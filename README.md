@@ -27,3 +27,10 @@ Quilt: Not Available yet. But the Fabric versions 3.1.7 and below should work fi
 - Has an option to only update vanilla biomes, and not to add the close to 200 new biomes.
 
 # Compatible Mods/Packs
+
+# FAQ
+- Will there be a Forge 1.16 version? No.
+- Where can I find andesite? In andesite crags.
+- Where do I find diorite? In Mediterranean Islands and Thermal Taigas.
+- Where do beehives spawn? In desert lakes and desert river biomes.
+- I can't find any sugar cane. Look in the tropical biomes and swamps.
