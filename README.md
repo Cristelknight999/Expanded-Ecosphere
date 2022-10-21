@@ -24,6 +24,6 @@ Quilt: Not Available yet. But the Fabric versions 3.1.7 and below should work fi
 - A config menu is available if you install [Cloth Config](https://www.curseforge.com/minecraft/mc-mods/cloth-config/files) and on fabric also [Mod Menu](https://www.curseforge.com/minecraft/mc-mods/modmenu).
 - You can also edit the config manually in wwoo.json5 (located at .minecraft/config/wwoo/)
 - Biomes can be disabled in banned_biomes.json5 (also located at .minecraft/config/wwoo/)
--Has an option to only update vanilla biomes, and not to add the close to 200 new biomes.
+- Has an option to only update vanilla biomes, and not to add the close to 200 new biomes.
 
 # Compatible Mods/Packs
