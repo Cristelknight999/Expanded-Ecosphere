@@ -18,7 +18,7 @@ Datapacks:
 Quilt: Not Available yet. But the Fabric versions 3.1.7 and below should work fine.
 
 # Features WWOO 1.19
-- Large Biomes! Select the world type large biomes in your world creation menu, or on a server set level-type	to LARGE_BIOMES
+- Large Biomes! Select the world type large biomes in your world creation menu, or on a server set `level-type` to `LARGE_BIOMES`
 
 # Features WWOO 1.19 [Mod only]
 - A config menu is available if you install [Cloth Config](https://www.curseforge.com/minecraft/mc-mods/cloth-config/files) and on fabric also [Mod Menu](https://www.curseforge.com/minecraft/mc-mods/modmenu).
@@ -29,8 +29,16 @@ Quilt: Not Available yet. But the Fabric versions 3.1.7 and below should work fi
 # Compatible Mods/Packs
 
 # FAQ
-- Will there be a Forge 1.16 version? No.
+- Will there be a Forge 1.16.x version? No.
 - Where can I find andesite? In andesite crags.
 - Where do I find diorite? In Mediterranean Islands and Thermal Taigas.
 - Where do beehives spawn? In desert lakes and desert river biomes.
 - I can't find any sugar cane. Look in the tropical biomes and swamps.
+
+# How to install
+On a server:
+1. If you are using a Vanilla, Spigot, or Paper server, download the datapack version. If you are using a Fabric or Forge server, you can download either the datapack or the mod version.
+2. If you are using the datapack version (the one that ends with `.zip`), put the file into the `world/datapacks` folder. If you are using the mod version (the one that ends with `.jar`), put the file into the `mods` folder.
+3. Start your server. **Next steps only needed in 1.18-1.19.2!** If you log onto it, you'll see that the area around spawn is vanilla terrain while beyond it is WWOO terrain. Stop your server.
+4. Go into the `world` folder and delete the `region` folder.
+5. Restart your server, and it should be fully generating new terrain
