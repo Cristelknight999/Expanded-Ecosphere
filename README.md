@@ -22,11 +22,30 @@ Quilt: Not Available yet. But the Fabric versions 3.1.7 and below should work fi
 
 ### Mod only
 - A config menu is available if you install [Cloth Config](https://www.curseforge.com/minecraft/mc-mods/cloth-config/files) and on fabric also [Mod Menu](https://www.curseforge.com/minecraft/mc-mods/modmenu).
-- You can also edit the config manually in wwoo.json5 (located at .minecraft/config/wwoo/)
-- Biomes can be disabled in banned_biomes.json5 (also located at .minecraft/config/wwoo/)
+- You can also edit the config manually in `wwoo.json5` (located at `.minecraft/config/wwoo/`)
+- Biomes can be disabled in `banned_biomes.json5` (also located at `.minecraft/config/wwoo/`)
 - Has an option to only update vanilla biomes, and not to add the close to 200 new biomes.
 
 # Compatible Mods/Datapacks
+
+### Structure Mods
+| Mod Name  | Download |
+| ------------- | ------------- |
+| Towns and Towers  |  [Curseforge](https://www.curseforge.com/minecraft/mc-mods/towns-and-towers-structure-add-on) [PlanetMC](https://www.planetminecraft.com/data-pack/towns-amp-towers-structure-overhaul/)  |
+| Unstructured  | [Curseforge](https://www.curseforge.com/minecraft/mc-mods/unstructured)  |
+| Repurposed Structures  | Curseforge: [Forge](https://www.curseforge.com/minecraft/mc-mods/repurposed-structures) [Fabric](https://www.curseforge.com/minecraft/mc-mods/repurposed-structures-fabric)  |
+
+### World-gen Mods
+| Mod Name  | Download | More Info |
+| ------------- | ------------- | ------------- |
+| Oh The Biomes You'll Go  | Curseforge: [Forge](https://www.curseforge.com/minecraft/mc-mods/oh-the-biomes-youll-go) [Fabric](https://www.curseforge.com/minecraft/mc-mods/oh-the-biomes-youll-go-fabric)  | Only compatible with the wwoo mod |
+| Biomes O' Plenty  | [Curseforge](https://www.curseforge.com/minecraft/mc-mods/biomes-o-plenty)  | Only compatible with the wwoo mod |
+| Promenade  | [Curseforge](https://www.curseforge.com/minecraft/mc-mods/promenade)  | Only compatible with the wwoo mod |
+| Terralith  | [PlanetMC](https://www.planetminecraft.com/data-pack/terralith-overworld-evolved-100-biomes-caves-and-more/) [Curseforge](https://www.curseforge.com/minecraft/mc-mods/terralith)  | Only compatible with the wwoo mod, if compatible mode is enabled |
+
+
+
+
 
 # FAQ
 - Will there be a Forge 1.16.x version? No.
@@ -36,7 +55,7 @@ Quilt: Not Available yet. But the Fabric versions 3.1.7 and below should work fi
 - I can't find any sugar cane. Look in the tropical biomes and swamps.
 
 # How to install
-### On Client:
+## On Client:
 1. Download the mod or datapack version from the [downloads](#official-downloads) above.
 ##### Mod:
 1. put the file into the `mods` folder in `.minecraft/mods`. 
@@ -46,12 +65,12 @@ Quilt: Not Available yet. But the Fabric versions 3.1.7 and below should work fi
 ##### Datapack: 
 1. Open Minecraft.
 2. Create a new world and click on "Data Packs".
-3. Drag the data pack into the Minecraft window. It should be a .zip file or directory.
+3. Drag the data pack into the Minecraft window. It should be a `.zip` file or `directory`.
 Click "Yes" on the confirmation screen.
 4. Move the data pack to the right hand side of the screen by clicking the triangle on its icon.
 5. Click "Done" and continue creating your world, then click on "Create New World".
 
-### On a server:
+## On a server:
 1. If you are using a Vanilla, Spigot, or Paper server, download the datapack version. If you are using a Fabric or Forge server, you can download either the datapack or the mod version ([download](#official-downloads) links are above).
 2. If you are using the datapack version (the one that ends with `.zip`), put the file into the `world/datapacks` folder. If you are using the mod version (the one that ends with `.jar`), put the file into the `mods` folder.
 3. Start your server.<br>**Next steps only needed in 1.18-1.19.2!**<br>If you log onto it, you'll see that the area around spawn is vanilla terrain while beyond it is WWOO terrain. Stop your server.
