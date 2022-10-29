@@ -27,6 +27,7 @@ Quilt: Not Available yet. But the Fabric versions 3.1.7 and below should work fi
 - Has an option to only update vanilla biomes, and not to add the close to 200 new biomes.
 
 # Compatible Mods/Datapacks
+If you know any other mods or datapacks that work well with WWOO, the contact me(Cristelknight) on [Discord](https://discord.gg/yJng7sC44x).
 
 ### Structure Mods
 | Mod Name  | Download |
@@ -42,10 +43,6 @@ Quilt: Not Available yet. But the Fabric versions 3.1.7 and below should work fi
 | Biomes O' Plenty  | [Curseforge](https://www.curseforge.com/minecraft/mc-mods/biomes-o-plenty)  | Only compatible with the wwoo mod |
 | Promenade  | [Curseforge](https://www.curseforge.com/minecraft/mc-mods/promenade)  | Only compatible with the wwoo mod |
 | Terralith  | [PlanetMC](https://www.planetminecraft.com/data-pack/terralith-overworld-evolved-100-biomes-caves-and-more/) [Curseforge](https://www.curseforge.com/minecraft/mc-mods/terralith)  | Only compatible with the wwoo mod, if compatible mode is enabled |
-
-
-
-
 
 # FAQ
 - Will there be a Forge 1.16.x version? No.
