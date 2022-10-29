@@ -39,10 +39,10 @@ If you know any other mods or datapacks that work well with WWOO, then contact m
 ### World-gen Mods
 | Mod Name  | Download | More Info |
 | ------------- | ------------- | ------------- |
-| Oh The Biomes You'll Go  | Curseforge: [Forge](https://www.curseforge.com/minecraft/mc-mods/oh-the-biomes-youll-go) [Fabric](https://www.curseforge.com/minecraft/mc-mods/oh-the-biomes-youll-go-fabric)  | Only compatible with the wwoo mod |
-| Biomes O' Plenty  | [Curseforge](https://www.curseforge.com/minecraft/mc-mods/biomes-o-plenty)  | Only compatible with the wwoo mod |
-| Promenade  | [Curseforge](https://www.curseforge.com/minecraft/mc-mods/promenade)  | Only compatible with the wwoo mod |
-| Terralith  | [PlanetMC](https://www.planetminecraft.com/data-pack/terralith-overworld-evolved-100-biomes-caves-and-more/) [Curseforge](https://www.curseforge.com/minecraft/mc-mods/terralith)  | Only compatible with the wwoo mod, if compatible mode is enabled |
+| Oh The Biomes You'll Go  | Curseforge: [Forge](https://www.curseforge.com/minecraft/mc-mods/oh-the-biomes-youll-go) [Fabric](https://www.curseforge.com/minecraft/mc-mods/oh-the-biomes-youll-go-fabric)  | Only compatible with the WWOO mod |
+| Biomes O' Plenty  | [Curseforge](https://www.curseforge.com/minecraft/mc-mods/biomes-o-plenty)  | Only compatible with the WWOO mod |
+| Promenade  | [Curseforge](https://www.curseforge.com/minecraft/mc-mods/promenade)  | Only compatible with the WWOO mod |
+| Terralith  | [PlanetMC](https://www.planetminecraft.com/data-pack/terralith-overworld-evolved-100-biomes-caves-and-more/) [Curseforge](https://www.curseforge.com/minecraft/mc-mods/terralith)  | Only compatible with the WWOO mod, if compatible mode is enabled |
 
 # FAQ
 - Will there be a Forge 1.16.x version? No.
