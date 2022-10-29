@@ -20,7 +20,7 @@ Quilt: Not Available yet. But the Fabric versions 3.1.7 and below should work fi
 # Features WWOO 1.19
 - Large Biomes! Select the world type large biomes in your world creation menu, or on a server set `level-type` to `LARGE_BIOMES`
 
-# Features WWOO 1.19 [Mod only]
+## [Mod only]
 - A config menu is available if you install [Cloth Config](https://www.curseforge.com/minecraft/mc-mods/cloth-config/files) and on fabric also [Mod Menu](https://www.curseforge.com/minecraft/mc-mods/modmenu).
 - You can also edit the config manually in wwoo.json5 (located at .minecraft/config/wwoo/)
 - Biomes can be disabled in banned_biomes.json5 (also located at .minecraft/config/wwoo/)
