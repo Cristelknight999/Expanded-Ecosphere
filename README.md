@@ -17,7 +17,7 @@ Datapacks:
 
 Quilt: Not Available yet. But the Fabric versions 3.1.7 and below should work fine.
 
-# Features WWOO 1.19
+# Features WWOO 1.19+
 - Large Biomes! Select the world type large biomes in your world creation menu, or on a server set `level-type` to `LARGE_BIOMES`
 
 #### [Mod only]
