@@ -27,7 +27,7 @@ Quilt: Not Available yet. But the Fabric versions 3.1.7 and below should work fi
 - Has an option to only update vanilla biomes, and not to add the close to 200 new biomes.
 
 # Compatible Mods/Datapacks
-If you know any other mods or datapacks that work well with WWOO, the contact me(Cristelknight) on [Discord](https://discord.gg/yJng7sC44x).
+If you know any other mods or datapacks that work well with WWOO, then contact me (Cristelknight) on [Discord](https://discord.gg/yJng7sC44x).
 
 ### Structure Mods
 | Mod Name  | Download |
