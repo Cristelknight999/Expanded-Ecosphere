@@ -26,7 +26,7 @@ Quilt: Not Available yet. But the Fabric versions 3.1.7 and below should work fi
 - Biomes can be disabled in banned_biomes.json5 (also located at .minecraft/config/wwoo/)
 - Has an option to only update vanilla biomes, and not to add the close to 200 new biomes.
 
-# Compatible Mods/Packs
+# Compatible Mods/Datapacks
 
 # FAQ
 - Will there be a Forge 1.16.x version? No.
@@ -36,10 +36,24 @@ Quilt: Not Available yet. But the Fabric versions 3.1.7 and below should work fi
 - I can't find any sugar cane. Look in the tropical biomes and swamps.
 
 # How to install
-On a server:
-1. If you are using a Vanilla, Spigot, or Paper server, download the datapack version. If you are using a Fabric or Forge server, you can download either the datapack or the mod version.
+### On Client:
+1. Download the mod or datapack version from the [downloads](#official-downloads) above.
+##### Mod:
+1. put the file into the `mods` folder in `.minecraft/mods`. 
+2. Then install the matching mod loader for your downloaded mod file: [Fabric download](https://fabricmc.net/use/installer/)[(tutorial)](https://fabricmc.net/wiki/player:tutorials:install_mcl:windows) or [Forge download](https://files.minecraftforge.net/net/minecraftforge/forge/)[(tutorial)](https://www.youtube.com/watch?v=fMKwJ97ri90).
+3. Then start your game and create a new world.
+
+##### Datapack: 
+1. Open Minecraft.
+2. Create a new world and click on "Data Packs".
+3. Drag the data pack into the Minecraft window. It should be a .zip file or directory.
+Click "Yes" on the confirmation screen.
+4. Move the data pack to the right hand side of the screen by clicking the triangle on its icon.
+5. Click "Done" and continue creating your world, then click on "Create New World".
+
+### On a server:
+1. If you are using a Vanilla, Spigot, or Paper server, download the datapack version. If you are using a Fabric or Forge server, you can download either the datapack or the mod version ([download](#official-downloads) links are above).
 2. If you are using the datapack version (the one that ends with `.zip`), put the file into the `world/datapacks` folder. If you are using the mod version (the one that ends with `.jar`), put the file into the `mods` folder.
-3. Start your server. 
-**Next steps only needed in 1.18-1.19.2!** If you log onto it, you'll see that the area around spawn is vanilla terrain while beyond it is WWOO terrain. Stop your server.
+3. Start your server.<br>**Next steps only needed in 1.18-1.19.2!**<br>If you log onto it, you'll see that the area around spawn is vanilla terrain while beyond it is WWOO terrain. Stop your server.
 4. Go into the `world` folder and delete the `region` folder.
 5. Restart your server, and it should be fully generating new terrain
