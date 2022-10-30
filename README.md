@@ -44,6 +44,10 @@ If you know any other mods or datapacks that work well with WWOO, then contact m
 | Promenade  | [Curseforge](https://www.curseforge.com/minecraft/mc-mods/promenade)  | Only compatible with the WWOO mod |
 | Terralith  | [PlanetMC](https://www.planetminecraft.com/data-pack/terralith-overworld-evolved-100-biomes-caves-and-more/) [Curseforge](https://www.curseforge.com/minecraft/mc-mods/terralith)  | Only compatible with the WWOO mod, if compatible mode is enabled |
 
+# Incompatible mods/datapacks
+| Mod Name  | Download | More Info |
+| ------------- | ------------- | ------------- |
+
 # FAQ
 - Will there be a Forge 1.16.x version? No.
 - Where can I find andesite? In andesite crags.
