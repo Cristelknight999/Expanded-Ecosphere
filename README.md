@@ -25,6 +25,7 @@ Quilt: Not Available yet. But the Fabric versions 3.1.7 and below should work fi
 - You can also edit the config manually in `wwoo.json5` (located at `.minecraft/config/wwoo/`)
 - Biomes can be disabled in `banned_biomes.json5` (also located at `.minecraft/config/wwoo/`)
 - Has an option to only update vanilla biomes, and not to add the close to 200 new biomes.
+- the overworld isn't piglin safe. (On datapack it is, so that the Hoglins which can spawn in the overworld don't mutate to Zoglins)
 
 # Compatible Mods/Datapacks
 If you know any other mods or datapacks that work well with WWOO, then contact me (Cristelknight) on [Discord](https://discord.gg/yJng7sC44x).
