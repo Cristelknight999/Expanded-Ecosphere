@@ -15,7 +15,7 @@ Datapacks:
 [1.17](https://www.planetminecraft.com/data-pack/william-wythers-overhauled-overworld-legacy-for-1-17/)
 [1.16](https://www.planetminecraft.com/data-pack/william-wythers-overhauled-overworld-1-17-snapshots-edition/)
 
-Quilt: Not Available yet. But the Fabric versions 3.1.7 and below should work fine.
+Quilt: Not Available yet. But the Fabric versions 3.1.7 and below should work fine the above versions maybe work with [Quilted Fabric API](https://www.curseforge.com/minecraft/mc-mods/qsl).
 
 # Features WWOO 1.19+
 - Large Biomes! Select the world type large biomes in your world creation menu, or on a server set `level-type` to `LARGE_BIOMES`
