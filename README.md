@@ -18,7 +18,8 @@ Datapacks:
 Quilt: Not Available yet. But the Fabric versions 3.1.7 and below should work fine the above versions maybe work with [Quilted Fabric API](https://www.curseforge.com/minecraft/mc-mods/qsl). It isn't tested.
 
 # Features WWOO 1.19+
-- Large Biomes! Select the world type large biomes in your world creation menu, or on a server set `level-type` to `LARGE_BIOMES`
+- Large Biomes! Because of some problems with world presets, you should not use the vanilla world presets. In the mod version you should definitely use the forceLargeBiomes option, found in the WWOO config.
+Old versions or datapack: (Select the world type large biomes in your world creation menu, or on a server set `level-type` to `LARGE_BIOMES`)
 
 ### Mod only
 - A config menu is available if you install [Cloth Config](https://www.curseforge.com/minecraft/mc-mods/cloth-config/files) and on fabric also [Mod Menu](https://www.curseforge.com/minecraft/mc-mods/modmenu).
