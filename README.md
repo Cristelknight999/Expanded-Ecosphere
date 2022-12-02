@@ -1,5 +1,6 @@
-# William Wythers' Overhauled Overworld [WWOO]
-![wwoo](https://user-images.githubusercontent.com/54945257/197195300-dccdd0a0-217d-4945-9f31-2549636dbc66.png)
+# William Wythers' Overhauled Overworld 
+
+[WWOO]![wythers-greenblue](https://user-images.githubusercontent.com/54945257/205379797-def647a9-8d28-4c90-80b9-08d8a4a0e082.png)
 
 
 William Wythers' Overhauled Overworld is a world-gen mod/pack that aims to re-create the vanilla overworld in a way that makes a more realistic and atmospheric world. You can explore more than 200 new/overhauled biomes which make your world insanely more immersive.
