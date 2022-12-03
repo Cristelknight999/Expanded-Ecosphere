@@ -1,7 +1,6 @@
 # William Wythers' Overhauled Overworld 
 
-[WWOO]![wythers-greenblue](https://user-images.githubusercontent.com/54945257/205379797-def647a9-8d28-4c90-80b9-08d8a4a0e082.png)
-
+![wythers-greenblue](https://user-images.githubusercontent.com/54945257/205379797-def647a9-8d28-4c90-80b9-08d8a4a0e082.png)
 
 William Wythers' Overhauled Overworld is a world-gen mod/pack that aims to re-create the vanilla overworld in a way that makes a more realistic and atmospheric world. You can explore more than 200 new/overhauled biomes which make your world insanely more immersive.
 
@@ -23,7 +22,7 @@ Quilt: Not Available yet. But the Fabric versions 3.1.7 and below should work fi
 Old versions or datapack: (Select the world type large biomes in your world creation menu, or on a server set `level-type` to `LARGE_BIOMES`)
 
 ### Mod only
-- A config menu is available if you install [Cloth Config](https://www.curseforge.com/minecraft/mc-mods/cloth-config/files) and on fabric also [Mod Menu](https://www.curseforge.com/minecraft/mc-mods/modmenu).
+- A config menu is available if you install [Cloth Config](https://www.curseforge.com/minecraft/mc-mods/cloth-config) and on fabric also [Mod Menu](https://www.curseforge.com/minecraft/mc-mods/modmenu).
 - You can also edit the config manually in `wwoo.json5` (located at `.minecraft/config/wwoo/`)
 - Biomes can be disabled in `banned_biomes.json5` (also located at `.minecraft/config/wwoo/`)
 - Has an option to only update vanilla biomes, and not to add the close to 200 new biomes.
@@ -43,6 +42,7 @@ If you know any other mods or datapacks that work well with WWOO, then contact m
 | Mod Name  | Download | More Info |
 | ------------- | ------------- | ------------- |
 | Oh The Biomes You'll Go  | Curseforge: [Forge](https://www.curseforge.com/minecraft/mc-mods/oh-the-biomes-youll-go) [Fabric](https://www.curseforge.com/minecraft/mc-mods/oh-the-biomes-youll-go-fabric)  | Only compatible with the WWOO mod |
+| The Graveyard Biomes | Curseforge: [Forge](https://www.curseforge.com/minecraft/mc-mods/the-graveyard-biomes-forge) [Fabric](https://www.curseforge.com/minecraft/mc-mods/the-graveyard-biomes-fabric) | Only compatible with the WWOO mod |
 | Biomes O' Plenty  | [Curseforge](https://www.curseforge.com/minecraft/mc-mods/biomes-o-plenty)  | Only compatible with the WWOO mod |
 | Promenade  | [Curseforge](https://www.curseforge.com/minecraft/mc-mods/promenade)  | Only compatible with the WWOO mod |
 | Terralith  | [PlanetMC](https://www.planetminecraft.com/data-pack/terralith-overworld-evolved-100-biomes-caves-and-more/) [Curseforge](https://www.curseforge.com/minecraft/mc-mods/terralith)  | Only compatible with the WWOO mod, if compatible mode is enabled |
