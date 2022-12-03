@@ -47,7 +47,7 @@ If you know any other mods or datapacks that work well with WWOO, then contact m
 | Promenade  | [Curseforge](https://www.curseforge.com/minecraft/mc-mods/promenade)  | Only compatible with the WWOO mod |
 | Terralith  | [PlanetMC](https://www.planetminecraft.com/data-pack/terralith-overworld-evolved-100-biomes-caves-and-more/) [Curseforge](https://www.curseforge.com/minecraft/mc-mods/terralith)  | Only compatible with the WWOO mod, if compatible mode is enabled |
 
-# Incompatible mods/datapacks
+# Incompatible Mods/Datapacks
 | Mod Name  | Download | More Info |
 | ------------- | ------------- | ------------- |
 
