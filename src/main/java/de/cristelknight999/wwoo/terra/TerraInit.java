@@ -98,14 +98,10 @@ public class TerraInit implements TerraBlenderApi {
                 }
                 ResourceKey<Biome> r = ResourceKey.create(Registries.BIOME, new ResourceLocation(b));
                 JsonObject jo = e.get("parameters").getAsJsonObject();
-                JsonArray temperature = jo.get("temperature").getAsJsonArray();
-                JsonArray humidity = jo.get("humidity").getAsJsonArray();
-                JsonArray continentalness = jo.get("continentalness").getAsJsonArray();
-                JsonArray erosion = jo.get("erosion").getAsJsonArray();
-                JsonArray weirdness = jo.get("weirdness").getAsJsonArray();
-                JsonArray depth = jo.get("depth").getAsJsonArray();
-                Climate.ParameterPoint p = new Climate.ParameterPoint(Climate.Parameter.span(temperature.get(0).getAsFloat(), temperature.get(1).getAsFloat()), Climate.Parameter.span(humidity.get(0).getAsFloat(), humidity.get(1).getAsFloat()), Climate.Parameter.span(continentalness.get(0).getAsFloat(), continentalness.get(1).getAsFloat()), Climate.Parameter.span(erosion.get(0).getAsFloat(), erosion.get(0).getAsFloat()), Climate.Parameter.span(depth.get(0).getAsFloat(), depth.get(1).getAsFloat()), Climate.Parameter.span(weirdness.get(0).getAsFloat(), weirdness.get(1).getAsFloat()), 0);
-                Pair<Climate.ParameterPoint, ResourceKey<Biome>> pair = new Pair<>(p, r);
+
+                Climate.ParameterPoint point = new Gson().fromJson(jo, Climate.ParameterPoint.class);
+
+                Pair<Climate.ParameterPoint, ResourceKey<Biome>> pair = new Pair<>(point, r);
                 list.add(pair);
             }
 
