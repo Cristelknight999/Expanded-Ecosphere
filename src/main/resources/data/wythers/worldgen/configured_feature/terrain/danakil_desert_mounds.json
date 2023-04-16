@@ -1,0 +1,16 @@
+{
+  "config": {
+    "features": [
+      {
+        "feature": "wythers:vegetation/placed_tree/terracotta_mound_orange",
+        "chance": 0.3
+      },
+      {
+        "feature": "wythers:vegetation/placed_tree/terracotta_mound_red",
+        "chance": 0.3
+      }
+    ],
+    "default": "wythers:vegetation/placed_tree/terracotta_mound_yellow"
+  },
+  "type": "minecraft:random_selector"
+}

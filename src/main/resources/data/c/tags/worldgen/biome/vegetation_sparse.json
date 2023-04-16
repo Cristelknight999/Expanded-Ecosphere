@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "wythers:dry_savanna",
+    "wythers:savanna_badlands",
+    "wythers:chaparral",
+    "wythers:dry_tropical_grassland",
+    "wythers:autumnal_plains",
+    "wythers:cold_plains",
+    "wythers:cool_plains",
+    "wythers:forest_edge",
+    "wythers:humid_tropical_grassland",
+    "wythers:kwongan_heath",
+    "wythers:scrubland",
+    "wythers:scrub_forest",
+    "wythers:subtropical_grassland",
+    "wythers:tundra",
+    "wythers:tropical_grassland",
+    "wythers:tropical_island",
+    "wythers:wooded_desert"
+  ]
+}

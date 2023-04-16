@@ -1,0 +1,24 @@
+{
+  "feature": {
+    "type": "minecraft:random_selector",
+    "config": {
+      "features": [
+        {
+          "chance": 0.25,
+          "feature": "wythers:vegetation/placed_tree_component/giant_dark_oak_branches_moss"
+        },
+        {
+          "chance": 0.25,
+          "feature": "wythers:vegetation/placed_tree_component/giant_dark_oak_branches_high_moss"
+        }
+      ],
+      "default": "wythers:vegetation/placed_tree_component/giant_dark_oak_trunk_moss"
+    }
+  },
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 3
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "start_height": {
+    "absolute": -51
+  },
+  "use_expansion_hack": true,
+  "max_distance_from_center": 80,
+  "biomes": "wythers:tropical_rainforest",
+  "spawn_overrides": {},
+  "step": "underground_decoration",
+  "terrain_adaptation": "beard_box",
+  "start_pool": "wythers:structures/underground/el_dorado/starts",
+  "size": 7,
+  "type": "minecraft:jigsaw"
+}

@@ -1,0 +1,23 @@
+{
+  "values": [
+    "wythers:birch_taiga",
+    "wythers:boreal_forest_red",
+    "wythers:boreal_forest_yellow",
+    "wythers:cold_island",
+    "wythers:deep_snowy_taiga",
+    "wythers:fen",
+    "wythers:forested_highlands",
+    "wythers:jade_highlands",
+    "wythers:larch_taiga",
+    "wythers:maple_mountains",
+    "wythers:flooded_temperate_rainforest",
+    "wythers:old_growth_taiga_crags",
+    "wythers:old_growth_taiga_swamp",
+    "wythers:pine_barrens",
+    "wythers:taiga_crags",
+    "wythers:temperate_rainforest",
+    "wythers:temperate_rainforest_crags",
+    "wythers:thermal_taiga",
+    "wythers:thermal_taiga_crags"
+  ]
+}

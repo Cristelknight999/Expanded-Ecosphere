@@ -1,0 +1,16 @@
+{
+  "config": {
+    "features": [
+      {
+        "feature": "wythers:vegetation/placed_tree/oak",
+        "chance": 0.1
+      },
+      {
+        "feature": "wythers:vegetation/placed_tree/oak_bush",
+        "chance": 0.25
+      }
+    ],
+    "default": "wythers:vegetation/placed_tree/oak_scrub"
+  },
+  "type": "minecraft:random_selector"
+}

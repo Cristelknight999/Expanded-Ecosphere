@@ -1,0 +1,53 @@
+{
+  "config": {
+    "tries": 64,
+    "xz_spread": 7,
+    "y_spread": 3,
+    "feature": {
+      "feature": {
+        "config": {
+          "to_place": {
+            "entries": [
+              {
+                "data": {
+                  "Name": "minecraft:orange_tulip"
+                },
+                "weight": 2
+              },
+              {
+                "data": {
+                  "Name": "minecraft:red_tulip"
+                },
+                "weight": 1
+              },
+              {
+                "data": {
+                  "Name": "minecraft:poppy"
+                },
+                "weight": 1
+              },
+              {
+                "data": {
+                  "Name": "minecraft:dead_bush"
+                },
+                "weight": 2
+              }
+            ],
+            "type": "minecraft:weighted_state_provider"
+          }
+        },
+        "type": "minecraft:simple_block"
+      },
+      "placement": [
+        {
+          "predicate": {
+            "blocks": "minecraft:air",
+            "type": "minecraft:matching_blocks"
+          },
+          "type": "minecraft:block_predicate_filter"
+        }
+      ]
+    }
+  },
+  "type": "minecraft:flower"
+}

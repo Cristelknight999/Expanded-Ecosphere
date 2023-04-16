@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:random_patch",
+  "config": {
+    "tries": 32,
+    "xz_spread": 5,
+    "y_spread": 1,
+    "feature": "wythers:vegetation/placed_block_column/mixed_dripleaf"
+  }
+}

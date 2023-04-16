@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:random_selector",
+  "config": {
+    "features": [
+      {
+        "chance": 0.1,
+        "feature": {
+          "feature": "wythers:vegetation/configured_tree/azalea_scrub",
+          "placement": []
+        }
+      },
+      {
+        "chance": 0.1,
+        "feature": {
+          "feature": "wythers:vegetation/configured_tree/dark_oak_scrub",
+          "placement": []
+        }
+      },
+      {
+        "chance": 0.1,
+        "feature": {
+          "feature": "wythers:vegetation/configured_tree/spruce_scrub",
+          "placement": []
+        }
+      }
+    ],
+    "default": {
+      "feature": "wythers:vegetation/configured_tree/birch_scrub",
+      "placement": []
+    }
+  }
+}

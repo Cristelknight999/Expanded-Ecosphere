@@ -1,0 +1,18 @@
+{
+  "replace": false,
+  "values": [
+    "wythers:savanna_river",
+    "wythers:jungle_river",
+    "wythers:flooded_savanna",
+    "wythers:badlands_river",
+    "wythers:billabong",
+    "wythers:black_river",
+    "wythers:desert_river",
+    "wythers:deep_desert_river",
+    "wythers:gravelly_river",
+    "wythers:icy_river",
+    "wythers:jungle_river",
+    "wythers:lantern_river",
+    "wythers:savanna_river"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "replace": true,
+  "values": [
+    "minecraft:warm_ocean",
+    "#minecraft:is_jungle",
+    "minecraft:mangrove_swamp",
+    "wythers:bayou",
+    "wythers:dripleaf_swamp",
+    "wythers:ancient_emerald_beech_forest",
+    "wythers:ancient_moss_forest",
+    "wythers:jade_highlands",
+    "wythers:ancient_mossy_swamp"
+  ]
+}

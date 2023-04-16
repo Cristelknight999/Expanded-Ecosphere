@@ -1,0 +1,20 @@
+{
+  "config": {
+    "features": [
+      {
+        "feature": "wythers:vegetation/placed_tree/mahogany",
+        "chance": 0.1
+      },
+      {
+        "feature": "wythers:vegetation/placed_tree/ebony",
+        "chance": 0.1
+      },
+      {
+        "feature": "minecraft:jungle_bush",
+        "chance": 0.5
+      }
+    ],
+    "default": "minecraft:jungle_tree"
+  },
+  "type": "minecraft:random_selector"
+}

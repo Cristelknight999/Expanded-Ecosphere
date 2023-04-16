@@ -1,0 +1,27 @@
+{
+  "replace": false,
+  "values": [
+    "wythers:chaparral",
+    "wythers:dry_tropical_grassland",
+    "wythers:flooded_savanna",
+    "wythers:savanna_basaltic_incursions",
+    "wythers:wooded_savanna",
+    "wythers:dry_savanna",
+    "wythers:savanna_badlands",
+    "wythers:dry_tropical_forest",
+    "wythers:eucalyptus_salubris_woodland",
+    "wythers:eucalyptus_woodland",
+    "wythers:giant_sequoia_forest",
+    "wythers:humid_tropical_grassland",
+    "wythers:jacaranda_savanna",
+    "wythers:savanna_badlands",
+    "wythers:savanna_badlands",
+    "wythers:savanna_basaltic_incursions",
+    "wythers:scrubland",
+    "wythers:scrub_forest",
+    "wythers:tsingy_forest",
+    "wythers:tropical_forest",
+    "wythers:tropical_grassland",
+    "wythers:wooded_savanna"
+  ]
+}

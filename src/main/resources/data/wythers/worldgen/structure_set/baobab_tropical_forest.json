@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "wythers:baobab_tropical_forest",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "spacing": 6,
+    "separation": 3,
+    "salt": 10387312,
+    "type": "minecraft:random_spread"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "feature": "wythers:vegetation/configured_tree_component/giant_azalea_branches_moss",
+  "placement": [
+    {
+      "type": "minecraft:surface_water_depth_filter",
+      "max_water_depth": 0
+    },
+    {
+      "type": "minecraft:heightmap",
+      "heightmap": "WORLD_SURFACE_WG"
+    }
+  ]
+}

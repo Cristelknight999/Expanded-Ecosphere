@@ -1,0 +1,19 @@
+{
+  "feature": "wythers:vegetation/configured_random_patch/grass_phantasmal_forest",
+  "placement": [
+    {
+      "count": 20,
+      "type": "minecraft:count"
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "heightmap": "WORLD_SURFACE_WG",
+      "type": "minecraft:heightmap"
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

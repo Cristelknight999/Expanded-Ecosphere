@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:random_patch",
+  "config": {
+    "tries": 24,
+    "xz_spread": 5,
+    "y_spread": 3,
+    "feature": "wythers:vegetation/placed_block_column/mix_melons_and_stems"
+  }
+}

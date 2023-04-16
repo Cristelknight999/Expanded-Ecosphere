@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:swamp",
+    "minecraft:mangrove_swamp",
+    "wythers:jungle_river",
+    "wythers:flooded_savanna",
+    "wythers:salt_lakes_white",
+    "wythers:salt_lakes_pink",
+    "wythers:salt_lakes_turquoise"
+  ]
+}

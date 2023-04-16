@@ -1,0 +1,148 @@
+{
+  "type": "minecraft:block_column",
+  "config": {
+    "direction": "up",
+    "allowed_placement": {
+      "type": "minecraft:matching_blocks",
+      "blocks": [
+        "minecraft:air"
+      ]
+    },
+    "prioritize_tip": true,
+    "layers": [
+      {
+        "height": 2,
+        "provider": {
+          "type": "minecraft:simple_state_provider",
+          "state": {
+            "Name": "minecraft:cactus",
+            "Properties": {
+              "age": "0"
+            }
+          }
+        }
+      },
+      {
+        "height": 1,
+        "provider": {
+          "type": "minecraft:simple_state_provider",
+          "state": {
+            "Name": "minecraft:cactus",
+            "Properties": {
+              "age": "9"
+            }
+          }
+        }
+      },
+      {
+        "height": 1,
+        "provider": {
+          "type": "minecraft:simple_state_provider",
+          "state": {
+            "Name": "minecraft:cactus",
+            "Properties": {
+              "age": "8"
+            }
+          }
+        }
+      },
+      {
+        "height": 1,
+        "provider": {
+          "type": "minecraft:weighted_state_provider",
+          "entries": [
+            {
+              "weight": 1,
+              "data": {
+                "Name": "minecraft:cactus",
+                "Properties": {
+                  "age": "11"
+                }
+              }
+            },
+            {
+              "weight": 1,
+              "data": {
+                "Name": "minecraft:cactus",
+                "Properties": {
+                  "age": "13"
+                }
+              }
+            },
+            {
+              "weight": 1,
+              "data": {
+                "Name": "minecraft:cactus",
+                "Properties": {
+                  "age": "15"
+                }
+              }
+            },
+            {
+              "weight": 1,
+              "data": {
+                "Name": "minecraft:cactus",
+                "Properties": {
+                  "age": "0"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "height": {
+          "type": "minecraft:uniform",
+          "value": {
+            "min_inclusive": 0,
+            "max_inclusive": 1
+          }
+        },
+        "provider": {
+          "type": "minecraft:weighted_state_provider",
+          "entries": [
+            {
+              "weight": 1,
+              "data": {
+                "Name": "minecraft:cactus",
+                "Properties": {
+                  "age": "10"
+                }
+              }
+            },
+            {
+              "weight": 1,
+              "data": {
+                "Name": "minecraft:cactus",
+                "Properties": {
+                  "age": "12"
+                }
+              }
+            },
+            {
+              "weight": 1,
+              "data": {
+                "Name": "minecraft:cactus",
+                "Properties": {
+                  "age": "14"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "height": 2,
+        "provider": {
+          "type": "minecraft:simple_state_provider",
+          "state": {
+            "Name": "minecraft:cactus",
+            "Properties": {
+              "age": "0"
+            }
+          }
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "type": "minecraft:block_column",
+  "config": {
+    "direction": "up",
+    "allowed_placement": {
+      "type": "minecraft:matching_blocks",
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "blocks": [
+        "minecraft:air"
+      ]
+    },
+    "prioritize_tip": false,
+    "layers": [
+      {
+        "height": 1,
+        "provider": {
+          "type": "minecraft:weighted_state_provider",
+          "entries": [
+            {
+              "weight": 1,
+              "data": {
+                "Name": "minecraft:pumpkin_stem",
+                "Properties": {
+                  "age": "0"
+                }
+              }
+            },
+            {
+              "weight": 1,
+              "data": {
+                "Name": "minecraft:pumpkin_stem",
+                "Properties": {
+                  "age": "1"
+                }
+              }
+            },
+            {
+              "weight": 1,
+              "data": {
+                "Name": "minecraft:pumpkin_stem",
+                "Properties": {
+                  "age": "2"
+                }
+              }
+            },
+            {
+              "weight": 1,
+              "data": {
+                "Name": "minecraft:pumpkin_stem",
+                "Properties": {
+                  "age": "3"
+                }
+              }
+            },
+            {
+              "weight": 1,
+              "data": {
+                "Name": "minecraft:pumpkin_stem",
+                "Properties": {
+                  "age": "4"
+                }
+              }
+            },
+            {
+              "weight": 1,
+              "data": {
+                "Name": "minecraft:pumpkin_stem",
+                "Properties": {
+                  "age": "5"
+                }
+              }
+            },
+            {
+              "weight": 1,
+              "data": {
+                "Name": "minecraft:pumpkin_stem",
+                "Properties": {
+                  "age": "6"
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

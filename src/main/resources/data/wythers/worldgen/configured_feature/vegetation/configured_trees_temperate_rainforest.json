@@ -1,0 +1,20 @@
+{
+  "config": {
+    "features": [
+      {
+        "feature": "wythers:vegetation/placed_tree/douglas_fir",
+        "chance": 0.15
+      },
+      {
+        "feature": "wythers:vegetation/placed_tree/sitka_spruce",
+        "chance": 0.15
+      },
+      {
+        "feature": "wythers:vegetation/placed_tree/douglas_fir_small",
+        "chance": 0.45
+      }
+    ],
+    "default": "wythers:vegetation/placed_tree/oak_bush"
+  },
+  "type": "minecraft:random_selector"
+}

@@ -1,0 +1,96 @@
+{
+  "type": "minecraft:random_patch",
+  "config": {
+    "tries": 128,
+    "xz_spread": 3,
+    "y_spread": 3,
+    "feature": {
+      "feature": {
+        "type": "minecraft:simple_block",
+        "config": {
+          "to_place": {
+            "type": "minecraft:weighted_state_provider",
+            "entries": [
+              {
+                "weight": 15,
+                "data": {
+                  "Name": "minecraft:dead_brain_coral_block"
+                }
+              },
+              {
+                "weight": 5,
+                "data": {
+                  "Name": "minecraft:dead_fire_coral_block"
+                }
+              },
+              {
+                "weight": 5,
+                "data": {
+                  "Name": "minecraft:dead_horn_coral_block"
+                }
+              },
+              {
+                "weight": 5,
+                "data": {
+                  "Name": "minecraft:dead_tube_coral_block"
+                }
+              },
+              {
+                "weight": 5,
+                "data": {
+                  "Name": "minecraft:dead_bubble_coral_block"
+                }
+              },
+              {
+                "weight": 3,
+                "data": {
+                  "Name": "minecraft:mossy_cobblestone"
+                }
+              },
+              {
+                "weight": 3,
+                "data": {
+                  "Name": "minecraft:seagrass"
+                }
+              },
+              {
+                "weight": 1,
+                "data": {
+                  "Name": "minecraft:moss_block"
+                }
+              }
+            ]
+          }
+        }
+      },
+      "placement": [
+        {
+          "type": "minecraft:block_predicate_filter",
+          "predicate": {
+            "type": "minecraft:matching_blocks",
+            "offset": [
+              0,
+              1,
+              0
+            ],
+            "blocks": "minecraft:air"
+          }
+        },
+        {
+          "type": "minecraft:block_predicate_filter",
+          "predicate": {
+            "type": "minecraft:matching_blocks",
+            "offset": [
+              0,
+              0,
+              0
+            ],
+            "blocks": [
+              "minecraft:dead_brain_coral_block"
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

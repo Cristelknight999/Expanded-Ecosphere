@@ -1,0 +1,62 @@
+{
+  "type": "minecraft:block_column",
+  "config": {
+    "direction": "up",
+    "allowed_placement": {
+      "type": "minecraft:matching_blocks",
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "blocks": "minecraft:air"
+    },
+    "prioritize_tip": true,
+    "layers": [
+      {
+        "height": {
+          "type": "minecraft:weighted_list",
+          "distribution": [
+            {
+              "weight": 1,
+              "data": 2
+            },
+            {
+              "weight": 4,
+              "data": 1
+            }
+          ]
+        },
+        "provider": {
+          "type": "minecraft:simple_state_provider",
+          "state": {
+            "Name": "minecraft:sunflower",
+            "Properties": {
+              "half": "lower"
+            }
+          }
+        }
+      },
+      {
+        "height": 1,
+        "provider": {
+          "type": "minecraft:weighted_state_provider",
+          "entries": [
+            {
+              "weight": 1,
+              "data": {
+                "Name": "minecraft:white_tulip"
+              }
+            },
+            {
+              "weight": 1,
+              "data": {
+                "Name": "minecraft:pink_tulip"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

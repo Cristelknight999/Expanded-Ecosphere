@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:random_selector",
+  "config": {
+    "features": [
+      {
+        "chance": 0.5,
+        "feature": "wythers:vegetation/placed_tree/giant_bloodwood"
+      }
+    ],
+    "default": "wythers:vegetation/placed_tree/giant_bloodwood"
+  }
+}

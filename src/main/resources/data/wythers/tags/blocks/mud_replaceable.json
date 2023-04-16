@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "#minecraft:dirt",
+    "minecraft:clay",
+    "minecraft:sand",
+    "minecraft:red_sand",
+    "minecraft:gravel",
+    "minecraft:packed_mud",
+    "minecraft:smooth_basalt",
+    "minecraft:deepslate",
+    "minecraft:moss_block"
+  ]
+}

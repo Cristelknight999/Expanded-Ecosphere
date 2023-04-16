@@ -1,0 +1,76 @@
+plugins {
+	id 'fabric-loom' version '0.12-SNAPSHOT'
+	id 'maven-publish'
+	id 'idea'
+	id 'java'
+}
+
+sourceCompatibility = JavaVersion.VERSION_17
+targetCompatibility = JavaVersion.VERSION_17
+
+archivesBaseName = "WWOO-FABRIC"
+version = "${project.mod_version}"
+group = project.maven_group
+
+repositories {
+	flatDir {
+		dirs 'lib'
+	}
+	maven { url "https://maven.shedaniel.me/" }
+
+	maven { url = 'https://maven.minecraftforge.net/' }
+
+	maven {
+		name = 'TerraformersMC'
+		url = 'https://maven.terraformersmc.com/'
+	}
+	mavenCentral()
+}
+
+dependencies {
+	minecraft "com.mojang:minecraft:${project.minecraft_version}"
+	mappings loom.officialMojangMappings()
+	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
+
+	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+
+
+	modApi("me.shedaniel.cloth:cloth-config-fabric:${project.cloth_config_version}") {
+		exclude(group: "net.fabricmc.fabric-api")
+	}
+
+	modImplementation("com.terraformersmc:modmenu:${project.modmenu_version}") {
+		exclude module: "fabric-api"
+	}
+
+	implementation("blue.endless:jankson:${jankson_version}")
+
+	modImplementation "com.github.glitchfiend:TerraBlender-fabric:${project.minecraft_version}-${project.terrablender_version}"
+
+	include(modImplementation("net:cristellib:${project.cristellib_version}"))
+
+	//modImplementation("net.devtech:arrp:0.6.7")
+}
+
+processResources {
+	inputs.property "version", project.version
+
+	filesMatching("fabric.mod.json") {
+		expand "version": project.version
+	}
+}
+
+tasks.withType(JavaCompile).configureEach {
+	// Minecraft 1.18 (1.18-pre2) upwards uses Java 17.
+	it.options.release = 17
+}
+
+java {
+	withSourcesJar()
+}
+jar {
+	from("LICENSE") {
+		rename { "${it}_${project.archivesBaseName}"}
+	}
+}
+

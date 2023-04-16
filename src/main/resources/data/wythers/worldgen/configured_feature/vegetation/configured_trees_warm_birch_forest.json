@@ -1,0 +1,16 @@
+{
+  "config": {
+    "features": [
+      {
+        "feature": "wythers:vegetation/placed_tree/azalea_birch",
+        "chance": 0.5
+      },
+      {
+        "feature": "wythers:vegetation/placed_tree/birch",
+        "chance": 0.3
+      }
+    ],
+    "default": "wythers:vegetation/placed_tree/aspen"
+  },
+  "type": "minecraft:random_selector"
+}

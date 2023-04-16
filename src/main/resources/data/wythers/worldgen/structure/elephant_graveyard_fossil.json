@@ -1,0 +1,16 @@
+{
+  "biomes": "wythers:savanna_basaltic_incursions",
+  "spawn_overrides": {},
+  "step": "underground_decoration",
+  "terrain_adaptation": "beard_thin",
+  "height": {
+    "min_inclusive": {
+      "absolute": 60
+    },
+    "max_inclusive": {
+      "below_top": 2
+    },
+    "type": "minecraft:uniform"
+  },
+  "type": "minecraft:nether_fossil"
+}

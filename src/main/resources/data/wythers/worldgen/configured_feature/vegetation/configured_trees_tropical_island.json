@@ -1,0 +1,32 @@
+{
+  "config": {
+    "features": [
+      {
+        "feature": "wythers:vegetation/placed_random_patch/thin_jungle_bamboo_patch",
+        "chance": 0.05
+      },
+      {
+        "feature": "wythers:vegetation/placed_tree/flowering_cassia",
+        "chance": 0.1
+      },
+      {
+        "feature": "wythers:vegetation/placed_tree/teak",
+        "chance": 0.2
+      },
+      {
+        "feature": "wythers:vegetation/placed_tree/sandalwood",
+        "chance": 0.1
+      },
+      {
+        "feature": "wythers:vegetation/placed_tree/rosewood",
+        "chance": 0.2
+      },
+      {
+        "feature": "wythers:vegetation/placed_tree/pandanus",
+        "chance": 0.1
+      }
+    ],
+    "default": "wythers:vegetation/placed_tree/jungle_palm"
+  },
+  "type": "minecraft:random_selector"
+}

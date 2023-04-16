@@ -1,0 +1,12 @@
+{
+  "config": {
+    "features": [
+      {
+        "feature": "wythers:vegetation/joshua_tree",
+        "chance": 0.8
+      }
+    ],
+    "default": "wythers:vegetation/joshua_tree"
+  },
+  "type": "minecraft:random_selector"
+}

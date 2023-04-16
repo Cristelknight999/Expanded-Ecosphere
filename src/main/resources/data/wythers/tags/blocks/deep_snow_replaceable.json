@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "#minecraft:dirt",
+    "#minecraft:terracotta",
+    "#minecraft:base_stone_overworld",
+    "minecraft:mud",
+    "minecraft:smooth_basalt",
+    "minecraft:basalt",
+    "minecraft:deepslate"
+  ]
+}

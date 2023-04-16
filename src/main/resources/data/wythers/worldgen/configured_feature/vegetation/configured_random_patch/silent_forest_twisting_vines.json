@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:random_patch",
+  "config": {
+    "tries": 48,
+    "xz_spread": 3,
+    "y_spread": 3,
+    "feature": {
+      "feature": {
+        "type": "minecraft:random_selector",
+        "config": {
+          "features": [
+            {
+              "chance": 0.1,
+              "feature": "wythers:vegetation/placed_block_column/twisting_vines_verdant"
+            }
+          ],
+          "default": "wythers:vegetation/placed_block_column/twisting_vines"
+        }
+      },
+      "placement": []
+    }
+  }
+}

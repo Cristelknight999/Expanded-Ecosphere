@@ -1,0 +1,60 @@
+{
+  "config": {
+    "features": [
+      {
+        "feature": "minecraft:jungle_tree",
+        "chance": 0.01
+      },
+      {
+        "feature": "wythers:vegetation/placed_tree/stick_plant",
+        "chance": 0.02
+      },
+      {
+        "feature": "wythers:vegetation/placed_random_patch/thin_jungle_bamboo_patch",
+        "chance": 0.05
+      },
+      {
+        "feature": "wythers:vegetation/placed_random_patch/melon_patch",
+        "chance": 0.005
+      },
+      {
+        "feature": "minecraft:jungle_bush",
+        "chance": 0.01
+      },
+      {
+        "feature": "wythers:vegetation/placed_tree/flowering_cassia",
+        "chance": 0.05
+      },
+      {
+        "feature": "wythers:vegetation/placed_tree/teak",
+        "chance": 0.05
+      },
+      {
+        "feature": "wythers:vegetation/placed_tree/sandalwood",
+        "chance": 0.05
+      },
+      {
+        "feature": "wythers:vegetation/placed_tree/rosewood",
+        "chance": 0.05
+      },
+      {
+        "feature": "wythers:vegetation/placed_tree/ebony",
+        "chance": 0.05
+      },
+      {
+        "feature": "wythers:vegetation/placed_tree/young_kapok",
+        "chance": 0.02
+      },
+      {
+        "feature": "wythers:vegetation/placed_tree/young_brazilwood",
+        "chance": 0.02
+      },
+      {
+        "feature": "wythers:vegetation/placed_tree/young_mega_jungle_tree",
+        "chance": 0.02
+      }
+    ],
+    "default": "wythers:vegetation/placed_tree/large_jungle_tree"
+  },
+  "type": "minecraft:random_selector"
+}

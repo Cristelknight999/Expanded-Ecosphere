@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "wythers:calcite_coast",
+    "wythers:cold_stony_shore",
+    "wythers:deepslate_shore",
+    "wythers:icy_shore",
+    "wythers:warm_stony_shore"
+  ]
+}

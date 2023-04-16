@@ -1,0 +1,24 @@
+{
+  "config": {
+    "features": [
+      {
+        "feature": "wythers:vegetation/placed_random_patch/thin_jungle_bamboo_patch",
+        "chance": 0.01
+      },
+      {
+        "feature": "wythers:vegetation/placed_tree/marula_vines",
+        "chance": 0.1
+      },
+      {
+        "feature": "wythers:vegetation/placed_tree/red_ivorywood_vines",
+        "chance": 0.2
+      },
+      {
+        "feature": "wythers:vegetation/placed_tree/mpingo_vines",
+        "chance": 0.3
+      }
+    ],
+    "default": "wythers:vegetation/placed_tree/forest_acacia_vines"
+  },
+  "type": "minecraft:random_selector"
+}
