@@ -5,17 +5,16 @@
 William Wythers' Overhauled Overworld is a world-gen mod/pack that aims to re-create the vanilla overworld in a way that makes a more realistic and atmospheric world. You can explore more than 200 new/overhauled biomes which make your world insanely more immersive.
 
 # Official Downloads
-Fabric: [here](https://www.curseforge.com/minecraft/mc-mods/william-wythers-overhauled-overworld/files/all?filter-status=1&filter-game-version=2020709689%3A7499)
+**Mods**:
+[Modrinth](https://modrinth.com/mod/wwoo)
+[CurseForge](https://www.curseforge.com/minecraft/mc-mods/william-wythers-overhauled-overworld/files) 
 
-Forge: [here](https://www.curseforge.com/minecraft/mc-mods/william-wythers-overhauled-overworld/files/all?filter-status=1&filter-game-version=2020709689%3A7498)
-
-Datapacks:
+**Datapacks**:
 [1.19](https://www.planetminecraft.com/data-pack/william-wythers-overhauled-overworld/)
 [1.18.1](https://www.planetminecraft.com/data-pack/william-wythers-overhauled-overworld-for-1-18-1/)
 [1.17](https://www.planetminecraft.com/data-pack/william-wythers-overhauled-overworld-legacy-for-1-17/)
 [1.16](https://www.planetminecraft.com/data-pack/william-wythers-overhauled-overworld-1-17-snapshots-edition/)
 
-Quilt: Not Available yet. But the Fabric versions 3.1.7 and below should work fine.
 
 # Features WWOO 1.19+
 - Large Biomes! Because of some problems with world presets, you should not use the vanilla world presets. In the mod version you should definitely use the forceLargeBiomes option, found in the WWOO config.
@@ -26,7 +25,7 @@ Old versions or datapack: (Select the world type large biomes in your world crea
 - You can also edit the config manually in `wwoo.json5` (located at `.minecraft/config/wwoo/`)
 - Biomes can be disabled in `banned_biomes.json5` (also located at `.minecraft/config/wwoo/`)
 - Has an option to only update vanilla biomes, and not to add the close to 200 new biomes.
-- the overworld isn't piglin safe. (On datapack it is, so that the Hoglins which can spawn in the overworld don't mutate to Zoglins)
+- The overworld isn't piglin safe. (On datapack it is, so that the Hoglins which can spawn in the overworld don't mutate to Zoglins)
 
 # Compatible Mods/Datapacks
 If you know any other mods or datapacks that work well with WWOO, then contact me (Cristelknight) on [Discord](https://discord.gg/yJng7sC44x).
