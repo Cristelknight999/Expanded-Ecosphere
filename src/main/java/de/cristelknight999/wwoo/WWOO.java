@@ -39,6 +39,7 @@ public class WWOO implements ModInitializer {
         LOGGER.info("Loading William Wythers' Overhauled Overworld");
         updater.checkForUpdates();
         //Config.init();
+        Util.registerPacks();
     }
 
     public static Updater getUpdater(){
