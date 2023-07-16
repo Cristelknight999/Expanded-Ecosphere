@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "minVersion": "0.8.5",
+  "package": "cristelknight.wwoo.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "HoglinMixin"
+  ],
+  "client": [
+    "MixinClientPacketListener"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

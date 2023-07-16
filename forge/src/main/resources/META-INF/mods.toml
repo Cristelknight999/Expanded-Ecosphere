@@ -1,0 +1,35 @@
+modLoader = "javafml"
+loaderVersion = "[47,)"
+#issueTrackerURL = ""
+license = "ARR"
+
+[[mods]]
+modId = "wwoo"
+version = "${version}"
+displayName = "WWOO"
+authors = "Cristelknight, William Wythers"
+description = '''
+In this mod I seek to re-create the vanilla biomes in a way that makes a more realistic and atmospheric world.
+'''
+logoFile = "pack.png"
+
+[[dependencies.wwoo]]
+modId = "forge"
+mandatory = true
+versionRange = "[47,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.wwoo]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.20,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.wwoo]]
+modId = "cristellib"
+mandatory = true
+versionRange = "[1.1.2,)"
+ordering = "NONE"
+side = "BOTH"
