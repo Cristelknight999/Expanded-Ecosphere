@@ -37,9 +37,9 @@
     "wwoo.mixins.json"
   ],
   "depends": {
-    "fabricloader": ">=0.12.0",
+    "fabricloader": ">=0.14.21",
     "fabric": "*",
-    "minecraft": ">=1.20",
-    "cristellib": ">=1.1.2"
+    "minecraft": ">=1.20.1",
+    "cristellib": ">=1.1.3"
   }
 }

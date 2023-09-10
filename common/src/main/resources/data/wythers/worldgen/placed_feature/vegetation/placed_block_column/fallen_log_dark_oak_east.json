@@ -1,0 +1,130 @@
+{
+  "feature": "wythers:vegetation/configured_block_column/fallen_log_dark_oak_east",
+  "placement": [
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:all_of",
+        "predicates": [
+          {
+            "type": "minecraft:matching_blocks",
+            "offset": [
+              -1,
+              0,
+              0
+            ],
+            "blocks": "minecraft:air"
+          },
+          {
+            "type": "minecraft:matching_blocks",
+            "offset": [
+              0,
+              0,
+              0
+            ],
+            "blocks": "minecraft:air"
+          },
+          {
+            "type": "minecraft:matching_blocks",
+            "offset": [
+              1,
+              0,
+              0
+            ],
+            "blocks": "minecraft:air"
+          },
+          {
+            "type": "minecraft:matching_blocks",
+            "offset": [
+              2,
+              0,
+              0
+            ],
+            "blocks": "minecraft:air"
+          },
+          {
+            "type": "minecraft:matching_blocks",
+            "offset": [
+              3,
+              0,
+              0
+            ],
+            "blocks": "minecraft:air"
+          },
+          {
+            "type": "minecraft:matching_blocks",
+            "offset": [
+              4,
+              0,
+              0
+            ],
+            "blocks": "minecraft:air"
+          },
+          {
+            "type": "minecraft:matching_blocks",
+            "offset": [
+              5,
+              0,
+              0
+            ],
+            "blocks": "minecraft:air"
+          },
+          {
+            "type": "minecraft:matching_block_tag",
+            "offset": [
+              -1,
+              -1,
+              0
+            ],
+            "tag": "minecraft:dirt"
+          },
+          {
+            "type": "minecraft:matching_block_tag",
+            "offset": [
+              0,
+              -1,
+              0
+            ],
+            "tag": "minecraft:dirt"
+          },
+          {
+            "type": "minecraft:matching_block_tag",
+            "offset": [
+              1,
+              -1,
+              0
+            ],
+            "tag": "minecraft:dirt"
+          },
+          {
+            "type": "minecraft:matching_block_tag",
+            "offset": [
+              2,
+              -1,
+              0
+            ],
+            "tag": "minecraft:dirt"
+          },
+          {
+            "type": "minecraft:matching_block_tag",
+            "offset": [
+              3,
+              -1,
+              0
+            ],
+            "tag": "minecraft:dirt"
+          },
+          {
+            "type": "minecraft:matching_block_tag",
+            "offset": [
+              4,
+              -1,
+              0
+            ],
+            "tag": "minecraft:dirt"
+          }
+        ]
+      }
+    }
+  ]
+}

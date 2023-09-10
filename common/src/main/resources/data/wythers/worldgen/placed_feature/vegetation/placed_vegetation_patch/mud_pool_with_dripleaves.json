@@ -1,0 +1,35 @@
+{
+  "feature": "wythers:vegetation/configured_vegetation_patch/mud_pool_with_dripleaves",
+  "placement": [
+    {
+      "type": "minecraft:noise_based_count",
+      "noise_to_count_ratio": 5,
+      "noise_factor": 30,
+      "noise_offset": 0.5
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "absolute": 63
+      }
+    },
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:matching_block_tag",
+        "offset": [
+          0,
+          0,
+          0
+        ],
+        "tag": "minecraft:dirt"
+      }
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

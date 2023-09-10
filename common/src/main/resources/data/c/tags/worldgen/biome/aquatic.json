@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "wythers:desert_lakes",
+    "wythers:danakil_desert",
+    "wythers:salt_lakes_pink",
+    "wythers:salt_lakes_turquoise",
+    "wythers:salt_lakes_white",
+    "wythers:thermal_taiga",
+    "wythers:thermal_taiga_crags",
+    "wythers:mud_pools"
+  ]
+}

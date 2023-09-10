@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:desert",
+    "wythers:deep_desert",
+    "wythers:desert_lakes",
+    "wythers:wooded_desert",
+    "wythers:cactus_desert"
+  ]
+}

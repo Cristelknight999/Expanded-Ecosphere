@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:simple_random_selector",
+  "config": {
+    "features": [
+      "wythers:vegetation/placed_block_column/fallen_log_oak_east",
+      "wythers:vegetation/placed_block_column/fallen_log_oak_west",
+      "wythers:vegetation/placed_block_column/fallen_log_oak_north",
+      "wythers:vegetation/placed_block_column/fallen_log_oak_south"
+    ]
+  }
+}

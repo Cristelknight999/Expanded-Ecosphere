@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:bamboo_jungle",
+    "wythers:sakura_forest",
+    "wythers:sparse_bamboo_jungle",
+    "wythers:bamboo_jungle_highlands",
+    "wythers:huangshan_highlands",
+    "wythers:waterlily_swamp",
+    "wythers:bamboo_swamp",
+    "wythers:bamboo_jungle_swamp",
+    "wythers:jade_highlands",
+    "wythers:maple_mountains",
+    "wythers:warm_birch_forest"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "config": {
+    "features": [
+      {
+        "feature": "wythers:vegetation/placed_random_patch/thin_jungle_bamboo_patch",
+        "chance": 0.01
+      },
+      {
+        "feature": "wythers:vegetation/placed_tree/flowering_cassia",
+        "chance": 0.02
+      },
+      {
+        "feature": "wythers:vegetation/placed_tree/red_ivorywood",
+        "chance": 0.2
+      },
+      {
+        "feature": "wythers:vegetation/placed_tree/mpingo",
+        "chance": 0.3
+      }
+    ],
+    "default": "wythers:vegetation/placed_tree/forest_acacia"
+  },
+  "type": "minecraft:random_selector"
+}

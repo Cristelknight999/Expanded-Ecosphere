@@ -1,0 +1,15 @@
+{
+  "feature": "wythers:vegetation/configured_tree/dead_thorn",
+  "placement": [
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:matching_blocks",
+        "blocks": [
+          "minecraft:grass_block",
+          "minecraft:sand"
+        ]
+      }
+    }
+  ]
+}

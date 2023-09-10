@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:bamboo_jungle",
+    "minecraft:jungle",
+    "wythers:tropical_rainforest",
+    "wythers:sparse_bamboo_jungle"
+  ]
+}

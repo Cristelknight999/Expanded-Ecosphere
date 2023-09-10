@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "wythers:snowy_bog",
+    "wythers:snowy_canyon",
+    "wythers:snowy_fen",
+    "wythers:snowy_peaks",
+    "wythers:snowy_thermal_taiga",
+    "wythers:snowy_tundra",
+    "wythers:crimson_tundra",
+    "wythers:deep_snowy_taiga",
+    "wythers:highlands",
+    "wythers:icy_crags",
+    "wythers:icy_shore",
+    "wythers:icy_volcano"
+  ]
+}

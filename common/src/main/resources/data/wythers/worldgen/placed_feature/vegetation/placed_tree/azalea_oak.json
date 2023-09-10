@@ -1,0 +1,14 @@
+{
+  "feature": "wythers:vegetation/configured_tree/azalea_oak",
+  "placement": [
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:would_survive",
+        "state": {
+          "Name": "minecraft:fern"
+        }
+      }
+    }
+  ]
+}

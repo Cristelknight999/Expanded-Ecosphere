@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "wythers:fungous_dripstone_caves",
+    "wythers:lush_fungous_dripstone_caves",
+    "wythers:lush_shroom_caves",
+    "wythers:mushroom_caves",
+    "wythers:mushroom_island"
+  ]
+}

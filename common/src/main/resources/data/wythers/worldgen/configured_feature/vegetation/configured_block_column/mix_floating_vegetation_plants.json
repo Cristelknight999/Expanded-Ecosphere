@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:random_selector",
+  "config": {
+    "features": [
+      {
+        "chance": 0.2,
+        "feature": "wythers:vegetation/placed_block_column/floating_vegetation_mat_dripleaf_north"
+      },
+      {
+        "chance": 0.2,
+        "feature": "wythers:vegetation/placed_block_column/floating_vegetation_mat_dripleaf_south"
+      },
+      {
+        "chance": 0.2,
+        "feature": "wythers:vegetation/placed_block_column/floating_vegetation_mat_dripleaf_east"
+      },
+      {
+        "chance": 0.2,
+        "feature": "wythers:vegetation/placed_block_column/floating_vegetation_mat_dripleaf_west"
+      }
+    ],
+    "default": "wythers:vegetation/placed_block_column/floating_vegetation_mat_tall_grass"
+  }
+}

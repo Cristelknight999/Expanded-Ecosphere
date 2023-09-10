@@ -1,0 +1,12 @@
+{
+  "config": {
+    "features": [
+      {
+        "feature": "wythers:vegetation/placed_tree/sand_palm",
+        "chance": 0.8
+      }
+    ],
+    "default": "wythers:vegetation/placed_tree/pandanus"
+  },
+  "type": "minecraft:random_selector"
+}

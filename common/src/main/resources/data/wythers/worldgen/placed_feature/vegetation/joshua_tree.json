@@ -1,0 +1,14 @@
+{
+  "feature": "wythers:vegetation/joshua_tree",
+  "placement": [
+    {
+      "predicate": {
+        "state": {
+          "Name": "minecraft:dead_bush"
+        },
+        "type": "minecraft:would_survive"
+      },
+      "type": "minecraft:block_predicate_filter"
+    }
+  ]
+}

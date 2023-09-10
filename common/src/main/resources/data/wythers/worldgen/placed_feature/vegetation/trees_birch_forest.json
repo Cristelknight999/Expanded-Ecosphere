@@ -1,0 +1,37 @@
+{
+  "feature": "wythers:vegetation/configured_tree/birch",
+  "placement": [
+    {
+      "type": "minecraft:noise_based_count",
+      "noise_to_count_ratio": 25,
+      "noise_factor": 70,
+      "noise_offset": 0.75
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:surface_water_depth_filter",
+      "max_water_depth": 0
+    },
+    {
+      "type": "minecraft:heightmap",
+      "heightmap": "MOTION_BLOCKING"
+    },
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:matching_blocks",
+        "offset": [
+          0,
+          -1,
+          0
+        ],
+        "blocks": "minecraft:grass_block"
+      }
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

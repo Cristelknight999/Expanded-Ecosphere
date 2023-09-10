@@ -1,0 +1,68 @@
+{
+  "feature": {
+    "type": "minecraft:random_selector",
+    "config": {
+      "features": [
+        {
+          "chance": 0.007,
+          "feature": "wythers:vegetation/placed_tree_component/giant_spruce_foot_1"
+        },
+        {
+          "chance": 0.005,
+          "feature": "wythers:vegetation/placed_tree_component/giant_spruce_foot_2"
+        },
+        {
+          "chance": 0.003,
+          "feature": "wythers:vegetation/placed_tree_component/giant_spruce_foot_3"
+        },
+        {
+          "chance": 0.3,
+          "feature": "wythers:vegetation/placed_tree_component/giant_spruce_large_base_1"
+        },
+        {
+          "chance": 0.3,
+          "feature": "wythers:vegetation/placed_tree_component/giant_spruce_large_base_2"
+        },
+        {
+          "chance": 0.05,
+          "feature": "wythers:vegetation/placed_tree_component/giant_spruce_large_crown_1"
+        },
+        {
+          "chance": 0.05,
+          "feature": "wythers:vegetation/placed_tree_component/giant_spruce_large_crown_2"
+        },
+        {
+          "chance": 0.05,
+          "feature": "wythers:vegetation/placed_tree_component/giant_spruce_large_crown_3"
+        },
+        {
+          "chance": 0.3,
+          "feature": "wythers:vegetation/placed_tree_component/giant_spruce_large_base_4"
+        }
+      ],
+      "default": "wythers:vegetation/placed_tree_component/giant_spruce_large_base"
+    }
+  },
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 10
+    },
+    {
+      "type": "minecraft:count",
+      "count": 30
+    },
+    {
+      "predicate": {
+        "state": {
+          "Properties": {
+            "stage": "0"
+          },
+          "Name": "minecraft:spruce_sapling"
+        },
+        "type": "minecraft:would_survive"
+      },
+      "type": "minecraft:block_predicate_filter"
+    }
+  ]
+}

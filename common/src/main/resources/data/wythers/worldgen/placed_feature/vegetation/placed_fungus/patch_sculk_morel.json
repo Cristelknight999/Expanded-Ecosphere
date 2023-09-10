@@ -1,0 +1,17 @@
+{
+  "feature": {
+    "type": "minecraft:random_patch",
+    "config": {
+      "tries": 12,
+      "xz_spread": 6,
+      "y_spread": 3,
+      "feature": "wythers:vegetation/placed_fungus/giant_sculk_morel"
+    }
+  },
+  "placement": [
+    {
+      "type": "minecraft:heightmap",
+      "heightmap": "WORLD_SURFACE_WG"
+    }
+  ]
+}

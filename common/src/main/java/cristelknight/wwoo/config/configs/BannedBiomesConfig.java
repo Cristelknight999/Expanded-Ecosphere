@@ -9,20 +9,23 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 
-public record BannedBiomesConfig(List<String> bannedBiomes)
+public record BannedBiomesConfig(boolean enableBiomes, Map<String, String> bannedBiomes)
         implements CommentedConfig<BannedBiomesConfig> {
 
     private static BannedBiomesConfig INSTANCE = null;
 
-    public static final BannedBiomesConfig DEFAULT = new BannedBiomesConfig(List.of());
+    public static final BannedBiomesConfig DEFAULT = new BannedBiomesConfig(false, Map.of());
 
     public static final Codec<BannedBiomesConfig> CODEC = RecordCodecBuilder.create(builder ->
             builder.group(
-                    Codec.list(Codec.STRING).fieldOf("banned_biomes").orElse(List.of()).forGetter(config -> config.bannedBiomes)
+                    Codec.BOOL.fieldOf("enableBiomes").forGetter(c -> c.enableBiomes),
+                    Codec.unboundedMap(Codec.STRING, Codec.STRING).fieldOf("replace").forGetter(c -> c.bannedBiomes)
             ).apply(builder, BannedBiomesConfig::new)
     );
+
 
     @Override
     public String getSubPath() {

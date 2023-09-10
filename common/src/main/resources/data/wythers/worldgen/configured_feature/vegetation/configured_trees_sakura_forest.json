@@ -1,0 +1,12 @@
+{
+  "config": {
+    "features": [
+      {
+        "feature": "wythers:vegetation/placed_tree/cherry_acacia_fancy",
+        "chance": 0.1
+      }
+    ],
+    "default": "wythers:vegetation/placed_tree/cherry_acacia_fancy"
+  },
+  "type": "minecraft:random_selector"
+}

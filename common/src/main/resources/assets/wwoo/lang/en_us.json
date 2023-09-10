@@ -6,13 +6,27 @@
     "wwoo.config.title": "William Wythers' Overhauled Overworld Config Menu",
 
     "wwoo.config.category.main": "Main Config",
-    "wwoo.config.category.default": "Default Mode",
-    "wwoo.config.category.compatible": "Compatible Mode",
+    "wwoo.config.category.biomes": "Biome Replacing",
+    "wwoo.config.category.modes": "WWOO Modes",
 
-    "wwoo.config.text.s": "Selected",
+    // Main
+    "wwoo.config.text.modes": "You can select different modes. Currently selected: %1$s Mode.\nFor more information and to change modes click on the Mode Category",
+    "wwoo.config.entry.bB": "Select the background block",
+    "wwoo.config.entry.showUpdates": "Announce updates in the chat when joining a world?",
+    "wwoo.config.entry.showBigUpdates": "Announce important updates even if the above setting is disabled?",
+    "wwoo.config.entry.forceLargeBiomes": "Force Minecraft to generate Large Biomes?",
+    "wwoo.config.text.forceLargeBiomes": "This option forces Minecraft to generate Large Biomes, this setting was introduced, because the default presets do not work (correctly). This option will probably not work with Compatible mode, or other biome mods.",
+
+    // Biome Replacing
+    "wwoo.config.entry.enableBiomes": "Enable biome replacing",
+    "wwoo.config.entry.biomeList": "Enter biomes into this list. Check the tooltip on how to do it",
+    "wwoo.config.entry.biomeList.toolTip": "Enter the biome to replace first and then the biome which should repalce it.\nSeperate them with a \"/\". For example: minecraft:plains/minecraft:basalt_deltas",
+
+    // WWOO Modes
+    "wwoo.config.text.requiresTerrablender": "To change the mode to COMPATIBLE, Terrablender version %1$s or later must be installed.",
+
     "wwoo.config.text.mrqtb": "Mode requires %1$s",
     "wwoo.config.text.rqTB": "This mode Requires %1$s %2$s",
-    "wwoo.config.text.ch": "here",
 
     "wwoo.config.text.newUpdateBig": "\n\n There is a new Version for William Wythers' Overhauled Overworld available, which adds much content or fixes a game breaking bug! Download it %1$s\n %2$s\n\n",
     "wwoo.config.text.newUpdate": "\n\n There is a new Version for William Wythers' Overhauled Overworld available! Download it %1$s\n %2$s\n\n",
@@ -27,25 +41,15 @@
     "wwoo.config.text.compatibleMode": "The Compatible Mode allows you to use this mod with Terralith.\n(And maybe some other mods need it too)\nIt is not compatible with large biomes!",
     "wwoo.config.text.defaultMode": "The Default Mode works with Oh The Biomes You'll Go\n(and probably with most other world-gen mods which only add biomes) and is more stable than the Compatible Mode.\nBut it doesn't work with Terralith",
 
-    "wwoo.config.text.comp1": "%1$s %2$s %3$s %4$s %5$s %6$s",
 
-    "wwoo.config.text.youcan": "You can select different modes. Currently selected:",
-    "wwoo.config.text.moreinfo": "Mode\nFor more information and to change modes click on the category's:",
+    "wwoo.config.text.youcan": "",
+    "wwoo.config.text.moreinfo": "",
     "wwoo.config.text.or": "or",
     "wwoo.config.text.orh": "or higher",
 
     "wwoo.config.entry.onlyVanillaBiomes": "Whether to only change Vanilla biomes or not (DEFAULT mode only)",
 
-    "wwoo.config.entry.showUpdates": "Announce updates in the chat when joining a world?",
-    "wwoo.config.entry.showBigUpdates": "Announce important updates even if the above setting is disabled?",
-
-    "wwoo.config.text.forceLargeBiomes": "This option forces Minecraft to generate Large Biomes, this setting was introduced, because the default presets do not work (correctly). This option will probably not work with Compatible mode, or other biome mods.",
-    "wwoo.config.entry.forceLargeBiomes": "Force Minecraft to generate Large Biomes?",
-
-
-
     "wwoo.config.entry.enableStructureCompat": "Enable that structures or mobs from other mods, can spawn in wwoo's biomes?",
-    "wwoo.config.entry.bB": "Select the background block",
 
     "advancements.adventure.world_explorer.title": "World Explorer",
     "advancements.adventure.world_explorer.description": "Discover (almost) every biome of William Wythers' Overhauled Overworld",

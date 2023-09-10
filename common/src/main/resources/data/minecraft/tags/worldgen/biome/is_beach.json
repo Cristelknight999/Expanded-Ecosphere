@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "wythers:tropical_beach",
+    "wythers:coastal_mangroves",
+    "wythers:sand_dunes",
+    "wythers:gravelly_beach",
+    "wythers:black_beach",
+    "wythers:desert_beach",
+    "wythers:icy_shore",
+    "wythers:sand_dunes",
+    "wythers:tropical_beach"
+  ]
+}

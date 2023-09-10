@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:simple_random_selector",
+  "config": {
+    "features": [
+      "wythers:vegetation/placed_block_column/saguaro_1",
+      "wythers:vegetation/placed_block_column/saguaro_2",
+      "wythers:vegetation/placed_block_column/saguaro_3",
+      "wythers:vegetation/placed_block_column/saguaro_4",
+      "wythers:vegetation/placed_block_column/saguaro_5",
+      "wythers:vegetation/placed_block_column/saguaro_6",
+      "wythers:vegetation/placed_block_column/saguaro_7",
+      "wythers:vegetation/placed_block_column/saguaro_8",
+      "wythers:vegetation/placed_block_column/saguaro_9",
+      "wythers:vegetation/placed_block_column/saguaro_10",
+      "wythers:vegetation/placed_block_column/saguaro_11",
+      "wythers:vegetation/placed_block_column/saguaro_12",
+      "wythers:vegetation/placed_block_column/saguaro_13",
+      "wythers:vegetation/placed_block_column/saguaro_14"
+    ]
+  }
+}

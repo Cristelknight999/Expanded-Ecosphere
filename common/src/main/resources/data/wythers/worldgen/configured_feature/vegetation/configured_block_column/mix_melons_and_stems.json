@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:simple_random_selector",
+  "config": {
+    "features": [
+      "wythers:vegetation/placed_block_column/melon_and_stem_north",
+      "wythers:vegetation/placed_block_column/melon_and_stem_south",
+      "wythers:vegetation/placed_block_column/melon_and_stem_west",
+      "wythers:vegetation/placed_block_column/melon_and_stem_east"
+    ]
+  }
+}

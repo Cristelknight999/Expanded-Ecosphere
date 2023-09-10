@@ -1,0 +1,16 @@
+{
+  "config": {
+    "features": [
+      {
+        "feature": "wythers:vegetation/placed_tree/pine",
+        "chance": 0.1
+      },
+      {
+        "feature": "wythers:vegetation/placed_tree/birch",
+        "chance": 0.25
+      }
+    ],
+    "default": "wythers:vegetation/placed_tree/autumn_oak"
+  },
+  "type": "minecraft:random_selector"
+}

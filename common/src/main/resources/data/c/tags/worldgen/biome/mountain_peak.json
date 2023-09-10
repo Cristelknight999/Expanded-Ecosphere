@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "wythers:cool_stony_peaks",
+    "wythers:crimson_tundra",
+    "wythers:highlands",
+    "wythers:icy_crags",
+    "wythers:icy_volcano",
+    "wythers:snowy_peaks",
+    "wythers:taiga_crags",
+    "wythers:temperate_rainforest_crags",
+    "wythers:thermal_taiga_crags",
+    "wythers:tibesti_mountains",
+    "wythers:tropical_volcano",
+    "wythers:windswept_jungle"
+  ]
+}

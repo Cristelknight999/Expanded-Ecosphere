@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:plains",
+    "minecraft:meadow",
+    "wythers:autumnal_plains",
+    "wythers:cool_plains",
+    "wythers:cold_plains",
+    "wythers:highland_plains",
+    "wythers:subtropical_grassland"
+  ]
+}

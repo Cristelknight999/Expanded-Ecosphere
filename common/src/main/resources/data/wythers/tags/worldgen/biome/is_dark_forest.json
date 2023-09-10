@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:dark_forest",
+    "wythers:forbidden_forest",
+    "wythers:phantasmal_forest",
+    "wythers:deep_dark_forest",
+    "wythers:ancient_emerald_beech_forest",
+    "wythers:ancient_golden_beech_forest",
+    "wythers:ancient_copper_beech_forest",
+    "wythers:ancient_moss_forest",
+    "wythers:ancient_oak_swamp",
+    "wythers:ancient_mossy_swamp",
+    "wythers:phantasmal_swamp"
+  ]
+}

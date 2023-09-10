@@ -1,6 +1,7 @@
 package cristelknight.wwoo.terra;
 
 import com.mojang.datafixers.util.Pair;
+import cristelknight.wwoo.WWOO;
 import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
@@ -19,6 +20,8 @@ public class WWOORegion extends Region {
 
     @Override
     public void addBiomes(Registry<Biome> registry, Consumer<Pair<Climate.ParameterPoint, ResourceKey<Biome>>> mapper) {
+        WWOO.LOGGER.error("Adding Biomes to WWOO Region");
+
         List<Pair<Climate.ParameterPoint, ResourceKey<Biome>>> pairList = TerraInit.readParameterPoints();
         for(Pair<Climate.ParameterPoint, ResourceKey<Biome>> p : pairList){
             mapper.accept(p);

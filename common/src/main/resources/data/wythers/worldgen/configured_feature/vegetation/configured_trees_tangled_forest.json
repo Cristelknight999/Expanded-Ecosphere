@@ -1,0 +1,12 @@
+{
+  "config": {
+    "features": [
+      {
+        "feature": "wythers:vegetation/placed_tree/tall_tangle",
+        "chance": 0.85
+      }
+    ],
+    "default": "wythers:vegetation/placed_tree/tangle"
+  },
+  "type": "minecraft:random_selector"
+}

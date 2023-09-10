@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:random_patch",
+  "config": {
+    "tries": 48,
+    "xz_spread": 3,
+    "y_spread": 3,
+    "feature": "wythers:vegetation/placed_block_column/elephant_bamboo"
+  }
+}

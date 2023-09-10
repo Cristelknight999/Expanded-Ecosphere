@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:jigsaw",
+  "biomes": [
+    "minecraft:savanna",
+    "wythers:dry_savanna",
+    "wythers:wooded_savanna"
+  ],
+  "step": "surface_structures",
+  "spawn_overrides": {
+    "creature": {
+      "bounding_box": "full",
+      "spawns": [
+        {
+          "type": "minecraft:parrot",
+          "weight": 40,
+          "minCount": 3,
+          "maxCount": 5
+        }
+      ]
+    }
+  },
+  "terrain_adaptation": "none",
+  "start_pool": "wythers:features/trees/baobabs/savanna",
+  "size": 2,
+  "start_height": {
+    "absolute": -11
+  },
+  "project_start_to_heightmap": "OCEAN_FLOOR_WG",
+  "max_distance_from_center": 80,
+  "use_expansion_hack": true
+}

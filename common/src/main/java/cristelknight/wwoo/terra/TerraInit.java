@@ -9,7 +9,9 @@ import com.mojang.serialization.JsonOps;
 import cristelknight.wwoo.WWOO;
 import cristelknight.wwoo.WWOORL;
 import cristelknight.wwoo.config.configs.BannedBiomesConfig;
+import cristelknight.wwoo.utils.Util;
 import net.cristellib.CristelLibExpectPlatform;
+import net.cristellib.util.TerrablenderUtil;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
@@ -41,21 +43,6 @@ public class TerraInit {
     private static final String NOISE = "resources/wwoo_default/data/minecraft/worldgen/noise_settings/overworld.json";
 
 
-    public static void onTerraBlenderInitialized() {
-
-    }
-
-    public static <T> T readConfig(JsonElement load, Codec<T> codec, DynamicOps<JsonElement> ops) {
-        DataResult<Pair<T, JsonElement>> decode = codec.decode(ops, load);
-        Optional<DataResult.PartialResult<Pair<T, JsonElement>>> error = decode.error();
-        if (error.isPresent()) {
-            throw new IllegalArgumentException("Couldn't read " + load.toString() + ", crashing instead.");
-        }
-        return decode.result().orElseThrow().getFirst();
-    }
-
-
-
     public static List<Pair<Climate.ParameterPoint, ResourceKey<Biome>>> readParameterPoints() {
         InputStream im;
         try {
@@ -76,17 +63,11 @@ public class TerraInit {
             for(int i = 0; i < jsonArray.size(); i++){
                 JsonObject e = jsonArray.get(i).getAsJsonObject();
                 String b = e.get("biome").getAsString();
-                if(b.contains("wythers:")){
-                    BannedBiomesConfig config = BannedBiomesConfig.DEFAULT.getConfig();
-                    if(config.bannedBiomes().contains(b.replace("wythers:", ""))) continue;
-                }
-                ResourceKey<Biome> r = ResourceKey.create(Registries.BIOME, new ResourceLocation(b));
-
+                if(b.contains("minecraft:")) continue;
 
                 JsonObject jo = e.get("parameters").getAsJsonObject();
-
-                Climate.ParameterPoint point = readConfig(jo, Climate.ParameterPoint.CODEC, JsonOps.INSTANCE);
-                Pair<Climate.ParameterPoint, ResourceKey<Biome>> pair = new Pair<>(point, r);
+                Climate.ParameterPoint point = Util.readConfig(jo, Climate.ParameterPoint.CODEC, JsonOps.INSTANCE);
+                Pair<Climate.ParameterPoint, ResourceKey<Biome>> pair = new Pair<>(point, ResourceKey.create(Registries.BIOME, new ResourceLocation(b)));
                 list.add(pair);
             }
 
@@ -117,34 +98,37 @@ public class TerraInit {
             JsonElement load = JsonParser.parseReader(reader);
             JsonElement element = load.getAsJsonObject().get("surface_rule");
 
-            return readConfig(element, SurfaceRules.RuleSource.CODEC, JsonOps.INSTANCE);
+            return Util.readConfig(element, SurfaceRules.RuleSource.CODEC, JsonOps.INSTANCE);
         } catch (Exception errorMsg) {
             throw new IllegalArgumentException("Couldn't parse " + NOISE + ", crashing instead.");
         }
     }
 
-    public static void readOverworldSurfaceRules() {
-        SurfaceRules.RuleSource s = readSurfaceRulesFromNoise();
-        SurfaceRuleManager.addSurfaceRules(SurfaceRuleManager.RuleCategory.OVERWORLD, "wythers", s);
-    }
+
 
     public static void terraEnableDisable(){
         if(WWOO.currentMode.equals(COMPATIBLE)){
-            registerRegions();
-            readOverworldSurfaceRules();
+            terraEnable();
         }
         else {
-            removeRegions();
+            TerrablenderUtil.setMixinEnabled(false);
+            Regions.remove(RegionType.OVERWORLD, new WWOORL("overworld"));
             SurfaceRuleManager.removeSurfaceRules(SurfaceRuleManager.RuleCategory.OVERWORLD, "wythers");
         }
     }
 
-    public static void registerRegions(){
-        Regions.register(new WWOORegion(new WWOORL("overworld"), 4));
-
+    public static void terraEnable(){
+        TerrablenderUtil.setMixinEnabled(true);
+        registerRegions();
+        readOverworldSurfaceRules();
+    }
+    private static void registerRegions(){
+        Regions.register(new WWOORegion(new WWOORL("overworld"), 10));
     }
 
-    private static void removeRegions(){
-        Regions.remove(RegionType.OVERWORLD, new WWOORL("overworld"));
+    private static void readOverworldSurfaceRules() {
+        SurfaceRules.RuleSource s = readSurfaceRulesFromNoise();
+        SurfaceRuleManager.addSurfaceRules(SurfaceRuleManager.RuleCategory.OVERWORLD, "wythers", s);
     }
+
 }

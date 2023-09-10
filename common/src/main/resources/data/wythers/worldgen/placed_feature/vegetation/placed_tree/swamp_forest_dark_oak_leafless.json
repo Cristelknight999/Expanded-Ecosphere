@@ -1,0 +1,17 @@
+{
+  "feature": "wythers:vegetation/configured_tree/swamp_forest_dark_oak_leafless",
+  "placement": [
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:would_survive",
+        "state": {
+          "Name": "minecraft:dark_oak_sapling",
+          "Properties": {
+            "stage": "0"
+          }
+        }
+      }
+    }
+  ]
+}

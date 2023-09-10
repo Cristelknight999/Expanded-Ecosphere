@@ -1,0 +1,102 @@
+{
+  "type": "minecraft:random_selector",
+  "config": {
+    "features": [
+      {
+        "chance": 0.05,
+        "feature": {
+          "feature": {
+            "type": "minecraft:block_column",
+            "config": {
+              "direction": "up",
+              "allowed_placement": {
+                "type": "minecraft:matching_blocks",
+                "blocks": "minecraft:air"
+              },
+              "prioritize_tip": true,
+              "layers": [
+                {
+                  "height": 1,
+                  "provider": {
+                    "type": "minecraft:simple_state_provider",
+                    "state": {
+                      "Name": "minecraft:sculk_catalyst",
+                      "Properties": {
+                        "bloom": "false"
+                      }
+                    }
+                  }
+                },
+                {
+                  "height": 1,
+                  "provider": {
+                    "type": "minecraft:simple_state_provider",
+                    "state": {
+                      "Name": "minecraft:sculk"
+                    }
+                  }
+                },
+                {
+                  "height": 1,
+                  "provider": {
+                    "type": "minecraft:simple_state_provider",
+                    "state": {
+                      "Name": "minecraft:sculk_shrieker",
+                      "Properties": {
+                        "can_summon": "true",
+                        "shrieking": "false",
+                        "waterlogged": "false"
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "placement": []
+        }
+      },
+      {
+        "chance": 0.1,
+        "feature": {
+          "feature": {
+            "type": "minecraft:simple_block",
+            "config": {
+              "to_place": {
+                "type": "minecraft:simple_state_provider",
+                "state": {
+                  "Name": "minecraft:sculk_shrieker",
+                  "Properties": {
+                    "can_summon": "true",
+                    "shrieking": "false",
+                    "waterlogged": "false"
+                  }
+                }
+              }
+            }
+          },
+          "placement": []
+        }
+      }
+    ],
+    "default": {
+      "feature": {
+        "type": "minecraft:simple_block",
+        "config": {
+          "to_place": {
+            "type": "minecraft:simple_state_provider",
+            "state": {
+              "Name": "minecraft:sculk_sensor",
+              "Properties": {
+                "power": "0",
+                "sculk_sensor_phase": "inactive",
+                "waterlogged": "false"
+              }
+            }
+          }
+        }
+      },
+      "placement": []
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "feature": "wythers:vegetation/configured_block_column/mix_floating_vegetation_plants",
+  "placement": [
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "absolute": 62
+      }
+    },
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:matching_blocks",
+        "offset": [
+          0,
+          0,
+          0
+        ],
+        "blocks": [
+          "minecraft:azalea_leaves"
+        ]
+      }
+    }
+  ]
+}

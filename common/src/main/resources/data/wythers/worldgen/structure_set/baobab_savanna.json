@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "wythers:baobab_savanna",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "spacing": 16,
+    "separation": 8,
+    "salt": 10387312,
+    "type": "minecraft:random_spread"
+  }
+}

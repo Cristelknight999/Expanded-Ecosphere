@@ -1,0 +1,28 @@
+{
+  "config": {
+    "features": [
+      {
+        "feature": "wythers:vegetation/placed_random_patch/thin_jungle_bamboo_patch",
+        "chance": 0.01
+      },
+      {
+        "feature": "wythers:vegetation/placed_tree/forest_acacia",
+        "chance": 0.05
+      },
+      {
+        "feature": "wythers:vegetation/placed_tree/stick_plant",
+        "chance": 0.02
+      },
+      {
+        "feature": "wythers:vegetation/placed_tree/corymbia_aparrerinja",
+        "chance": 0.2
+      },
+      {
+        "feature": "wythers:vegetation/placed_tree/eucalyptus_deanei_gray",
+        "chance": 0.2
+      }
+    ],
+    "default": "wythers:vegetation/placed_tree/eucalyptus_deanei_white"
+  },
+  "type": "minecraft:random_selector"
+}

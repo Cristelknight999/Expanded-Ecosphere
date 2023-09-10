@@ -18,27 +18,13 @@ public abstract class HoglinMixin {
 
     @Shadow public abstract void setImmuneToZombification(boolean bl);
 
-    @Shadow protected abstract boolean isImmuneToZombification();
-
-    @Shadow private int timeInOverworld;
-
-    @Inject(
-            method = "customServerAiStep",
-            at = @At(value = "HEAD"))
-
-    public void modifyHoglin(CallbackInfo ci) {
-        if(!isImmuneToZombification() && timeInOverworld < 0){
-            setImmuneToZombification(true);
-        }
-    }
-
     @Inject(
             method = "finalizeSpawn",
             at = @At(value = "HEAD"))
 
     public void modifyHoglin(ServerLevelAccessor serverLevelAccessor, DifficultyInstance difficultyInstance, MobSpawnType mobSpawnType, SpawnGroupData spawnGroupData, CompoundTag compoundTag, CallbackInfoReturnable<SpawnGroupData> cir) {
-        if(serverLevelAccessor.dimensionType().natural()){
-            timeInOverworld = -1;
+        if(serverLevelAccessor.dimensionType().natural() && (mobSpawnType.equals(MobSpawnType.NATURAL) || mobSpawnType.equals(MobSpawnType.CHUNK_GENERATION))){
+            setImmuneToZombification(true);
         }
     }
 

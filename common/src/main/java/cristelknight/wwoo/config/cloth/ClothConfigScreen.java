@@ -1,16 +1,17 @@
 package cristelknight.wwoo.config.cloth;
 
 import cristelknight.wwoo.WWOO;
+import cristelknight.wwoo.config.configs.BannedBiomesConfig;
 import cristelknight.wwoo.config.configs.WWOOConfig;
+import cristelknight.wwoo.utils.BiomeReplace;
 import cristelknight.wwoo.utils.Util;
-import me.shedaniel.clothconfig2.api.AbstractConfigListEntry;
 import me.shedaniel.clothconfig2.api.ConfigBuilder;
 import me.shedaniel.clothconfig2.api.ConfigCategory;
 import me.shedaniel.clothconfig2.api.ConfigEntryBuilder;
+import me.shedaniel.clothconfig2.api.Requirement;
 import me.shedaniel.clothconfig2.gui.entries.*;
-import me.shedaniel.clothconfig2.impl.builders.BooleanToggleBuilder;
 import me.shedaniel.clothconfig2.impl.builders.DropdownMenuBuilder;
-import me.shedaniel.clothconfig2.impl.builders.SubCategoryBuilder;
+import net.cristellib.CristelLib;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.ChatFormatting;
@@ -24,15 +25,13 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.*;
 import org.jetbrains.annotations.NotNull;
 
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.LinkedHashSet;
-import java.util.List;
+import java.util.*;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-import static cristelknight.wwoo.WWOO.MODID;
+import static cristelknight.wwoo.WWOO.*;
+import static cristelknight.wwoo.WWOO.Mode.DEFAULT;
 
 
 @Environment(value= EnvType.CLIENT)
@@ -48,10 +47,17 @@ public class ClothConfigScreen {
                 .setDefaultBackgroundTexture(new ResourceLocation(getIdentifier(config.backGroundBlock().getBlock())))
                 .setTitle(Component.translatable(MODID + ".config.title").withStyle(ChatFormatting.BOLD));
 
-        ConfigEntries entries = new ConfigEntries(builder.entryBuilder(), builder.getOrCreateCategory(mainName("main")), builder.getOrCreateCategory(mainName("default")), builder.getOrCreateCategory(mainName("compatible")));
+        ConfigEntries entries = new ConfigEntries(builder.entryBuilder(), builder.getOrCreateCategory(mainName("main")), builder.getOrCreateCategory(mainName("biomes")), builder.getOrCreateCategory(mainName("modes")));
         builder.setSavingRunnable(() -> {
             WWOOConfig.DEFAULT.setInstance(entries.createConfig());
             WWOOConfig.DEFAULT.getConfig(true, true);
+
+            BannedBiomesConfig.DEFAULT.setInstance(entries.createBiomesConfig());
+            BannedBiomesConfig config2 = BannedBiomesConfig.DEFAULT.getConfig(true, true);
+
+
+            if(config2.enableBiomes() && WWOO.currentMode.equals(DEFAULT)) BiomeReplace.replace();
+            else CristelLib.DATA_PACK.removeData(new ResourceLocation("minecraft", "overworld"));
         });
         return builder.build();
     }
@@ -64,125 +70,106 @@ public class ClothConfigScreen {
         return Component.translatable(MODID + ".config.category." + id);
     }
 
+    private static Component fieldToolTip(String id) {
+        return Component.translatable(MODID + ".config.entry.toolTip" + id);
+    }
+
+    private static Component textEntry(String id) {
+        return Component.translatable(MODID + ".config.text." + id);
+    }
+
     private static class ConfigEntries {
         private final ConfigEntryBuilder builder;
-        private final BooleanListEntry showUpdates, showBigUpdates, onlyVanillaBiomes, forceLargeBiomes;
+        private final BooleanListEntry showUpdates, showBigUpdates, onlyVanillaBiomes, forceLargeBiomes, enableBiomes;
         private final @NotNull DropdownBoxEntry<Block> backgroundBlock;
-        private final ConfigCategory category1, category2, category3;
+        private final EnumListEntry<WWOO.Mode> mode;
+        private final StringListListEntry biomeList;
 
         public ConfigEntries(ConfigEntryBuilder builder, ConfigCategory category1, ConfigCategory category2, ConfigCategory category3) {
             this.builder = builder;
-            this.category1 = category1;
-            this.category2 = category2;
-            this.category3 = category3;
-
-
-            SubCategoryBuilder main1 = new SubCategoryBuilder(Component.literal("main1"), Component.literal("main1"));
-            SubCategoryBuilder main2 = new SubCategoryBuilder(Component.literal("main2"), Component.literal("main2"));
-            SubCategoryBuilder main3 = new SubCategoryBuilder(Component.literal("main3"), Component.literal("main3"));
-
-
-            category2.addEntry(new SelectEntry(buttonWidget -> SelectEntry.onPress()));
-            category3.addEntry(new SelectEntry2(buttonWidget -> SelectEntry2.onPress()));
-
-            addTexts(main1, main3);
 
             WWOOConfig config = WWOOConfig.DEFAULT.getConfig();
 
-            textListEntry(Util.translatableText("defaultMode").withStyle(ChatFormatting.GRAY), main2);
-            onlyVanillaBiomes = createBooleanField("onlyVanillaBiomes", config.onlyVanillaBiomes(), WWOOConfig.DEFAULT.onlyVanillaBiomes(), main2, false, new Component[]{});
+            // Tab 3
+            if(!isTerraBlenderLoaded()){
+                textListEntry(Component.translatable(MODID + ".config.text.requiresTerrablender", minTerraBlenderVersion), category3);
+                textListEntry(Component.translatable(MODID + ".config.text.").withStyle((s) -> s.withClickEvent(new ClickEvent(ClickEvent.Action.OPEN_URL, "https://modrinth.com/mod/terrablender"))), category3);
+            }
+            mode = builder.startEnumSelector(fieldName("selectMode"), WWOO.Mode.class, currentMode).setDefaultValue(DEFAULT).setRequirement(Requirement.isTrue(WWOO::isTerraBlenderLoaded)).build();
+            category3.addEntry(mode);
 
-            backgroundBlock = createBlockField("bB", config.backGroundBlock().getBlock(), WWOOConfig.DEFAULT.backGroundBlock().getBlock(), main1, List.of(FT.NO_BLOCK_ENTITY, FT.NO_BUTTON));
 
-            showUpdates = createBooleanField("showUpdates", config.showUpdates(), WWOOConfig.DEFAULT.showUpdates(), main1, false, new Component[]{});
-            showBigUpdates = createBooleanField("showBigUpdates", config.showBigUpdates(), WWOOConfig.DEFAULT.showBigUpdates(), main1, false, new Component[]{});
+            // Tab 2
+            enableBiomes = createBooleanField("enableBiomes", BannedBiomesConfig.DEFAULT.getConfig().enableBiomes(), BannedBiomesConfig.DEFAULT.enableBiomes(), category2, new Component[]{});
+            biomeList = builder.startStrList(fieldName("biomeList"), convertMapToList(BannedBiomesConfig.DEFAULT.getConfig().bannedBiomes())).setTooltip(new Component[]{fieldToolTip("biomeList")}).setDefaultValue(List.of()).setRequirement(Requirement.isTrue(enableBiomes)).build();
+            category2.addEntry(biomeList);
 
-            forceLargeBiomes = createBooleanField("forceLargeBiomes", config.forceLargeBiomes(), WWOOConfig.DEFAULT.forceLargeBiomes(), main1,false, new Component[]{});
-            textListEntry(Util.translatableText("forceLargeBiomes").withStyle(ChatFormatting.GRAY), main1);
+
+            // Tab 1
+            textListEntry(Component.translatable(MODID + ".config.text.modes", Component.literal(currentMode.toString()).withStyle(ChatFormatting.DARK_PURPLE)).withStyle(ChatFormatting.GRAY), category1);
+
+            backgroundBlock = createBlockField("bB", config.backGroundBlock().getBlock(), WWOOConfig.DEFAULT.backGroundBlock().getBlock(), category1, List.of(FT.NO_BLOCK_ENTITY, FT.NO_BUTTON));
+            showUpdates = createBooleanField("showUpdates", config.showUpdates(), WWOOConfig.DEFAULT.showUpdates(), category1, new Component[]{});
+            showBigUpdates = createBooleanField("showBigUpdates", config.showBigUpdates(), WWOOConfig.DEFAULT.showBigUpdates(), category1, new Component[]{});
+            onlyVanillaBiomes = builder.startBooleanToggle(fieldName("onlyVanillaBiomes"), config.onlyVanillaBiomes()).setDefaultValue(WWOOConfig.DEFAULT.onlyVanillaBiomes()).setRequirement(() -> mode.getValue().equals(DEFAULT)).build();
+            category1.addEntry(onlyVanillaBiomes);
+            forceLargeBiomes = createBooleanField("forceLargeBiomes", config.forceLargeBiomes(), WWOOConfig.DEFAULT.forceLargeBiomes(), category1, new Component[]{});
+
+            textListEntry(Util.translatableText("forceLargeBiomes").withStyle(ChatFormatting.GRAY), category1);
+
+
+
+
 
             linkButtons(category1);
             linkButtons(category2);
             linkButtons(category3);
-
-            //showWarning = createBooleanField("showWarning", config.showWarning, DEFAULT.showWarning, main1, false, new Component[0]);
-
         }
+
 
 
         public WWOOConfig createConfig() {
-            return new WWOOConfig(WWOO.currentMode.toString(), onlyVanillaBiomes.getValue(), forceLargeBiomes.getValue(), showUpdates.getValue(), showBigUpdates.getValue(), backgroundBlock.getValue().defaultBlockState());
+            WWOO.Mode currentMode = mode.getValue();
+            WWOO.currentMode = currentMode;
+
+            return new WWOOConfig(currentMode.toString(), onlyVanillaBiomes.getValue(), forceLargeBiomes.getValue(), showUpdates.getValue(), showBigUpdates.getValue(), backgroundBlock.getValue().defaultBlockState());
+        }
+
+        public BannedBiomesConfig createBiomesConfig() {
+            return new BannedBiomesConfig(enableBiomes.getValue(), convertListToMap(biomeList.getValue()));
+        }
+        private static List<String> convertMapToList(Map<String, String> stringMap) {
+            return stringMap.entrySet().stream()
+                    .map(entry -> entry.getKey() + "/" + entry.getValue())
+                    .collect(Collectors.toList());
+        }
+        private static Map<String, String> convertListToMap(List<String> stringList) {
+            return stringList.stream()
+                    .map(s -> s.split("/"))
+                    .filter(parts -> parts.length == 2)
+                    .collect(Collectors.toMap(parts -> parts[0], parts -> parts[1]));
         }
 
 
+        private BooleanListEntry createBooleanField(String id, boolean value, boolean defaultValue, ConfigCategory category, Component[] tooltip) {
+            BooleanListEntry e = builder.startBooleanToggle(fieldName(id), value)
+                    .setDefaultValue(defaultValue).setTooltip(tooltip).build();
 
-
-        private FloatListEntry createFloatField(String id, float value, float defaultValue, SubCategoryBuilder sub) {
-            FloatListEntry entry = builder.startFloatField(fieldName(id), value)
-                    .setDefaultValue(defaultValue)
-                    .setMin(0).setMax(100)
-                    .build();
-            main(sub, entry);
-            return entry;
+            category.addEntry(e);
+            return e;
         }
-
-        private BooleanListEntry createBooleanField(String id, boolean value, boolean defaultValue, SubCategoryBuilder sub, boolean rr, Component[] tooltip) {
-            BooleanToggleBuilder e = builder.startBooleanToggle(fieldName(id), value)
-                    .setDefaultValue(defaultValue).setTooltip(tooltip);
-            BooleanListEntry entry = rr ? e.requireRestart().build() : e.build();
-            main(sub, entry);
-            return entry;
-        }
-
-        private IntegerListEntry createIntField(String id, int value, int defaultValue, SubCategoryBuilder sub) {
-            IntegerListEntry entry = builder.startIntField(fieldName(id), value)
-                    .setDefaultValue(defaultValue)
-                    .setMin(0).setMax(100)
-                    .build();
-            main(sub, entry);
-            return entry;
-        }
-
-        private @NotNull DropdownBoxEntry<Block> createBlockField(String id, Block value, Block defaultValue, SubCategoryBuilder sub, List<FT> filter) {
-
-
+        private @NotNull DropdownBoxEntry<Block> createBlockField(String id, Block value, Block defaultValue, ConfigCategory category, List<FT> filter) {
             DropdownMenuBuilder<Block> e = builder.startDropdownMenu(fieldName(id), DropdownMenuBuilder.TopCellElementBuilder.ofBlockObject(value), DropdownMenuBuilder.CellCreatorBuilder.ofBlockObject())
                     .setDefaultValue(defaultValue)
                     .setSelections(BuiltInRegistries.BLOCK.stream().sorted(Comparator.comparing(Block::toString)).filter(new BlockPredicate(filter)).collect(Collectors.toCollection(LinkedHashSet::new)));
-
             @NotNull DropdownBoxEntry<Block> entry = e.build();
-
-            main(sub, entry);
+            category.addEntry(entry);
             return entry;
         }
 
-        private void main(SubCategoryBuilder sub, AbstractConfigListEntry<?> entry){
-            if(sub.getFieldNameKey().equals(Component.literal("main1"))){
-                category1.addEntry(entry);
-            }
-            else if(sub.getFieldNameKey().equals(Component.literal("main2"))){
-                category2.addEntry(entry);
-            }
-            else if(sub.getFieldNameKey().equals(Component.literal("main3"))){
-                category3.addEntry(entry);
-            }
-            else {
-                sub.add(entry);
-            }
-        }
-
-        public void textListEntry(Component component, SubCategoryBuilder sub){
+        public void textListEntry(Component component, ConfigCategory category){
             TextListEntry tle = this.builder.startTextDescription(component).build();
-            main(sub, tle);
-        }
-
-        private void addTexts(SubCategoryBuilder main1, SubCategoryBuilder main3){
-            if(!WWOO.isTerraBlenderLoaded()){
-                textListEntry(Component.translatable(MODID + ".config.text.rqTB", Component.literal("Terrablender " + WWOO.minTerraBlenderVersion).withStyle(ChatFormatting.BOLD), Util.translatableText("orh")), main3);
-                textListEntry(Component.translatable(MODID + ".config.text.downloadTB", Util.translatableText("ch").withStyle(ChatFormatting.BOLD).withStyle((s) -> s.withClickEvent(new ClickEvent(ClickEvent.Action.OPEN_URL, "https://www.curseforge.com/minecraft/mc-mods/terrablender")))), main3);
-            }
-            textListEntry(Util.translatableText("compatibleMode").withStyle(ChatFormatting.GRAY), main3);
-            textListEntry(Component.translatable( MODID + ".config.text.comp1", Util.translatableText("youcan").withStyle(ChatFormatting.GRAY), Component.literal(WWOO.currentMode.toString()).withStyle(ChatFormatting.DARK_RED), Util.translatableText("moreinfo").withStyle(ChatFormatting.GRAY), Component.literal(mainName("default").getString()).withStyle(ChatFormatting.DARK_PURPLE),
-                    Util.translatableText("or").withStyle(ChatFormatting.GRAY), Component.literal(mainName("compatible").getString()).withStyle(ChatFormatting.DARK_PURPLE)), main1);
+            category.addEntry(tle);
         }
 
         private void linkButtons(ConfigCategory category){

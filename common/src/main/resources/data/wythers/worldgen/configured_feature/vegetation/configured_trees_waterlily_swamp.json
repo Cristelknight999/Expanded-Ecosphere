@@ -1,0 +1,16 @@
+{
+  "config": {
+    "features": [
+      {
+        "feature": "wythers:vegetation/placed_tree/willow",
+        "chance": 0.3
+      },
+      {
+        "feature": "wythers:vegetation/placed_tree/waterlily_swamp_birch",
+        "chance": 0.3
+      }
+    ],
+    "default": "wythers:vegetation/placed_tree/waterlily_swamp_azalea"
+  },
+  "type": "minecraft:random_selector"
+}

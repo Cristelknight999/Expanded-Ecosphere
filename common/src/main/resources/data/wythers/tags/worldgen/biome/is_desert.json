@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:desert",
+    "wythers:desert_lakes",
+    "wythers:deep_desert",
+    "wythers:tibesti_mountains",
+    "wythers:mud_pools",
+    "wythers:salt_lakes_pink",
+    "wythers:salt_lakes_turquoise",
+    "wythers:salt_lakes_white",
+    "wythers:cactus_desert",
+    "wythers:danakil_desert",
+    "wythers:desert_beach",
+    "wythers:desert_pinnacles",
+    "wythers:desert_river",
+    "wythers:wooded_desert"
+  ]
+}
