@@ -20,8 +20,6 @@ public class WWOORegion extends Region {
 
     @Override
     public void addBiomes(Registry<Biome> registry, Consumer<Pair<Climate.ParameterPoint, ResourceKey<Biome>>> mapper) {
-        WWOO.LOGGER.error("Adding Biomes to WWOO Region");
-
         List<Pair<Climate.ParameterPoint, ResourceKey<Biome>>> pairList = TerraInit.readParameterPoints();
         for(Pair<Climate.ParameterPoint, ResourceKey<Biome>> p : pairList){
             mapper.accept(p);

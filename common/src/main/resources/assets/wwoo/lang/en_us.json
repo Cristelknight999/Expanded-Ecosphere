@@ -3,6 +3,7 @@
     "language.region": "United States",
     "language.code": "en_us",
 
+    // CONFIG
     "wwoo.config.title": "William Wythers' Overhauled Overworld Config Menu",
 
     "wwoo.config.category.main": "Main Config",
@@ -14,6 +15,9 @@
     "wwoo.config.entry.bB": "Select the background block",
     "wwoo.config.entry.showUpdates": "Announce updates in the chat when joining a world?",
     "wwoo.config.entry.showBigUpdates": "Announce important updates even if the above setting is disabled?",
+    "wwoo.config.entry.removeOreBlobs": "Remove ore blobs",
+    "wwoo.config.entry.removeOreBlobs.toolTip": "Removes underground ores (andesite, diorite, granite, gravel and dirt)",
+    "wwoo.config.entry.onlyVanillaBiomes": "Whether to only change Vanilla biomes or not (DEFAULT mode only)",
     "wwoo.config.entry.forceLargeBiomes": "Force Minecraft to generate Large Biomes?",
     "wwoo.config.text.forceLargeBiomes": "This option forces Minecraft to generate Large Biomes, this setting was introduced, because the default presets do not work (correctly). This option will probably not work with Compatible mode, or other biome mods.",
 
@@ -21,13 +25,18 @@
     "wwoo.config.entry.enableBiomes": "Enable biome replacing",
     "wwoo.config.entry.biomeList": "Enter biomes into this list. Check the tooltip on how to do it",
     "wwoo.config.entry.biomeList.toolTip": "Enter the biome to replace first and then the biome which should repalce it.\nSeperate them with a \"/\". For example: minecraft:plains/minecraft:basalt_deltas",
+    "wwoo.config.text.replaceBiomes": "Only biomes which are added trough WWOO will work.\nAlso on compatible mode you can only replace WWOO biomes and only replace them with non vanilla biomes.\nIf a biome doesn't exist, the game will crash!",
+
 
     // WWOO Modes
     "wwoo.config.text.requiresTerrablender": "To change the mode to COMPATIBLE, Terrablender version %1$s or later must be installed.",
+    "wwoo.config.text.downloadTB": "Click here too download",
+    "wwoo.config.entry.selectMode": "Select the mode WWOO should use",
+    "wwoo.config.text.defaultMode": "§l§nDefault Mode:§r\nIf you don't have any other mods that add biomes (to the overworld), you should definitely use this mode for the best result.",
+    "wwoo.config.text.compatibleMode": "§l§nCompatible Mode:§r\nThis mode uses Terrablender to add WWOOs biomes to the overworld. You don't need to use this mode, if you have biome mods which use terrablender to add their biomes to the overworld. But the world-gen §ncould§r be better with this mode. Best test both modes.\nIf you have a mod like Terralith, then you of course have to enable it.",
 
-    "wwoo.config.text.mrqtb": "Mode requires %1$s",
-    "wwoo.config.text.rqTB": "This mode Requires %1$s %2$s",
 
+    // Updater
     "wwoo.config.text.newUpdateBig": "\n\n There is a new Version for William Wythers' Overhauled Overworld available, which adds much content or fixes a game breaking bug! Download it %1$s\n %2$s\n\n",
     "wwoo.config.text.newUpdate": "\n\n There is a new Version for William Wythers' Overhauled Overworld available! Download it %1$s\n %2$s\n\n",
 
@@ -36,21 +45,7 @@
     "wwoo.config.text.null": "",
 
 
-
-    "wwoo.config.text.downloadTB": "Click %1$s too download",
-    "wwoo.config.text.compatibleMode": "The Compatible Mode allows you to use this mod with Terralith.\n(And maybe some other mods need it too)\nIt is not compatible with large biomes!",
-    "wwoo.config.text.defaultMode": "The Default Mode works with Oh The Biomes You'll Go\n(and probably with most other world-gen mods which only add biomes) and is more stable than the Compatible Mode.\nBut it doesn't work with Terralith",
-
-
-    "wwoo.config.text.youcan": "",
-    "wwoo.config.text.moreinfo": "",
-    "wwoo.config.text.or": "or",
-    "wwoo.config.text.orh": "or higher",
-
-    "wwoo.config.entry.onlyVanillaBiomes": "Whether to only change Vanilla biomes or not (DEFAULT mode only)",
-
-    "wwoo.config.entry.enableStructureCompat": "Enable that structures or mobs from other mods, can spawn in wwoo's biomes?",
-
+    // Non config stuff
     "advancements.adventure.world_explorer.title": "World Explorer",
     "advancements.adventure.world_explorer.description": "Discover (almost) every biome of William Wythers' Overhauled Overworld",
 

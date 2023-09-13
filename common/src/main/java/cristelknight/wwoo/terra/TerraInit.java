@@ -2,17 +2,14 @@ package cristelknight.wwoo.terra;
 
 import com.google.gson.*;
 import com.mojang.datafixers.util.Pair;
-import com.mojang.serialization.Codec;
-import com.mojang.serialization.DataResult;
-import com.mojang.serialization.DynamicOps;
 import com.mojang.serialization.JsonOps;
 import cristelknight.wwoo.WWOO;
 import cristelknight.wwoo.WWOORL;
-import cristelknight.wwoo.config.configs.BannedBiomesConfig;
+import cristelknight.wwoo.config.configs.ReplaceBiomesConfig;
+import cristelknight.wwoo.utils.BiomeReplace;
 import cristelknight.wwoo.utils.Util;
 import net.cristellib.CristelLibExpectPlatform;
 import net.cristellib.util.TerrablenderUtil;
-import net.minecraft.core.Registry;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
@@ -31,15 +28,12 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 
-import static cristelknight.wwoo.WWOO.Mode.COMPATIBLE;
 
 
 public class TerraInit {
 
     private static final String OVERWORLD = "resources/wwoo_default/data/minecraft/dimension/overworld.json";
-
     private static final String NOISE = "resources/wwoo_default/data/minecraft/worldgen/noise_settings/overworld.json";
 
 
@@ -59,6 +53,11 @@ public class TerraInit {
             if (!el.isJsonObject()) throw new RuntimeException("Input stream is on JsonElement");
             List<Pair<Climate.ParameterPoint, ResourceKey<Biome>>> list = new ArrayList<>();
             JsonObject o = el.getAsJsonObject();
+
+            if(ReplaceBiomesConfig.DEFAULT.getConfig().enableBiomes()){
+                BiomeReplace.replaceObject(o, true);
+            }
+
             JsonArray jsonArray = o.get("generator").getAsJsonObject().get("biome_source").getAsJsonObject().get("biomes").getAsJsonArray();
             for(int i = 0; i < jsonArray.size(); i++){
                 JsonObject e = jsonArray.get(i).getAsJsonObject();
@@ -107,7 +106,7 @@ public class TerraInit {
 
 
     public static void terraEnableDisable(){
-        if(WWOO.currentMode.equals(COMPATIBLE)){
+        if(WWOO.currentMode.equals(WWOO.Mode.COMPATIBLE)){
             terraEnable();
         }
         else {

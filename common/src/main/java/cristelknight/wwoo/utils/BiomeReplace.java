@@ -3,7 +3,7 @@ package cristelknight.wwoo.utils;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import cristelknight.wwoo.WWOO;
-import cristelknight.wwoo.config.configs.BannedBiomesConfig;
+import cristelknight.wwoo.config.configs.ReplaceBiomesConfig;
 import net.cristellib.CristelLib;
 import net.cristellib.CristelLibExpectPlatform;
 import net.minecraft.resources.ResourceLocation;
@@ -24,18 +24,18 @@ public class BiomeReplace {
 
         JsonObject object = Util.getObjectFromPath(path);
 
-        replaceObject(object);
+        replaceObject(object, false);
 
         addDimensionFile(new ResourceLocation("minecraft", "overworld"), object);
     }
 
-    public static void replaceObject(JsonObject object){
+    public static void replaceObject(JsonObject object, boolean skipVanilla){
         JsonObject generator = (JsonObject) object.get("generator");
         JsonObject biome_source = (JsonObject) generator.get("biome_source");
         JsonArray biomes = (JsonArray) biome_source.get("biomes");
 
 
-        BannedBiomesConfig config = BannedBiomesConfig.DEFAULT.getConfig();
+        ReplaceBiomesConfig config = ReplaceBiomesConfig.DEFAULT.getConfig();
         Map<String, String> replaces = config.bannedBiomes();
         if(replaces.isEmpty()) return;
 
@@ -43,7 +43,7 @@ public class BiomeReplace {
 
         for(Map.Entry<String, String> replace : replaces.entrySet()){
             String b = replace.getKey();
-            if(strings.containsKey(b)) continue;
+            if(strings.containsKey(b) || skipIfVanilla(skipVanilla, replace)) continue;
             Set<Integer> integers = getAllBiomes(biomes, b);
             strings.put(b, integers);
         }
@@ -54,6 +54,11 @@ public class BiomeReplace {
             String r = replace.getValue();
             replaceBiomes(biomes, r, strings.get(b));
         }
+    }
+
+    private static boolean skipIfVanilla(boolean skipVanilla, Map.Entry<String, String> replace){
+        if(!skipVanilla) return false;
+        return replace.getKey().contains("minecraft:") || replace.getValue().contains("minecraft:");
     }
 
 

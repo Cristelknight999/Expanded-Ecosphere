@@ -1,8 +1,9 @@
 package cristelknight.wwoo.config.cloth;
 
 import cristelknight.wwoo.WWOO;
-import cristelknight.wwoo.config.configs.BannedBiomesConfig;
+import cristelknight.wwoo.config.configs.ReplaceBiomesConfig;
 import cristelknight.wwoo.config.configs.WWOOConfig;
+import cristelknight.wwoo.terra.TerraInit;
 import cristelknight.wwoo.utils.BiomeReplace;
 import cristelknight.wwoo.utils.Util;
 import me.shedaniel.clothconfig2.api.ConfigBuilder;
@@ -52,12 +53,12 @@ public class ClothConfigScreen {
             WWOOConfig.DEFAULT.setInstance(entries.createConfig());
             WWOOConfig.DEFAULT.getConfig(true, true);
 
-            BannedBiomesConfig.DEFAULT.setInstance(entries.createBiomesConfig());
-            BannedBiomesConfig config2 = BannedBiomesConfig.DEFAULT.getConfig(true, true);
+            ReplaceBiomesConfig.DEFAULT.setInstance(entries.createBiomesConfig());
+            ReplaceBiomesConfig config2 = ReplaceBiomesConfig.DEFAULT.getConfig(true, true);
 
-
+            if(WWOO.isTerraBlenderLoaded()) TerraInit.terraEnableDisable();
             if(config2.enableBiomes() && WWOO.currentMode.equals(DEFAULT)) BiomeReplace.replace();
-            else CristelLib.DATA_PACK.removeData(new ResourceLocation("minecraft", "overworld"));
+            else CristelLib.DATA_PACK.removeData(new ResourceLocation("minecraft", "dimension/overworld.json"));
         });
         return builder.build();
     }
@@ -71,16 +72,12 @@ public class ClothConfigScreen {
     }
 
     private static Component fieldToolTip(String id) {
-        return Component.translatable(MODID + ".config.entry.toolTip" + id);
-    }
-
-    private static Component textEntry(String id) {
-        return Component.translatable(MODID + ".config.text." + id);
+        return Component.translatable(MODID + ".config.entry." + id + ".toolTip");
     }
 
     private static class ConfigEntries {
         private final ConfigEntryBuilder builder;
-        private final BooleanListEntry showUpdates, showBigUpdates, onlyVanillaBiomes, forceLargeBiomes, enableBiomes;
+        private final BooleanListEntry removeOreBlobs, showUpdates, showBigUpdates, onlyVanillaBiomes, forceLargeBiomes, enableBiomes;
         private final @NotNull DropdownBoxEntry<Block> backgroundBlock;
         private final EnumListEntry<WWOO.Mode> mode;
         private final StringListListEntry biomeList;
@@ -93,17 +90,20 @@ public class ClothConfigScreen {
             // Tab 3
             if(!isTerraBlenderLoaded()){
                 textListEntry(Component.translatable(MODID + ".config.text.requiresTerrablender", minTerraBlenderVersion), category3);
-                textListEntry(Component.translatable(MODID + ".config.text.").withStyle((s) -> s.withClickEvent(new ClickEvent(ClickEvent.Action.OPEN_URL, "https://modrinth.com/mod/terrablender"))), category3);
+                textListEntry(Component.translatable(MODID + ".config.text.downloadTB").withStyle((s) -> s.withClickEvent(new ClickEvent(ClickEvent.Action.OPEN_URL, "https://modrinth.com/mod/terrablender"))), category3);
             }
             mode = builder.startEnumSelector(fieldName("selectMode"), WWOO.Mode.class, currentMode).setDefaultValue(DEFAULT).setRequirement(Requirement.isTrue(WWOO::isTerraBlenderLoaded)).build();
             category3.addEntry(mode);
+            textListEntry(Component.translatable(MODID + ".config.text.defaultMode").withStyle(ChatFormatting.GRAY), category3);
+            textListEntry(Component.translatable(MODID + ".config.text.compatibleMode").withStyle(ChatFormatting.GRAY), category3);
+
 
 
             // Tab 2
-            enableBiomes = createBooleanField("enableBiomes", BannedBiomesConfig.DEFAULT.getConfig().enableBiomes(), BannedBiomesConfig.DEFAULT.enableBiomes(), category2, new Component[]{});
-            biomeList = builder.startStrList(fieldName("biomeList"), convertMapToList(BannedBiomesConfig.DEFAULT.getConfig().bannedBiomes())).setTooltip(new Component[]{fieldToolTip("biomeList")}).setDefaultValue(List.of()).setRequirement(Requirement.isTrue(enableBiomes)).build();
+            enableBiomes = createBooleanField("enableBiomes", ReplaceBiomesConfig.DEFAULT.getConfig().enableBiomes(), ReplaceBiomesConfig.DEFAULT.enableBiomes(), category2, new Component[]{});
+            biomeList = builder.startStrList(fieldName("biomeList"), convertMapToList(ReplaceBiomesConfig.DEFAULT.getConfig().bannedBiomes())).setTooltip(new Component[]{fieldToolTip("biomeList")}).setDefaultValue(List.of()).setRequirement(Requirement.isTrue(enableBiomes)).build();
             category2.addEntry(biomeList);
-
+            textListEntry(Component.translatable(MODID + ".config.text.replaceBiomes").withStyle(ChatFormatting.GRAY), category2);
 
             // Tab 1
             textListEntry(Component.translatable(MODID + ".config.text.modes", Component.literal(currentMode.toString()).withStyle(ChatFormatting.DARK_PURPLE)).withStyle(ChatFormatting.GRAY), category1);
@@ -111,6 +111,7 @@ public class ClothConfigScreen {
             backgroundBlock = createBlockField("bB", config.backGroundBlock().getBlock(), WWOOConfig.DEFAULT.backGroundBlock().getBlock(), category1, List.of(FT.NO_BLOCK_ENTITY, FT.NO_BUTTON));
             showUpdates = createBooleanField("showUpdates", config.showUpdates(), WWOOConfig.DEFAULT.showUpdates(), category1, new Component[]{});
             showBigUpdates = createBooleanField("showBigUpdates", config.showBigUpdates(), WWOOConfig.DEFAULT.showBigUpdates(), category1, new Component[]{});
+            removeOreBlobs = createBooleanField("removeOreBlobs", config.removeOreBlobs(), WWOOConfig.DEFAULT.removeOreBlobs(), category1, new Component[]{fieldToolTip("removeOreBlobs")});
             onlyVanillaBiomes = builder.startBooleanToggle(fieldName("onlyVanillaBiomes"), config.onlyVanillaBiomes()).setDefaultValue(WWOOConfig.DEFAULT.onlyVanillaBiomes()).setRequirement(() -> mode.getValue().equals(DEFAULT)).build();
             category1.addEntry(onlyVanillaBiomes);
             forceLargeBiomes = createBooleanField("forceLargeBiomes", config.forceLargeBiomes(), WWOOConfig.DEFAULT.forceLargeBiomes(), category1, new Component[]{});
@@ -132,11 +133,11 @@ public class ClothConfigScreen {
             WWOO.Mode currentMode = mode.getValue();
             WWOO.currentMode = currentMode;
 
-            return new WWOOConfig(currentMode.toString(), onlyVanillaBiomes.getValue(), forceLargeBiomes.getValue(), showUpdates.getValue(), showBigUpdates.getValue(), backgroundBlock.getValue().defaultBlockState());
+            return new WWOOConfig(currentMode.toString(), onlyVanillaBiomes.getValue(), forceLargeBiomes.getValue(), removeOreBlobs.getValue(), showUpdates.getValue(), showBigUpdates.getValue(), backgroundBlock.getValue().defaultBlockState());
         }
 
-        public BannedBiomesConfig createBiomesConfig() {
-            return new BannedBiomesConfig(enableBiomes.getValue(), convertListToMap(biomeList.getValue()));
+        public ReplaceBiomesConfig createBiomesConfig() {
+            return new ReplaceBiomesConfig(enableBiomes.getValue(), convertListToMap(biomeList.getValue()));
         }
         private static List<String> convertMapToList(Map<String, String> stringMap) {
             return stringMap.entrySet().stream()
@@ -183,9 +184,9 @@ public class ClothConfigScreen {
             category.addEntry(tle);
             category.addEntry(new LinkEntry(fieldName("h"), buttonWidget -> Minecraft.getInstance().setScreen(new ConfirmLinkScreen(confirmed -> {
                 if (confirmed) {
-                    net.minecraft.Util.getPlatform().openUri(WWOO.LINK_H);
+                    net.minecraft.Util.getPlatform().openUri(WWOO.LINK_CF);
                 }
-                Minecraft.getInstance().setScreen(new ClothConfigScreen().create(lastScreen)); }, WWOO.LINK_H, true)), new ResourceLocation(MODID, "textures/gui/cf.png"), 10));
+                Minecraft.getInstance().setScreen(new ClothConfigScreen().create(lastScreen)); }, WWOO.LINK_CF, true)), new ResourceLocation(MODID, "textures/gui/cf.png"), 10));
         }
 
         static class BlockPredicate implements Predicate<Block> {

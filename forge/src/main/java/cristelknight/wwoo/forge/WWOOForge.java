@@ -16,6 +16,8 @@ public class WWOOForge {
     public WWOOForge() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+        WWOO.init();
+
         if(WWOO.isTerraBlenderLoaded()) modEventBus.addListener(this::terraBlenderSetup);
         if(isClothConfigLoaded()) ModLoadingContext.get().registerExtensionPoint(ConfigScreenHandler.ConfigScreenFactory.class,
                 () -> new ConfigScreenHandler.ConfigScreenFactory((client, parent) -> new ClothConfigScreen().create(parent)));
