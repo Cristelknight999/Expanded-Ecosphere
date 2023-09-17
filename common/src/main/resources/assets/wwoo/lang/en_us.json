@@ -24,8 +24,8 @@
     // Biome Replacing
     "wwoo.config.entry.enableBiomes": "Enable biome replacing",
     "wwoo.config.entry.biomeList": "Enter biomes into this list. Check the tooltip on how to do it",
-    "wwoo.config.entry.biomeList.toolTip": "Enter the biome to replace first and then the biome which should repalce it.\nSeperate them with a \"/\". For example: minecraft:plains/minecraft:basalt_deltas",
-    "wwoo.config.text.replaceBiomes": "Only biomes which are added trough WWOO will work.\nAlso on compatible mode you can only replace WWOO biomes and only replace them with non vanilla biomes.\nIf a biome doesn't exist, the game will crash!",
+    "wwoo.config.entry.biomeList.toolTip": "Enter the biome to replace first and then the biome which should replace it.\nSeparate them with a \"/\". For example: minecraft:plains/minecraft:basalt_deltas",
+    "wwoo.config.text.replaceBiomes": "Only biomes which are added through WWOO will work.\nAlso on compatible mode you can only replace WWOO biomes and only replace them with non vanilla biomes.\nIf a biome doesn't exist, the game will crash!",
 
 
     // WWOO Modes
@@ -33,7 +33,7 @@
     "wwoo.config.text.downloadTB": "Click here too download",
     "wwoo.config.entry.selectMode": "Select the mode WWOO should use",
     "wwoo.config.text.defaultMode": "§l§nDefault Mode:§r\nIf you don't have any other mods that add biomes (to the overworld), you should definitely use this mode for the best result.",
-    "wwoo.config.text.compatibleMode": "§l§nCompatible Mode:§r\nThis mode uses Terrablender to add WWOOs biomes to the overworld. You don't need to use this mode, if you have biome mods which use terrablender to add their biomes to the overworld. But the world-gen §ncould§r be better with this mode. Best test both modes.\nIf you have a mod like Terralith, then you of course have to enable it.",
+    "wwoo.config.text.compatibleMode": "§l§nCompatible Mode:§r\nThis mode uses Terrablender to add WWOOs biomes to the overworld. You don't need to use this mode, if you have biome mods which use Terrablender to add their biomes to the overworld. But the world-gen §ncould§r be better with this mode. Best test both modes.\nIf you have a mod like Terralith, then you of course have to enable it.",
 
 
     // Updater
