@@ -3,8 +3,8 @@ package cristelknight.wwoo.terra;
 import com.google.gson.*;
 import com.mojang.datafixers.util.Pair;
 import com.mojang.serialization.JsonOps;
-import cristelknight.wwoo.WWOO;
-import cristelknight.wwoo.WWOORL;
+import cristelknight.wwoo.ExpandedEcosphere;
+import cristelknight.wwoo.EERL;
 import cristelknight.wwoo.config.configs.ReplaceBiomesConfig;
 import cristelknight.wwoo.utils.BiomeReplace;
 import cristelknight.wwoo.utils.Util;
@@ -33,18 +33,18 @@ import java.util.List;
 
 public class TerraInit {
 
-    private static final String OVERWORLD = "resources/wwoo_default/data/minecraft/dimension/overworld.json";
-    private static final String NOISE = "resources/wwoo_default/data/minecraft/worldgen/noise_settings/overworld.json";
+    private static final String OVERWORLD = "resources/ee_default/data/minecraft/dimension/overworld.json";
+    private static final String NOISE = "resources/ee_default/data/minecraft/worldgen/noise_settings/overworld.json";
 
 
     public static List<Pair<Climate.ParameterPoint, ResourceKey<Biome>>> readParameterPoints() {
         InputStream im;
         try {
-            Path path = CristelLibExpectPlatform.getResourceDirectory(WWOO.MODID, OVERWORLD);
+            Path path = CristelLibExpectPlatform.getResourceDirectory(ExpandedEcosphere.MODID, OVERWORLD);
             if(path == null) throw new RuntimeException();
             im = Files.newInputStream(path);
         } catch (IOException e) {
-            WWOO.LOGGER.error("Couldn't read " + OVERWORLD + ", crashing instead");
+            ExpandedEcosphere.LOGGER.error("Couldn't read " + OVERWORLD + ", crashing instead");
             throw new RuntimeException(e);
         }
 
@@ -72,10 +72,10 @@ public class TerraInit {
 
             return list;
         } catch (FileNotFoundException e) {
-            WWOO.LOGGER.error("Couldn't find " + OVERWORLD + ", crashing instead");
+            ExpandedEcosphere.LOGGER.error("Couldn't find " + OVERWORLD + ", crashing instead");
             throw new RuntimeException(e);
         } catch (IOException | JsonSyntaxException e) {
-            WWOO.LOGGER.error("Couldn't parse " + OVERWORLD + ", crashing instead");
+            ExpandedEcosphere.LOGGER.error("Couldn't parse " + OVERWORLD + ", crashing instead");
             throw new RuntimeException(e);
         }
     }
@@ -86,11 +86,11 @@ public class TerraInit {
     public static SurfaceRules.RuleSource readSurfaceRulesFromNoise() {
         InputStream im;
         try {
-            Path path = CristelLibExpectPlatform.getResourceDirectory(WWOO.MODID, NOISE);
+            Path path = CristelLibExpectPlatform.getResourceDirectory(ExpandedEcosphere.MODID, NOISE);
             if(path == null) throw new RuntimeException();
             im = Files.newInputStream(path);
         } catch (IOException e) {
-            WWOO.LOGGER.error("Couldn't read " + NOISE + ", crashing instead");
+            ExpandedEcosphere.LOGGER.error("Couldn't read " + NOISE + ", crashing instead");
             throw new RuntimeException(e);
         }
         try(InputStreamReader reader = new InputStreamReader(im)) {
@@ -106,12 +106,12 @@ public class TerraInit {
 
 
     public static void terraEnableDisable(){
-        if(WWOO.currentMode.equals(WWOO.Mode.COMPATIBLE)){
+        if(ExpandedEcosphere.currentMode.equals(ExpandedEcosphere.Mode.COMPATIBLE)){
             terraEnable();
         }
         else {
             TerrablenderUtil.setMixinEnabled(false);
-            Regions.remove(RegionType.OVERWORLD, new WWOORL("overworld"));
+            Regions.remove(RegionType.OVERWORLD, new EERL("overworld"));
             SurfaceRuleManager.removeSurfaceRules(SurfaceRuleManager.RuleCategory.OVERWORLD, "wythers");
         }
     }
@@ -122,7 +122,7 @@ public class TerraInit {
         readOverworldSurfaceRules();
     }
     private static void registerRegions(){
-        Regions.register(new WWOORegion(new WWOORL("overworld"), 10));
+        Regions.register(new WWOORegion(new EERL("overworld"), 10));
     }
 
     private static void readOverworldSurfaceRules() {

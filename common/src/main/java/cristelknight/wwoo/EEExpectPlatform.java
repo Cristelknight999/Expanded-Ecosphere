@@ -2,7 +2,7 @@ package cristelknight.wwoo;
 
 import dev.architectury.injectables.annotations.ExpectPlatform;
 
-public class WWOOExpectPlatform {
+public class EEExpectPlatform {
 
     @ExpectPlatform
     public static boolean isNewer(String oldVersion, String newVersion){

@@ -2,11 +2,8 @@ package cristelknight.wwoo.config.configs;
 
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
-import cristelknight.wwoo.WWOO;
 import cristelknight.wwoo.config.jankson.config.CommentedConfig;
 import net.minecraft.Util;
-import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -29,7 +26,7 @@ public record ReplaceBiomesConfig(boolean enableBiomes, Map<String, String> bann
 
     @Override
     public String getSubPath() {
-        return "wwoo/replace_biomes";
+        return "expanded_ecosphere/replace_biomes";
     }
 
     @Override
@@ -53,15 +50,15 @@ public record ReplaceBiomesConfig(boolean enableBiomes, Map<String, String> bann
             map.put("enableBiomes", """
                 Enable biome replacing""");
             map.put("replace", """
-                Enter all WWOO biomes that should be replaced into this map.
+                Enter all Expanded Ecosphere biomes that should be replaced into this map.
                 As the key put the biome you want to replace and as value the biome you want to replace it with.
                 Here is an example:
                 "replace": {
                     "minecraft:plains": "minecraft:basalt_deltas",
                     "wythers:bayou": "minecraft:river"
                 }
-                Only biomes which are added trough WWOO will work.
-                Also on compatible mode you can only replace WWOO biomes and only replace them with non vanilla biomes.
+                Only biomes which are added trough Expanded Ecosphere will work.
+                Also on compatible mode you can only replace Expanded Ecosphere biomes and only replace them with non vanilla biomes.
                 If a biome doesn't exist, the game will crash!""");
         });
     }
@@ -69,10 +66,10 @@ public record ReplaceBiomesConfig(boolean enableBiomes, Map<String, String> bann
     @Override
     public String getHeader() {
         return """
-               WWOO Replace Config
+               Expanded Ecosphere Replace Config
                
                ===========
-               This config is only for replacing biomes, the main WWOO config is in the other file.""";
+               This config is only for replacing biomes, the main Expanded Ecosphere config is in the other file.""";
     }
 
     @Override

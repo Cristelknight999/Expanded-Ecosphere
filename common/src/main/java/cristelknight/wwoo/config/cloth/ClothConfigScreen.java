@@ -1,8 +1,8 @@
 package cristelknight.wwoo.config.cloth;
 
-import cristelknight.wwoo.WWOO;
+import cristelknight.wwoo.ExpandedEcosphere;
 import cristelknight.wwoo.config.configs.ReplaceBiomesConfig;
-import cristelknight.wwoo.config.configs.WWOOConfig;
+import cristelknight.wwoo.config.configs.EEConfig;
 import cristelknight.wwoo.terra.TerraInit;
 import cristelknight.wwoo.utils.BiomeReplace;
 import cristelknight.wwoo.utils.Util;
@@ -16,8 +16,6 @@ import net.cristellib.CristelLib;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.ChatFormatting;
-import net.minecraft.client.Minecraft;
-import net.minecraft.client.gui.screens.ConfirmLinkScreen;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.chat.ClickEvent;
@@ -31,18 +29,16 @@ import java.util.function.Predicate;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-import static cristelknight.wwoo.WWOO.*;
-import static cristelknight.wwoo.WWOO.Mode.DEFAULT;
+import static cristelknight.wwoo.ExpandedEcosphere.*;
+import static cristelknight.wwoo.ExpandedEcosphere.Mode.DEFAULT;
 
 
 @Environment(value= EnvType.CLIENT)
 public class ClothConfigScreen {
 
-    private static Screen lastScreen;
 
     public Screen create(Screen parent) {
-        lastScreen = parent;
-        WWOOConfig config = WWOOConfig.DEFAULT.getConfig();
+        EEConfig config = EEConfig.DEFAULT.getConfig();
         ConfigBuilder builder = ConfigBuilder.create()
                 .setParentScreen(parent)
                 .setDefaultBackgroundTexture(new ResourceLocation(getIdentifier(config.backGroundBlock().getBlock())))
@@ -50,14 +46,14 @@ public class ClothConfigScreen {
 
         ConfigEntries entries = new ConfigEntries(builder.entryBuilder(), builder.getOrCreateCategory(mainName("main")), builder.getOrCreateCategory(mainName("biomes")), builder.getOrCreateCategory(mainName("modes")));
         builder.setSavingRunnable(() -> {
-            WWOOConfig.DEFAULT.setInstance(entries.createConfig());
-            WWOOConfig.DEFAULT.getConfig(true, true);
+            EEConfig.DEFAULT.setInstance(entries.createConfig());
+            EEConfig.DEFAULT.getConfig(true, true);
 
             ReplaceBiomesConfig.DEFAULT.setInstance(entries.createBiomesConfig());
             ReplaceBiomesConfig config2 = ReplaceBiomesConfig.DEFAULT.getConfig(true, true);
 
-            if(WWOO.isTerraBlenderLoaded()) TerraInit.terraEnableDisable();
-            if(config2.enableBiomes() && WWOO.currentMode.equals(DEFAULT)) BiomeReplace.replace();
+            if(ExpandedEcosphere.isTerraBlenderLoaded()) TerraInit.terraEnableDisable();
+            if(config2.enableBiomes() && ExpandedEcosphere.currentMode.equals(DEFAULT)) BiomeReplace.replace();
             else CristelLib.DATA_PACK.removeData(new ResourceLocation("minecraft", "dimension/overworld.json"));
         });
         return builder.build();
@@ -77,22 +73,22 @@ public class ClothConfigScreen {
 
     private static class ConfigEntries {
         private final ConfigEntryBuilder builder;
-        private final BooleanListEntry removeOreBlobs, showUpdates, showBigUpdates, onlyVanillaBiomes, forceLargeBiomes, enableBiomes;
+        private final BooleanListEntry removeOreBlobs, showUpdates, showBigUpdates, forceLargeBiomes, enableBiomes;
         private final @NotNull DropdownBoxEntry<Block> backgroundBlock;
-        private final EnumListEntry<WWOO.Mode> mode;
+        private final EnumListEntry<ExpandedEcosphere.Mode> mode;
         private final StringListListEntry biomeList;
 
         public ConfigEntries(ConfigEntryBuilder builder, ConfigCategory category1, ConfigCategory category2, ConfigCategory category3) {
             this.builder = builder;
 
-            WWOOConfig config = WWOOConfig.DEFAULT.getConfig();
+            EEConfig config = EEConfig.DEFAULT.getConfig();
 
             // Tab 3
             if(!isTerraBlenderLoaded()){
                 textListEntry(Component.translatable(MODID + ".config.text.requiresTerrablender", minTerraBlenderVersion), category3);
                 textListEntry(Component.translatable(MODID + ".config.text.downloadTB").withStyle((s) -> s.withClickEvent(new ClickEvent(ClickEvent.Action.OPEN_URL, "https://modrinth.com/mod/terrablender"))), category3);
             }
-            mode = builder.startEnumSelector(fieldName("selectMode"), WWOO.Mode.class, currentMode).setDefaultValue(DEFAULT).setRequirement(Requirement.isTrue(WWOO::isTerraBlenderLoaded)).build();
+            mode = builder.startEnumSelector(fieldName("selectMode"), ExpandedEcosphere.Mode.class, currentMode).setDefaultValue(DEFAULT).setRequirement(Requirement.isTrue(ExpandedEcosphere::isTerraBlenderLoaded)).build();
             category3.addEntry(mode);
             textListEntry(Component.translatable(MODID + ".config.text.defaultMode").withStyle(ChatFormatting.GRAY), category3);
             textListEntry(Component.translatable(MODID + ".config.text.compatibleMode").withStyle(ChatFormatting.GRAY), category3);
@@ -108,32 +104,23 @@ public class ClothConfigScreen {
             // Tab 1
             textListEntry(Component.translatable(MODID + ".config.text.modes", Component.literal(currentMode.toString()).withStyle(ChatFormatting.DARK_PURPLE)).withStyle(ChatFormatting.GRAY), category1);
 
-            backgroundBlock = createBlockField("bB", config.backGroundBlock().getBlock(), WWOOConfig.DEFAULT.backGroundBlock().getBlock(), category1, List.of(FT.NO_BLOCK_ENTITY, FT.NO_BUTTON));
-            showUpdates = createBooleanField("showUpdates", config.showUpdates(), WWOOConfig.DEFAULT.showUpdates(), category1, new Component[]{});
-            showBigUpdates = createBooleanField("showBigUpdates", config.showBigUpdates(), WWOOConfig.DEFAULT.showBigUpdates(), category1, new Component[]{});
-            removeOreBlobs = createBooleanField("removeOreBlobs", config.removeOreBlobs(), WWOOConfig.DEFAULT.removeOreBlobs(), category1, new Component[]{fieldToolTip("removeOreBlobs")});
-            onlyVanillaBiomes = builder.startBooleanToggle(fieldName("onlyVanillaBiomes"), config.onlyVanillaBiomes()).setDefaultValue(WWOOConfig.DEFAULT.onlyVanillaBiomes()).setRequirement(() -> mode.getValue().equals(DEFAULT)).build();
-            category1.addEntry(onlyVanillaBiomes);
-            forceLargeBiomes = createBooleanField("forceLargeBiomes", config.forceLargeBiomes(), WWOOConfig.DEFAULT.forceLargeBiomes(), category1, new Component[]{});
+            backgroundBlock = createBlockField("bB", config.backGroundBlock().getBlock(), EEConfig.DEFAULT.backGroundBlock().getBlock(), category1, List.of(FT.NO_BLOCK_ENTITY, FT.NO_BUTTON));
+            showUpdates = createBooleanField("showUpdates", config.showUpdates(), EEConfig.DEFAULT.showUpdates(), category1, new Component[]{});
+            showBigUpdates = createBooleanField("showBigUpdates", config.showBigUpdates(), EEConfig.DEFAULT.showBigUpdates(), category1, new Component[]{});
+            removeOreBlobs = createBooleanField("removeOreBlobs", config.removeOreBlobs(), EEConfig.DEFAULT.removeOreBlobs(), category1, new Component[]{fieldToolTip("removeOreBlobs")});
+            forceLargeBiomes = createBooleanField("forceLargeBiomes", config.forceLargeBiomes(), EEConfig.DEFAULT.forceLargeBiomes(), category1, new Component[]{});
 
             textListEntry(Util.translatableText("forceLargeBiomes").withStyle(ChatFormatting.GRAY), category1);
 
-
-
-
-
-            linkButtons(category1);
-            linkButtons(category2);
-            linkButtons(category3);
         }
 
 
 
-        public WWOOConfig createConfig() {
-            WWOO.Mode currentMode = mode.getValue();
-            WWOO.currentMode = currentMode;
+        public EEConfig createConfig() {
+            ExpandedEcosphere.Mode currentMode = mode.getValue();
+            ExpandedEcosphere.currentMode = currentMode;
 
-            return new WWOOConfig(currentMode.toString(), onlyVanillaBiomes.getValue(), forceLargeBiomes.getValue(), removeOreBlobs.getValue(), showUpdates.getValue(), showBigUpdates.getValue(), backgroundBlock.getValue().defaultBlockState());
+            return new EEConfig(currentMode.toString(), forceLargeBiomes.getValue(), removeOreBlobs.getValue(), showUpdates.getValue(), showBigUpdates.getValue(), backgroundBlock.getValue().defaultBlockState());
         }
 
         public ReplaceBiomesConfig createBiomesConfig() {
@@ -171,22 +158,6 @@ public class ClothConfigScreen {
         public void textListEntry(Component component, ConfigCategory category){
             TextListEntry tle = this.builder.startTextDescription(component).build();
             category.addEntry(tle);
-        }
-
-        private void linkButtons(ConfigCategory category){
-            TextListEntry tle = this.builder.startTextDescription(Component.literal(" ")).build();
-            category.addEntry(tle);
-            category.addEntry(new LinkEntry(fieldName("dc"), buttonWidget -> Minecraft.getInstance().setScreen(new ConfirmLinkScreen(confirmed -> {
-                if (confirmed) {
-                    net.minecraft.Util.getPlatform().openUri(WWOO.LINK_DC);
-                }
-                Minecraft.getInstance().setScreen(new ClothConfigScreen().create(lastScreen)); }, WWOO.LINK_DC, true)), new ResourceLocation(MODID, "textures/gui/dc.png"), 3));
-            category.addEntry(tle);
-            category.addEntry(new LinkEntry(fieldName("h"), buttonWidget -> Minecraft.getInstance().setScreen(new ConfirmLinkScreen(confirmed -> {
-                if (confirmed) {
-                    net.minecraft.Util.getPlatform().openUri(WWOO.LINK_CF);
-                }
-                Minecraft.getInstance().setScreen(new ClothConfigScreen().create(lastScreen)); }, WWOO.LINK_CF, true)), new ResourceLocation(MODID, "textures/gui/cf.png"), 10));
         }
 
         static class BlockPredicate implements Predicate<Block> {

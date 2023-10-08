@@ -1,7 +1,6 @@
 package cristelknight.wwoo.terra;
 
 import com.mojang.datafixers.util.Pair;
-import cristelknight.wwoo.WWOO;
 import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;

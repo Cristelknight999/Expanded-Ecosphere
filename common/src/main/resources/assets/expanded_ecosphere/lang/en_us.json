@@ -4,45 +4,44 @@
     "language.code": "en_us",
 
     // CONFIG
-    "wwoo.config.title": "William Wythers' Overhauled Overworld Config Menu",
+    "expanded_ecosphere.config.title": "Expanded Ecosphere Config Menu",
 
-    "wwoo.config.category.main": "Main Config",
-    "wwoo.config.category.biomes": "Biome Replacing",
-    "wwoo.config.category.modes": "WWOO Modes",
+    "expanded_ecosphere.config.category.main": "Main Config",
+    "expanded_ecosphere.config.category.biomes": "Biome Replacing",
+    "expanded_ecosphere.config.category.modes": "Expanded Ecosphere Modes",
 
     // Main
-    "wwoo.config.text.modes": "You can select different modes. Currently selected: %1$s Mode.\nFor more information and to change modes click on the Mode Category",
-    "wwoo.config.entry.bB": "Select the background block",
-    "wwoo.config.entry.showUpdates": "Announce updates in the chat when joining a world?",
-    "wwoo.config.entry.showBigUpdates": "Announce important updates even if the above setting is disabled?",
-    "wwoo.config.entry.removeOreBlobs": "Remove ore blobs",
-    "wwoo.config.entry.removeOreBlobs.toolTip": "Removes underground ores (andesite, diorite, granite, gravel and dirt)",
-    "wwoo.config.entry.onlyVanillaBiomes": "Whether to only change Vanilla biomes or not (DEFAULT mode only)",
-    "wwoo.config.entry.forceLargeBiomes": "Force Minecraft to generate Large Biomes?",
-    "wwoo.config.text.forceLargeBiomes": "This option forces Minecraft to generate Large Biomes, this setting was introduced, because the default presets do not work (correctly). This option will probably not work with Compatible mode, or other biome mods.",
+    "expanded_ecosphere.config.text.modes": "You can select different modes. Currently selected: %1$s Mode.\nFor more information and to change modes click on the Mode Category",
+    "expanded_ecosphere.config.entry.bB": "Select the background block",
+    "expanded_ecosphere.config.entry.showUpdates": "Announce updates in the chat when joining a world?",
+    "expanded_ecosphere.config.entry.showBigUpdates": "Announce important updates even if the above setting is disabled?",
+    "expanded_ecosphere.config.entry.removeOreBlobs": "Remove ore blobs",
+    "expanded_ecosphere.config.entry.removeOreBlobs.toolTip": "Removes underground ores (andesite, diorite, granite, gravel and dirt)",
+    "expanded_ecosphere.config.entry.forceLargeBiomes": "Force Minecraft to generate Large Biomes?",
+    "expanded_ecosphere.config.text.forceLargeBiomes": "This option forces Minecraft to generate Large Biomes, this setting was introduced, because the default presets do not work (correctly). This option will probably not work with Compatible mode, or other biome mods.",
 
     // Biome Replacing
-    "wwoo.config.entry.enableBiomes": "Enable biome replacing",
-    "wwoo.config.entry.biomeList": "Enter biomes into this list. Check the tooltip on how to do it",
-    "wwoo.config.entry.biomeList.toolTip": "Enter the biome to replace first and then the biome which should replace it.\nSeparate them with a \"/\". For example: minecraft:plains/minecraft:basalt_deltas",
-    "wwoo.config.text.replaceBiomes": "Only biomes which are added through WWOO will work.\nAlso on compatible mode you can only replace WWOO biomes and only replace them with non vanilla biomes.\nIf a biome doesn't exist, the game will crash!",
+    "expanded_ecosphere.config.entry.enableBiomes": "Enable biome replacing",
+    "expanded_ecosphere.config.entry.biomeList": "Enter biomes into this list. Check the tooltip on how to do it",
+    "expanded_ecosphere.config.entry.biomeList.toolTip": "Enter the biome to replace first and then the biome which should replace it.\nSeparate them with a \"/\". For example: minecraft:plains/minecraft:basalt_deltas",
+    "expanded_ecosphere.config.text.replaceBiomes": "Only biomes which are added through Expanded Ecosphere will work.\nAlso on compatible mode you can only replace Expanded Ecosphere biomes and only replace them with non vanilla biomes.\nIf a biome doesn't exist, the game will crash!",
 
 
-    // WWOO Modes
-    "wwoo.config.text.requiresTerrablender": "To change the mode to COMPATIBLE, Terrablender version %1$s or later must be installed.",
-    "wwoo.config.text.downloadTB": "Click here too download",
-    "wwoo.config.entry.selectMode": "Select the mode WWOO should use",
-    "wwoo.config.text.defaultMode": "§l§nDefault Mode:§r\nIf you don't have any other mods that add biomes (to the overworld), you should definitely use this mode for the best result.",
-    "wwoo.config.text.compatibleMode": "§l§nCompatible Mode:§r\nThis mode uses Terrablender to add WWOOs biomes to the overworld. You don't need to use this mode, if you have biome mods which use Terrablender to add their biomes to the overworld. But the world-gen §ncould§r be better with this mode. Best test both modes.\nIf you have a mod like Terralith, then you of course have to enable it.",
+    // expanded_ecosphere Modes
+    "expanded_ecosphere.config.text.requiresTerrablender": "To change the mode to COMPATIBLE, Terrablender version %1$s or later must be installed.",
+    "expanded_ecosphere.config.text.downloadTB": "Click here too download",
+    "expanded_ecosphere.config.entry.selectMode": "Select the mode Expanded Ecosphere should use",
+    "expanded_ecosphere.config.text.defaultMode": "§l§nDefault Mode:§r\nIf you don't have any other mods that add biomes (to the overworld), you should definitely use this mode for the best result.",
+    "expanded_ecosphere.config.text.compatibleMode": "§l§nCompatible Mode:§r\nThis mode uses Terrablender to add Expanded Ecospheres biomes to the overworld. You don't need to use this mode, if you have biome mods which use Terrablender to add their biomes to the overworld. But the world-gen §ncould§r be better with this mode. Best test both modes.\nIf you have a mod like Terralith, then you of course have to enable it.",
 
 
     // Updater
-    "wwoo.config.text.newUpdateBig": "\n\n There is a new Version for William Wythers' Overhauled Overworld available, which adds much content or fixes a game breaking bug! Download it %1$s\n %2$s\n\n",
-    "wwoo.config.text.newUpdate": "\n\n There is a new Version for William Wythers' Overhauled Overworld available! Download it %1$s\n %2$s\n\n",
+    "expanded_ecosphere.config.text.newUpdateBig": "\n\n There is a new Version for William Wythers' Overhauled Overworld available, which adds much content or fixes a game breaking bug! Download it %1$s\n %2$s\n\n",
+    "expanded_ecosphere.config.text.newUpdate": "\n\n There is a new Version for William Wythers' Overhauled Overworld available! Download it %1$s\n %2$s\n\n",
 
-    "wwoo.config.text.newUpdates": "(You are %1$s version%2$s behind)",
-    "wwoo.config.text.multiple": "s",
-    "wwoo.config.text.null": "",
+    "expanded_ecosphere.config.text.newUpdates": "(You are %1$s version%2$s behind)",
+    "expanded_ecosphere.config.text.multiple": "s",
+    "expanded_ecosphere.config.text.null": "",
 
 
     // Non config stuff

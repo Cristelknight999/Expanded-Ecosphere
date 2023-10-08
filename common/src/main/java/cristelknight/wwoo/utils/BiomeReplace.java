@@ -2,7 +2,7 @@ package cristelknight.wwoo.utils;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
-import cristelknight.wwoo.WWOO;
+import cristelknight.wwoo.ExpandedEcosphere;
 import cristelknight.wwoo.config.configs.ReplaceBiomesConfig;
 import net.cristellib.CristelLib;
 import net.cristellib.CristelLibExpectPlatform;
@@ -19,7 +19,7 @@ public class BiomeReplace {
 
     public static void replace() {
 
-        Path path = CristelLibExpectPlatform.getResourceDirectory(WWOO.MODID, "resources/wwoo_default/data/minecraft/dimension/overworld.json");
+        Path path = CristelLibExpectPlatform.getResourceDirectory(ExpandedEcosphere.MODID, "resources/ee_default/data/minecraft/dimension/overworld.json");
         if(path == null) throw new RuntimeException();
 
         JsonObject object = Util.getObjectFromPath(path);

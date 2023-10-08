@@ -6,7 +6,7 @@ import com.mojang.datafixers.util.Pair;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.DataResult;
 import com.mojang.serialization.DynamicOps;
-import cristelknight.wwoo.WWOO;
+import cristelknight.wwoo.ExpandedEcosphere;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -63,7 +63,7 @@ public class ConfigUtil {
             String output = header + jsonElement.toJson(JSON_GRAMMAR);
             Files.write(path, output.getBytes());
         } catch (IOException e) {
-            WWOO.LOGGER.error(e.toString());
+            ExpandedEcosphere.LOGGER.error(e.toString());
         }
     }
 

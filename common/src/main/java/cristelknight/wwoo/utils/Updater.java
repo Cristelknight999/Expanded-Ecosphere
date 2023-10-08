@@ -4,8 +4,8 @@ import com.google.gson.Gson;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
-import cristelknight.wwoo.WWOO;
-import cristelknight.wwoo.WWOOExpectPlatform;
+import cristelknight.wwoo.ExpandedEcosphere;
+import cristelknight.wwoo.EEExpectPlatform;
 import net.cristellib.CristelLibExpectPlatform;
 import net.cristellib.util.Platform;
 import net.minecraft.ChatFormatting;
@@ -32,7 +32,7 @@ public class Updater {
 
     private int newUpdates;
 
-    private static final String s = "[WWOO Updater]";
+    private static final String s = "[Expanded Ecosphere Updater]";
 
     public Updater(String currentVersion) {
         this.currentVersion = currentVersion;
@@ -45,7 +45,7 @@ public class Updater {
             try {
                 updateIndex = JsonParser.parseReader(new InputStreamReader(in)).getAsJsonObject().get(getReleaseTarget()).getAsString();
             } catch (NullPointerException e) {
-                WWOO.LOGGER.warn(s + " This version doesn't have an update index, skipping");
+                ExpandedEcosphere.LOGGER.warn(s + " This version doesn't have an update index, skipping");
                 info = Optional.empty();
                 return;
             }
@@ -61,7 +61,7 @@ public class Updater {
                 if(isForge && u.modDownloadFO.isEmpty()) continue;
                 if(!isForge && u.modDownloadFA.isEmpty()) continue;
 
-                if(WWOOExpectPlatform.isNewer(currentVersion, u.semanticVersion)){
+                if(EEExpectPlatform.isNewer(currentVersion, u.semanticVersion)){
                     newUpdate.add(u);
                     if(u.isBig) isBig = true;
                 }
@@ -69,22 +69,22 @@ public class Updater {
 
             if(newUpdate.isEmpty()){
                 info = Optional.empty();
-                WWOO.LOGGER.info(s + " Found no updates");
+                ExpandedEcosphere.LOGGER.info(s + " Found no updates");
                 return;
             }
 
             newUpdates = newUpdate.size();
 
             String isBigString = isBig ? " important" : "";
-            WWOO.LOGGER.warn(s + " Found an" + isBigString + " update!");
+            ExpandedEcosphere.LOGGER.warn(s + " Found an" + isBigString + " update!");
             info = newUpdate.stream().findFirst();
             return;
 
         }
         catch(FileNotFoundException e) {
-            WWOO.LOGGER.warn(s + " Unable to download " + e.getMessage());
+            ExpandedEcosphere.LOGGER.warn(s + " Unable to download " + e.getMessage());
         } catch (IOException e) {
-            WWOO.LOGGER.warn(s + " Failed to get update info!", e);
+            ExpandedEcosphere.LOGGER.warn(s + " Failed to get update info!", e);
         }
 
         info = Optional.empty();
@@ -101,9 +101,9 @@ public class Updater {
         if (update == null) {
             return Optional.empty();
         }
-        String string = isBig ? "wwoo.config.text.newUpdateBig" : "wwoo.config.text.newUpdate";
+        String string = isBig ? "expanded_ecosphere.config.text.newUpdateBig" : "expanded_ecosphere.config.text.newUpdate";
 
-        Component component1 = Component.translatable("wwoo.config.text.newUpdates", newUpdates, newUpdates > 1 ? Util.translatableText("multiple") : Util.translatableText("null")).withStyle(ChatFormatting.GRAY);
+        Component component1 = Component.translatable("expanded_ecosphere.config.text.newUpdates", newUpdates, newUpdates > 1 ? Util.translatableText("multiple") : Util.translatableText("null")).withStyle(ChatFormatting.GRAY);
 
         Component component = Component.translatable(string, Util.translatableText("ch").withStyle(ChatFormatting.BOLD).withStyle(ChatFormatting.UNDERLINE)
                 .withStyle((s) -> s.withClickEvent(new ClickEvent(ClickEvent.Action.OPEN_URL, update.modDownloadFA))), component1);
@@ -112,7 +112,7 @@ public class Updater {
     }
 
     public static String getReleaseTarget() {
-        return SharedConstants.getCurrentVersion().isStable() ? SharedConstants.getCurrentVersion().getName() : WWOO.backupVersionNumber;
+        return SharedConstants.getCurrentVersion().isStable() ? SharedConstants.getCurrentVersion().getName() : ExpandedEcosphere.backupVersionNumber;
     }
 
 }
