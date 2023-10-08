@@ -1,30 +1,27 @@
-# William Wythers' Overhauled Overworld 
-
-![wythers-greenblue](https://user-images.githubusercontent.com/54945257/205379797-def647a9-8d28-4c90-80b9-08d8a4a0e082.png)
+# Expanded Ecosphere
 
 William Wythers' Overhauled Overworld is a world-gen mod/pack that aims to re-create the vanilla overworld in a way that makes a more realistic and atmospheric world. You can explore more than 200 new/overhauled biomes which make your world insanely more immersive.
 
 # Official Downloads
 **Mods**:
-[Modrinth](https://modrinth.com/mod/wwoo)
-[CurseForge](https://www.curseforge.com/minecraft/mc-mods/william-wythers-overhauled-overworld/files) 
+[Modrinth](https://modrinth.com/mod/expanded-ecosphere)
+[CurseForge](https://www.curseforge.com/minecraft/mc-mods/expanded-ecosphere) 
 
 **Datapacks**:
 [1.19](https://www.planetminecraft.com/data-pack/william-wythers-overhauled-overworld/)
 [1.18.1](https://www.planetminecraft.com/data-pack/william-wythers-overhauled-overworld-for-1-18-1/)
-[1.17](https://www.planetminecraft.com/data-pack/william-wythers-overhauled-overworld-legacy-for-1-17/)
+
+(Those are more WWOO then Expanded Ecosphere)
+[1.17](https://www.planetminecraft.com/data-pack/william-wythers-overhauled-overworld-legacy-for-1-17/) 
 [1.16](https://www.planetminecraft.com/data-pack/william-wythers-overhauled-overworld-1-17-snapshots-edition/)
 
 
-# Features WWOO 1.19+
+# Features Expanded Ecosphere 1.19+
 - Large Biomes! Because of some problems with world presets, you should not use the vanilla world presets. In the mod version you should definitely use the forceLargeBiomes option, found in the WWOO config.
 Old versions or datapack: (Select the world type large biomes in your world creation menu, or on a server set `level-type` to `LARGE_BIOMES`)
 
 ### Mod only
 - A config menu is available if you install [Cloth Config](https://www.curseforge.com/minecraft/mc-mods/cloth-config) and on fabric also [Mod Menu](https://www.curseforge.com/minecraft/mc-mods/modmenu).
-- You can also edit the config manually in `wwoo.json5` (located at `.minecraft/config/wwoo/`)
-- Biomes can be disabled in `banned_biomes.json5` (also located at `.minecraft/config/wwoo/`)
-- Has an option to only update vanilla biomes, and not to add the close to 200 new biomes.
 - The overworld isn't piglin safe. (On datapack it is, so that the Hoglins which can spawn in the overworld don't mutate to Zoglins)
 
 # Compatible Mods/Datapacks
