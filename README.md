@@ -25,7 +25,7 @@ Old versions or datapack: (Select the world type large biomes in your world crea
 - The overworld isn't piglin safe. (On datapack it is, so that the Hoglins which can spawn in the overworld don't mutate to Zoglins)
 
 # Compatible Mods/Datapacks
-If you know any other mods or datapacks that work well with WWOO, then contact me (Cristelknight) on [Discord](https://discord.gg/yJng7sC44x).
+If you know any other mods or datapacks that work well with Expanded Ecosphere, then contact me (Cristelknight) on [Discord](https://discord.gg/yJng7sC44x).
 
 ### Structure Mods
 | Mod Name  | Download |
@@ -37,11 +37,11 @@ If you know any other mods or datapacks that work well with WWOO, then contact m
 ### World-gen Mods
 | Mod Name  | Download | More Info |
 | ------------- | ------------- | ------------- |
-| Oh The Biomes You'll Go  | Curseforge: [Forge](https://www.curseforge.com/minecraft/mc-mods/oh-the-biomes-youll-go) [Fabric](https://www.curseforge.com/minecraft/mc-mods/oh-the-biomes-youll-go-fabric)  | Only compatible with the WWOO mod |
-| The Graveyard Biomes | Curseforge: [Forge](https://www.curseforge.com/minecraft/mc-mods/the-graveyard-biomes-forge) [Fabric](https://www.curseforge.com/minecraft/mc-mods/the-graveyard-biomes-fabric) | Only compatible with the WWOO mod |
-| Biomes O' Plenty  | [Curseforge](https://www.curseforge.com/minecraft/mc-mods/biomes-o-plenty)  | Only compatible with the WWOO mod |
-| Promenade  | [Curseforge](https://www.curseforge.com/minecraft/mc-mods/promenade)  | Only compatible with the WWOO mod |
-| Terralith  | [PlanetMC](https://www.planetminecraft.com/data-pack/terralith-overworld-evolved-100-biomes-caves-and-more/) [Curseforge](https://www.curseforge.com/minecraft/mc-mods/terralith)  | Only compatible with the WWOO mod, if compatible mode is enabled |
+| Oh The Biomes You'll Go  | Curseforge: [Forge](https://www.curseforge.com/minecraft/mc-mods/oh-the-biomes-youll-go) [Fabric](https://www.curseforge.com/minecraft/mc-mods/oh-the-biomes-youll-go-fabric)  | Only compatible with the mod |
+| The Graveyard Biomes | Curseforge: [Forge](https://www.curseforge.com/minecraft/mc-mods/the-graveyard-biomes-forge) [Fabric](https://www.curseforge.com/minecraft/mc-mods/the-graveyard-biomes-fabric) | Only compatible with the mod |
+| Biomes O' Plenty  | [Curseforge](https://www.curseforge.com/minecraft/mc-mods/biomes-o-plenty)  | Only compatible with the mod |
+| Promenade  | [Curseforge](https://www.curseforge.com/minecraft/mc-mods/promenade)  | Only compatible with the mod |
+| Terralith  | [PlanetMC](https://www.planetminecraft.com/data-pack/terralith-overworld-evolved-100-biomes-caves-and-more/) [Curseforge](https://www.curseforge.com/minecraft/mc-mods/terralith)  | Only compatible with the mod, if compatible mode is enabled |
 
 # Incompatible Mods/Datapacks
 | Mod Name  | Download | More Info |
@@ -73,6 +73,6 @@ Click "Yes" on the confirmation screen.
 ## On a server:
 1. If you are using a Vanilla, Spigot, or Paper server, download the datapack version. If you are using a Fabric or Forge server, you can download either the datapack or the mod version ([download](#official-downloads) links are above).
 2. If you are using the datapack version (the one that ends with `.zip`), put the file into the `world/datapacks` folder. If you are using the mod version (the one that ends with `.jar`), put the file into the `mods` folder.
-3. Start your server.<br>**Next steps only needed in 1.18-1.19.2!**<br>If you log onto it, you'll see that the area around spawn is vanilla terrain while beyond it is WWOO terrain. Stop your server.
+3. Start your server.<br>**Next steps only needed in 1.18-1.19.2!**<br>If you log onto it, you'll see that the area around spawn is vanilla terrain while beyond it is new terrain. Stop your server.
 4. Go into the `world` folder and delete the `region` folder.
 5. Restart your server, and it should be fully generating new terrain
