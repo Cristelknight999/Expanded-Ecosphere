@@ -9,7 +9,6 @@ import cristelknight.wwoo.utils.Util;
 import me.shedaniel.clothconfig2.api.ConfigBuilder;
 import me.shedaniel.clothconfig2.api.ConfigCategory;
 import me.shedaniel.clothconfig2.api.ConfigEntryBuilder;
-import me.shedaniel.clothconfig2.api.Requirement;
 import me.shedaniel.clothconfig2.gui.entries.*;
 import me.shedaniel.clothconfig2.impl.builders.DropdownMenuBuilder;
 import net.cristellib.CristelLib;
@@ -88,7 +87,7 @@ public class ClothConfigScreen {
                 textListEntry(Component.translatable(MODID + ".config.text.requiresTerrablender", minTerraBlenderVersion), category3);
                 textListEntry(Component.translatable(MODID + ".config.text.downloadTB").withStyle((s) -> s.withClickEvent(new ClickEvent(ClickEvent.Action.OPEN_URL, "https://modrinth.com/mod/terrablender"))), category3);
             }
-            mode = builder.startEnumSelector(fieldName("selectMode"), ExpandedEcosphere.Mode.class, currentMode).setDefaultValue(DEFAULT).setRequirement(Requirement.isTrue(ExpandedEcosphere::isTerraBlenderLoaded)).build();
+            mode = builder.startEnumSelector(fieldName("selectMode"), ExpandedEcosphere.Mode.class, currentMode).setDefaultValue(DEFAULT).build();
             category3.addEntry(mode);
             textListEntry(Component.translatable(MODID + ".config.text.defaultMode").withStyle(ChatFormatting.GRAY), category3);
             textListEntry(Component.translatable(MODID + ".config.text.compatibleMode").withStyle(ChatFormatting.GRAY), category3);
@@ -97,7 +96,7 @@ public class ClothConfigScreen {
 
             // Tab 2
             enableBiomes = createBooleanField("enableBiomes", ReplaceBiomesConfig.DEFAULT.getConfig().enableBiomes(), ReplaceBiomesConfig.DEFAULT.enableBiomes(), category2, new Component[]{});
-            biomeList = builder.startStrList(fieldName("biomeList"), convertMapToList(ReplaceBiomesConfig.DEFAULT.getConfig().bannedBiomes())).setTooltip(new Component[]{fieldToolTip("biomeList")}).setDefaultValue(List.of()).setRequirement(Requirement.isTrue(enableBiomes)).build();
+            biomeList = builder.startStrList(fieldName("biomeList"), convertMapToList(ReplaceBiomesConfig.DEFAULT.getConfig().bannedBiomes())).setTooltip(fieldToolTip("biomeList")).setDefaultValue(List.of()).build();
             category2.addEntry(biomeList);
             textListEntry(Component.translatable(MODID + ".config.text.replaceBiomes").withStyle(ChatFormatting.GRAY), category2);
 
