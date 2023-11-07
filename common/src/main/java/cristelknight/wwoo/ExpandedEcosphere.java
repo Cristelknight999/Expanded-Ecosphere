@@ -7,6 +7,7 @@ import cristelknight.wwoo.utils.BiomeReplace;
 import cristelknight.wwoo.utils.Updater;
 import cristelknight.wwoo.utils.Util;
 import net.cristellib.CristelLibExpectPlatform;
+import net.cristellib.ModLoadingUtil;
 import net.cristellib.builtinpacks.BuiltInDataPacks;
 import net.minecraft.network.chat.Component;
 import org.apache.logging.log4j.LogManager;
@@ -46,7 +47,7 @@ public class ExpandedEcosphere {
 
 
     public static boolean isTerraBlenderLoaded(){
-        return CristelLibExpectPlatform.isModLoadedWithVersion("terrablender", minTerraBlenderVersion);
+        return ModLoadingUtil.isModLoadedWithVersion("terrablender", minTerraBlenderVersion);
     }
 
     public enum Mode {

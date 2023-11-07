@@ -30,6 +30,6 @@ side = "BOTH"
 [[dependencies.expanded_ecosphere]]
 modId = "cristellib"
 mandatory = true
-versionRange = "[1.1.4,)"
+versionRange = "[1.1.5,)"
 ordering = "NONE"
 side = "BOTH"
