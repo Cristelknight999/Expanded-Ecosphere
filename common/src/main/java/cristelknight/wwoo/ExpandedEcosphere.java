@@ -34,7 +34,7 @@ public class ExpandedEcosphere {
 
         BuiltInDataPacks.registerPack(new EERL("resources/ee_default"), MODID, Component.literal("Expanded Ecosphere Default World Gen"), () -> currentMode.equals(Mode.DEFAULT));
         BuiltInDataPacks.registerPack(new EERL("resources/ee_remove_blobs"), MODID, Component.literal("Disables granit, etc."), () -> EEConfig.DEFAULT.getConfig().removeOreBlobs());
-        BuiltInDataPacks.registerPack(new EERL("resources/ee_force_large_biomes"), MODID, Component.literal("Forcing LARGE biomes"), () -> EEConfig.DEFAULT.getConfig().forceLargeBiomes() && currentMode.equals(Mode.DEFAULT));
+        BuiltInDataPacks.registerPack(new EERL("resources/ee_force_large_biomes"), MODID, Component.literal("Forcing LARGE biomes"), () -> EEConfig.DEFAULT.getConfig().forceLargeBiomes());
     }
 
     public static Updater getUpdater(){
