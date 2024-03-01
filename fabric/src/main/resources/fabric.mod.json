@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "id": "expanded_ecosphere",
+  "id": "${mod_id}",
   "version": "${version}",
-  "name": "Expanded Ecosphere",
-  "description": "In this mod I seek to re-create the vanilla biomes in a way that makes a more realistic and atmospheric world.",
+  "name": "${mod_name}",
+  "description": "${mod_description}",
   "authors": [
     "Cristelknight999",
     "William Wythers"
@@ -22,7 +22,7 @@
       "cristelknight.wwoo.fabric.terrablender.TerrablenderFabricInit"
     ]
   },
-  "license": "CC BY-NC-ND 4.0",
+  "license": "${mod_license}",
   "icon": "pack.png",
   "custom": {
     "modmenu": {
@@ -37,10 +37,10 @@
     "wwoo.mixins.json"
   ],
   "depends": {
-    "fabricloader": ">=0.14.21",
+    "fabricloader": ">=${fabric_loader_min_version}",
     "fabric": "*",
-    "minecraft": "1.20.1",
-    "cristellib": ">=1.1.3"
+    "minecraft": ">=${minecraft_version}",
+    "cristellib": ">=${cristellib_version}"
   },
   "breaks": {
     "cristellib": "1.1.4"

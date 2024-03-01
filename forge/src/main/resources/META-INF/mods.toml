@@ -1,35 +1,33 @@
 modLoader = "javafml"
-loaderVersion = "[47,)"
+loaderVersion = "${forge_loader_version_range}"
 #issueTrackerURL = ""
-license = "ARR"
+license = "${mod_license}"
 
 [[mods]]
-modId = "expanded_ecosphere"
+modId = "${mod_id}"
 version = "${version}"
-displayName = "Expanded Ecosphere"
+displayName = "${mod_name}"
 authors = "Cristelknight, William Wythers"
-description = '''
-In this mod I seek to re-create the vanilla biomes in a way that makes a more realistic and atmospheric world.
-'''
+description = '''${mod_description}'''
 logoFile = "pack.png"
 
-[[dependencies.expanded_ecosphere]]
+[[dependencies.${mod_id}]]
 modId = "forge"
 mandatory = true
-versionRange = "[47,)"
+versionRange = "${forge_version_range}"
 ordering = "NONE"
 side = "BOTH"
 
-[[dependencies.expanded_ecosphere]]
+[[dependencies.${mod_id}]]
 modId = "minecraft"
 mandatory = true
-versionRange = "[1.20.1,1.20.2)"
+versionRange = "[${minecraft_version},)"
 ordering = "NONE"
 side = "BOTH"
 
-[[dependencies.expanded_ecosphere]]
+[[dependencies.${mod_id}]]
 modId = "cristellib"
 mandatory = true
-versionRange = "[1.1.5,)"
+versionRange = "[${cristellib_version},)"
 ordering = "NONE"
 side = "BOTH"
