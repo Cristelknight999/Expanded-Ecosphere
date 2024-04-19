@@ -27,13 +27,6 @@ Old versions or datapack: (Select the world type large biomes in your world crea
 # Compatible Mods/Datapacks
 If you know any other mods or datapacks that work well with Expanded Ecosphere, then contact me (Cristelknight) on [Discord](https://discord.gg/yJng7sC44x).
 
-### Structure Mods
-| Mod Name  | Download |
-| ------------- | ------------- |
-| Towns and Towers  |  [Curseforge](https://www.curseforge.com/minecraft/mc-mods/towns-and-towers-structure-add-on) [PlanetMC](https://www.planetminecraft.com/data-pack/towns-amp-towers-structure-overhaul/)  |
-| Unstructured  | [Curseforge](https://www.curseforge.com/minecraft/mc-mods/unstructured)  |
-| Repurposed Structures  | Curseforge: [Forge](https://www.curseforge.com/minecraft/mc-mods/repurposed-structures) [Fabric](https://www.curseforge.com/minecraft/mc-mods/repurposed-structures-fabric)  |
-
 ### World-gen Mods
 | Mod Name  | Download | More Info |
 | ------------- | ------------- | ------------- |
@@ -42,10 +35,6 @@ If you know any other mods or datapacks that work well with Expanded Ecosphere, 
 | Biomes O' Plenty  | [Curseforge](https://www.curseforge.com/minecraft/mc-mods/biomes-o-plenty)  | Only compatible with the mod |
 | Promenade  | [Curseforge](https://www.curseforge.com/minecraft/mc-mods/promenade)  | Only compatible with the mod |
 | Terralith  | [PlanetMC](https://www.planetminecraft.com/data-pack/terralith-overworld-evolved-100-biomes-caves-and-more/) [Curseforge](https://www.curseforge.com/minecraft/mc-mods/terralith)  | Only compatible with the mod, if compatible mode is enabled |
-
-# Incompatible Mods/Datapacks
-| Mod Name  | Download | More Info |
-| ------------- | ------------- | ------------- |
 
 # FAQ
 - Will there be a Forge 1.16.x version? No.
