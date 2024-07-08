@@ -1,0 +1,73 @@
+{
+    "replace": false,
+    "values": [
+        {
+            "id": "terralith:snowy_maple_forest",
+            "required": false
+        },
+        {
+            "id": "terralith:forested_highlands",
+            "required": false
+        },
+        {
+            "id": "terralith:shield",
+            "required": false
+        },
+        {
+            "id": "biomesoplenty:fir_clearing",
+            "required": false
+        },
+        {
+            "id": "byg:maple_taiga",
+            "required": false
+        },
+        {
+            "id": "byg:zelkova_forest",
+            "required": false
+        },
+        {
+            "id": "biomesoplenty:snowy_fir_clearing",
+            "required": false
+        },
+        {
+            "id": "biomesoplenty:snowy_maple_forest",
+            "required": false
+        },
+        {
+            "id": "wythers:boreal_forest_red",
+            "required": false
+        },
+        {
+            "id": "wythers:boreal_forest_yellow",
+            "required": false
+        },
+        {
+            "id": "wythers:cold_island",
+            "required": false
+        },
+        {
+            "id": "wythers:maple_mountains",
+            "required": false
+        },
+        {
+            "id": "regions_unexplored:canadian_forest",
+            "required": false
+        },
+        {
+            "id": "regions_unexplored:maple_forest",
+            "required": false
+        },
+        {
+            "id": "regions_unexplored:boreal_forest",
+            "required": false
+        },
+        {
+            "id": "regions_unexplored:golden_boreal_forest",
+            "required": false
+        },
+        {
+            "id": "regions_unexplored:old_growth_boreal_forest",
+            "required": false
+        }
+    ]
+}

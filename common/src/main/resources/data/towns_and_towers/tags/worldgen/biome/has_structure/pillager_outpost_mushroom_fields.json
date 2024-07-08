@@ -1,0 +1,14 @@
+{
+    "replace": true,
+    "values": [
+        "minecraft:mushroom_fields",
+        {
+            "id": "biomesoplenty:mystic_forest",
+            "required": false
+        },
+        {
+            "id": "biomesoplenty:raimbow_hills",
+            "required": false
+        }
+    ]
+}

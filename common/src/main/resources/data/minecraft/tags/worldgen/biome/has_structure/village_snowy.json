@@ -1,6 +1,38 @@
 {
-  "replace": false,
+  "replace": true,
   "values": [
-    "minecraft:snowy_plains"
+    "minecraft:snowy_plains",
+    {
+      "id": "biomesoplenty:cold_desert",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:snowy_coniferous_forest",
+      "required": false
+    },
+    {
+      "id": "byg:frosted_coniferous_forest",
+      "required": false
+    },
+    {
+      "id": "byg:shattered_glacier",
+      "required": false
+    },
+    {
+        "id": "wythers:deep_snowy_taiga",
+        "required": false
+    },
+    {
+        "id": "wythers:snowy_bog",
+        "required": false
+    },
+    {
+        "id": "wythers:snowy_fen",
+        "required": false
+    },
+    {
+        "id": "wythers:snowy_tundra",
+        "required": false
+    }
   ]
 }

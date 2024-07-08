@@ -1,0 +1,33 @@
+{
+  "name": "kaisyn:village/exclusives/mediterranean/streets/avenue",
+  "fallback": "kaisyn:village/exclusives/mediterranean/terminators/avenue",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "terrain_matching",
+        "location": "kaisyn:village/exclusives/mediterranean/streets/avenue/avenue_01",
+        "processors": "kaisyn:village/exclusives/street_mediterranean"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "terrain_matching",
+        "location": "kaisyn:village/exclusives/mediterranean/streets/avenue/avenue_02",
+        "processors": "kaisyn:village/exclusives/street_mediterranean"
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "terrain_matching",
+        "location": "kaisyn:village/exclusives/mediterranean/streets/avenue/avenue_03",
+        "processors": "kaisyn:village/exclusives/street_mediterranean"
+      }
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+    "replace": false,
+    "values": [
+        {
+            "id": "terralith:highlands",
+            "required": false
+        },
+        {
+            "id": "biomesoplenty:highland",
+            "required": false
+        },
+        {
+            "id": "biomesoplenty:highland_moor",
+            "required": false
+        },        
+        {
+            "id": "wythers:cold_plains",
+            "required": false
+        },
+        {
+            "id": "wythers:temperate_island",
+            "required": false
+        },
+        {
+            "id": "tectonic:cold_plains",
+            "required": false
+        },
+        {
+            "id": "hybrid_beta:temperate_rainforest",
+            "required": false
+        }
+    ]
+}

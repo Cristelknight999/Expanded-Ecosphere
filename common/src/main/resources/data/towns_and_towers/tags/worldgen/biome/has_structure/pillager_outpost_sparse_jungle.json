@@ -1,0 +1,66 @@
+{
+    "replace": false,
+    "values": [
+        "minecraft:sparse_jungle",
+        {
+            "id": "terralith:tropical_jungle",
+            "required": false
+        },
+        {
+            "id": "biomesoplenty:floodplain",
+            "required": false
+        },
+        {
+            "id": "biomesoplenty:tropics",
+            "required": false
+        },
+        {
+            "id": "byg:jacaranda_forest",
+            "required": false
+        },
+        {
+            "id": "wythers:sandy_jungle",
+            "required": false
+        },
+        {
+            "id": "wythers:sparse_bamboo_jungle",
+            "required": false
+        },
+        {
+            "id": "wythers:sparse_eucalyptus_jungle",
+            "required": false
+        },
+        {
+            "id": "wythers:tropical_forest",
+            "required": false
+        },
+        {
+            "id": "wythers:tropical_island",
+            "required": false
+        },
+        {
+            "id": "traverse:flatlands",
+            "required": false
+        },
+        {
+            "id": "terrestria:volcanic_island",
+            "required": false
+        },
+        {
+            "id": "terrestria:volcanic_island",
+            "required": false
+        },
+        {
+            "id": "regions_unexplored:eucalyptus_forest",
+            "required": false
+        },
+        {
+            "id": "regions_unexplored:tropics",
+            "required": false
+        },
+        {
+            "id": "hybrid_beta:rainforest",
+            "required": false
+        }
+    ]
+}

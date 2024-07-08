@@ -1,0 +1,15 @@
+{
+  "name": "kaisyn:village/beach_lighthouse/town_centers",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "rigid",
+        "location": "kaisyn:village/beach_lighthouse/town_centers/beach_meeting_point_1",
+        "processors": "minecraft:empty"
+      }
+    }
+  ]
+}

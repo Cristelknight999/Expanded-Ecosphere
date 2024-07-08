@@ -1,0 +1,24 @@
+{
+  "name": "kaisyn:ships/pillager_outpost_ocean/base_plate",
+  "fallback": "kaisyn:ships/pillager_outpost_ocean/base_plate",
+  "elements": [
+    {
+      "weight": 80,
+      "element": {
+        "location": "kaisyn:ships/pillager_outpost_ocean/base_plate",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "kaisyn:ships/pillager_outpost_ocean/variant/base_plate",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }   
+  ]
+}

@@ -1,6 +1,74 @@
 {
-  "replace": false,
+  "replace": true,
   "values": [
-    "minecraft:taiga"
+    "minecraft:taiga",
+    {
+      "id": "biomesoplenty:coniferous_forest",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:dead_forest",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:maple_woods",
+      "required": false
+    },
+    {
+      "id": "byg:borealis_grove",
+      "required": false
+    },
+    {
+      "id": "byg:canadian_shield",
+      "required": false
+    },
+    {
+      "id": "byg:cika_woods",
+      "required": false
+    },
+    {
+      "id": "byg:coniferous_forest",
+      "required": false
+    },
+    {
+      "id": "terralith:alpine_highlands",
+      "required": false
+    },
+    {
+      "id": "terralith:lush_valley",
+      "required": false
+    },
+    {
+      "id": "terralith:rocky_shrubland",
+      "required": false
+    },
+    {
+      "id": "terralith:shield",
+      "required": false
+    },
+    {
+        "id": "wythers:forested_highlands",
+        "required": false
+    },
+    {
+        "id": "wythers:larch_taiga",
+        "required": false
+    },
+    {
+        "id": "wythers:pine_barrens",
+        "required": false
+    },
+    {
+        "id": "traverse:coniferious_forest",
+        "required": false
+    },
+    {
+        "id": "terrestria:snowy_hemlock_forest",
+        "required": false
+    },
+    {
+        "id": "terrestria:hemlock_rainforest",
+        "required": false
+    }
   ]
 }

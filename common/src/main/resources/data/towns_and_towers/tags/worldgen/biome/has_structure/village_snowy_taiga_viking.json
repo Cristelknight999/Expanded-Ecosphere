@@ -1,0 +1,70 @@
+{
+    "replace": false,
+    "values": [
+        "minecraft:snowy_taiga",
+        {
+            "id": "terralith:forested_highlands",
+            "required": false
+        },
+        {
+            "id": "terralith:shield",
+            "required": false
+        },
+        {
+            "id": "terralith:shield_clearing",
+            "required": false
+        },
+        {
+            "id": "terralith:snowy_maple_forest",
+            "required": false
+        },
+        {
+            "id": "terralith:snowy_shield",
+            "required": false
+        },
+        {
+            "id": "wythers:berry_bog",
+            "required": false
+        },
+        {
+            "id": "wythers:crimson_tundra",
+            "required": false
+        },
+        {
+            "id": "wythers:frigid_island",
+            "required": false
+        },
+        {
+            "id": "wythers:frozen_island",
+            "required": false
+        },
+        {
+            "id": "wythers:tundra",
+            "required": false
+        },
+        {
+            "id": "snowy_coniferious_forest",
+            "required": false
+        },
+        {
+            "id": "jermsy:tundra",
+            "required": false
+        },
+        {
+            "id": "regions_unexplored:cold_boreal_forest",
+            "required": false
+        },
+        {
+            "id": "regions_unexplored:cold_deciduous_forest",
+            "required": false
+        },
+        {
+            "id": "regions_unexplored:frozen_forest",
+            "required": false
+        },
+        {
+            "id": "regions_unexplored:frozen_tundra",
+            "required": false
+        }
+    ]
+}

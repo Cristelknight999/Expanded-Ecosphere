@@ -1,0 +1,58 @@
+{
+    "replace": false,
+    "values": [
+        "minecraft:beach",
+        {
+            "id": "biomesoplenty:dune_beach",
+            "required": false
+        },
+        {
+            "id": "byg:rainbow_beach",
+            "required": false
+        },
+        {
+            "id": "terralith:gravel_beach",
+            "required": false
+        },
+        {
+            "id": "wythers:black_beach",
+            "required": false
+        },
+        {
+            "id": "wythers:desert_beach",
+            "required": false
+        },
+        {
+            "id": "wythers:gravelly_beach",
+            "required": false
+        },
+        {
+            "id": "wythers:sand_dunes",
+            "required": false
+        },
+        {
+            "id": "wythers:tropical_beach",
+            "required": false
+        },
+        {
+            "id": "tectonic:cold_beach",
+            "required": false
+        },
+        {
+            "id": "tectonic:lukewarm_beach",
+            "required": false
+        },
+        {
+            "id": "jermsy:gravelly_beach",
+            "required": false
+        },
+        {
+            "id": "regions_unexplored:grassy_beach",
+            "required": false
+        },
+        {
+            "id": "regions_unexplored:gravel_beach",
+            "required": false
+        }
+    ]
+}

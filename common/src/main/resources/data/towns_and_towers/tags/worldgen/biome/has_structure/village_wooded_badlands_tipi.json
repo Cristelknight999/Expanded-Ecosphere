@@ -1,0 +1,30 @@
+{
+    "replace": false,
+    "values": [
+        "minecraft:wooded_badlands",
+        {
+            "id": "terralith:bryce_canyon",
+            "required": false
+        },
+        {
+            "id": "terralith:painted_mountains",
+            "required": false
+        },
+        {
+            "id": "byg:sierra_badlands",
+            "required": false
+        },
+        {
+            "id": "regions_unexplored:dry_bushland",
+            "required": false
+        },
+        {
+            "id": "regions_unexplored:prairie",
+            "required": false
+        },
+        {
+            "id": "regions_unexplored:wooded_arid_mountains",
+            "required": false
+        }
+    ]
+}

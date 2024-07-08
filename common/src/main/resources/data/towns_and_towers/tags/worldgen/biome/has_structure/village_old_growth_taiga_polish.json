@@ -1,0 +1,47 @@
+{
+    "replace": false,
+    "values": [
+        "minecraft:old_growth_pine_taiga",
+        "minecraft:old_growth_spruce_taiga",
+        {
+            "id": "terralith:siberian_taiga",
+            "required": false
+        },
+        {
+            "id": "terralith:valley_clearing",
+            "required": false
+        },
+        {
+            "id": "byg:black_forest",
+            "required": false
+        },        
+        {
+            "id": "byg:dacite_ridges",
+            "required": false
+        },
+        {
+            "id": "wythers:ancient_taiga",
+            "required": false
+        },
+        {
+            "id": "wythers:old_growth_taiga_swamp",
+            "required": false
+        },
+        {
+            "id": "wythers:temperate_rainforest",
+            "required": false
+        },
+        {
+            "id": "tectonic:old_growth_snowy_taiga",
+            "required": false
+        },
+        {
+            "id": "regions_unexplored:redwoods",
+            "required": false
+        },
+        {
+            "id": "regions_unexplored:sparse_redwoods",
+            "required": false
+        }
+    ]
+}

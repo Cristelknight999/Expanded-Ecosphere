@@ -1,0 +1,46 @@
+{
+    "replace": false,
+    "values": [
+        "minecraft:swamp",
+        {
+            "id": "terralith:ice_marsh",
+            "required": false
+        },
+        {
+            "id": "terralith:orchid_swamp",
+            "required": false
+        },
+        {
+            "id": "biomesoplenty:wetland",
+            "required": false
+        },
+        {
+            "id": "blooming_biosphere:marsh",
+            "required": false
+        },
+        {
+            "id": "byg:cypress_swamplands",
+            "required": false
+        },
+        {
+            "id": "wythers:ancient_mossy_swamp",
+            "required": false
+        },
+        {
+            "id": "wythers:ancient_oak_swamp",
+            "required": false
+        },
+        {
+            "id": "wythers:marsh",
+            "required": false
+        },
+        {
+            "id": "wythers:waterlilly_swamp",
+            "required": false
+        },
+        {
+            "id": "regions_unexplored:fen",
+            "required": false
+        }
+    ]
+}

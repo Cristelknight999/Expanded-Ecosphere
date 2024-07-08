@@ -1,0 +1,18 @@
+{
+    "replace": true,
+    "values": [
+        "minecraft:snowy_slopes",
+        {
+            "id": "byg:zelkova_forest",
+            "required": false
+        },
+        {
+            "id": "terralith:rocky_shrubland",
+            "required": false
+        },
+        {
+            "id": "regions_unexplored:icy_heights",
+            "required": false
+        }
+    ]
+}

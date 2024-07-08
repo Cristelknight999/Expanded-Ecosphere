@@ -9,7 +9,6 @@ architectury {
 
 loom {
     neoForge {
-        accessWidenerPath = project(":common").loom.accessWidenerPath
     }
 }
 
@@ -22,24 +21,17 @@ configurations {
     shadowCommon // Don't use shadow from the shadow plugin since it *excludes* files.
     compileClasspath.extendsFrom common
     runtimeClasspath.extendsFrom common
-    developmentForge.extendsFrom common
+    developmentNeoForge.extendsFrom common
 }
 
 dependencies {
     neoForge "net.neoforged:neoforge:${rootProject.neoforge_version}"
-
-    modImplementation "maven.modrinth:cristel-lib:${rootProject.cristellib_version}-neoforge"
-    modImplementation "com.github.glitchfiend:TerraBlender-neoforge:${rootProject.minecraft_version}-${rootProject.terrablender_version}"
-    modApi "me.shedaniel.cloth:cloth-config-neoforge:${rootProject.cloth_config_version}"
-    implementation("blue.endless:jankson:${rootProject.jankson_version}")
 
     common(project(path: ":common", configuration: "namedElements")) { transitive false }
     shadowCommon(project(path: ":common", configuration: "transformProductionNeoForge")) { transitive = false }
 }
 
 shadowJar {
-    exclude "fabric.mod.json"
-    exclude "architectury.common.json"
 
     configurations = [project.configurations.shadowCommon]
     archiveClassifier.set("dev-shadow")

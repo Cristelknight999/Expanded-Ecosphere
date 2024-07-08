@@ -1,9 +1,0 @@
-{
-  "feature": "wythers:vegetation/configured_tree_component/giant_sequoia_small_crown_3",
-  "placement": [
-    {
-      "type": "minecraft:heightmap",
-      "heightmap": "WORLD_SURFACE_WG"
-    }
-  ]
-}

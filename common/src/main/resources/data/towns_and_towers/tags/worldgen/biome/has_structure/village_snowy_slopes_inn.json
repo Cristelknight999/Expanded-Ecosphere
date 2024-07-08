@@ -1,0 +1,18 @@
+{
+    "replace": false,
+    "values": [
+        "minecraft:snowy_slopes",
+        {
+            "id": "byg:howling_peaks",
+            "required": false
+        },
+        {
+            "id": "terralith:alpine_grove",
+            "required": false
+        },
+        {
+            "id": "regions_unexplored:icy_heights",
+            "required": false
+        }
+    ]
+}

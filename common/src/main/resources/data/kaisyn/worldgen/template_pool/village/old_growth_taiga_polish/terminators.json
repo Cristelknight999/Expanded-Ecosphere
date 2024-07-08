@@ -1,0 +1,24 @@
+{
+  "name": "kaisyn:village/old_growth_taiga_polish/terminators",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "terrain_matching",
+        "location": "kaisyn:village/old_growth_taiga_polish/terminators/terminator_01",
+        "processors": "kaisyn:village/street_polish"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "terrain_matching",
+        "location": "kaisyn:village/old_growth_taiga_polish/terminators/terminator_02",
+        "processors": "kaisyn:village/street_polish"
+      }
+    }
+  ]
+}

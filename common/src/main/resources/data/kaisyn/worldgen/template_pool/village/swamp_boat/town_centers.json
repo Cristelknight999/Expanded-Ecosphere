@@ -1,0 +1,15 @@
+{
+  "name": "kaisyn:village/swamp_boat/town_centers",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "rigid",
+        "location": "kaisyn:village/swamp_boat/town_centers/swamp_b_meeting_point_1",
+        "processors": "kaisyn:village/street_swamp"
+      }
+    }
+  ]
+}

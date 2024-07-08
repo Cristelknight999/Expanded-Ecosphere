@@ -1,0 +1,14 @@
+{
+    "replace": false,
+    "values": [
+        "minecraft:grove",
+        {
+            "id": "terralith:siberian_grove",
+            "required": false
+        },
+        {
+            "id": "regions_unexplored:temperate_grove",
+            "required": false
+        }
+    ]
+}

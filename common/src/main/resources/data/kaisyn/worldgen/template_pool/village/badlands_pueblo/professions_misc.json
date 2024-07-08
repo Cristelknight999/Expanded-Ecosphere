@@ -1,0 +1,60 @@
+{
+  "name": "kaisyn:village/badlands_pueblo/professions_misc",
+  "fallback": "kaisyn:village/badlands_pueblo/professions_misc",
+  "elements": [
+    {
+      "weight": 2,
+      "element": {
+        "location": "kaisyn:village/badlands_pueblo/professions_misc/badlands_butcher_1",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+        "location": "kaisyn:village/badlands_pueblo/professions_misc/badlands_farmer_1",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+        "location": "kaisyn:village/badlands_pueblo/professions_misc/badlands_fisher_1",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+        "location": "kaisyn:village/badlands_pueblo/professions_misc/badlands_fletcher_1",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+        "location": "kaisyn:village/badlands_pueblo/professions_misc/badlands_leatherworker_1",
+        "processors": "kaisyn:village/street_pueblo",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+        "location": "kaisyn:village/badlands_pueblo/professions_misc/badlands_shepherd_1",
+        "processors": "kaisyn:village/street_pueblo",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    }
+  ]
+}

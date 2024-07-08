@@ -1,0 +1,74 @@
+{
+    "replace": false,
+    "values": [
+        "minecraft:forest",
+        {
+            "id": "biomesoplenty:old_growth_woodland",
+            "required": false
+        },
+        {
+            "id": "biomesoplenty:woodland",
+            "required": false
+        },
+        {
+            "id": "blooming_biosphere:autumnal_forest",
+            "required": false
+        },
+        {
+            "id": "blooming_biosphere:oak_woodland",
+            "required": false
+        },
+        {
+            "id": "byg:ebony_woods",
+            "required": false
+        },
+        {
+            "id": "byg:red_oak_forest",
+            "required": false
+        },
+        {
+            "id": "wythers:ancient_copper_beech_forest",
+            "required": false
+        },
+        {
+            "id": "wythers:ancient_emerald_beech_forest",
+            "required": false
+        },
+        {
+            "id": "wythers:ancient_golden_beech_forest",
+            "required": false
+        },
+        {
+            "id": "wythers:ancient_moss_forest",
+            "required": false
+        },
+        {
+            "id": "wythers:forest_edge",
+            "required": false
+        },
+        {
+            "id": "terrestria:cypress_forest",
+            "required": false
+        },
+        {
+            "id": "terrestria:dense_woodlands",
+            "required": false
+        },
+        {
+            "id": "jermsy:sparse_forest",
+            "required": false
+        },
+        {
+            "id": "regions_unexplored:deciduous_forest",
+            "required": false
+        },
+        {
+            "id": "regions_unexplored:willow_forest",
+            "required": false
+        },
+        {
+            "id": "hybrid_beta:seasonal_forest",
+            "required": false
+        }
+    ]
+}

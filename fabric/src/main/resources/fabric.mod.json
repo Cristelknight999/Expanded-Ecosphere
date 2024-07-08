@@ -5,21 +5,15 @@
   "name": "${mod_name}",
   "description": "${mod_description}",
   "authors": [
-    "Cristelknight999",
-    "William Wythers"
+    "Kubek and Biban_Auriu",
+    "Cristelknight999"
   ],
   "contact": {
-    "homepage": "https://www.curseforge.com/minecraft/mc-mods/expanded-ecosphere"
+    "homepage": "${homepage}"
   },
   "entrypoints": {
     "main": [
-      "cristelknight.wwoo.fabric.ExpandedEcosphereFabric"
-    ],
-    "modmenu": [
-      "cristelknight.wwoo.fabric.config.ModMenuConfig"
-    ],
-    "terrablender": [
-      "cristelknight.wwoo.fabric.terrablender.TerrablenderFabricInit"
+      "cristelknight.tt.fabric.TTFabric"
     ]
   },
   "license": "${mod_license}",
@@ -32,20 +26,10 @@
     }
   },
   "environment": "*",
-  "mixins": [
-    "wwoo-common.mixins.json",
-    "wwoo.mixins.json"
-  ],
   "depends": {
     "fabricloader": ">=${fabric_loader_min_version}",
     "fabric": "*",
     "minecraft": ">=${minecraft_version}",
     "cristellib": ">=${cristellib_version}"
-  },
-  "breaks": {
-    "cristellib": "1.1.4"
-  },
-  "conflicts": {
-    "wwoo": "*"
   }
 }

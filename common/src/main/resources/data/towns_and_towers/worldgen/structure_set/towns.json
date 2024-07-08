@@ -1,0 +1,122 @@
+{
+  "structures": [
+    {
+      "structure": "towns_and_towers:village_badlands",
+      "weight": 5
+    },
+    {
+      "structure": "towns_and_towers:village_beach",
+      "weight": 5
+    },
+    {
+      "structure": "towns_and_towers:village_birch_forest",
+      "weight": 5
+    },
+    {
+      "structure": "towns_and_towers:village_flower_forest",
+      "weight": 5
+    },
+    {
+      "structure": "towns_and_towers:village_forest",
+      "weight": 5
+    },
+    {
+      "structure": "towns_and_towers:village_snowy_slopes",
+      "weight": 5
+    },
+    {
+      "structure": "towns_and_towers:village_jungle",
+      "weight": 5
+    },
+    {
+      "structure": "towns_and_towers:village_meadow",
+      "weight": 5
+    },
+    {
+      "structure": "towns_and_towers:village_mushroom_fields",
+      "weight": 5
+    },
+    {
+      "structure": "towns_and_towers:village_ocean",
+      "weight": 2
+    },
+    {
+      "structure": "towns_and_towers:village_old_growth_taiga",
+      "weight": 5
+    },
+    {
+      "structure": "towns_and_towers:village_grove",
+      "weight": 5
+    },
+    {
+      "structure": "towns_and_towers:village_savanna_plateau",
+      "weight": 5
+    },
+    {
+      "structure": "towns_and_towers:village_sunflower_plains",
+      "weight": 5
+    },
+    {
+      "structure": "towns_and_towers:village_snowy_taiga",
+      "weight": 5
+    },
+    {
+      "structure": "towns_and_towers:village_sparse_jungle",
+      "weight": 5
+    },
+    {
+      "structure": "towns_and_towers:village_swamp",
+      "weight": 5
+    },
+    {
+      "structure": "towns_and_towers:village_wooded_badlands",
+      "weight": 5
+    },
+    {
+      "structure": "towns_and_towers:exclusives/village_mediterranean",
+      "weight": 5
+    },
+    {
+      "structure": "towns_and_towers:exclusives/village_swedish",
+      "weight": 5
+    },
+    {
+      "structure": "towns_and_towers:exclusives/village_tudor",
+      "weight": 5
+    },
+    {
+      "structure": "towns_and_towers:exclusives/village_wandering_trader_camp",
+      "weight": 5
+    },
+    {
+      "structure": "towns_and_towers:exclusives/village_classic",
+      "weight": 5
+    },
+    {
+      "structure": "towns_and_towers:exclusives/village_rustic",
+      "weight": 5
+    },
+    {
+      "structure": "towns_and_towers:exclusives/village_iberian",
+      "weight": 5
+    },
+    {
+      "structure": "towns_and_towers:exclusives/village_nilotic",
+      "weight": 5
+    },
+    {
+      "structure": "towns_and_towers:exclusives/village_piglin",
+      "weight": 5
+    }
+  ],
+  "placement": {
+    "salt": 10587309,
+    "spacing": 48,
+    "separation": 24,
+    "type": "minecraft:random_spread",
+    "exclusion_zone": {
+      "chunk_count": 5,
+      "other_set": "minecraft:villages"
+    }
+  }
+}

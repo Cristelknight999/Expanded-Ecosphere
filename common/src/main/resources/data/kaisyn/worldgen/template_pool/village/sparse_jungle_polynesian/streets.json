@@ -1,0 +1,87 @@
+{
+  "name": "kaisyn:village/sparse_jungle_polynesian/streets",
+  "fallback": "kaisyn:village/sparse_jungle_polynesian/terminators",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "terrain_matching",
+        "location": "kaisyn:village/sparse_jungle_polynesian/streets/corner_01",
+        "processors": "kaisyn:village/street_polynesian"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "terrain_matching",
+        "location": "kaisyn:village/sparse_jungle_polynesian/streets/corner_02",
+        "processors": "kaisyn:village/street_polynesian"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "terrain_matching",
+        "location": "kaisyn:village/sparse_jungle_polynesian/streets/crossroad_01",
+        "processors": "kaisyn:village/street_polynesian"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "terrain_matching",
+        "location": "kaisyn:village/sparse_jungle_polynesian/streets/crossroad_02",
+        "processors": "kaisyn:village/street_polynesian"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "terrain_matching",
+        "location": "kaisyn:village/sparse_jungle_polynesian/streets/crossroad_03",
+        "processors": "kaisyn:village/street_polynesian"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "terrain_matching",
+        "location": "kaisyn:village/sparse_jungle_polynesian/streets/straight_01",
+        "processors": "kaisyn:village/street_polynesian"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "terrain_matching",
+        "location": "kaisyn:village/sparse_jungle_polynesian/streets/straight_02",
+        "processors": "kaisyn:village/street_polynesian"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "terrain_matching",
+        "location": "kaisyn:village/sparse_jungle_polynesian/streets/straight_03",
+        "processors": "kaisyn:village/street_polynesian"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "terrain_matching",
+        "location": "kaisyn:village/sparse_jungle_polynesian/streets/straight_04",
+        "processors": "kaisyn:village/street_polynesian"
+      }
+    }
+  ]
+}

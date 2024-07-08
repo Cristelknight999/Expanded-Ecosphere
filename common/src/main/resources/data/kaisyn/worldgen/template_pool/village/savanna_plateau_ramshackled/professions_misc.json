@@ -1,0 +1,69 @@
+{
+  "name": "kaisyn:village/savanna_plateau_ramshackled/professions_misc",
+  "fallback": "kaisyn:village/savanna_plateau_ramshackled/professions_misc",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "rigid",
+        "location": "kaisyn:village/savanna_plateau_ramshackled/professions_misc/savanna_plateau_cartographer_1",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "rigid",
+        "location": "kaisyn:village/savanna_plateau_ramshackled/professions_misc/savanna_plateau_butcher_1",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "rigid",
+        "location": "kaisyn:village/savanna_plateau_ramshackled/professions_misc/savanna_plateau_farmer_1",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "rigid",
+        "location": "kaisyn:village/savanna_plateau_ramshackled/professions_misc/savanna_plateau_fletcher_1",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "rigid",
+        "location": "kaisyn:village/savanna_plateau_ramshackled/professions_misc/savanna_plateau_leatherworker_1",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "rigid",
+        "location": "kaisyn:village/savanna_plateau_ramshackled/professions_misc/savanna_plateau_mason_1",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "rigid",
+        "location": "kaisyn:village/savanna_plateau_ramshackled/professions_misc/savanna_plateau_shepherd_1",
+        "processors": "minecraft:empty"
+      }
+    }
+  ]
+}

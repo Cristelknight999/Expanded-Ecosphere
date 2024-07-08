@@ -1,6 +1,7 @@
 plugins {
     id "architectury-plugin" version "3.4-SNAPSHOT"
     id "dev.architectury.loom" version "1.5-SNAPSHOT" apply false
+    id "io.github.pacifistmc.forgix" version "1.2.6"
 }
 
 architectury {
@@ -20,7 +21,23 @@ subprojects {
     }
 }
 
+forgix {
+    group = "cristelknight.tt" // (Required Value)
+    mergedJarName = "t_and_t" // (Required Value)
+    outputDir = "build/libs/merged"
 
+    forge {
+        projectName = "forge"
+    }
+
+    fabric {
+        projectName = "fabric"
+    }
+
+    custom {
+        projectName = "neoforge" // (Required Value)
+    }
+}
 
 allprojects {
     apply plugin: "java"
@@ -32,17 +49,6 @@ allprojects {
     group = rootProject.maven_group
 
     repositories {
-        exclusiveContent {
-            forRepository {
-                maven {
-                    name = "Modrinth"
-                    url = "https://api.modrinth.com/maven"
-                }
-            }
-            filter {
-                includeGroup "maven.modrinth"
-            }
-        }
     }
 
 
@@ -50,7 +56,7 @@ allprojects {
         var replaceProperties = [
                 minecraft_version   : minecraft_version,
                 neo_version         : neoforge_version,
-                cristellib_version : cristellib_version,
+                cristellib_version  : cristellib_version,
 
                 version: mod_version,
 
@@ -63,7 +69,7 @@ allprojects {
 
                 fabric_loader_min_version: fabric_loader_min_version,
 
-                mod_id              : archives_base_name, mod_name: mod_name, mod_license: mod_license, mod_version: mod_version, mod_description: mod_description,
+                mod_id              : archives_base_name, mod_name: mod_name, mod_license: mod_license, mod_version: mod_version, mod_description: mod_description, homepage: homepage
         ]
         inputs.properties replaceProperties
 

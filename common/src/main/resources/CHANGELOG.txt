@@ -1,0 +1,265 @@
+1.12.1 - Bits and Details Update
+- waxed all signs (the women and children too)
+- you can now find suspicious gravel in forest ruins
+- Swedish and Sonwy Taiga villages got a slight rework, few multi-workstation buildings are now separate (No more toolsmith and weaponsmith in the same building)
+- loot table update, because od grass/short grass change in the game
+
+1.12 - The Here And There Update (Brushing The Dust) 
+
+- this is going to be the last update working on both 1.19 and 1.20. From 1.13 on, we'll take full advantage of new 1.20 (and maybe also .21) features. 
+- the pack has been paired with Blooming Biosphere (https://www.planetminecraft.com/data-pack/blooming-biosphere/).
+- several villages (Iberian, Swedish, Tudor, Rustic, Meadow and Classic) have reccieved few slight changes in appearance, mostly for the sake of more uniform look of the whole structure.
+- mediterranean village got a bit of a refresh, with more consistent look.
+- most village houses should no longer have connected roofs and be properly separated from eachother instead.
+- a new village and outpost set has been added, appearing in savanna_plateau in vanilla, and in selection of modded biomes (in Terralith and Blooming Biosphere)
+- one new exclusive structure has been added, that takes advantege of a special mechanic, only present in William Wythers' Expanded Ecosphere (previously called Overhauled Overworld, in 1.19). Beware the beasts!
+
+1.11 - The End, So Far Update
+
+- updated the pack to 1.20 pack format. The same file still functions properly both on 1.20.x and 1.19.x
+- tha pack is now compatible with Regions Unexplored (https://www.curseforge.com/minecraft/mc-mods/regions-unexplored), adding T&T villages and outposts to modded biomes.
+- fixed broken villager ship loot table that caused the game to freeze/crash, along with other minor fixes
+- replaced accacie wood in flower forest village with its mangrove counterparts
+- added flower forest village and outpost to cherry grove. In further updates of the pack Japanese styled structures might end up removed from the flower forest as to avoid repetition. 
+
+Note. T&T is not being actively worked on anymore. New additions might become less likely to drop any time soon.
+
+1.10 & 1.10-B - The Technical Update (part II)
+
+- added a config for the mod version (Fabric + Forge & 1.18.2 + 1.19.2), located in config/towns_and_towers folder. There, you will find 2 json files, one for disabling certain structures, and one to edit the frequency of structure types. You'll know which one is which by the name;
+- added automatic compatibility with the Waystone mod (https://www.curseforge.com/minecraft/mc-mods/waystones) (for both Forge and Fabric). 
+	* waystones will not appear as their own small structure in villages though. Instead, 1 waystone will always be found at the town center. Some villages don't contain waystones, particularly camps or single-piece structure villages;
+- added automatic compatibility with Fabric Waystones (https://www.curseforge.com/minecraft/mc-mods/fabric-waystones). 
+	* Waystones will appear as their separate structure piece in the village like in the normal mod (max of 1 per village). Some villages don't contain waystones, particularly camps or single-piece structure villages, like the tipi camp (wooded badlands) or snowy slopes village (alpine inn);
+- added automatic compatibility with Guard Villagers (https://www.curseforge.com/minecraft/mc-mods/guard-villagers) (for both Forge and Fabric).
+	* Guard villagers spawn in a cluster of 6 around each iron golem per village, so we made sure each village only has 1 iron golem. Some villages don't have one as they are either too small or for other reasons, like the ruined forest village which has no inhabitants;
+- remove some unnecessary jigsaws that caused errors;
+- improved the grove village a bit, by removing some unnecessary decor that caused the structure to look a bit unnatural and adding some tables to the side (these will only appear if you don't use Fabric Waystones, which will spawn a waystone shrine there instead);
+- re-organized the changelogs a bit;
+- (FOR 1.18.2 ONLY) fixed a bug with the Pillager Galleon that sometimes caused the bottom part of the ship to shift around instead of being aligned with the top part (example here: https://imgur.com/a/T4ZN55i).
+
+(FOR 1.18.2 ONLY) 1.9.1-B - Hotfix #1
+
+- fixed a jigsaw misspelling that caused a crash when locating/discovering a badlands village. Thanks estpulvis for pointing that out!
+
+1.9 & 1.9-B - The Balancing Update
+
+	It's been a while since we last posted an update. Sorry about that. Here are the latest changes in this update:
+
+- paired the pack with Tectonic (https://www.curseforge.com/minecraft/mc-mods/tectonic). Now, T&T structures will spawn in the new biomes added by the mod (Apollo did all the work, with some minor tweaks by us. Thanks, Apollo!);
+- paired the pack with Traverse (https://www.curseforge.com/minecraft/mc-mods/traverse). Now, T&T structures will also spawn in biomes added by this mod;
+- paired the pack with Terrestria (https://www.curseforge.com/minecraft/mc-mods/terrestria). Now, T&T structures will also spawn in biomes added by this mod;
+- paired the pack with JermsyBoy's World Overhaul (https://www.planetminecraft.com/data-pack/jermsyboy-s-world-overhaul/). Now, T&T structures will also spawn in biomes added by this mod;
+- re-arranged the folder/file structure a bit (shouldn't cause any log errors or crashes);
+- made some small changes to some processors for some village streets;
+- lots of bug fixes across all structures, mostly related to broken jigsaws which spammed the logs. Other small changes include:
+	* fixing structure pieces that had profession blocks in places where villagers couldn't reach them;
+	* modifying a few structure pieces so they would be more consistent with the rest;
+	* adding unused structures into the template pools (ex: the small farm for the polish village, which would never spawn)
+- tweaked the rustic outpost a bit so the scaffolding under the beehives would not break upon worldgen;
+- fixed bug where villager fleet would overcrowd the oceans (hopefully);
+- removed the 3 unique villagers from the sparse jungle, beach, and Mediterranean villages respectively. They will be added in a later update with nerfed trades, as they were a bit OP;
+- removed conduit from pillager galleon secret chest, and instead replaced it with 3 nautilus shells;
+- removed the improved vanilla pillager outpost for better mod compatibility and to keep in line with the idea of only adding new structures instead of replacing existing ones. The vanilla pillager outpost will now only spawn in plains biomes;
+- mushroom outpost no longer spawns pillagers over time (this was made as a balance change, as hostile mobs couldn't spawn in the mushroom fields biome, which theoretically meant you could make an OP pillager farm);
+- reduced the frequency of villages and outposts quite a bit;
+- massively reduced pillager spawn rate. Now it's just slightly faster than vanilla. (Vanilla: max-1 / min-1 --- T&T: max-2 / min-1);
+- added the Iberian village, a Mediterranean / Spanish structure found in warmer biomes;
+- added the Iberian outpost, an old Spanish fortress now occupied by pillagers;
+- added a rare variant of the pillager galleon, with a Cthulu face instead of the illager face embeded on the main sail as an homage to William Wythers, the original creator of the structure;
+
+NOTE: We have also updated the 1.18.2 version to be the the 1.9 update of T&T, changing a few blocks and a few other things here and there.
+For a full list of changes between versions, check out the patch notes for versions 1.7, 1.8 (+ 1.8.1 + 1.8.2), and 1.9.
+Do note that while upgrading from version 1.6 to version 1.9 is possible, doing so may cause a few errors to occur, and CAN POTENTIALLY CORRUPT YOUR WORLD, so we strongly recommend making a new world with the latest version for 1.18.2. At the very least, backup your world before upgrading.
+
+1.8.2 - The Phat Update (part II)
+
+- re-added Nilotic village (WWOO exclusive) (still WIP);
+- paired the pack with William Wyther's Overhauled Overworld (https://www.curseforge.com/minecraft/mc-mods/william-wythers-overhauled-overworld). Now, T&T structures will also spawn in the new custom biomes from WWOO;
+- tweaked some random template pool values;
+- added some minor improvements to the Tudor village;
+- fixed a couple of broken jigsaws;
+- added some "crutch" files to help prevent log spam/errors;
+- added the rustic outpost, inspired by medieval apiaries (exclusive structure);
+- added the snowy taiga outpost, in line with the Viking theme of the village.
+
+1.8.1 - Hotfix #1
+
+- fixed the desert temple mimic spawning a bit too high;
+- fixed the wandering traders not spawning in the wandering trader camp;
+- fixed the issue where the pack would not validate sometimes.
+
+1.8 - The Phat Update (part I)
+
+- massive overhaul for almost all structures, which can be sorted into multiple categories: 
+
+1) Folder structure
+- removed unused/irrelevant NBT files or replaced certain files with their vanilla counterparts (like for the vanilla villages);
+- re-named the majority of files so they are on par with vanilla naming conventions.
+
+2) Structure modifications
+- added a bell, cats, and iron golems to all town centers for all villages;
+- added the remaining missing professions to all villages (exceptions being the beach lighthouse, snowy slopes inn, and sunflower plains farm villages, where they were never supposed to be all present);
+-added a chest/chests to each villager's profession house, corresponding to its corresponding profession (like how they are in vanilla);
+- made the villager profession houses separate instead of them being merged into house pieces;
+-added more loot to all villages (including a few easter eggs here and there);
+- massive interior and exterior overhaul for all structure pieces, made while taking into consideration villager pathfinding (meaning we made sure they could reach their workstation and bed correctly and made sure they wouldn't get stuck in the doorway because of carpets);
+- changed trades for Shipmaster (Beach village) and Bishop (Med village), giving them more balanced trades, but still maintaining their uniqueness (+ a few easter eggs for you to find); 
+- replaced some custom loot tables with vanilla counterparts for better mod compatibility;
+- replaced some villager types (for example, in the snowy slopes inn, one can find snowy villagers instead of plains villagers);
+- made the villages a bit bigger overall;
+- changed the ocean wreckage loot a bit.
+
+3) Structure additions
+
+OUTPOSTS
+- added allays to outposts. The number of allays will differ per outpost type:
+	* towers - 1 allay
+	* forts - 2 allays
+	* camps - 0 allays
+- SPOILER: added a secret chest to each outpost containing an inspirational message and a few diamonds.
+
+VILLAGES
+- remastered the sparse jungle village by adding new houses, a unique villager with unique trades (villager chief found in the town center house), and in general tidying up the whole thing to look like a proper Polynesian village;
+- remastered the sunflower plains farm, improving the detailing and adding more loot (but also removing the majority of sponges as we considered those a bit too OP). More will come in the next updates (I won't spoil anything);
+- moderately improved the Tudor village to better match its real-life design, with more wooden frames (basically made it a bit more detailed);
+- moderately improved the meadow and snowy slopes villages by adding more flowers instead of spamming berry bushes, along with some nicer decor;
+- moderately improved the swamp village, with a new town center, removing the barrel spam and making it seem more weathered (the boat house designs remain though);
+- moderately improved the tipi camp (correctly spelled now) by adding loot to all yurts and making them look a bit nicer;
+- remade the beach village, with new houses, interior, general design, and loot;
+- added the rustic village, which can be found in more autumnal biomes (this includes modded ones) (exclusive structure);
+- added the Viking village, which can be found in the snowy taiga biome and various other modded biomes with large trees and snowy landscapes;
+- added the grove villager outpost, which can be found in, well, the grove biome. It's basically a whole village with everything one might contain shoved into a giant building (including loot);
+- (INCOMPLETE) added the Nilotic village, which can be found in the flooded savanna biome (WWOO exclusive --- not available as of now).
+
+SHIPS
+- remade the pillager galleon from the ground up. The structure is now worthy of that title, being literally an outpost on the sea, with lots of loot and pillagers, so be careful!
+- remastered the villager fleet mothership by adding new loot and making the ship grander in general.
+
+OTHER
+- remade the final room for the desert temple mimic, which now contains only 3 treasure chests instead of 8, but now has a husk spawner;
+- added a layer of protection to the corridor pieces so that the redstone mechanism doesn't get destroyed by water.
+	
+4) Bug fixes (keep in mind this isn't the full list because I forgot many of them):
+	* fixed all broken jigsaws (HOPEFULLY for the last time, but I doubt it);
+	* fixed some empty loot chests, most commonly found in the villager fleet;
+	* fixed certain pieces not generating, like the large farm for the classic village;
+	*fixed some villagers getting stuck in walls and suffocating;
+	* fixed some naming errors here and there;
+	* fixed chests found on villager fleet, causing servers to sometimes crash upon opening them;
+	* fixed an issue where jungle, flower forest, and birch villages were too sparse;
+	* fixed bug where some carpets were blocking villagers from entering certain houses;
+	* fixed certain jigsaws turning into unwanted blocks (like terracotta for the mushroom fields village);
+	* fixed some minor inconsistencies in a few outposts;
+	* fixed the issue with lower pillager spawn rates;
+	* fixed the mimic desert temple creating a giant hole in the ground due to incorrect structure type;
+
+This update took quite a while to make, so sorry about that. We'll keep you posted about what we will take up soon. Cheers!
+
+1.7.2 - Hotfix #2
+
+- removed or modified some tags that made an error pop up;
+- fixed some broken jigsaws from the jungle village.
+
+1.7.1 - Hotfix #1
+
+- removed the Nilotic outpost tag for now;
+
+1.7 - The Technical Update (part I) / The 1.19 Update
+
+- updated the pack to 1.19, with all the necessary technical changes;
+- major tag overhaul for all structures. This will not affect the player in any major way, but it's a measure to organize the pack a lot more;
+- paired the mod/datapack with other major Worldgen mods:
+	- paired the pack with Biomes O' Plenty (BoP) (https://www.curseforge.com/minecraft/mc-mods/biomes-o-plenty). Now, structures from T&T will also spawn in appropriate biomes from this mod. Some vanilla villages were switched with ones from our mod in some cases;
+	- paired the pack with Oh, The Biomes You'll Go (BYG) (https://www.curseforge.com/minecraft/mc-mods/oh-the-biomes-youll-go). Now, structures from T&T will also spawn in appropriate biomes from this mod. Some vanilla villages were switched with ones from our mod in some cases;
+	- paired the pack with Promenade (https://www.curseforge.com/minecraft/mc-mods/promenade). Now, structures from T&T will also spawn in appropriate biomes from this mod (ex: a Japanese village in the cherry forests);
+	- reorganized the structure distribution for Terralith. Some structures were moved around to better fit their respective biome.
+- added exclusion zones. Now, structures are a lot less likely to mesh with each other (WIP);
+- removed the barrels from the sunflower plains farm fence, so now villagers no longer become fishers there;
+- added the Nilotic village to the flooded savanna biome (WWOO exclusive);
+- fixed a bug where the mothership for the villager fleet would sometimes not spawn;
+- improved the Swedish village with new 1.19 blocks. Now, houses use mangrove planks instead of red terracotta;
+- modified the list of biomes where ships could spawn, as follows:
+    * wreckage - found in normal ocean variants;
+    * villager fleet and pillager galleon -  found in deep ocean variants.
+- feeding dolphins raw fish will now lead the player to either a villager fleet or ocean wreckage;
+- added all villages to the village tag. Now, you can simply do /locate structure #village and find the nearest one near you, instead of locating a specific one. This will also help with mod compatibility in the future;
+- added all pillager outposts to the pillager_outpost tag. Now, you can simply do /locate structure #vpillager_outpost and find the nearest one near you, instead of locating a specific one. This will also help with mod compatibility in the future;
+- fixed a bug where pillagers would sometimes not spawn upon world generation (hopefully. If that's not the case, let us know);
+- fixed a bug where some pillager outposts would be classified as villages, preventing pillager spawning.
+
+1.6 - The Random Stuff Update (part II) / Last 1.18.2 Update 
+
+- added the birch village inspired by Romanian architecture to the birch forest and old growth birch forest;
+- added the oriental-themed outpost to the desert oasis biome (Terralith exclusive);
+- added the Swedish church outpost to match the Swedish village (Terralith exclusive);
+- added the missing profession houses to some villages. Now, every village can spawn at least 1 of every profession instead of being biome specific;
+- removed the gazebo from the badlands village and replaced it with a misc_profession piece, as the generation was a bit whacky with the previous gazebo piece;
+- toned down the spawn chance of some jungle village pieces;
+- tweaked the town center for the wooded badlands outpost. Also made the spawn chance for all yurts equal;
+- fixed a bug where pillagers would not spawn in some outposts.
+- increased village size for sparse jungle, jungle, meadow, and badlands villages
+- updated credits.txt;
+- added changelog history.
+
+1.5 - Upgrades, people, upgrades! Update (part II)
+
+- toned down the spawn chance for the butcher work area in the mushroom fields village;
+- fixed some broken house pieces for mushroom fields;
+- fixed a bug where gazebos found in the badlands and mushroom fields villages would not spawn any workstations;
+- massively overhauled the jungle village with new buildings, roads (that aren't flooded or broken), and loot;
+- upgraded the sunflower plains farm;
+- added the Alpha islands outpost (brick pyramid from Infdev) (Terralith Exclusive);
+- added the Alpha Islands village (pre-1.14 village) (Terralith Exclusive).
+
+1.4 - The Rare Structures Update
+
+- added the mushroom village to the mushroom fields biome;
+- added the fungus lighthouse outpost to the mushroom fields biome;
+- added the stone church outpost to the snowy slopes biome;
+- added the correct credits.txt this time;
+
+*Due to time restraints, the jungle village overhaul has been moved to update 1.5.*
+
+1.3 - The Random Stuff Update (part I)
+
+- added loot and some minor decor pieces to the wandering trader camp (Terralith exclusive);
+- remastered the tipi village (wooded badlands). The camp now includes actual loot, more detailed yurts, and in general more color (color/colour?);
+- remastered the old growth taiga outpost (the polish cabins). The outpost now consists of a large, single fortified cabin (also fixed problems related to generation);
+- added the ruined shipwreck camp outpost (beach and snowy beach, with a different style for each);
+- fixed a small bug with the armorer house in the badlands village and villager suffocating in the wall (whoops);
+- fixed a bug with carpets being broken and blocks being replaced during the generation of certain outposts;
+- added decor to the majority of outposts (most evident in the birch, savanna, and swamp outposts) and changed the sizes of the bounding boxes of these structures where necessary;
+- switched the player-spawned pillagers in favor of pillagers spawned via jigsaws (this doesn't affect the average user but makes our job easier for future updates);
+- added extra loot to the vineyard outpost (Terralith exclusive);
+- removed the stony_shore biome from the list of potential biomes a structure can spawn in (this is mostly for Terralith rather than vanilla);
+- added more bugs to fix later.
+
+1.2 - Upgrades, people, upgrades! Update (part I)
+
+- remastered the badlands village. The village is now bigger, with more detailed buildings, improved loot, and workstations. Go out and explore!
+- some improvements have been made to swamp village and lighthouse structures, to make the structures better match the general mood of the pack;
+- re-added and remastered the wandering trader camp as a Terralith exclusive. The camp will now spawn in the desert oasis biome;
+- fixed a minor bug with the outpost loot.
+
+1.1 - The Namespace Unification Update
+
+- organized the pack structure a bit;
+- fixed the errors that resulted from broken jigsaws, spamming the logs;
+- replaced the chest loot found in outposts with vanilla pillager outpost loot (for better mod compatibility);
+- fixed the broken chests with set loot and/or no loot found in a couple of outposts;
+- fixed a bug where the wooded badlands outpost was using the sparse jungle outpost structure pieces;
+- removed the bugged structures and unused template pools where necessary;
+- removed the ruined clay structure found in wooded badlands. It has been replaced by the tipi village/camp. The clay structure will be re-added in a later update;
+- removed the snowy taiga outpost. Now the fire lookout tower will spawn in both normal and snowy taiga biomes;
+- replaced the oak tree in the grove outposts with a spruce tree to better fit in with the surrounding landscape;
+- replaced the more_structures namespace with towns_and_towers namespace.
+
+1.01 - The Terralith Update
+
+- paired the pack with Terralith (https://www.curseforge.com/minecraft/mc-mods/terralith). Now, structures from our pack will also spawn in the new Terralith biomes, alongside the vanilla biomes;
+- new exclusive structures spawn if Terralith is installed. They have the *exclusive* prefix when previewing the /locate command. (the pack, of course, still works on its own, as well as with other structure packs.)
+
+1.0 - A new beginning
+
+Initial Release

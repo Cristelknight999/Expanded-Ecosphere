@@ -1,0 +1,60 @@
+{
+  "name": "kaisyn:village/exclusives/piglin/streets",
+  "fallback": "kaisyn:village/exclusives/piglin/terminators",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "terrain_matching",
+        "location": "kaisyn:village/exclusives/piglin/streets/corner_01",
+        "processors": "kaisyn:village/exclusives/street_piglin"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "terrain_matching",
+        "location": "kaisyn:village/exclusives/piglin/streets/crossroad_01",
+        "processors": "kaisyn:village/exclusives/street_piglin"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "terrain_matching",
+        "location": "kaisyn:village/exclusives/piglin/streets/crossroad_02",
+        "processors": "kaisyn:village/exclusives/street_piglin"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "terrain_matching",
+        "location": "kaisyn:village/exclusives/piglin/streets/turn_01",
+        "processors": "kaisyn:village/exclusives/street_piglin"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "terrain_matching",
+        "location": "kaisyn:village/exclusives/piglin/streets/straight_01",
+        "processors": "kaisyn:village/exclusives/street_piglin"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "terrain_matching",
+        "location": "kaisyn:village/exclusives/piglin/streets/straight_02",
+        "processors": "kaisyn:village/exclusives/street_piglin"
+      }
+    }
+  ]
+}

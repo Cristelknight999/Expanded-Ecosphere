@@ -1,0 +1,15 @@
+{
+  "name": "kaisyn:village/flower_forest_japanese/lamps",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 2,
+      "element": {
+        "location": "kaisyn:village/flower_forest_japanese/flower_forest_lamp_1",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    }
+  ]
+}

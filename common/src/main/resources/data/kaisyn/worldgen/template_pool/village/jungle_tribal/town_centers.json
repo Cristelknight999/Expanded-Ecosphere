@@ -1,0 +1,33 @@
+{
+  "name": "kaisyn:village/jungle_tribal/town_centers",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 3,
+      "element": {
+        "location": "kaisyn:village/jungle_tribal/town_centers/jungle_meeting_point_1",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 3,
+      "element": {
+        "location": "kaisyn:village/jungle_tribal/town_centers/jungle_meeting_point_2",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 3,
+      "element": {
+        "location": "kaisyn:village/jungle_tribal/town_centers/jungle_meeting_point_3",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:jigsaw",
+  "biomes": "#towns_and_towers:has_structure/shallow_oceans_wreckage",
+  "max_distance_from_center": 116,
+  "size": 7,
+  "spawn_overrides": {},
+  "start_height": {
+    "absolute": 62
+  },
+  "start_pool": "kaisyn:ships/wreckage_ocean/wreckage",
+  "step": "underground_decoration",
+  "use_expansion_hack": false
+}

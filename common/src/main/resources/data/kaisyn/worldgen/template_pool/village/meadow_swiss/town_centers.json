@@ -1,0 +1,15 @@
+{
+  "name": "kaisyn:village/meadow_swiss/town_centers",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "kaisyn:village/meadow_swiss/town_centers/meadow_meeting_point_1",
+        "processors": "kaisyn:village/street_meadow",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    }
+  ]
+}

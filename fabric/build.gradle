@@ -8,7 +8,6 @@ architectury {
 }
 
 loom {
-    accessWidenerPath = project(":common").loom.accessWidenerPath
 }
 
 configurations {
@@ -20,31 +19,17 @@ configurations {
 }
 
 repositories {
-    maven {
-        name = 'TerraformersMC'
-        url = 'https://maven.terraformersmc.com/'
-    }
 }
 
 dependencies {
     modImplementation "net.fabricmc:fabric-loader:${rootProject.fabric_loader_version}"
     modApi( "net.fabricmc.fabric-api:fabric-api:${rootProject.fabric_api_version}") { exclude group: 'net.fabricmc', module: 'fabric-loader' }
 
-    modImplementation("com.terraformersmc:modmenu:${rootProject.modmenu_version}") {
-        exclude module: "fabric-api"
-    }
-    modImplementation "com.github.glitchfiend:TerraBlender-fabric:${rootProject.minecraft_version}-${rootProject.terrablender_version}"
-    modImplementation "maven.modrinth:cristel-lib:${rootProject.cristellib_version}-fabric"
-    modApi "me.shedaniel.cloth:cloth-config-fabric:${rootProject.cloth_config_version}"
-    implementation("blue.endless:jankson:${rootProject.jankson_version}")
-
     common(project(path: ":common", configuration: "namedElements")) { transitive false }
     shadowCommon(project(path: ":common", configuration: "transformProductionFabric")) { transitive false }
 }
 
 shadowJar {
-    exclude "architectury.common.json"
-
     configurations = [project.configurations.shadowCommon]
     archiveClassifier.set("dev-shadow")
 }

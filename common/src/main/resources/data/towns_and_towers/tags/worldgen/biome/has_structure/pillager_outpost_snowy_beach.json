@@ -1,0 +1,14 @@
+{
+    "replace": false,
+    "values": [
+        "minecraft:snowy_beach",
+        {
+            "id": "byg:shattered_glacier",
+            "required": false
+        },
+        {
+            "id": "byg:glacial_chasm",
+            "required": false
+        }
+    ]
+}

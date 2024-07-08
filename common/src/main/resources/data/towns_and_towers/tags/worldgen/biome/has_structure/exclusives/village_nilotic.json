@@ -1,0 +1,29 @@
+{
+    "replace": false,
+    "values": [
+        {
+            "id": "wythers:dripleaf_swamp",
+            "required": false
+        },        
+        {
+            "id": "wythers:flooded_jungle",
+            "required": false
+        },
+        {
+            "id": "wythers:flooded_rainforest",
+            "required": false
+        },        
+        {
+            "id": "wythers:flooded_savanna",
+            "required": false
+        },
+        {
+            "id": "wythers:flooded_temperate_rainforest",
+            "required": false
+        },        
+        {
+            "id": "wythers:pantanal",
+            "required": false
+        }
+    ]
+}

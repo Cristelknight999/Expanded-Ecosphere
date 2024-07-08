@@ -1,8 +1,42 @@
 {
-  "replace": false,
+  "replace": true,
   "values": [
     "minecraft:savanna",
-    "wythers:dry_savanna",
-    "wythers:wooded_savanna"
+    {
+      "id": "biomesoplenty:dryland",
+      "required": false
+    },
+    {
+      "id": "byg:araucaria_savanna",
+      "required": false
+    },
+    {
+      "id": "byg:baobab_savanna",
+      "required": false
+    },
+    {
+      "id": "byg:firecracker_shrubland",
+      "required": false
+    },
+    {
+      "id": "terralith:savanna_slopes",
+      "required": false
+    },
+    {
+        "id": "wythers:eucalyptus_salubris_woodland",
+        "required": false
+    },
+    {
+        "id": "wythers:eucalyptus_woodland",
+        "required": false
+    },
+    {
+        "id": "wythers:sparse_eucalyptus_woodland",
+        "required": false
+    },
+    {
+        "id": "wythers:wooded_savanna",
+        "required": false
+    }
   ]
 }

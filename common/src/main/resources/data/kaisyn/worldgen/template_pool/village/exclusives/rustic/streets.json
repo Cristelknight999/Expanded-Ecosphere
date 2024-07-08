@@ -1,0 +1,114 @@
+{
+  "name": "kaisyn:village/exclusives/rustic/streets",
+  "fallback": "kaisyn:village/exclusives/rustic/terminators",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "terrain_matching",
+        "location": "kaisyn:village/exclusives/rustic/streets/corner_01",
+        "processors": "kaisyn:village/exclusives/street_rustic"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "terrain_matching",
+        "location": "kaisyn:village/exclusives/rustic/streets/corner_02",
+        "processors": "kaisyn:village/exclusives/street_rustic"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "terrain_matching",
+        "location": "kaisyn:village/exclusives/rustic/streets/corner_03",
+        "processors": "kaisyn:village/exclusives/street_rustic"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "terrain_matching",
+        "location": "kaisyn:village/exclusives/rustic/streets/crossroad_01",
+        "processors": "kaisyn:village/exclusives/street_rustic"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "terrain_matching",
+        "location": "kaisyn:village/exclusives/rustic/streets/crossroad_02",
+        "processors": "kaisyn:village/exclusives/street_rustic"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "terrain_matching",
+        "location": "kaisyn:village/exclusives/rustic/streets/crossroad_03",
+        "processors": "kaisyn:village/exclusives/street_rustic"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "terrain_matching",
+        "location": "kaisyn:village/exclusives/rustic/streets/crossroad_04",
+        "processors": "kaisyn:village/exclusives/street_rustic"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "terrain_matching",
+        "location": "kaisyn:village/exclusives/rustic/streets/straight_01",
+        "processors": "kaisyn:village/exclusives/street_rustic"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "terrain_matching",
+        "location": "kaisyn:village/exclusives/rustic/streets/straight_02",
+        "processors": "kaisyn:village/exclusives/street_rustic"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "terrain_matching",
+        "location": "kaisyn:village/exclusives/rustic/streets/straight_03",
+        "processors": "kaisyn:village/exclusives/street_rustic"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "terrain_matching",
+        "location": "kaisyn:village/exclusives/rustic/streets/straight_04",
+        "processors": "kaisyn:village/exclusives/street_rustic"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "terrain_matching",
+        "location": "kaisyn:village/exclusives/rustic/streets/straight_05",
+        "processors": "kaisyn:village/exclusives/street_rustic"
+      }
+    }
+  ]
+}

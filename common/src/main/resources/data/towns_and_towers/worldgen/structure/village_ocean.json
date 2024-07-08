@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:jigsaw",
+  "biomes": "#towns_and_towers:has_structure/village_deep_oceans_ships",
+  "max_distance_from_center": 116,
+  "size": 7,
+  "spawn_overrides": {},
+  "start_height": {
+    "absolute": 59
+  },
+  "start_pool": "kaisyn:ships/village_ocean/base_plate",
+  "step": "underground_decoration",
+  "use_expansion_hack": false
+}

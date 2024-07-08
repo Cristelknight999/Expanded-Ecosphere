@@ -1,0 +1,33 @@
+{
+  "name": "kaisyn:village/sunflower_plains_farm/side/farms",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "terrain_matching",
+        "location": "kaisyn:village/sunflower_plains_farm/side/sunflower_plains_farm_beetroot_1",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "terrain_matching",
+        "location": "kaisyn:village/sunflower_plains_farm/side/sunflower_plains_farm_pumpkin_1",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "terrain_matching",
+        "location": "kaisyn:village/sunflower_plains_farm/side/sunflower_plains_farm_wheat_1",
+        "processors": "minecraft:empty"
+      }
+    }
+  ]
+}

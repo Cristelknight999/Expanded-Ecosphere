@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "${mod_id}",
+  "version": "${version}",
+  "name": "${mod_name}",
+  "description": "${mod_description}",
+  "authors": [
+    "Kubek and Biban_Auriu",
+    "Cristelknight999"
+  ],
+  "contact": {
+    "homepage": "${homepage}"
+  },
+  "license": "${mod_license}",
+  "icon": "pack.png",
+  "custom": {
+    "modmenu": {
+      "links": {
+        "modmenu.discord": "https://discord.gg/yJng7sC44x"
+      }
+    }
+  },
+  "environment": "*",
+  "depends": {
+    "fabricloader": ">=${fabric_loader_min_version}",
+    "fabric": "*",
+    "minecraft": ">=${minecraft_version}",
+    "cristellib": ">=${cristellib_version}"
+  }
+}

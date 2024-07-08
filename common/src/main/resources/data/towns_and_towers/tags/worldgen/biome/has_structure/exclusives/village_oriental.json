@@ -1,0 +1,41 @@
+{
+    "replace": false,
+    "values": [
+        {
+            "id": "terralith:desert_oasis",
+            "required": false
+        },
+        {
+            "id": "biomesoplenty:lush_desert",
+            "required": false
+        },
+        {
+            "id": "byg:windswept_desert",
+            "required": false
+        },
+        {
+            "id": "byg:windswept_dunes",
+            "required": false
+        },
+        {
+            "id": "wythers:desert_lakes",
+            "required": false
+        },
+        {
+            "id": "wythers:desert_island",
+            "required": false
+        },
+        {
+            "id": "terrestria:volcanic_island",
+            "required": false
+        },
+        {
+            "id": "terrestria:lush_desert",
+            "required": false
+        },
+        {
+            "id": "terrestria:oasis",
+            "required": false
+        }
+    ]
+}

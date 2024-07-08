@@ -1,0 +1,24 @@
+{
+  "name": "kaisyn:village/exclusives/mediterranean/terminators/promenade",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "terrain_matching",
+        "location": "kaisyn:village/exclusives/mediterranean/terminators/promenade/promenade_end_01",
+        "processors": "kaisyn:village/exclusives/street_mediterranean"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "terrain_matching",
+        "location": "kaisyn:village/exclusives/mediterranean/terminators/promenade/promenade_end_02",
+        "processors": "kaisyn:village/exclusives/street_mediterranean"
+      }
+    }
+  ]
+}

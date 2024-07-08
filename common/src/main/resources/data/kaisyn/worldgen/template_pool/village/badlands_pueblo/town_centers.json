@@ -1,0 +1,15 @@
+{
+  "name": "kaisyn:village/badlands_pueblo/town_centers",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 50,
+      "element": {
+        "location": "kaisyn:village/badlands_pueblo/town_centers/badlands_meeting_point_1",
+        "processors": "kaisyn:village/street_pueblo",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    }
+  ]
+}

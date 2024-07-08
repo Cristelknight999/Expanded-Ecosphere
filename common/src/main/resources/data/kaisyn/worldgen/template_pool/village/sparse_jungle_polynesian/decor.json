@@ -1,0 +1,22 @@
+{
+  "name": "kaisyn:village/sparse_jungle_polynesian/decor",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "rigid",
+        "location": "kaisyn:village/sparse_jungle_polynesian/sparse_jungle_tiki_torch_1",
+        "processors": "minecraft:empty"
+      }
+    },
+	  {
+      "weight": 5,
+      "element": {
+        "projection": "rigid",
+        "element_type": "minecraft:empty_pool_element"
+      }
+    }
+  ]
+}

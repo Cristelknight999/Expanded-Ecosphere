@@ -1,0 +1,184 @@
+{
+  "name": "kaisyn:village/snowy_taiga_viking/houses",
+  "fallback": "kaisyn:village/snowy_taiga_viking/terminators",
+  "elements": [
+    {
+      "weight": 4,
+      "element": {
+        "location": "kaisyn:village/snowy_taiga_viking/houses/snowy_taiga_armorer_1",
+        "processors": "minecraft:street_snowy_or_taiga",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 6,
+      "element": {
+        "location": "kaisyn:village/snowy_taiga_viking/houses/snowy_taiga_butcher_1",
+        "processors": "minecraft:street_snowy_or_taiga",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 5,
+      "element": {
+        "location": "kaisyn:village/snowy_taiga_viking/houses/snowy_taiga_cartographer_1",
+        "processors": "minecraft:street_snowy_or_taiga",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 6,
+      "element": {
+        "location": "kaisyn:village/snowy_taiga_viking/houses/snowy_taiga_fisher_1",
+        "processors": "minecraft:street_snowy_or_taiga",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 3,
+      "element": {
+        "location": "kaisyn:village/snowy_taiga_viking/houses/snowy_taiga_fletcher_1",
+        "processors": "minecraft:street_snowy_or_taiga",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 6,
+      "element": {
+        "location": "kaisyn:village/snowy_taiga_viking/houses/snowy_taiga_leatherworker_1",
+        "processors": "minecraft:street_snowy_or_taiga",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 5,
+      "element": {
+        "location": "kaisyn:village/snowy_taiga_viking/houses/snowy_taiga_library_1",
+        "processors": "minecraft:street_snowy_or_taiga",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 3,
+      "element": {
+        "location": "kaisyn:village/snowy_taiga_viking/houses/snowy_taiga_mason_1",
+        "processors": "minecraft:street_snowy_or_taiga",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 6,
+      "element": {
+        "location": "kaisyn:village/snowy_taiga_viking/houses/snowy_taiga_shepherd_1",
+        "processors": "minecraft:street_snowy_or_taiga",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 5,
+      "element": {
+        "location": "kaisyn:village/snowy_taiga_viking/houses/snowy_taiga_small_farm_1",
+        "processors": "minecraft:farm_snowy",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 6,
+      "element": {
+        "location": "kaisyn:village/snowy_taiga_viking/houses/snowy_taiga_large_farm_1",
+        "processors": "minecraft:farm_snowy",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 4,
+      "element": {
+        "location": "kaisyn:village/snowy_taiga_viking/houses/snowy_taiga_toolsmith_1",
+        "processors": "minecraft:street_snowy_or_taiga",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "kaisyn:village/snowy_taiga_viking/houses/snowy_taiga_weaponsmith_1",
+        "processors": "minecraft:street_snowy_or_taiga",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 6,
+      "element": {
+        "location": "kaisyn:village/snowy_taiga_viking/houses/snowy_taiga_temple_1",
+        "processors": "minecraft:street_snowy_or_taiga",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 7,
+      "element": {
+        "location": "kaisyn:village/snowy_taiga_viking/houses/snowy_taiga_small_house_1",
+        "processors": "minecraft:street_snowy_or_taiga",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 7,
+      "element": {
+        "location": "kaisyn:village/snowy_taiga_viking/houses/snowy_taiga_small_house_2",
+        "processors": "minecraft:street_snowy_or_taiga",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 7,
+      "element": {
+        "location": "kaisyn:village/snowy_taiga_viking/houses/snowy_taiga_small_house_3",
+        "processors": "minecraft:street_snowy_or_taiga",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 7,
+      "element": {
+        "location": "kaisyn:village/snowy_taiga_viking/houses/snowy_taiga_small_house_4",
+        "processors": "minecraft:street_snowy_or_taiga",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 7,
+      "element": {
+        "location": "kaisyn:village/snowy_taiga_viking/houses/snowy_taiga_small_house_5",
+        "processors": "minecraft:street_snowy_or_taiga",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 20,
+      "element": {
+        "projection": "rigid",
+        "element_type": "minecraft:empty_pool_element"
+      }
+    }
+  ]
+}

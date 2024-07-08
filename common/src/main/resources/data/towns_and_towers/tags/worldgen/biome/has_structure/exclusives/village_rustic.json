@@ -1,0 +1,73 @@
+{
+    "replace": false,
+    "values": [
+        {
+            "id": "byg:autumnal_forest",
+            "required": false
+        },
+        {
+            "id": "byg:autumnal_taiga",
+            "required": false
+        },
+        {
+            "id": "biomesoplenty:boreal_forest",
+            "required": false
+        },
+        {
+            "id": "biomesoplenty:seasonal_forest",
+            "required": false
+        },
+        {
+            "id": "promenade:pumpkin_pastures",
+            "required": false
+        },       
+        {
+            "id": "wythers:autumnal_flower_forest",
+            "required": false
+        },
+        {
+            "id": "wythers:autumnal_forest",
+            "required": false
+        },        
+        {
+            "id": "wythers:autumnal_forest_edge",
+            "required": false
+        },
+        {
+            "id": "wythers:autumnal_plains",
+            "required": false
+        },        
+        {
+            "id": "wythers:harvest_fields",
+            "required": false
+        },
+        {
+            "id": "tectonic:autumn_forest",
+            "required": false
+        },  
+        {
+            "id": "tectonic:autumn_birch_forest",
+            "required": false
+        },
+        {
+            "id": "traverse:autumnal_woods",
+            "required": false
+        },
+        {
+            "id": "jermsy:seasonal_forest",
+            "required": false
+        },
+        {
+            "id": "regions_unexplored:autumnal_fields",
+            "required": false
+        },
+        {
+            "id": "regions_unexplored:autumnal_maple_forest",
+            "required": false
+        },
+        {
+            "id": "hybrid_beta:autumnal_forest",
+            "required": false
+        }
+    ]
+}

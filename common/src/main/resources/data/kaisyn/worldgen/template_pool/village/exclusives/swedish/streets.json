@@ -1,0 +1,114 @@
+{
+  "name": "kaisyn:village/exclusives/swedish/streets",
+  "fallback": "kaisyn:village/exclusives/swedish/terminators",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "terrain_matching",
+        "location": "kaisyn:village/exclusives/swedish/streets/corner_01",
+        "processors": "kaisyn:village/exclusives/street_swedish"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "terrain_matching",
+        "location": "kaisyn:village/exclusives/swedish/streets/corner_02",
+        "processors": "kaisyn:village/exclusives/street_swedish"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "terrain_matching",
+        "location": "kaisyn:village/exclusives/swedish/streets/corner_03",
+        "processors": "kaisyn:village/exclusives/street_swedish"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "terrain_matching",
+        "location": "kaisyn:village/exclusives/swedish/streets/crossroad_01",
+        "processors": "kaisyn:village/exclusives/street_swedish"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "terrain_matching",
+        "location": "kaisyn:village/exclusives/swedish/streets/crossroad_02",
+        "processors": "kaisyn:village/exclusives/street_swedish"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "terrain_matching",
+        "location": "kaisyn:village/exclusives/swedish/streets/crossroad_03",
+        "processors": "kaisyn:village/exclusives/street_swedish"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "terrain_matching",
+        "location": "kaisyn:village/exclusives/swedish/streets/crossroad_04",
+        "processors": "kaisyn:village/exclusives/street_swedish"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "terrain_matching",
+        "location": "kaisyn:village/exclusives/swedish/streets/straight_01",
+        "processors": "kaisyn:village/exclusives/street_swedish"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "terrain_matching",
+        "location": "kaisyn:village/exclusives/swedish/streets/straight_02",
+        "processors": "kaisyn:village/exclusives/street_swedish"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "terrain_matching",
+        "location": "kaisyn:village/exclusives/swedish/streets/straight_03",
+        "processors": "kaisyn:village/exclusives/street_swedish"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "terrain_matching",
+        "location": "kaisyn:village/exclusives/swedish/streets/straight_04",
+        "processors": "kaisyn:village/exclusives/street_swedish"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "terrain_matching",
+        "location": "kaisyn:village/exclusives/swedish/streets/straight_05",
+        "processors": "kaisyn:village/exclusives/street_swedish"
+      }
+    }
+  ]
+}

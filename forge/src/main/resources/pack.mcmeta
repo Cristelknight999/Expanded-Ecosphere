@@ -1,6 +1,7 @@
 {
   "pack": {
-    "description": "Expanded Ecosphere",
-    "pack_format": 18
+    "pack_format": 26,
+    "description": "Towns and Towers - New villages, pillager outposts, and ships!",
+    "formats": {"min_inclusive": 26, "max_inclusive": 1000}
   }
 }

@@ -1,0 +1,38 @@
+{
+    "replace": false,
+    "values": [
+        "minecraft:sunflower_plains",
+        {
+            "id": "terralith:steppe",
+            "required": false
+        },
+        {
+            "id": "biomesoplenty:pasture",
+            "required": false
+        },
+        {
+            "id": "byg:prairie",
+            "required": false
+        },
+        {
+            "id": "byg:autumnal_valley",
+            "required": false
+        },
+        {
+            "id": "biomesoplenty:pumpkin_patch",
+            "required": false
+        },
+        {
+            "id": "regions_unexplored:barley_fields",
+            "required": false
+        },
+        {
+            "id": "regions_unexplored:flower_field",
+            "required": false
+        },
+        {
+            "id": "regions_unexplored:pumpkin_fields",
+            "required": false
+        }
+    ]
+}

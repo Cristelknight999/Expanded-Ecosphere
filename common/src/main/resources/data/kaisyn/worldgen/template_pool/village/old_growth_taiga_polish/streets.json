@@ -1,0 +1,60 @@
+{
+  "name": "kaisyn:village/old_growth_taiga_polish/streets",
+  "fallback": "kaisyn:village/old_growth_taiga_polish/terminators",
+  "elements": [
+    {
+      "weight": 2,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "terrain_matching",
+        "location": "kaisyn:village/old_growth_taiga_polish/streets/corner_01",
+        "processors": "kaisyn:village/street_polish"
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "terrain_matching",
+        "location": "kaisyn:village/old_growth_taiga_polish/streets/corner_02",
+        "processors": "kaisyn:village/street_polish"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "terrain_matching",
+        "location": "kaisyn:village/old_growth_taiga_polish/streets/crossroad_01",
+        "processors": "kaisyn:village/street_polish"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "terrain_matching",
+        "location": "kaisyn:village/old_growth_taiga_polish/streets/crossroad_02",
+        "processors": "kaisyn:village/street_polish"
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "terrain_matching",
+        "location": "kaisyn:village/old_growth_taiga_polish/streets/straight_01",
+        "processors": "kaisyn:village/street_polish"
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "terrain_matching",
+        "location": "kaisyn:village/old_growth_taiga_polish/streets/straight_02",
+        "processors": "kaisyn:village/street_polish"
+      }
+    }
+  ]
+}

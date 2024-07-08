@@ -1,0 +1,15 @@
+{
+  "name": "kaisyn:village/exclusives/classic/well",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "kaisyn:village/exclusives/classic/town_centers/classic_meeting_point_1/well_bottom",
+        "processors": "minecraft:empty"
+      }
+    }
+  ]
+}

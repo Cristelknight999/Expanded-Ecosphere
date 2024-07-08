@@ -1,0 +1,61 @@
+{
+  "processors": [
+    {
+      "processor_type": "minecraft:rule",
+      "rules": [
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:water"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:packed_mud"
+          },
+          "output_state": {
+            "Name": "minecraft:spruce_planks"
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_block_match",
+            "block": "minecraft:packed_mud",
+            "probability": 0.3
+          },
+          "output_state": {
+            "Name": "minecraft:mud_bricks"
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_block_match",
+            "block": "minecraft:packed_mud",
+            "probability": 0.3
+          },
+          "output_state": {
+            "Name": "minecraft:rooted_dirt"
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_block_match",
+            "block": "minecraft:packed_mud",
+            "probability": 0.2
+          },
+          "output_state": {
+            "Name": "minecraft:dirt"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -14,4 +14,4 @@ include("fabric")
 include("forge")
 include("neoforge")
 
-rootProject.name = "WWOO"
+rootProject.name = "t_and_t"

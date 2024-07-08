@@ -1,0 +1,15 @@
+{
+  "name": "kaisyn:village/exclusives/mediterranean/town_centers",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "kaisyn:village/exclusives/mediterranean/town_centers/med_meeting_point_1",
+        "processors": "kaisyn:village/exclusives/street_mediterranean",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

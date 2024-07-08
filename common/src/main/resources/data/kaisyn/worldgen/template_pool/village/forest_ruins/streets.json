@@ -1,0 +1,150 @@
+{
+  "name": "kaisyn:village/forest_ruins/streets",
+  "fallback": "kaisyn:village/forest_ruins/terminators",
+  "elements": [
+    {
+      "weight": 2,
+      "element": {
+        "location": "kaisyn:village/forest_ruins/streets/corner_01",
+        "processors": "kaisyn:village/forest_ruins/street_forest",
+        "projection": "terrain_matching",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+        "location": "kaisyn:village/forest_ruins/streets/corner_02",
+        "processors": "kaisyn:village/forest_ruins/street_forest",
+        "projection": "terrain_matching",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+        "location": "kaisyn:village/forest_ruins/streets/corner_03",
+        "processors": "kaisyn:village/forest_ruins/street_forest",
+        "projection": "terrain_matching",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 4,
+      "element": {
+        "location": "kaisyn:village/forest_ruins/streets/straight_01",
+        "processors": "kaisyn:village/forest_ruins/street_forest",
+        "projection": "terrain_matching",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 4,
+      "element": {
+        "location": "kaisyn:village/forest_ruins/streets/straight_02",
+        "processors": "kaisyn:village/forest_ruins/street_forest",
+        "projection": "terrain_matching",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 7,
+      "element": {
+        "location": "kaisyn:village/forest_ruins/streets/straight_03",
+        "processors": "kaisyn:village/forest_ruins/street_forest",
+        "projection": "terrain_matching",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 7,
+      "element": {
+        "location": "kaisyn:village/forest_ruins/streets/straight_04",
+        "processors": "kaisyn:village/forest_ruins/street_forest",
+        "projection": "terrain_matching",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 3,
+      "element": {
+        "location": "kaisyn:village/forest_ruins/streets/straight_05",
+        "processors": "kaisyn:village/forest_ruins/street_forest",
+        "projection": "terrain_matching",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 4,
+      "element": {
+        "location": "kaisyn:village/forest_ruins/streets/straight_06",
+        "processors": "kaisyn:village/forest_ruins/street_forest",
+        "projection": "terrain_matching",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+        "location": "kaisyn:village/forest_ruins/streets/crossroad_01",
+        "processors": "kaisyn:village/forest_ruins/street_forest",
+        "projection": "terrain_matching",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "kaisyn:village/forest_ruins/streets/crossroad_02",
+        "processors": "kaisyn:village/forest_ruins/street_forest",
+        "projection": "terrain_matching",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+        "location": "kaisyn:village/forest_ruins/streets/crossroad_03",
+        "processors": "kaisyn:village/forest_ruins/street_forest",
+        "projection": "terrain_matching",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+        "location": "kaisyn:village/forest_ruins/streets/crossroad_04",
+        "processors": "kaisyn:village/forest_ruins/street_forest",
+        "projection": "terrain_matching",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+        "location": "kaisyn:village/forest_ruins/streets/crossroad_05",
+        "processors": "kaisyn:village/forest_ruins/street_forest",
+        "projection": "terrain_matching",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+        "location": "kaisyn:village/forest_ruins/streets/crossroad_06",
+        "processors": "kaisyn:village/forest_ruins/street_forest",
+        "projection": "terrain_matching",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 3,
+      "element": {
+        "location": "kaisyn:village/forest_ruins/streets/turn_01",
+        "processors": "kaisyn:village/forest_ruins/street_forest",
+        "projection": "terrain_matching",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    }
+  ]
+}

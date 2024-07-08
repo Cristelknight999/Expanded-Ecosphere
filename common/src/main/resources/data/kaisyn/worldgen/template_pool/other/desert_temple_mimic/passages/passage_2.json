@@ -1,0 +1,15 @@
+{
+  "name": "kaisyn:other/desert_temple_mimic/passages/passage_2",
+  "fallback": "kaisyn:other/desert_temple_mimic/passages/passage_2",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "kaisyn:other/desert_temple_mimic/passages/passage_2",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

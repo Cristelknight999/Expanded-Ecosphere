@@ -1,0 +1,32 @@
+{
+  "replace": false,
+  "values": [
+    "towns_and_towers:exclusives/village_classic",
+    "towns_and_towers:exclusives/village_iberian",
+    "towns_and_towers:exclusives/village_mediterranean",
+    "towns_and_towers:exclusives/village_nilotic",
+    "towns_and_towers:exclusives/village_piglin",
+    "towns_and_towers:exclusives/village_rustic",
+    "towns_and_towers:exclusives/village_swedish",
+    "towns_and_towers:exclusives/village_tudor",
+    "towns_and_towers:exclusives/village_wandering_trader_camp",
+    "towns_and_towers:village_badlands",
+    "towns_and_towers:village_beach",
+    "towns_and_towers:village_birch_forest",
+    "towns_and_towers:village_flower_forest",
+    "towns_and_towers:village_forest",
+    "towns_and_towers:village_snowy_slopes",
+    "towns_and_towers:village_jungle",
+    "towns_and_towers:village_grove", 
+    "towns_and_towers:village_meadow",
+    "towns_and_towers:village_mushroom_fields",
+    "towns_and_towers:village_ocean",
+    "towns_and_towers:village_old_growth_taiga",
+    "towns_and_towers:village_savanna_plateau",
+    "towns_and_towers:village_sparse_jungle",
+    "towns_and_towers:village_sunflower_plains",
+    "towns_and_towers:village_snowy_taiga",
+    "towns_and_towers:village_swamp",
+    "towns_and_towers:village_wooded_badlands"
+  ]
+}

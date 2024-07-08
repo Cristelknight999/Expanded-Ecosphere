@@ -1,0 +1,51 @@
+{
+  "name": "kaisyn:village/mushroom_fields_fantasy/streets",
+  "fallback": "kaisyn:village/mushroom_fields_fantasy/terminators",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "terrain_matching",
+        "location": "kaisyn:village/mushroom_fields_fantasy/streets/straight_01",
+        "processors": "kaisyn:village/street_mushroom"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "terrain_matching",
+        "location": "kaisyn:village/mushroom_fields_fantasy/streets/straight_02",
+        "processors": "kaisyn:village/street_mushroom"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "terrain_matching",
+        "location": "kaisyn:village/mushroom_fields_fantasy/streets/straight_03",
+        "processors": "kaisyn:village/street_mushroom"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "terrain_matching",
+        "location": "kaisyn:village/mushroom_fields_fantasy/streets/crossroad_01",
+        "processors": "kaisyn:village/street_mushroom"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "terrain_matching",
+        "location": "kaisyn:village/mushroom_fields_fantasy/streets/turn_01",
+        "processors": "kaisyn:village/street_mushroom"
+      }
+    }
+  ]
+}

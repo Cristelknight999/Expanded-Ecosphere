@@ -1,0 +1,15 @@
+{
+  "name": "kaisyn:village/exclusives/swedish/town_centers",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "rigid",
+        "location": "kaisyn:village/exclusives/swedish/town_centers/swedish_meeting_point_1",
+        "processors": "kaisyn:village/exclusives/street_swedish"
+      }
+    }
+  ]
+}

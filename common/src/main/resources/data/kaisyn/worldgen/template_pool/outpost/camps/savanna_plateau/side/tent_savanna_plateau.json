@@ -1,0 +1,60 @@
+{
+  "name": "kaisyn:outpost/camps/savanna_plateau/side/tent_savanna_plateau",
+  "fallback": "minecraft:empty",
+  "elements": [
+      {
+      "weight": 1,
+      "element": {
+        "location": "kaisyn:outpost/camps/savanna_plateau/side/tent_savanna_plateau_1",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "kaisyn:outpost/camps/savanna_plateau/side/tent_savanna_plateau_2",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 3,
+      "element": {
+        "location": "kaisyn:outpost/camps/savanna_plateau/side/tent_savanna_plateau_3",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "kaisyn:outpost/camps/savanna_plateau/side/tent_savanna_plateau_4",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 3,
+      "element": {
+        "location": "kaisyn:outpost/camps/savanna_plateau/side/tent_savanna_plateau_5",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 3,
+      "element": {
+        "location": "kaisyn:outpost/camps/savanna_plateau/side/tent_savanna_plateau_6",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    }
+  ]
+}

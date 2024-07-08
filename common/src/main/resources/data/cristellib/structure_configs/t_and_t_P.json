@@ -1,0 +1,31 @@
+{
+  "name": "structure_rarity_new",
+  "subPath": "towns_and_towers",
+  "header": "This config file makes it possible to change the spacing, separation, salt (and frequency) of Towns and Towers' structure sets. Big thanks to Cristelknight for making this all possible.\n\tSPACING ---  controls how far a structure can be from others of its kind\n\tSEPARATION --- controls how close to each other two structures of the same type can be.\nBy default, the values should be 48/24 for villages and outposts (spacing/separation respectively) - a hypothetical village is going to appear not further than 48 chunks away (ca. 760 blocks), but not closer than 24 chunks (ca. 380 blocks).\n\t* If you want a structure to spawn more frequently, decrease those values.\n\t* If you want a structure to spawn less frequently, increase those values.\nKEEP IN MIND THAT SPACING ALWAYS NEEDS TO BE HIGHER THAN SEPARATION.\n\nLINKS\n=====\nCurseforge link: https://www.curseforge.com/minecraft/mc-mods/towns-and-towers\nModrinth link: https://modrinth.com/mod/towns-and-towers\nPMC link: https://www.planetminecraft.com/data-pack/towns-amp-towers-structure-overhaul/\nGitHub Repository: [NEED TO MAKE ONE]",
+  "config_type": "PLACEMENT",
+  "comments": {
+    "towers": "Here you can find all pillager outposts.",
+    "towns": "Here you can find all villages.",
+    "other": "Here you can find all structures that aren't villages or outposts.",
+
+    "towers.spacing": "DEFAULT 48",
+    "towns.spacing": "DEFAULT 48",
+    "other.spacing": "DEFAULT 32",
+
+    "towers.separation": "DEFAULT 24",
+    "towns.separation": "DEFAULT 24",
+    "other.separation": "DEFAULT 16",
+
+    "other.frequency": "DEFAULT 0.2"
+  },
+  "structure_sets": [
+    {
+      "modid": "t_and_t",
+      "structure_set": [
+        "towns_and_towers:towns",
+        "towns_and_towers:towers",
+        "towns_and_towers:other"
+      ]
+    }
+  ]
+}

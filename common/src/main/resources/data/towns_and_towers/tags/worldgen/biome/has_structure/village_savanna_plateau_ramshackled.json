@@ -1,0 +1,18 @@
+{
+    "replace": false,
+    "values": [
+        "minecraft:savanna_plateau",
+        {
+            "id": "blooming_biosphere:chaparral",
+            "required": false
+        },
+        {
+            "id": "terralith:savanna_badlands",
+            "required": false
+        },
+        {
+            "id": "terralith:white_mesa",
+            "required": false
+        }
+    ]
+}

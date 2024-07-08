@@ -1,0 +1,24 @@
+{
+  "name": "kaisyn:village/mushroom_fields_fantasy/animals",
+  "fallback": "kaisyn:village/mushroom_fields_fantasy/animals",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "rigid",
+        "location": "kaisyn:village/mushroom_fields_fantasy/animals/mooshroom_red",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "rigid",
+        "location": "kaisyn:village/mushroom_fields_fantasy/animals/mooshroom_brown",
+        "processors": "minecraft:empty"
+      }
+    }
+  ]
+}

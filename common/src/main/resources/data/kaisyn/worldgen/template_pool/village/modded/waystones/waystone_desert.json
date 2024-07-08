@@ -1,0 +1,15 @@
+{
+  "name": "kaisyn:village/modded/waystones/waystone_desert",
+  "fallback": "kaisyn:village/modded/waystones/waystone_desert",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "kaisyn:village/modded/waystones/waystone_desert",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+    "replace": false,
+    "values": [
+        {
+            "id": "terralith:hot_shrubland",
+            "required": false
+        },
+        {
+            "id": "terralith:brushland",
+            "required": false
+        },
+        {
+            "id": "terralith:shrubland",
+            "required": false
+        },
+        {
+            "id": "biomesoplenty:mediterranean_forest",
+            "required": false
+        },
+        {
+            "id": "biomesoplenty:rocky_shrubland",
+            "required": false
+        },
+        {
+            "id": "biomesoplenty:scrubland",
+            "required": false
+        },
+        {
+            "id": "biomesoplenty:shrubland",
+            "required": false
+        },
+        {
+            "id": "biomesoplenty:wooded_scrubland",
+            "required": false
+        },
+        {
+            "id": "wythers:mediterranean_island",
+            "required": false
+        }
+    ]
+}

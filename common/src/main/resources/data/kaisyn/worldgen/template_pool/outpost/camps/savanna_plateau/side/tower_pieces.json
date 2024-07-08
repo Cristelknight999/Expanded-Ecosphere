@@ -1,0 +1,132 @@
+{
+  "name": "kaisyn:outpost/camps/savanna_plateau/side/tower_pieces",
+  "fallback": "kaisyn:village/savanna_plateau_ramshackled/tower_tops",
+  "elements": [
+    {
+      "weight": 4,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "rigid",
+        "location": "kaisyn:outpost/camps/savanna_plateau/side/tower_pieces/savanna_plateau_tower_piece_2",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 3,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "rigid",
+        "location": "kaisyn:outpost/camps/savanna_plateau/side/tower_pieces/savanna_plateau_tower_piece_3",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 3,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "rigid",
+        "location": "kaisyn:outpost/camps/savanna_plateau/side/tower_pieces/savanna_plateau_tower_piece_4",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 3,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "rigid",
+        "location": "kaisyn:outpost/camps/savanna_plateau/side/tower_pieces/savanna_plateau_tower_piece_5",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 4,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "rigid",
+        "location": "kaisyn:outpost/camps/savanna_plateau/side/tower_pieces/savanna_plateau_tower_piece_6",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 4,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "rigid",
+        "location": "kaisyn:outpost/camps/savanna_plateau/side/tower_pieces/savanna_plateau_tower_piece_7",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 4,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "rigid",
+        "location": "kaisyn:outpost/camps/savanna_plateau/side/tower_pieces/savanna_plateau_tower_piece_8",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "rigid",
+        "location": "kaisyn:outpost/camps/savanna_plateau/side/tower_pieces/savanna_plateau_tower_top_2",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "rigid",
+        "location": "kaisyn:outpost/camps/savanna_plateau/side/tower_pieces/savanna_plateau_tower_top_3",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "rigid",
+        "location": "kaisyn:outpost/camps/savanna_plateau/side/tower_pieces/savanna_plateau_tower_top_4",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "rigid",
+        "location": "kaisyn:outpost/camps/savanna_plateau/side/tower_pieces/savanna_plateau_tower_top_5",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "rigid",
+        "location": "kaisyn:outpost/camps/savanna_plateau/side/tower_pieces/savanna_plateau_tower_top_6",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "rigid",
+        "location": "kaisyn:outpost/camps/savanna_plateau/side/tower_pieces/savanna_plateau_tower_top_7",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "rigid",
+        "location": "kaisyn:outpost/camps/savanna_plateau/side/tower_pieces/savanna_plateau_tower_top_1",
+        "processors": "minecraft:empty"
+      }
+    }
+  ]
+}

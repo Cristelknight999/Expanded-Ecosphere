@@ -1,0 +1,24 @@
+{
+  "name": "kaisyn:village/forest_ruins/town_centers",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 50,
+      "element": {
+        "location": "kaisyn:village/forest_ruins/town_centers/forest_meeting_point_1",
+        "processors": "kaisyn:village/forest_ruins/street_forest",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 50,
+      "element": {
+        "location": "kaisyn:village/forest_ruins/town_centers/forest_meeting_point_2",
+        "processors": "kaisyn:village/forest_ruins/street_forest",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    }
+  ]
+}

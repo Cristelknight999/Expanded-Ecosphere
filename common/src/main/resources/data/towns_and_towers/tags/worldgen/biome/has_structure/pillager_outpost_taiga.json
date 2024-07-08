@@ -1,0 +1,90 @@
+{
+    "replace": true,
+    "values": [
+        "minecraft:taiga",
+        {
+            "id": "biomesoplenty:coniferous_forest",
+            "required": false
+        },
+        {
+            "id": "biomesoplenty:crag",
+            "required": false
+        },
+        {
+            "id": "biomesoplenty:fir_clearing",
+            "required": false
+        },
+        {
+            "id": "byg:autumnal_taiga",
+            "required": false
+        },
+        {
+            "id": "byg:black_forest",
+            "required": false
+        },
+        {
+            "id": "byg:canadian_shield",
+            "required": false
+        },
+        {
+            "id": "byg:coniferous_forest",
+            "required": false
+        },
+        {
+            "id": "byg:dacite_ridges",
+            "required": false
+        },
+        {
+            "id": "terralith:alpine_highlands",
+            "required": false
+        },
+        {
+            "id": "terralith:lush_valley",
+            "required": false
+        },
+        {
+            "id": "terralith:shield_clearing",
+            "required": false
+        },
+        {
+            "id": "terralith:shield",
+            "required": false
+        },
+        {
+            "id": "terralith:yosemite_lowlands",
+            "required": false
+        },
+        {
+            "id": "wythers:forested_highlands",
+            "required": false
+        },
+        {
+            "id": "wythers:larch_taiga",
+            "required": false
+        },
+        {
+            "id": "wythers:pine_barrens",
+            "required": false
+        },
+        {
+            "id": "traverse:coniferious_forest",
+            "required": false
+        },
+        {
+            "id": "terrestria:snowy_hemlock_forest",
+            "required": false
+        },
+        {
+            "id": "terrestria:hemlock_rainforest",
+            "required": false
+        },
+        {
+            "id": "regions_unexplored:pine_forest",
+            "required": false
+        },
+        {
+            "id": "regions_unexplored:pine_slopes",
+            "required": false
+        }
+    ]
+}

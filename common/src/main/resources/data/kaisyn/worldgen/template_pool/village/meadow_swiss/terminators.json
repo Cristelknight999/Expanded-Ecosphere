@@ -1,0 +1,33 @@
+{
+  "name": "kaisyn:village/meadow_swiss/terminators",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "kaisyn:village/meadow_swiss/terminators/terminator_01",
+        "processors": "kaisyn:village/street_meadow",
+        "projection": "terrain_matching",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+        "location": "kaisyn:village/meadow_swiss/terminators/terminator_02",
+        "processors": "kaisyn:village/street_meadow",
+        "projection": "terrain_matching",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+        "location": "kaisyn:village/meadow_swiss/terminators/terminator_03",
+        "processors": "kaisyn:village/street_meadow",
+        "projection": "terrain_matching",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    }
+  ]
+}

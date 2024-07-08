@@ -1,0 +1,24 @@
+{
+  "name": "kaisyn:village/sunflower_plains_farm/decor",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "rigid",
+        "location": "kaisyn:village/sunflower_plains_farm/sunflower_plains_scarecrow_1",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "projection": "rigid",
+        "location": "kaisyn:village/sunflower_plains_farm/sunflower_plains_scarecrow_2",
+        "processors": "minecraft:empty"
+      }
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "name": "kaisyn:village/flower_forest_japanese/gates",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 5,
+      "element": {
+        "location": "kaisyn:village/flower_forest_japanese/flower_forest_gate_1",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+	{
+      "weight": 3,
+      "element": {
+        "location": "kaisyn:village/flower_forest_japanese/flower_forest_gate_2",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "location": "resources/config.json5",
+  "destination": "fwaystones/config.json5",
+  "condition": [
+    {
+      "type": "mod_loaded",
+      "mod": "fwaystones"
+    }
+  ]
+}

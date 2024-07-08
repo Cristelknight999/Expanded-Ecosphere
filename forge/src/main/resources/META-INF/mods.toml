@@ -10,6 +10,7 @@ displayName = "${mod_name}"
 authors = "Cristelknight, William Wythers"
 description = '''${mod_description}'''
 logoFile = "pack.png"
+displayURL="${homepage}"
 
 [[dependencies.${mod_id}]]
 modId = "forge"

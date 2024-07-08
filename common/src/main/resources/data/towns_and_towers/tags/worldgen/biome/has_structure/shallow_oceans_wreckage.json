@@ -1,0 +1,13 @@
+{
+    "replace": false,
+    "values": [
+        "minecraft:cold_ocean",
+        "minecraft:ocean",
+        "minecraft:lukewarm_ocean",
+        "minecraft:warm_ocean",
+        {
+            "id": "tectonic:lagoon",
+            "required": false
+        }
+    ]
+}

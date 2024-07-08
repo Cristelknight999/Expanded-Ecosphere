@@ -1,0 +1,61 @@
+{
+    "replace": false,
+    "values": [
+        {
+            "id": "byg:rose_fields",
+            "required": false
+        },
+        {
+            "id": "biomesoplenty:lush_savanna",
+            "required": false
+        },       
+        {
+            "id": "wythers:flowering_pantanal",
+            "required": false
+        },
+        {
+            "id": "wythers:humid_tropical_grassland",
+            "required": false
+        },        
+        {
+            "id": "wythers:jacaranda_savanna",
+            "required": false
+        },
+        {
+            "id": "wythers:lapacho_plains",
+            "required": false
+        },        
+        {
+            "id": "wythers:subtropical_forest",
+            "required": false
+        },
+        {
+            "id": "wythers:subtropical_forest_edge",
+            "required": false
+        },
+        {
+            "id": "wythers:subtropical_grassland",
+            "required": false
+        },
+        {
+            "id": "wythers:tropical_grassland",
+            "required": false
+        },
+        {
+            "id": "traverse:grasslands",
+            "required": false
+        },
+        {
+            "id": "jermsy:shrubland",
+            "required": false
+        },
+        {
+            "id": "tectonic:grasslands",
+            "required": false
+        },
+        {
+            "id": "regions_unexplored:shrubland",
+            "required": false
+        }
+    ]
+}

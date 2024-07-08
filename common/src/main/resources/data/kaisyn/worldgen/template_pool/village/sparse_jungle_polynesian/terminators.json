@@ -1,0 +1,15 @@
+{
+  "name": "kaisyn:village/sparse_jungle_polynesian/terminators",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "kaisyn:village/sparse_jungle_polynesian/terminators/terminator_01",
+        "processors": "kaisyn:village/street_polynesian",
+        "projection": "terrain_matching",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "kaisyn:village/snowy_taiga_viking/town_centers",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 5,
+      "element": {
+        "location": "kaisyn:village/snowy_taiga_viking/town_centers/snowy_taiga_meeting_point_1",
+        "processors": "minecraft:street_snowy_or_taiga",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    }
+  ]
+}

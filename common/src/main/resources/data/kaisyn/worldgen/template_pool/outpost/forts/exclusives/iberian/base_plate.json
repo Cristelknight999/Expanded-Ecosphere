@@ -1,0 +1,15 @@
+{
+  "name": "kaisyn:outpost/forts/exclusives/iberian/base_plate",
+  "fallback": "minecraft:empty",
+  "elements": [
+      {
+      "weight": 1,
+      "element": {
+        "location": "kaisyn:outpost/forts/exclusives/iberian/base_plate",
+        "processors": "kaisyn:village/exclusives/iberian/house_iberian",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    }
+  ]
+}

@@ -10,7 +10,7 @@ displayName="${mod_name}" #mandatory
 # A URL to query for updates for this mod. See the JSON update specification https://docs.neoforged.net/docs/misc/updatechecker/
 #updateJSONURL="https://change.me.example.invalid/updates.json" #optional
 # A URL for the "homepage" for this mod, displayed in the mod UI
-#displayURL="https://change.me.to.your.mods.homepage.example.invalid/" #optional
+displayURL="${homepage}" #optional
 # A file name (in the root of the mod JAR) containing a logo for display
 logoFile="pack.png"
 # A text field displayed in the mod UI
@@ -27,12 +27,6 @@ displayTest="IGNORE_ALL_VERSION"
 
 # The description text for the mod (multi line!) (#mandatory)
 description= '''${mod_description}'''
-
-[[mixins]]
-config="wwoo-common.mixins.json"
-
-[[mixins]]
-config="wwoo.mixins.json"
 
 [[dependencies.${mod_id}]]
     modId="neoforge"
