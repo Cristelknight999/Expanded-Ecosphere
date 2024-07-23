@@ -1,0 +1,18 @@
+{
+  "replace": false,
+  "values": [
+    "wythers:ayers_rock",
+    "wythers:outback",
+    "wythers:outback_desert",
+    "wythers:kwongan_heath",
+    "wythers:billabong",
+    "wythers:eucalyptus_woodland",
+    "wythers:sparse_eucalyptus_woodland",
+    "wythers:eucalyptus_salubris_woodland",
+    "wythers:eucalyptus_jungle",
+    "wythers:sparse_eucalyptus_jungle",
+    "wythers:eucalyptus_deanei_forest",
+    "wythers:eucalyptus_jungle_canyon",
+    "wythers:desert_pinnacles"
+  ]
+}

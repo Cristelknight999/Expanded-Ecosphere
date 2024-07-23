@@ -1,14 +1,10 @@
 {
-  "replace": true,
+  "replace": false,
   "values": [
     "minecraft:desert",
-    {
-      "id": "byg:mojave_desert",
-      "required": false
-    },
-    {
-      "id": "terralith:desert_oasis",
-      "required": false
-    }
+    "wythers:deep_desert",
+    "wythers:desert_lakes",
+    "wythers:wooded_desert",
+    "wythers:cactus_desert"
   ]
 }

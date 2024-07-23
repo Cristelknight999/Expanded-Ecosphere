@@ -1,0 +1,65 @@
+{
+  "type": "minecraft:tree",
+  "config": {
+    "ignore_vines": false,
+    "force_dirt": true,
+    "minimum_size": {
+      "type": "minecraft:two_layers_feature_size",
+      "limit": 1,
+      "lower_size": 1,
+      "upper_size": 2
+    },
+    "dirt_provider": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "minecraft:spruce_log",
+        "Properties": {
+          "axis": "y"
+        }
+      }
+    },
+    "trunk_provider": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "minecraft:spruce_log",
+        "Properties": {
+          "axis": "y"
+        }
+      }
+    },
+    "foliage_provider": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "minecraft:spruce_leaves",
+        "Properties": {
+          "waterlogged": "false",
+          "persistent": "false",
+          "distance": "7"
+        }
+      }
+    },
+    "trunk_placer": {
+      "type": "minecraft:straight_trunk_placer",
+      "base_height": 25,
+      "height_rand_a": 2,
+      "height_rand_b": 14
+    },
+    "foliage_placer": {
+      "type": "minecraft:mega_pine_foliage_placer",
+      "radius": 0,
+      "offset": 1,
+      "crown_height": {
+        "type": "minecraft:uniform",
+        "value": {
+          "min_inclusive": 13,
+          "max_inclusive": 17
+        }
+      }
+    },
+    "decorators": [
+      {
+        "type": "minecraft:trunk_vine"
+      }
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "wythers:banyan_sparse_jungle",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "spacing": 8,
+    "separation": 4,
+    "salt": 10387312,
+    "type": "minecraft:random_spread"
+  }
+}

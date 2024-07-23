@@ -1,0 +1,31 @@
+{
+  "feature": "wythers:vegetation/configured_block_column/spanish_moss_west",
+  "placement": [
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:matching_block_tag",
+        "offset": [
+          0,
+          1,
+          0
+        ],
+        "tag": "minecraft:base_stone_overworld"
+      }
+    },
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:matching_blocks",
+        "offset": [
+          0,
+          0,
+          0
+        ],
+        "blocks": [
+          "minecraft:air"
+        ]
+      }
+    }
+  ]
+}

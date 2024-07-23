@@ -1,0 +1,27 @@
+{
+  "feature": "wythers:vegetation/configured_random_patch/oak_leaf_pile",
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 10
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:very_biased_to_bottom",
+        "min_inclusive": {
+          "absolute": 70
+        },
+        "max_inclusive": {
+          "absolute": 80
+        }
+      }
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

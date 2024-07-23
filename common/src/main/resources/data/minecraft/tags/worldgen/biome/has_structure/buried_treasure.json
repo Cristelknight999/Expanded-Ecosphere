@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "#minecraft:is_beach",
+    "wythers:tropical_island",
+    "wythers:jungle_island",
+    "wythers:mushroom_island",
+    "wythers:desert_island"
+  ]
+}

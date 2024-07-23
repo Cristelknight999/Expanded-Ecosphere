@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "wythers:cactus_desert",
+    "wythers:desert_beach",
+    "wythers:desert_island",
+    "wythers:desert_pinnacles",
+    "wythers:deep_desert",
+    "wythers:guelta",
+    "wythers:wooded_desert"
+  ]
+}

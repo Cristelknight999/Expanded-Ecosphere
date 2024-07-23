@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:random_patch",
+  "config": {
+    "tries": 3,
+    "xz_spread": 5,
+    "y_spread": 7,
+    "feature": "wythers:other/placed_block_column/floating_lantern"
+  }
+}

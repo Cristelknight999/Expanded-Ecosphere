@@ -1,0 +1,40 @@
+{
+  "config": {
+    "features": [
+      {
+        "feature": "wythers:vegetation/placed_tree/giant_spruce_mature",
+        "chance": 0.3
+      },
+      {
+        "feature": "wythers:vegetation/placed_tree/giant_spruce_small",
+        "chance": 0.2
+      },
+      {
+        "feature": "wythers:vegetation/placed_tree/giant_spruce_medium",
+        "chance": 0.03
+      },
+      {
+        "feature": "wythers:vegetation/placed_tree/giant_spruce_large",
+        "chance": 0.02
+      },
+      {
+        "feature": "wythers:vegetation/placed_tree/giant_pine_small",
+        "chance": 0.01
+      },
+      {
+        "feature": "wythers:vegetation/placed_tree/giant_pine_medium",
+        "chance": 0
+      },
+      {
+        "feature": "wythers:vegetation/placed_tree/giant_pine_large",
+        "chance": 0
+      },
+      {
+        "feature": "minecraft:pine_checked",
+        "chance": 0.33333334
+      }
+    ],
+    "default": "wythers:vegetation/placed_tree/giant_spruce_juvenile"
+  },
+  "type": "minecraft:random_selector"
+}

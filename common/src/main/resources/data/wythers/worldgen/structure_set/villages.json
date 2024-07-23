@@ -1,0 +1,22 @@
+{
+  "structures": [
+    {
+      "structure": "wythers:village_badlands_desert",
+      "weight": 1
+    },
+    {
+      "structure": "wythers:village_badlands",
+      "weight": 1
+    },
+    {
+      "structure": "wythers:village_wooded_badlands",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "spacing": 16,
+    "separation": 4,
+    "salt": 10387312,
+    "type": "minecraft:random_spread"
+  }
+}

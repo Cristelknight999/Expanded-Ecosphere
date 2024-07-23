@@ -1,0 +1,65 @@
+{
+  "type": "minecraft:random_patch",
+  "config": {
+    "tries": 32,
+    "xz_spread": 7,
+    "y_spread": 3,
+    "feature": {
+      "feature": {
+        "type": "minecraft:simple_block",
+        "config": {
+          "to_place": {
+            "type": "minecraft:weighted_state_provider",
+            "entries": [
+              {
+                "weight": 20,
+                "data": {
+                  "Name": "minecraft:red_mushroom"
+                }
+              },
+              {
+                "weight": 20,
+                "data": {
+                  "Name": "minecraft:brown_mushroom"
+                }
+              },
+              {
+                "weight": 50,
+                "data": {
+                  "Name": "minecraft:grass"
+                }
+              },
+              {
+                "weight": 10,
+                "data": {
+                  "Name": "minecraft:fern"
+                }
+              },
+              {
+                "weight": 2,
+                "data": {
+                  "Name": "minecraft:dead_bush"
+                }
+              },
+              {
+                "weight": 1,
+                "data": {
+                  "Name": "minecraft:lily_of_the_valley"
+                }
+              }
+            ]
+          }
+        }
+      },
+      "placement": [
+        {
+          "type": "minecraft:block_predicate_filter",
+          "predicate": {
+            "type": "minecraft:matching_blocks",
+            "blocks": "minecraft:air"
+          }
+        }
+      ]
+    }
+  }
+}

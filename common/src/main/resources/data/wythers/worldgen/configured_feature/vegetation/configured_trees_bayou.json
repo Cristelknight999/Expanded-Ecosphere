@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:random_selector",
+  "config": {
+    "features": [
+      {
+        "chance": 0.15,
+        "feature": "wythers:vegetation/placed_tree/bamboo_palm"
+      },
+      {
+        "chance": 0.25,
+        "feature": "wythers:vegetation/placed_tree/bayou_cypress_shallow"
+      },
+      {
+        "chance": 0.25,
+        "feature": "wythers:vegetation/placed_tree/bayou_cypress_middle"
+      },
+      {
+        "chance": 0.25,
+        "feature": "wythers:vegetation/placed_tree/bayou_cypress_deep"
+      },
+      {
+        "chance": 0.15,
+        "feature": "wythers:vegetation/placed_tree/bayou_cypress_surface_2"
+      }
+    ],
+    "default": "wythers:vegetation/placed_tree/bayou_cypress_surface"
+  }
+}

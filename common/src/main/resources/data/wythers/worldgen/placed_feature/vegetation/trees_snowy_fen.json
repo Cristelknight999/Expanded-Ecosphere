@@ -1,0 +1,43 @@
+{
+  "feature": "wythers:vegetation/configured_trees_snowy_fen",
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": {
+        "type": "minecraft:weighted_list",
+        "distribution": [
+          {
+            "weight": 5,
+            "data": 100
+          },
+          {
+            "weight": 1,
+            "data": 20
+          }
+        ]
+      }
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:surface_water_depth_filter",
+      "max_water_depth": 0
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:uniform",
+        "min_inclusive": {
+          "absolute": 65
+        },
+        "max_inclusive": {
+          "absolute": 85
+        }
+      }
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

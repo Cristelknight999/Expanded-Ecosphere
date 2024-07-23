@@ -1,0 +1,110 @@
+{
+  "type": "minecraft:random_patch",
+  "config": {
+    "tries": 32,
+    "xz_spread": 5,
+    "y_spread": 1,
+    "feature": {
+      "feature": {
+        "type": "minecraft:simple_block",
+        "config": {
+          "to_place": {
+            "type": "minecraft:weighted_state_provider",
+            "entries": [
+              {
+                "weight": 1,
+                "data": {
+                  "Name": "minecraft:small_dripleaf",
+                  "Properties": {
+                    "facing": "north",
+                    "half": "lower",
+                    "waterlogged": "true"
+                  }
+                }
+              },
+              {
+                "weight": 1,
+                "data": {
+                  "Name": "minecraft:small_dripleaf",
+                  "Properties": {
+                    "facing": "south",
+                    "half": "lower",
+                    "waterlogged": "true"
+                  }
+                }
+              },
+              {
+                "weight": 1,
+                "data": {
+                  "Name": "minecraft:small_dripleaf",
+                  "Properties": {
+                    "waterlogged": "true",
+                    "facing": "west",
+                    "half": "lower"
+                  }
+                }
+              },
+              {
+                "weight": 1,
+                "data": {
+                  "Name": "minecraft:small_dripleaf",
+                  "Properties": {
+                    "facing": "east",
+                    "half": "lower",
+                    "waterlogged": "true"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+      "placement": [
+        {
+          "type": "minecraft:block_predicate_filter",
+          "predicate": {
+            "type": "minecraft:matching_blocks",
+            "offset": [
+              0,
+              1,
+              0
+            ],
+            "blocks": "minecraft:air"
+          }
+        },
+        {
+          "type": "minecraft:block_predicate_filter",
+          "predicate": {
+            "type": "minecraft:matching_fluids",
+            "offset": [
+              0,
+              0,
+              0
+            ],
+            "fluids": "minecraft:water"
+          }
+        },
+        {
+          "type": "minecraft:block_predicate_filter",
+          "predicate": {
+            "type": "minecraft:matching_blocks",
+            "offset": [
+              0,
+              -1,
+              0
+            ],
+            "blocks": [
+              "minecraft:dirt",
+              "minecraft:mud",
+              "minecraft:coarse_dirt",
+              "minecraft:grass_block",
+              "minecraft:podzol",
+              "minecraft:red_sand",
+              "minecraft:sand"
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

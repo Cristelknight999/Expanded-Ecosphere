@@ -1,0 +1,28 @@
+{
+  "replace": false,
+  "values": [
+    "wythers:ayers_rock",
+    "wythers:outback",
+    "wythers:outback_desert",
+    "wythers:badlands_canyon",
+    "wythers:badlands_desert",
+    "wythers:cactus_desert",
+    "wythers:desert_beach",
+    "wythers:desert_island",
+    "wythers:desert_pinnacles",
+    "wythers:deep_desert",
+    "wythers:guelta",
+    "wythers:jacaranda_savanna",
+    "wythers:kwongan_heath",
+    "wythers:red_desert",
+    "wythers:red_rock_canyon",
+    "wythers:savanna_basaltic_incursions",
+    "wythers:scrubland",
+    "wythers:scrub_forest",
+    "wythers:tropical_volcano",
+    "wythers:volcanic_chamber",
+    "wythers:volcanic_crater",
+    "wythers:volcano",
+    "wythers:wooded_desert"
+  ]
+}

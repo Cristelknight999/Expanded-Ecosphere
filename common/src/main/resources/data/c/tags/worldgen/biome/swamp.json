@@ -1,0 +1,25 @@
+{
+  "replace": false,
+  "values": [
+    "wythers:berry_bog",
+    "wythers:fen",
+    "wythers:flooded_temperate_rainforest",
+    "wythers:old_growth_taiga_swamp",
+    "wythers:phantasmal_swamp",
+    "wythers:ancient_oak_swamp",
+    "wythers:birch_swamp",
+    "wythers:autumnal_swamp",
+    "wythers:marsh",
+    "wythers:bayou",
+    "wythers:waterlily_swamp",
+    "wythers:ancient_mossy_swamp",
+    "wythers:dripleaf_swamp",
+    "wythers:bamboo_swamp",
+    "wythers:bamboo_jungle_swamp",
+    "wythers:flooded_jungle",
+    "wythers:flooded_rainforest",
+    "wythers:tangled_forest",
+    "wythers:flooded_savanna",
+    "wythers:mud_pools"
+  ]
+}

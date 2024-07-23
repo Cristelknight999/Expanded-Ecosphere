@@ -1,0 +1,26 @@
+{
+  "replace": true,
+  "values": [
+    "minecraft:snowy_plains",
+    "minecraft:ice_spikes",
+    "minecraft:frozen_peaks",
+    "minecraft:jagged_peaks",
+    "minecraft:snowy_slopes",
+    "minecraft:frozen_ocean",
+    "minecraft:deep_frozen_ocean",
+    "minecraft:grove",
+    "minecraft:deep_dark",
+    "minecraft:frozen_river",
+    "minecraft:snowy_taiga",
+    "minecraft:snowy_beach",
+    "#minecraft:is_end",
+    "minecraft:desert",
+    "minecraft:dark_forest",
+    "wythers:forbidden_forest",
+    "wythers:ancient_oak_swamp",
+    "wythers:birch_swamp",
+    "wythers:snowy_thermal_taiga",
+    "wythers:deep_snowy_taiga",
+    "wythers:icy_crags"
+  ]
+}

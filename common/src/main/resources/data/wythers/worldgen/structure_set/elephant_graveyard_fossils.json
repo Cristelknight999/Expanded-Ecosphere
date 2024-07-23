@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "wythers:elephant_graveyard_fossil",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "spacing": 3,
+    "separation": 1,
+    "salt": 14357921,
+    "type": "minecraft:random_spread"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "feature": "wythers:vegetation/configured_tree/mega_jungle_tree",
+  "placement": [
+    {
+      "predicate": {
+        "state": {
+          "Name": "minecraft:fern"
+        },
+        "type": "minecraft:would_survive"
+      },
+      "type": "minecraft:block_predicate_filter"
+    }
+  ]
+}

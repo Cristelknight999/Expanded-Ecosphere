@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:random_selector",
+  "config": {
+    "features": [
+      {
+        "chance": 0.35,
+        "feature": "wythers:vegetation/placed_block_column/sapling_bamboo"
+      }
+    ],
+    "default": "wythers:vegetation/placed_block_column/thin_jungle_bamboo"
+  }
+}

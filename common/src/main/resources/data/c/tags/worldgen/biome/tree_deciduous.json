@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "wythers:ancient_copper_beech_forest",
+    "wythers:ancient_emerald_beech_forest",
+    "wythers:ancient_golden_beech_forest",
+    "wythers:ancient_moss_forest",
+    "wythers:autumnal_birch_forest",
+    "wythers:autumnal_forest",
+    "wythers:autumnal_flower_forest",
+    "wythers:cool_forest",
+    "wythers:cool_forest_edge",
+    "wythers:eucalyptus_deanei_forest",
+    "wythers:flowering_pantanal",
+    "wythers:forbidden_forest",
+    "wythers:warm_birch_forest",
+    "wythers:waterlily_swamp",
+    "wythers:windswept_jungle",
+    "wythers:wistman_woods"
+  ]
+}

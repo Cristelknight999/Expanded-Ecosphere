@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:bamboo",
+    "minecraft:bamboo_sapling",
+    "minecraft:grass",
+    "minecraft:large_fern",
+    "minecraft:fern",
+    "minecraft:melon",
+    "minecraft:melon_stem",
+    "minecraft:brown_mushroom",
+    "minecraft:lily_pad",
+    "minecraft:big_dripleaf",
+    "minecraft:big_dripleaf_stem",
+    "minecraft:vine"
+  ]
+}

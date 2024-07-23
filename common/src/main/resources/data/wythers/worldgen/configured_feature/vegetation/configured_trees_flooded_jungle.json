@@ -1,0 +1,52 @@
+{
+  "config": {
+    "features": [
+      {
+        "feature": "minecraft:jungle_tree",
+        "chance": 0.01
+      },
+      {
+        "feature": "wythers:vegetation/placed_tree/stick_plant",
+        "chance": 0.02
+      },
+      {
+        "feature": "wythers:vegetation/placed_random_patch/thin_jungle_bamboo_patch",
+        "chance": 0.005
+      },
+      {
+        "feature": "wythers:vegetation/placed_random_patch/melon_patch",
+        "chance": 0.0025
+      },
+      {
+        "feature": "wythers:vegetation/placed_tree/kapok_tree_flooded",
+        "chance": 0.1
+      },
+      {
+        "feature": "wythers:vegetation/placed_tree/brazilwood_tree_flooded",
+        "chance": 0.1
+      },
+      {
+        "feature": "wythers:vegetation/placed_tree/young_kapok",
+        "chance": 0.002
+      },
+      {
+        "feature": "wythers:vegetation/placed_tree/young_brazilwood",
+        "chance": 0.002
+      },
+      {
+        "feature": "wythers:vegetation/placed_tree/young_mega_jungle_tree",
+        "chance": 0.002
+      },
+      {
+        "feature": "minecraft:fancy_oak_checked",
+        "chance": 0.01
+      },
+      {
+        "feature": "minecraft:jungle_bush",
+        "chance": 0.01
+      }
+    ],
+    "default": "wythers:vegetation/placed_tree/mega_jungle_tree_flooded"
+  },
+  "type": "minecraft:random_selector"
+}

@@ -1,0 +1,50 @@
+{
+  "type": "minecraft:random_selector",
+  "config": {
+    "features": [
+      {
+        "chance": 0.5,
+        "feature": {
+          "feature": "wythers:vegetation/configured_tree/quaking_aspen",
+          "placement": [
+            {
+              "type": "minecraft:noise_based_count",
+              "noise_to_count_ratio": -1,
+              "noise_factor": 30,
+              "noise_offset": 0
+            },
+            {
+              "type": "minecraft:block_predicate_filter",
+              "predicate": {
+                "type": "minecraft:would_survive",
+                "state": {
+                  "Name": "minecraft:fern"
+                }
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "default": {
+      "feature": "wythers:vegetation/configured_tree/ponderosa_pine",
+      "placement": [
+        {
+          "type": "minecraft:noise_based_count",
+          "noise_to_count_ratio": 1,
+          "noise_factor": 30,
+          "noise_offset": 0
+        },
+        {
+          "type": "minecraft:block_predicate_filter",
+          "predicate": {
+            "type": "minecraft:would_survive",
+            "state": {
+              "Name": "minecraft:fern"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

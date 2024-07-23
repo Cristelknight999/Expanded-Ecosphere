@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "wythers:autumnal_flower_forest",
+    "wythers:spring_flower_fields",
+    "wythers:spring_flower_forest",
+    "wythers:flowering_pantanal"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:random_selector",
+  "config": {
+    "features": [
+      {
+        "chance": 0.15,
+        "feature": "wythers:vegetation/placed_tree/swamp_forest_dark_oak_leafless"
+      }
+    ],
+    "default": "wythers:vegetation/placed_tree/swamp_forest_dark_oak"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "wythers:tropical_grassland",
+    "wythers:humid_tropical_grassland",
+    "wythers:subtropical_grassland",
+    "wythers:cold_plains",
+    "wythers:cool_plains",
+    "wythers:autumnal_plains",
+    "wythers:harvest_fields",
+    "wythers:highland_plains",
+    "wythers:lapacho_plains",
+    "wythers:subtropical_grassland",
+    "wythers:tundra"
+  ]
+}

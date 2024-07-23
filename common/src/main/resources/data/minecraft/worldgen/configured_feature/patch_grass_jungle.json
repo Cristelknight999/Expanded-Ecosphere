@@ -1,0 +1,71 @@
+{
+  "type": "minecraft:random_patch",
+  "config": {
+    "tries": 24,
+    "xz_spread": 7,
+    "y_spread": 3,
+    "feature": {
+      "feature": {
+        "type": "minecraft:simple_block",
+        "config": {
+          "to_place": {
+            "type": "minecraft:weighted_state_provider",
+            "entries": [
+              {
+                "weight": 5,
+                "data": {
+                  "Name": "minecraft:large_fern",
+                  "Properties": {
+                    "half": "lower"
+                  }
+                }
+              },
+              {
+                "weight": 0,
+                "data": {
+                  "Name": "minecraft:jungle_sapling",
+                  "Properties": {
+                    "stage": "1"
+                  }
+                }
+              },
+              {
+                "weight": 2,
+                "data": {
+                  "Name": "minecraft:grass"
+                }
+              },
+              {
+                "weight": 30,
+                "data": {
+                  "Name": "minecraft:fern"
+                }
+              }
+            ]
+          }
+        }
+      },
+      "placement": [
+        {
+          "type": "minecraft:block_predicate_filter",
+          "predicate": {
+            "type": "minecraft:all_of",
+            "predicates": [
+              {
+                "type": "minecraft:matching_blocks",
+                "offset": [
+                  0,
+                  0,
+                  0
+                ],
+                "blocks": [
+                  "minecraft:air"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "replace": false,
+  "values": [
+    "wythers:tropical_rainforest",
+    "wythers:eucalyptus_jungle",
+    "wythers:eucalyptus_jungle_canyon",
+    "wythers:sparse_bamboo_jungle",
+    "wythers:jungle_island",
+    "wythers:bamboo_swamp",
+    "wythers:bamboo_jungle_swamp",
+    "wythers:bamboo_jungle_canyon",
+    "wythers:bamboo_jungle_highlands",
+    "wythers:dry_tropical_grassland",
+    "wythers:highland_tropical_rainforest",
+    "wythers:mushroom_island",
+    "wythers:flooded_jungle",
+    "wythers:flooded_rainforest",
+    "wythers:pantanal",
+    "wythers:sandy_jungle",
+    "wythers:sparse_bamboo_jungle",
+    "wythers:sparse_eucalyptus_jungle",
+    "wythers:sparse_eucalyptus_woodland",
+    "wythers:windswept_jungle"
+  ]
+}

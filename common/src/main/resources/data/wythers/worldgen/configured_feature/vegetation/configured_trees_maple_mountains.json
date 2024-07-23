@@ -1,0 +1,24 @@
+{
+  "config": {
+    "features": [
+      {
+        "feature": "wythers:vegetation/placed_random_patch/thin_jungle_bamboo_patch",
+        "chance": 0.05
+      },
+      {
+        "feature": "wythers:vegetation/placed_tree/maple",
+        "chance": 0.3
+      },
+      {
+        "feature": "wythers:vegetation/placed_tree/pine",
+        "chance": 0.3
+      },
+      {
+        "feature": "wythers:vegetation/placed_tree/birch",
+        "chance": 0.15
+      }
+    ],
+    "default": "wythers:vegetation/placed_tree/azalea_oak"
+  },
+  "type": "minecraft:random_selector"
+}

@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:deepslate",
+    "minecraft:stone",
+    "minecraft:mossy_cobblestone",
+    "minecraft:moss_block",
+    "minecraft:water",
+    "minecraft:seagrass"
+  ]
+}

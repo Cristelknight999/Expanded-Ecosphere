@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:random_patch",
+  "config": {
+    "tries": 75,
+    "xz_spread": 5,
+    "y_spread": 5,
+    "feature": "wythers:vegetation/placed_block_column/dripleaf_bayou"
+  }
+}

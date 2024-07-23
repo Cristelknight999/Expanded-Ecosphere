@@ -7,11 +7,18 @@ architectury {
 }
 
 loom {
+    accessWidenerPath = project(":common").loom.accessWidenerPath
     forge {
+        convertAccessWideners = true
+        extraAccessWideners.add loom.accessWidenerPath.get().asFile.name
+
+        mixinConfig "wwoo-common.mixins.json"
+        mixinConfig "wwoo.mixins.json"
     }
 }
 
 repositories {
+    maven { url 'https://jitpack.io' }
 }
 
 configurations {
@@ -25,12 +32,20 @@ configurations {
 dependencies {
     forge "net.minecraftforge:forge:${rootProject.forge_version}"
 
+    modImplementation "maven.modrinth:cristel-lib:${rootProject.cristellib_version}-forge"
+    modImplementation "com.github.glitchfiend:TerraBlender-forge:${rootProject.minecraft_version}-${rootProject.terrablender_version}"
+    modApi "me.shedaniel.cloth:cloth-config-forge:${rootProject.cloth_config_version}"
+    implementation("blue.endless:jankson:${rootProject.jankson_version}")
+
     common(project(path: ":common", configuration: "namedElements")) { transitive false }
     shadowCommon(project(path: ":common", configuration: "transformProductionForge")) { transitive = false }
 }
 
 
 shadowJar {
+    exclude "fabric.mod.json"
+    exclude "architectury.common.json"
+
     configurations = [project.configurations.shadowCommon]
     archiveClassifier.set("dev-shadow")
 }

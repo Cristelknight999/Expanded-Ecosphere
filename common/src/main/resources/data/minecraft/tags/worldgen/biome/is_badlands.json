@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "wythers:ayers_rock",
+    "wythers:outback",
+    "wythers:outback_desert",
+    "wythers:badlands_canyon",
+    "wythers:badlands_desert",
+    "wythers:kwongan_heath",
+    "wythers:red_desert",
+    "wythers:red_rock_canyon",
+    "wythers:savanna_badlands"
+  ]
+}

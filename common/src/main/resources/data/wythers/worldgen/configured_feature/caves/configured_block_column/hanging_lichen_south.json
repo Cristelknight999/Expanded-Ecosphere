@@ -1,0 +1,55 @@
+{
+  "type": "minecraft:block_column",
+  "config": {
+    "direction": "down",
+    "allowed_placement": {
+      "type": "minecraft:matching_blocks",
+      "blocks": "minecraft:air"
+    },
+    "prioritize_tip": false,
+    "layers": [
+      {
+        "height": 1,
+        "provider": {
+          "type": "minecraft:simple_state_provider",
+          "state": {
+            "Name": "minecraft:glow_lichen",
+            "Properties": {
+              "down": "false",
+              "east": "false",
+              "north": "false",
+              "south": "true",
+              "up": "true",
+              "waterlogged": "false",
+              "west": "false"
+            }
+          }
+        }
+      },
+      {
+        "height": {
+          "type": "minecraft:uniform",
+          "value": {
+            "min_inclusive": 3,
+            "max_inclusive": 13
+          }
+        },
+        "provider": {
+          "type": "minecraft:simple_state_provider",
+          "state": {
+            "Name": "minecraft:glow_lichen",
+            "Properties": {
+              "down": "false",
+              "east": "false",
+              "north": "false",
+              "south": "true",
+              "up": "false",
+              "waterlogged": "false",
+              "west": "false"
+            }
+          }
+        }
+      }
+    ]
+  }
+}

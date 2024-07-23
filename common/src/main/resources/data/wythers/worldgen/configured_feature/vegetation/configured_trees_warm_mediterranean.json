@@ -1,0 +1,12 @@
+{
+  "config": {
+    "features": [
+      {
+        "feature": "wythers:vegetation/placed_tree/mediterranean_cypress_11",
+        "chance": 0.2
+      }
+    ],
+    "default": "wythers:vegetation/placed_tree/grassland_palm"
+  },
+  "type": "minecraft:random_selector"
+}

@@ -1,0 +1,49 @@
+{
+  "feature": "wythers:vegetation/configured_random_patch/flooded_savanna_water_plants",
+  "placement": [
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "absolute": 62
+      }
+    },
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:matching_fluids",
+        "offset": [
+          0,
+          0,
+          0
+        ],
+        "fluids": "minecraft:water"
+      }
+    },
+    {
+      "type": "minecraft:count",
+      "count": {
+        "type": "minecraft:weighted_list",
+        "distribution": [
+          {
+            "weight": 1,
+            "data": 10
+          },
+          {
+            "weight": 5,
+            "data": 5
+          },
+          {
+            "weight": 3,
+            "data": 0
+          }
+        ]
+      }
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

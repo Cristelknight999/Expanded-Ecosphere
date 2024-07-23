@@ -1,0 +1,29 @@
+{
+  "config": {
+    "vegetation_chance": 0.5,
+    "xz_radius": {
+      "type": "minecraft:uniform",
+      "value": {
+        "min_inclusive": 4,
+        "max_inclusive": 7
+      }
+    },
+    "extra_edge_column_chance": 0,
+    "extra_bottom_block_chance": 0,
+    "vertical_range": 1,
+    "vegetation_feature": {
+      "feature": "minecraft:dripleaf",
+      "placement": []
+    },
+    "surface": "floor",
+    "depth": 2,
+    "replaceable": "#minecraft:lush_ground_replaceable",
+    "ground_state": {
+      "state": {
+        "Name": "minecraft:mud"
+      },
+      "type": "minecraft:simple_state_provider"
+    }
+  },
+  "type": "minecraft:waterlogged_vegetation_patch"
+}
