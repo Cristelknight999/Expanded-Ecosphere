@@ -13,18 +13,19 @@ import org.jetbrains.annotations.Nullable;
 import java.util.HashMap;
 
 
-public record EEConfig(String mode, boolean forceLargeBiomes, boolean removeOreBlobs, boolean showUpdates, boolean showBigUpdates, BlockState backGroundBlock)
+public record EEConfig(String mode, boolean forceLargeBiomes, boolean removeOreBlobs, boolean checkForUpdates, boolean showUpdates, boolean showBigUpdates, BlockState backGroundBlock)
         implements CommentedConfig<EEConfig> {
 
     private static EEConfig INSTANCE = null;
 
-    public static final EEConfig DEFAULT = new EEConfig("DEFAULT",false,true, true, true, Blocks.CALCITE.defaultBlockState());
+    public static final EEConfig DEFAULT = new EEConfig("DEFAULT",false,true,true,true, true, Blocks.CALCITE.defaultBlockState());
 
     public static final Codec<EEConfig> CODEC = RecordCodecBuilder.create(builder ->
             builder.group(
                     Codec.STRING.fieldOf("mode").orElse("DEFAULT").forGetter(config -> config.mode),
                     Codec.BOOL.fieldOf("forceLargeBiomes").orElse(false).forGetter(config -> config.forceLargeBiomes),
                     Codec.BOOL.fieldOf("removeOreBlobs").orElse(true).forGetter(config -> config.removeOreBlobs),
+                    Codec.BOOL.fieldOf("checkForUpdates").orElse(true).forGetter(config -> config.checkForUpdates),
                     Codec.BOOL.fieldOf("showUpdates").orElse(true).forGetter(config -> config.showUpdates),
                     Codec.BOOL.fieldOf("showBigUpdates").orElse(true).forGetter(config -> config.showBigUpdates),
                     BlockState.CODEC.fieldOf("backGroundBlock").orElse(Blocks.CALCITE.defaultBlockState()).forGetter(config -> config.backGroundBlock)
@@ -56,13 +57,15 @@ public record EEConfig(String mode, boolean forceLargeBiomes, boolean removeOreB
     public @NotNull HashMap<String, String> getComments() {
         return Util.make(new HashMap<>(), map -> {
             map.put("removeOreBlobs", """
-                    Removes underground ores (andesite, diorite, granite, gravel and dirt)""");
+                    Removes underground ores (andesite, diorite, granite, gravel and dirt).""");
             map.put("mode", """
                     Type DEFAULT or COMPATIBLE, for changing modes.
                     COMPATIBLE allows compat with Terralith and disabling biomes in banned_biomes.json5,
                     but it requires Terrablender and is a bit unstable.""");
+            map.put("checkForUpdates", """
+                    Whether WWEE should check if there are any updates.""");
             map.put("showUpdates", """
-                    Whether updates should be announced in chat when entering a world""");
+                    Whether updates should be announced in chat when entering a world.""");
             map.put("forceLargeBiomes", """        
                     Whether to force Minecraft to generate Large Biomes or not.
                     This option forces Minecraft to generate Large Biomes, this setting was introduced,

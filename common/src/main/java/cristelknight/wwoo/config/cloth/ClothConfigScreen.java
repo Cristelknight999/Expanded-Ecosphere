@@ -72,7 +72,7 @@ public class ClothConfigScreen {
 
     private static class ConfigEntries {
         private final ConfigEntryBuilder builder;
-        private final BooleanListEntry removeOreBlobs, showUpdates, showBigUpdates, forceLargeBiomes, enableBiomes;
+        private final BooleanListEntry removeOreBlobs, checkForUpdates, showUpdates, showBigUpdates, forceLargeBiomes, enableBiomes;
         private final @NotNull DropdownBoxEntry<Block> backgroundBlock;
         private final EnumListEntry<ExpandedEcosphere.Mode> mode;
         private final StringListListEntry biomeList;
@@ -104,6 +104,7 @@ public class ClothConfigScreen {
             textListEntry(Component.translatable(MODID + ".config.text.modes", Component.literal(currentMode.toString()).withStyle(ChatFormatting.DARK_PURPLE)).withStyle(ChatFormatting.GRAY), category1);
 
             backgroundBlock = createBlockField("bB", config.backGroundBlock().getBlock(), EEConfig.DEFAULT.backGroundBlock().getBlock(), category1, List.of(FT.NO_BLOCK_ENTITY, FT.NO_BUTTON));
+            checkForUpdates = createBooleanField("checkForUpdates", config.checkForUpdates(), EEConfig.DEFAULT.checkForUpdates(), category1, new Component[]{});
             showUpdates = createBooleanField("showUpdates", config.showUpdates(), EEConfig.DEFAULT.showUpdates(), category1, new Component[]{});
             showBigUpdates = createBooleanField("showBigUpdates", config.showBigUpdates(), EEConfig.DEFAULT.showBigUpdates(), category1, new Component[]{});
             removeOreBlobs = createBooleanField("removeOreBlobs", config.removeOreBlobs(), EEConfig.DEFAULT.removeOreBlobs(), category1, new Component[]{fieldToolTip("removeOreBlobs")});
@@ -119,7 +120,7 @@ public class ClothConfigScreen {
             ExpandedEcosphere.Mode currentMode = mode.getValue();
             ExpandedEcosphere.currentMode = currentMode;
 
-            return new EEConfig(currentMode.toString(), forceLargeBiomes.getValue(), removeOreBlobs.getValue(), showUpdates.getValue(), showBigUpdates.getValue(), backgroundBlock.getValue().defaultBlockState());
+            return new EEConfig(currentMode.toString(), forceLargeBiomes.getValue(), removeOreBlobs.getValue(), checkForUpdates.getValue(), showUpdates.getValue(), showBigUpdates.getValue(), backgroundBlock.getValue().defaultBlockState());
         }
 
         public ReplaceBiomesConfig createBiomesConfig() {

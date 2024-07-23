@@ -6,6 +6,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import cristelknight.wwoo.ExpandedEcosphere;
 import cristelknight.wwoo.EEExpectPlatform;
+import cristelknight.wwoo.config.configs.EEConfig;
 import net.cristellib.CristelLibExpectPlatform;
 import net.cristellib.util.Platform;
 import net.minecraft.ChatFormatting;
@@ -40,6 +41,9 @@ public class Updater {
 
 
     public void checkForUpdates() {
+        EEConfig config = EEConfig.DEFAULT.getConfig();
+        if(!config.checkForUpdates()) return;
+
         try (InputStream in = new URL("https://github.com/Cristelknight999/CristelknightUpdateChecker/releases/download/1.0/update.json").openStream()) {
             String updateIndex;
             try {
