@@ -41,10 +41,8 @@
     "root_placer": {
       "trunk_offset_y": {
         "type": "minecraft:uniform",
-        "value": {
-          "min_inclusive": 2,
-          "max_inclusive": 8
-        }
+        "min_inclusive": 2,
+        "max_inclusive": 8
       },
       "root_provider": {
         "state": {

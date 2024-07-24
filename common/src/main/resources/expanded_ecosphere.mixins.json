@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "package": "de.cristelknight.wwee.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "minVersion": "0.8",
+  "client": [
+    "MixinClientPacketListener"
+  ],
+  "mixins": [
+    "HoglinMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

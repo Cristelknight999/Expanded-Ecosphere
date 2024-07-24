@@ -51,10 +51,8 @@
       },
       "trunk_offset_y": {
         "type": "minecraft:uniform",
-        "value": {
-          "min_inclusive": 32,
-          "max_inclusive": 35
-        }
+        "min_inclusive": 32,
+        "max_inclusive": 35
       },
       "mangrove_root_placement": {
         "max_root_width": 1,

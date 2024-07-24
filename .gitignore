@@ -5,6 +5,7 @@ run/
 out/
 *.iml
 .gradle/
+.architectury-transformer/
 output/
 bin/
 libs/

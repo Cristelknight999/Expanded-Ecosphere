@@ -45,10 +45,8 @@
       "type": "minecraft:fancy_foliage_placer",
       "radius": {
         "type": "minecraft:uniform",
-        "value": {
-          "min_inclusive": 1,
-          "max_inclusive": 2
-        }
+        "min_inclusive": 1,
+        "max_inclusive": 2
       },
       "offset": 0,
       "height": 2

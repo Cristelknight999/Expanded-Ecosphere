@@ -1,0 +1,48 @@
+modLoader = "javafml"
+loaderVersion = "${neo_loader_version_range}"
+#issueTrackerURL = ""
+license = "${mod_license}"
+
+[[mods]]
+modId = "${mod_id}"
+version = "${mod_version}"
+
+displayName = "${mod_name}"
+authors = "William Wythers, Cristelknight999"
+displayURL="${homepage}"
+logoFile="pack.png"
+
+description = '''${mod_description}'''
+
+displayTest="IGNORE_ALL_VERSION"
+
+[[mixins]]
+config="expanded_ecosphere.mixins.json"
+
+[[dependencies.${mod_id}]]
+modId="neoforge"
+type="required"
+versionRange="${neo_version_range}"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.${mod_id}]]
+modId="minecraft"
+type="required"
+versionRange="[${minecraft_version},)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.${mod_id}]]
+modId="cristellib"
+type="required"
+versionRange="[${cristellib_version},)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.${mod_id}]]
+modId="wwoo"
+type="discouraged"
+versionRange=""
+ordering="NONE"
+side="BOTH"

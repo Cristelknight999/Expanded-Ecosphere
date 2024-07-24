@@ -113,7 +113,7 @@
           "type": "minecraft:block_predicate_filter",
           "predicate": {
             "type": "minecraft:matching_blocks",
-            "blocks": "minecraft:grass"
+            "blocks": "minecraft:short_grass"
           }
         },
         {
@@ -146,7 +146,7 @@
                   ],
                   "blocks": [
                     "minecraft:air",
-                    "minecraft:grass"
+                    "minecraft:short_grass"
                   ]
                 },
                 {
@@ -157,7 +157,7 @@
                     0
                   ],
                   "blocks": [
-                    "minecraft:grass",
+                    "minecraft:short_grass",
                     "minecraft:air"
                   ]
                 },
@@ -169,7 +169,7 @@
                     1
                   ],
                   "blocks": [
-                    "minecraft:grass",
+                    "minecraft:short_grass",
                     "minecraft:air"
                   ]
                 },
@@ -181,7 +181,7 @@
                     -1
                   ],
                   "blocks": [
-                    "minecraft:grass",
+                    "minecraft:short_grass",
                     "minecraft:air"
                   ]
                 },

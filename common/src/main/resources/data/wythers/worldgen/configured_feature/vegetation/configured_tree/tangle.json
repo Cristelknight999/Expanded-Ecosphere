@@ -22,10 +22,8 @@
           "property": "age",
           "values": {
             "type": "minecraft:uniform",
-            "value": {
-              "min_inclusive": 0,
-              "max_inclusive": 4
-            }
+            "min_inclusive": 0,
+            "max_inclusive": 4
           },
           "type": "minecraft:randomized_int_state_provider"
         },
@@ -78,10 +76,8 @@
     "root_placer": {
       "trunk_offset_y": {
         "type": "minecraft:uniform",
-        "value": {
-          "min_inclusive": 1,
-          "max_inclusive": 3
-        }
+        "min_inclusive": 1,
+        "max_inclusive": 3
       },
       "root_provider": {
         "state": {
@@ -134,18 +130,14 @@
     "trunk_placer": {
       "extra_branch_steps": {
         "type": "minecraft:uniform",
-        "value": {
-          "min_inclusive": 1,
-          "max_inclusive": 4
-        }
+        "min_inclusive": 1,
+        "max_inclusive": 4
       },
       "place_branch_per_log_probability": 0.5,
       "extra_branch_length": {
         "type": "minecraft:uniform",
-        "value": {
-          "min_inclusive": 0,
-          "max_inclusive": 1
-        }
+        "min_inclusive": 0,
+        "max_inclusive": 1
       },
       "can_grow_through": "#minecraft:mangrove_logs_can_grow_through",
       "base_height": 2,

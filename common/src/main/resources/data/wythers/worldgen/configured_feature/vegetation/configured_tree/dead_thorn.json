@@ -60,10 +60,8 @@
       },
       "trunk_offset_y": {
         "type": "minecraft:uniform",
-        "value": {
-          "min_inclusive": 1,
-          "max_inclusive": 4
-        }
+        "min_inclusive": 1,
+        "max_inclusive": 4
       },
       "above_root_placement": {
         "above_root_provider": {

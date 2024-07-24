@@ -41,10 +41,8 @@
     "root_placer": {
       "trunk_offset_y": {
         "type": "minecraft:uniform",
-        "value": {
-          "min_inclusive": 2,
-          "max_inclusive": 8
-        }
+        "min_inclusive": 2,
+        "max_inclusive": 8
       },
       "root_provider": {
         "state": {
@@ -160,10 +158,8 @@
           "property": "age",
           "values": {
             "type": "minecraft:uniform",
-            "value": {
-              "min_inclusive": 0,
-              "max_inclusive": 4
-            }
+            "min_inclusive": 0,
+            "max_inclusive": 4
           },
           "type": "minecraft:randomized_int_state_provider"
         },

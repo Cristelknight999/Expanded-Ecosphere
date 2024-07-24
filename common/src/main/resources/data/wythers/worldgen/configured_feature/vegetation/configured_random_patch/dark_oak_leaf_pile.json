@@ -33,7 +33,7 @@
             ],
             "blocks": [
               "minecraft:air",
-              "minecraft:grass"
+              "minecraft:short_grass"
             ]
           }
         },

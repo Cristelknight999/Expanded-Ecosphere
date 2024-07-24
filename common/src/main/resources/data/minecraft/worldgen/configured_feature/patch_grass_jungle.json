@@ -21,7 +21,7 @@
                 }
               },
               {
-                "weight": 0,
+                "weight": 1,
                 "data": {
                   "Name": "minecraft:jungle_sapling",
                   "Properties": {
@@ -32,7 +32,7 @@
               {
                 "weight": 2,
                 "data": {
-                  "Name": "minecraft:grass"
+                  "Name": "minecraft:short_grass"
                 }
               },
               {

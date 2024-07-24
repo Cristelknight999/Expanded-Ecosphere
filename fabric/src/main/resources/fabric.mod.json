@@ -9,17 +9,17 @@
     "William Wythers"
   ],
   "contact": {
-    "homepage": "https://www.curseforge.com/minecraft/mc-mods/expanded-ecosphere"
+    "homepage": "${homepage}"
   },
   "entrypoints": {
     "main": [
-      "cristelknight.wwoo.fabric.ExpandedEcosphereFabric"
+      "de.cristelknight.wwee.fabric.ExpandedEcosphereFabric"
     ],
     "modmenu": [
-      "cristelknight.wwoo.fabric.config.ModMenuConfig"
+      "de.cristelknight.wwee.fabric.config.ModMenuConfig"
     ],
     "terrablender": [
-      "cristelknight.wwoo.fabric.terrablender.TerrablenderFabricInit"
+      "de.cristelknight.wwee.fabric.terrablender.TerrablenderFabricInit"
     ]
   },
   "license": "${mod_license}",
@@ -33,17 +33,13 @@
   },
   "environment": "*",
   "mixins": [
-    "wwoo-common.mixins.json",
-    "wwoo.mixins.json"
+    "expanded_ecosphere.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=${fabric_loader_min_version}",
     "fabric": "*",
     "minecraft": ">=${minecraft_version}",
     "cristellib": ">=${cristellib_version}"
-  },
-  "breaks": {
-    "cristellib": "1.1.4"
   },
   "conflicts": {
     "wwoo": "*"

@@ -43,17 +43,13 @@
       "height_rand_b": 9,
       "extra_branch_steps": {
         "type": "minecraft:uniform",
-        "value": {
-          "min_inclusive": 1,
-          "max_inclusive": 6
-        }
+        "min_inclusive": 1,
+        "max_inclusive": 6
       },
       "extra_branch_length": {
         "type": "minecraft:uniform",
-        "value": {
-          "min_inclusive": 0,
-          "max_inclusive": 1
-        }
+        "min_inclusive": 0,
+        "max_inclusive": 1
       },
       "place_branch_per_log_probability": 0.5,
       "can_grow_through": "#minecraft:mangrove_logs_can_grow_through"

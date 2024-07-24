@@ -12,18 +12,19 @@
 
     // Main
     "expanded_ecosphere.config.text.modes": "You can select different modes. Currently selected: %1$s Mode.\nFor more information and to change modes click on the Mode Category",
-    "expanded_ecosphere.config.entry.bB": "Select the background block",
-    "expanded_ecosphere.config.entry.showUpdates": "Announce updates in the chat when joining a world?",
-    "expanded_ecosphere.config.entry.showBigUpdates": "Announce important updates even if the above setting is disabled?",
-    "expanded_ecosphere.config.entry.removeOreBlobs": "Remove ore blobs",
-    "expanded_ecosphere.config.entry.removeOreBlobs.toolTip": "Removes underground ores (andesite, diorite, granite, gravel and dirt)",
-    "expanded_ecosphere.config.entry.forceLargeBiomes": "Force Minecraft to generate Large Biomes?",
+    //"expanded_ecosphere.config.entry.bB": "Select the background block",
+    "expanded_ecosphere.config.entry.checkForUpdates": "Try to check for updates.",
+    "expanded_ecosphere.config.entry.showUpdates": "Announce updates in the chat when joining a world.",
+    "expanded_ecosphere.config.entry.showBigUpdates": "Announce important updates even if the above setting is disabled.",
+    "expanded_ecosphere.config.entry.removeOreBlobs": "Remove ore blobs.",
+    "expanded_ecosphere.config.entry.removeOreBlobs.toolTip": "Removes underground ores (andesite, diorite, granite, gravel and dirt).",
+    "expanded_ecosphere.config.entry.forceLargeBiomes": "Force Minecraft to generate Large Biomes.",
     "expanded_ecosphere.config.text.forceLargeBiomes": "This option forces Minecraft to generate Large Biomes, this setting was introduced, because the default presets do not work (correctly). This option will probably not work with Compatible mode, or other biome mods.",
 
     // Biome Replacing
     "expanded_ecosphere.config.entry.enableBiomes": "Enable biome replacing",
-    "expanded_ecosphere.config.entry.biomeList": "Enter biomes into this list. Check the tooltip on how to do it",
-    "expanded_ecosphere.config.entry.biomeList.toolTip": "Enter the biome to replace first and then the biome which should replace it.\nSeparate them with a \"/\". For example: minecraft:plains/minecraft:basalt_deltas",
+    "expanded_ecosphere.config.entry.biomeList": "Enter biomes into this list. Check the tooltip on how to do it.",
+    "expanded_ecosphere.config.entry.biomeList.toolTip": "Enter the biome to replace first and then the biome which should replace it.\nSeparate them with a \"#\". For example: minecraft:plains#minecraft:basalt_deltas",
     "expanded_ecosphere.config.text.replaceBiomes": "Only biomes which are added through Expanded Ecosphere will work.\nAlso on compatible mode you can only replace Expanded Ecosphere biomes and only replace them with non vanilla biomes.\nIf a biome doesn't exist, the game will crash!",
 
 
@@ -32,7 +33,7 @@
     "expanded_ecosphere.config.text.downloadTB": "Click here too download",
     "expanded_ecosphere.config.entry.selectMode": "Select the mode Expanded Ecosphere should use",
     "expanded_ecosphere.config.text.defaultMode": "§l§nDefault Mode:§r\nIf you don't have any other mods that add biomes (to the overworld), you should definitely use this mode for the best result.",
-    "expanded_ecosphere.config.text.compatibleMode": "§l§nCompatible Mode:§r\nThis mode uses Terrablender to add Expanded Ecospheres biomes to the overworld. You don't need to use this mode, if you have biome mods which use Terrablender to add their biomes to the overworld. But the world-gen §ncould§r be better with this mode. Best test both modes.\nIf you have a mod like Terralith, then you of course have to enable it.",
+    "expanded_ecosphere.config.text.compatibleMode": "§l§nCompatible Mode:§r\nThis mode uses Terrablender to add Expanded Ecospheres biomes to the overworld. You don't need to use this mode, if you §nonly§r have biome mods which use Terrablender to add their biomes to the overworld. But the world-gen §ncould§r be better with this mode. Best test both modes.\nIf you have a mod like Terralith, then you of course have to enable it.",
 
 
     // Updater
