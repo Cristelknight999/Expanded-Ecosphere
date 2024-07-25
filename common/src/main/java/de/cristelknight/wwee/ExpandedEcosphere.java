@@ -33,7 +33,7 @@ public class ExpandedEcosphere {
         ReplaceBiomesConfig config2 = ReplaceBiomesConfig.DEFAULT.getConfig();
         if(config2.enableBiomes() && currentMode.equals(Mode.DEFAULT)) BiomeReplace.replace();
 
-        ResourceLocation.withDefaultNamespace(":lol");
+        ResourceLocation.withDefaultNamespace("lol");
 
         BuiltInDataPacks.registerPack(EERL.create("resources/ee_default"), MODID, Component.literal("Expanded Ecosphere Default World Gen"), () -> currentMode.equals(Mode.DEFAULT));
         BuiltInDataPacks.registerPack(EERL.create("resources/ee_remove_blobs"), MODID, Component.literal("Disables granit, etc."), () -> EEConfig.DEFAULT.getConfig().removeOreBlobs());
