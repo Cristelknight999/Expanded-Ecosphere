@@ -48,7 +48,7 @@ If you know any other mods or datapacks that work well with Expanded Ecosphere, 
 1. Download the mod or datapack version from the [downloads](#official-downloads) above.
 ##### Mod:
 1. put the file into the `mods` folder in `.minecraft/mods`. 
-2. Then install the matching mod loader for your downloaded mod file: [Fabric download](https://fabricmc.net/use/installer/)[(tutorial)](https://fabricmc.net/wiki/player:tutorials:install_mcl:windows) or [Forge download](https://files.minecraftforge.net/net/minecraftforge/forge/)[(tutorial)](https://www.youtube.com/watch?v=fMKwJ97ri90).
+2. Then install the matching mod loader for your downloaded mod file: [Fabric download](https://fabricmc.net/use/installer/)[(tutorial)](https://docs.fabricmc.net/players/installing-fabric) or [Forge download](https://files.minecraftforge.net/net/minecraftforge/forge/)[(tutorial)](https://www.youtube.com/watch?v=fMKwJ97ri90).
 3. Then start your game and create a new world.
 
 ##### Datapack: 
