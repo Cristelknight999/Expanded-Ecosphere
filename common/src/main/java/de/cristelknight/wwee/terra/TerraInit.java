@@ -66,7 +66,7 @@ public class TerraInit {
 
                 JsonObject jo = e.get("parameters").getAsJsonObject();
                 Climate.ParameterPoint point = Util.readConfig(jo, Climate.ParameterPoint.CODEC, JsonOps.INSTANCE);
-                Pair<Climate.ParameterPoint, ResourceKey<Biome>> pair = new Pair<>(point, ResourceKey.create(Registries.BIOME, ResourceLocation.withDefaultNamespace(b)));
+                Pair<Climate.ParameterPoint, ResourceKey<Biome>> pair = new Pair<>(point, ResourceKey.create(Registries.BIOME, ResourceLocation.parse(b)));
                 list.add(pair);
             }
 
