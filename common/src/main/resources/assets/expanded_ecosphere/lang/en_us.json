@@ -41,6 +41,7 @@
     "expanded_ecosphere.config.text.newUpdate": "\n\n There is a new Version for William Wythers' Overhauled Overworld available! Download it %1$s\n %2$s\n\n",
 
     "expanded_ecosphere.config.text.newUpdates": "(You are %1$s version%2$s behind)",
+    "expanded_ecosphere.config.text.ch": "here",
     "expanded_ecosphere.config.text.multiple": "s",
     "expanded_ecosphere.config.text.null": "",
 
