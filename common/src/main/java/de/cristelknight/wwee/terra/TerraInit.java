@@ -50,7 +50,7 @@ public class TerraInit {
 
         try (InputStreamReader reader = new InputStreamReader(im)) {
             JsonElement el = JsonParser.parseReader(reader);
-            if (!el.isJsonObject()) throw new RuntimeException("Input stream is no JsonObject");
+            if (!el.isJsonObject()) throw new RuntimeException("Input stream is on JsonElement");
             List<Pair<Climate.ParameterPoint, ResourceKey<Biome>>> list = new ArrayList<>();
             JsonObject o = el.getAsJsonObject();
 
