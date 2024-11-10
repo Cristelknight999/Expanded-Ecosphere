@@ -113,13 +113,11 @@
     ]
   },
   "spawn_costs": {},
-  "carvers": {
-    "air": [
-      "minecraft:cave",
-      "minecraft:cave_extra_underground",
-      "minecraft:canyon"
-    ]
-  },
+  "carvers": [
+    "minecraft:cave",
+    "minecraft:cave_extra_underground",
+    "minecraft:canyon"
+  ],
   "features": [
     [],
     [
@@ -173,7 +171,7 @@
     [
       "minecraft:glow_lichen",
       "minecraft:seagrass_deep_cold",
-      "minecraft:seagrass_simple",
+      
       "minecraft:kelp_cold"
     ],
     [

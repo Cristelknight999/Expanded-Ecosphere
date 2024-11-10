@@ -15,13 +15,11 @@
     "grass_color": 14399078,
     "foliage_color": 16765788
   },
-  "carvers": {
-    "air": [
-      "minecraft:cave",
-      "minecraft:cave_extra_underground",
-      "minecraft:canyon"
-    ]
-  },
+  "carvers": [
+    "minecraft:cave",
+    "minecraft:cave_extra_underground",
+    "minecraft:canyon"
+  ],
   "features": [
     [
       "wythers:terrain/placed_random_patch/stone_cliffs"
