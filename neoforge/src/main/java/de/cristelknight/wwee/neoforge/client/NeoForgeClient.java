@@ -10,4 +10,5 @@ public class NeoForgeClient {
         container.registerExtensionPoint(IConfigScreenFactory.class, (mc, screen) ->
                 new ClothConfigScreen().create(screen));
     }
+
 }
