@@ -1,8 +1,11 @@
 {
   "display": {
     "icon": {
-      "item": "minecraft:netherite_boots",
-      "nbt": "{Damage:0, Enchantments: [{lvl: 3s, id: \"minecraft:unbreaking\"}]}"
+      "id": "minecraft:netherite_boots",
+      "count": 1,
+      "components": {
+        "minecraft:enchantment_glint_override": true
+      }
     },
     "title": {
       "translate": "advancements.adventure.world_explorer.title"
@@ -26,7 +29,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:volcanic_crater"
+                "biomes": "wythers:volcanic_crater"
               }
             }
           }
@@ -42,7 +45,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:icy_volcano"
+                "biomes": "wythers:icy_volcano"
               }
             }
           }
@@ -58,7 +61,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:volcano"
+                "biomes": "wythers:volcano"
               }
             }
           }
@@ -74,7 +77,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:tropical_volcano"
+                "biomes": "wythers:tropical_volcano"
               }
             }
           }
@@ -90,7 +93,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:frozen_island"
+                "biomes": "wythers:frozen_island"
               }
             }
           }
@@ -106,7 +109,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:frigid_island"
+                "biomes": "wythers:frigid_island"
               }
             }
           }
@@ -122,7 +125,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:cold_island"
+                "biomes": "wythers:cold_island"
               }
             }
           }
@@ -138,7 +141,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:temperate_island"
+                "biomes": "wythers:temperate_island"
               }
             }
           }
@@ -154,7 +157,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:mediterranean_island_thermal_springs"
+                "biomes": "wythers:mediterranean_island_thermal_springs"
               }
             }
           }
@@ -170,7 +173,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:desert_island"
+                "biomes": "wythers:desert_island"
               }
             }
           }
@@ -186,7 +189,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:jungle_island"
+                "biomes": "wythers:jungle_island"
               }
             }
           }
@@ -202,7 +205,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:mushroom_island"
+                "biomes": "wythers:mushroom_island"
               }
             }
           }
@@ -218,7 +221,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:mediterranean_island"
+                "biomes": "wythers:mediterranean_island"
               }
             }
           }
@@ -234,7 +237,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:tropical_island"
+                "biomes": "wythers:tropical_island"
               }
             }
           }
@@ -250,7 +253,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:icy_ocean"
+                "biomes": "wythers:icy_ocean"
               }
             }
           }
@@ -266,7 +269,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:deep_icy_ocean"
+                "biomes": "wythers:deep_icy_ocean"
               }
             }
           }
@@ -282,7 +285,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:glacial_cliffs"
+                "biomes": "wythers:glacial_cliffs"
               }
             }
           }
@@ -298,7 +301,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:icy_shore"
+                "biomes": "wythers:icy_shore"
               }
             }
           }
@@ -314,7 +317,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:cold_stony_shore"
+                "biomes": "wythers:cold_stony_shore"
               }
             }
           }
@@ -330,7 +333,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:calcite_coast"
+                "biomes": "wythers:calcite_coast"
               }
             }
           }
@@ -346,7 +349,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:phantasmal_forest"
+                "biomes": "wythers:phantasmal_forest"
               }
             }
           }
@@ -362,7 +365,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:warm_stony_shore"
+                "biomes": "wythers:warm_stony_shore"
               }
             }
           }
@@ -378,7 +381,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:deepslate_shore"
+                "biomes": "wythers:deepslate_shore"
               }
             }
           }
@@ -394,7 +397,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:chaparral"
+                "biomes": "wythers:chaparral"
               }
             }
           }
@@ -410,7 +413,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:kwongan_heath"
+                "biomes": "wythers:kwongan_heath"
               }
             }
           }
@@ -426,7 +429,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:ice_cap"
+                "biomes": "wythers:ice_cap"
               }
             }
           }
@@ -442,7 +445,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:larch_taiga"
+                "biomes": "wythers:larch_taiga"
               }
             }
           }
@@ -458,7 +461,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:snowy_tundra"
+                "biomes": "wythers:snowy_tundra"
               }
             }
           }
@@ -474,7 +477,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:crimson_tundra"
+                "biomes": "wythers:crimson_tundra"
               }
             }
           }
@@ -490,7 +493,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:tundra"
+                "biomes": "wythers:tundra"
               }
             }
           }
@@ -506,7 +509,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:temperate_rainforest"
+                "biomes": "wythers:temperate_rainforest"
               }
             }
           }
@@ -522,7 +525,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:boreal_forest_yellow"
+                "biomes": "wythers:boreal_forest_yellow"
               }
             }
           }
@@ -538,7 +541,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:cold_plains"
+                "biomes": "wythers:cold_plains"
               }
             }
           }
@@ -554,7 +557,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:cool_forest"
+                "biomes": "wythers:cool_forest"
               }
             }
           }
@@ -570,7 +573,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:ancient_taiga"
+                "biomes": "wythers:ancient_taiga"
               }
             }
           }
@@ -586,7 +589,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:harvest_fields"
+                "biomes": "wythers:harvest_fields"
               }
             }
           }
@@ -602,7 +605,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:cool_plains"
+                "biomes": "wythers:cool_plains"
               }
             }
           }
@@ -618,7 +621,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:cool_forest_edge"
+                "biomes": "wythers:cool_forest_edge"
               }
             }
           }
@@ -634,7 +637,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:birch_taiga"
+                "biomes": "wythers:birch_taiga"
               }
             }
           }
@@ -650,7 +653,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:forest_edge"
+                "biomes": "wythers:forest_edge"
               }
             }
           }
@@ -666,7 +669,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:ancient_emerald_beech_forest"
+                "biomes": "wythers:ancient_emerald_beech_forest"
               }
             }
           }
@@ -682,7 +685,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:spring_flower_forest"
+                "biomes": "wythers:spring_flower_forest"
               }
             }
           }
@@ -698,7 +701,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:ancient_moss_forest"
+                "biomes": "wythers:ancient_moss_forest"
               }
             }
           }
@@ -714,7 +717,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:jacaranda_savanna"
+                "biomes": "wythers:jacaranda_savanna"
               }
             }
           }
@@ -730,7 +733,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:subtropical_grassland"
+                "biomes": "wythers:subtropical_grassland"
               }
             }
           }
@@ -746,7 +749,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:subtropical_forest_edge"
+                "biomes": "wythers:subtropical_forest_edge"
               }
             }
           }
@@ -762,7 +765,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:subtropical_forest"
+                "biomes": "wythers:subtropical_forest"
               }
             }
           }
@@ -778,7 +781,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:warm_birch_forest"
+                "biomes": "wythers:warm_birch_forest"
               }
             }
           }
@@ -794,7 +797,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:wooded_savanna"
+                "biomes": "wythers:wooded_savanna"
               }
             }
           }
@@ -810,7 +813,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:tropical_forest"
+                "biomes": "wythers:tropical_forest"
               }
             }
           }
@@ -826,7 +829,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:dry_savanna"
+                "biomes": "wythers:dry_savanna"
               }
             }
           }
@@ -842,7 +845,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:tropical_rainforest"
+                "biomes": "wythers:tropical_rainforest"
               }
             }
           }
@@ -858,7 +861,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:savanna_basaltic_incursions"
+                "biomes": "wythers:savanna_basaltic_incursions"
               }
             }
           }
@@ -874,7 +877,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:dry_tropical_forest"
+                "biomes": "wythers:dry_tropical_forest"
               }
             }
           }
@@ -890,7 +893,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:sandy_jungle"
+                "biomes": "wythers:sandy_jungle"
               }
             }
           }
@@ -906,7 +909,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:dry_tropical_grassland"
+                "biomes": "wythers:dry_tropical_grassland"
               }
             }
           }
@@ -922,7 +925,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:gravelly_beach"
+                "biomes": "wythers:gravelly_beach"
               }
             }
           }
@@ -938,7 +941,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:black_beach"
+                "biomes": "wythers:black_beach"
               }
             }
           }
@@ -954,7 +957,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:coastal_mangroves"
+                "biomes": "wythers:coastal_mangroves"
               }
             }
           }
@@ -970,7 +973,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:tropical_beach"
+                "biomes": "wythers:tropical_beach"
               }
             }
           }
@@ -986,7 +989,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:desert_beach"
+                "biomes": "wythers:desert_beach"
               }
             }
           }
@@ -1002,7 +1005,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:snowy_fen"
+                "biomes": "wythers:snowy_fen"
               }
             }
           }
@@ -1018,7 +1021,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:fen"
+                "biomes": "wythers:fen"
               }
             }
           }
@@ -1034,7 +1037,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:snowy_bog"
+                "biomes": "wythers:snowy_bog"
               }
             }
           }
@@ -1050,7 +1053,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:berry_bog"
+                "biomes": "wythers:berry_bog"
               }
             }
           }
@@ -1066,7 +1069,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:flooded_temperate_rainforest"
+                "biomes": "wythers:flooded_temperate_rainforest"
               }
             }
           }
@@ -1082,7 +1085,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:marsh"
+                "biomes": "wythers:marsh"
               }
             }
           }
@@ -1098,7 +1101,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:old_growth_taiga_swamp"
+                "biomes": "wythers:old_growth_taiga_swamp"
               }
             }
           }
@@ -1114,7 +1117,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:birch_swamp"
+                "biomes": "wythers:birch_swamp"
               }
             }
           }
@@ -1130,7 +1133,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:ancient_oak_swamp"
+                "biomes": "wythers:ancient_oak_swamp"
               }
             }
           }
@@ -1146,7 +1149,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:phantasmal_swamp"
+                "biomes": "wythers:phantasmal_swamp"
               }
             }
           }
@@ -1162,7 +1165,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:bayou"
+                "biomes": "wythers:bayou"
               }
             }
           }
@@ -1178,7 +1181,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:ancient_mossy_swamp"
+                "biomes": "wythers:ancient_mossy_swamp"
               }
             }
           }
@@ -1194,7 +1197,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:flowering_pantanal"
+                "biomes": "wythers:flowering_pantanal"
               }
             }
           }
@@ -1210,7 +1213,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:pantanal"
+                "biomes": "wythers:pantanal"
               }
             }
           }
@@ -1226,7 +1229,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:bamboo_jungle_swamp"
+                "biomes": "wythers:bamboo_jungle_swamp"
               }
             }
           }
@@ -1242,7 +1245,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:flooded_rainforest"
+                "biomes": "wythers:flooded_rainforest"
               }
             }
           }
@@ -1258,7 +1261,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:snowy_thermal_taiga"
+                "biomes": "wythers:snowy_thermal_taiga"
               }
             }
           }
@@ -1274,7 +1277,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:thermal_taiga"
+                "biomes": "wythers:thermal_taiga"
               }
             }
           }
@@ -1290,7 +1293,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:highlands"
+                "biomes": "wythers:highlands"
               }
             }
           }
@@ -1306,7 +1309,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:forested_highlands"
+                "biomes": "wythers:forested_highlands"
               }
             }
           }
@@ -1322,7 +1325,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:cool_stony_peaks"
+                "biomes": "wythers:cool_stony_peaks"
               }
             }
           }
@@ -1338,7 +1341,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:highland_tropical_rainforest"
+                "biomes": "wythers:highland_tropical_rainforest"
               }
             }
           }
@@ -1354,7 +1357,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:huangshan_highlands"
+                "biomes": "wythers:huangshan_highlands"
               }
             }
           }
@@ -1370,7 +1373,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:eucalyptus_deanei_forest"
+                "biomes": "wythers:eucalyptus_deanei_forest"
               }
             }
           }
@@ -1386,7 +1389,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:eucalyptus_woodland"
+                "biomes": "wythers:eucalyptus_woodland"
               }
             }
           }
@@ -1402,7 +1405,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:sparse_eucalyptus_woodland"
+                "biomes": "wythers:sparse_eucalyptus_woodland"
               }
             }
           }
@@ -1418,7 +1421,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:eucalyptus_salubris_woodland"
+                "biomes": "wythers:eucalyptus_salubris_woodland"
               }
             }
           }
@@ -1434,7 +1437,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:outback_desert"
+                "biomes": "wythers:outback_desert"
               }
             }
           }
@@ -1450,7 +1453,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:outback"
+                "biomes": "wythers:outback"
               }
             }
           }
@@ -1466,7 +1469,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:deep_snowy_taiga"
+                "biomes": "wythers:deep_snowy_taiga"
               }
             }
           }
@@ -1482,7 +1485,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:autumnal_flower_forest"
+                "biomes": "wythers:autumnal_flower_forest"
               }
             }
           }
@@ -1498,7 +1501,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:spring_flower_fields"
+                "biomes": "wythers:spring_flower_fields"
               }
             }
           }
@@ -1514,7 +1517,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:scrub_forest"
+                "biomes": "wythers:scrub_forest"
               }
             }
           }
@@ -1530,7 +1533,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:eucalyptus_jungle"
+                "biomes": "wythers:eucalyptus_jungle"
               }
             }
           }
@@ -1546,7 +1549,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:red_desert"
+                "biomes": "wythers:red_desert"
               }
             }
           }
@@ -1562,7 +1565,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:cactus_desert"
+                "biomes": "wythers:cactus_desert"
               }
             }
           }
@@ -1578,7 +1581,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:deep_dark_forest"
+                "biomes": "wythers:deep_dark_forest"
               }
             }
           }
@@ -1594,7 +1597,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:danakil_desert"
+                "biomes": "wythers:danakil_desert"
               }
             }
           }
@@ -1610,7 +1613,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:bamboo_jungle_highlands"
+                "biomes": "wythers:bamboo_jungle_highlands"
               }
             }
           }
@@ -1626,7 +1629,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:wooded_desert"
+                "biomes": "wythers:wooded_desert"
               }
             }
           }
@@ -1642,7 +1645,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:deep_desert"
+                "biomes": "wythers:deep_desert"
               }
             }
           }
@@ -1658,7 +1661,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:tibesti_mountains"
+                "biomes": "wythers:tibesti_mountains"
               }
             }
           }
@@ -1674,7 +1677,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:dripleaf_swamp"
+                "biomes": "wythers:dripleaf_swamp"
               }
             }
           }
@@ -1690,7 +1693,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:flooded_savanna"
+                "biomes": "wythers:flooded_savanna"
               }
             }
           }
@@ -1706,7 +1709,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:tangled_forest"
+                "biomes": "wythers:tangled_forest"
               }
             }
           }
@@ -1722,7 +1725,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:desert_lakes"
+                "biomes": "wythers:desert_lakes"
               }
             }
           }
@@ -1738,7 +1741,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:salt_lakes_turquoise"
+                "biomes": "wythers:salt_lakes_turquoise"
               }
             }
           }
@@ -1754,7 +1757,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:salt_lakes_white"
+                "biomes": "wythers:salt_lakes_white"
               }
             }
           }
@@ -1770,7 +1773,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:salt_lakes_pink"
+                "biomes": "wythers:salt_lakes_pink"
               }
             }
           }
@@ -1786,7 +1789,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:mud_pools"
+                "biomes": "wythers:mud_pools"
               }
             }
           }
@@ -1802,7 +1805,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:icy_crags"
+                "biomes": "wythers:icy_crags"
               }
             }
           }
@@ -1818,7 +1821,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:taiga_crags"
+                "biomes": "wythers:taiga_crags"
               }
             }
           }
@@ -1834,7 +1837,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:temperate_rainforest_crags"
+                "biomes": "wythers:temperate_rainforest_crags"
               }
             }
           }
@@ -1850,7 +1853,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:thermal_taiga_crags"
+                "biomes": "wythers:thermal_taiga_crags"
               }
             }
           }
@@ -1866,7 +1869,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:old_growth_taiga_crags"
+                "biomes": "wythers:old_growth_taiga_crags"
               }
             }
           }
@@ -1882,7 +1885,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:autumnal_crags"
+                "biomes": "wythers:autumnal_crags"
               }
             }
           }
@@ -1898,7 +1901,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:aspen_crags"
+                "biomes": "wythers:aspen_crags"
               }
             }
           }
@@ -1914,7 +1917,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:forbidden_forest"
+                "biomes": "wythers:forbidden_forest"
               }
             }
           }
@@ -1930,7 +1933,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:wistman_woods"
+                "biomes": "wythers:wistman_woods"
               }
             }
           }
@@ -1946,7 +1949,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:andesite_crags"
+                "biomes": "wythers:andesite_crags"
               }
             }
           }
@@ -1962,7 +1965,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:jade_highlands"
+                "biomes": "wythers:jade_highlands"
               }
             }
           }
@@ -1978,7 +1981,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:savanna_badlands"
+                "biomes": "wythers:savanna_badlands"
               }
             }
           }
@@ -1994,7 +1997,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:tsingy_forest"
+                "biomes": "wythers:tsingy_forest"
               }
             }
           }
@@ -2010,7 +2013,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:highland_plains"
+                "biomes": "wythers:highland_plains"
               }
             }
           }
@@ -2026,7 +2029,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:boreal_forest_red"
+                "biomes": "wythers:boreal_forest_red"
               }
             }
           }
@@ -2042,7 +2045,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:ayers_rock"
+                "biomes": "wythers:ayers_rock"
               }
             }
           }
@@ -2058,7 +2061,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:scrubland"
+                "biomes": "wythers:scrubland"
               }
             }
           }
@@ -2074,7 +2077,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:tepui"
+                "biomes": "wythers:tepui"
               }
             }
           }
@@ -2090,7 +2093,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:autumnal_forest"
+                "biomes": "wythers:autumnal_forest"
               }
             }
           }
@@ -2106,7 +2109,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:ancient_golden_beech_forest"
+                "biomes": "wythers:ancient_golden_beech_forest"
               }
             }
           }
@@ -2122,7 +2125,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:maple_mountains"
+                "biomes": "wythers:maple_mountains"
               }
             }
           }
@@ -2138,7 +2141,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:badlands_desert"
+                "biomes": "wythers:badlands_desert"
               }
             }
           }
@@ -2154,7 +2157,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:desert_pinnacles"
+                "biomes": "wythers:desert_pinnacles"
               }
             }
           }
@@ -2170,7 +2173,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:sand_dunes"
+                "biomes": "wythers:sand_dunes"
               }
             }
           }
@@ -2186,7 +2189,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:pine_barrens"
+                "biomes": "wythers:pine_barrens"
               }
             }
           }
@@ -2202,7 +2205,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:snowy_canyon"
+                "biomes": "wythers:snowy_canyon"
               }
             }
           }
@@ -2218,7 +2221,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:cool_stony_canyons"
+                "biomes": "wythers:cool_stony_canyons"
               }
             }
           }
@@ -2234,7 +2237,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:stony_canyon"
+                "biomes": "wythers:stony_canyon"
               }
             }
           }
@@ -2250,7 +2253,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:granite_canyon"
+                "biomes": "wythers:granite_canyon"
               }
             }
           }
@@ -2266,7 +2269,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:tropical_forest_canyon"
+                "biomes": "wythers:tropical_forest_canyon"
               }
             }
           }
@@ -2282,7 +2285,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:bamboo_jungle_canyon"
+                "biomes": "wythers:bamboo_jungle_canyon"
               }
             }
           }
@@ -2298,7 +2301,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:jungle_canyon"
+                "biomes": "wythers:jungle_canyon"
               }
             }
           }
@@ -2314,7 +2317,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:eucalyptus_jungle_canyon"
+                "biomes": "wythers:eucalyptus_jungle_canyon"
               }
             }
           }
@@ -2330,7 +2333,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:badlands_canyon"
+                "biomes": "wythers:badlands_canyon"
               }
             }
           }
@@ -2346,7 +2349,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:red_rock_canyon"
+                "biomes": "wythers:red_rock_canyon"
               }
             }
           }
@@ -2362,7 +2365,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:autumnal_swamp"
+                "biomes": "wythers:autumnal_swamp"
               }
             }
           }
@@ -2378,7 +2381,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:waterlily_swamp"
+                "biomes": "wythers:waterlily_swamp"
               }
             }
           }
@@ -2394,7 +2397,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:bamboo_swamp"
+                "biomes": "wythers:bamboo_swamp"
               }
             }
           }
@@ -2410,7 +2413,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:icy_river"
+                "biomes": "wythers:icy_river"
               }
             }
           }
@@ -2426,7 +2429,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:gravelly_river"
+                "biomes": "wythers:gravelly_river"
               }
             }
           }
@@ -2442,7 +2445,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:black_river"
+                "biomes": "wythers:black_river"
               }
             }
           }
@@ -2458,7 +2461,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:lantern_river"
+                "biomes": "wythers:lantern_river"
               }
             }
           }
@@ -2474,7 +2477,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:savanna_river"
+                "biomes": "wythers:savanna_river"
               }
             }
           }
@@ -2490,7 +2493,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:tropical_forest_river"
+                "biomes": "wythers:tropical_forest_river"
               }
             }
           }
@@ -2506,7 +2509,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:jungle_river"
+                "biomes": "wythers:jungle_river"
               }
             }
           }
@@ -2522,7 +2525,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:badlands_river"
+                "biomes": "wythers:badlands_river"
               }
             }
           }
@@ -2538,7 +2541,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:billabong"
+                "biomes": "wythers:billabong"
               }
             }
           }
@@ -2554,7 +2557,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:desert_river"
+                "biomes": "wythers:desert_river"
               }
             }
           }
@@ -2570,7 +2573,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:deep_desert_river"
+                "biomes": "wythers:deep_desert_river"
               }
             }
           }
@@ -2586,7 +2589,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:autumnal_birch_forest"
+                "biomes": "wythers:autumnal_birch_forest"
               }
             }
           }
@@ -2602,7 +2605,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:ancient_copper_beech_forest"
+                "biomes": "wythers:ancient_copper_beech_forest"
               }
             }
           }
@@ -2618,7 +2621,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:sakura_forest"
+                "biomes": "wythers:sakura_forest"
               }
             }
           }
@@ -2634,7 +2637,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:lapacho_plains"
+                "biomes": "wythers:lapacho_plains"
               }
             }
           }
@@ -2650,7 +2653,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:humid_tropical_grassland"
+                "biomes": "wythers:humid_tropical_grassland"
               }
             }
           }
@@ -2666,7 +2669,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:sparse_bamboo_jungle"
+                "biomes": "wythers:sparse_bamboo_jungle"
               }
             }
           }
@@ -2682,7 +2685,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:sparse_eucalyptus_jungle"
+                "biomes": "wythers:sparse_eucalyptus_jungle"
               }
             }
           }
@@ -2698,7 +2701,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:giant_sequoia_forest"
+                "biomes": "wythers:giant_sequoia_forest"
               }
             }
           }
@@ -2714,7 +2717,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:windswept_jungle"
+                "biomes": "wythers:windswept_jungle"
               }
             }
           }
@@ -2730,7 +2733,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:guelta"
+                "biomes": "wythers:guelta"
               }
             }
           }
@@ -2746,7 +2749,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:autumnal_plains"
+                "biomes": "wythers:autumnal_plains"
               }
             }
           }
@@ -2762,7 +2765,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:autumnal_forest_edge"
+                "biomes": "wythers:autumnal_forest_edge"
               }
             }
           }
@@ -2778,7 +2781,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:tropical_grassland"
+                "biomes": "wythers:tropical_grassland"
               }
             }
           }
@@ -2794,7 +2797,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:snowy_peaks"
+                "biomes": "wythers:snowy_peaks"
               }
             }
           }
@@ -2810,7 +2813,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:volcanic_chamber"
+                "biomes": "wythers:volcanic_chamber"
               }
             }
           }
@@ -2826,7 +2829,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:underground"
+                "biomes": "wythers:underground"
               }
             }
           }
@@ -2842,7 +2845,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:mushroom_caves"
+                "biomes": "wythers:mushroom_caves"
               }
             }
           }
@@ -2858,7 +2861,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:calcite_caverns"
+                "biomes": "wythers:calcite_caverns"
               }
             }
           }
@@ -2874,7 +2877,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:lush_shroom_caves"
+                "biomes": "wythers:lush_shroom_caves"
               }
             }
           }
@@ -2890,7 +2893,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:deep_dark_incursion"
+                "biomes": "wythers:deep_dark_incursion"
               }
             }
           }
@@ -2906,7 +2909,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:lichenous_caves"
+                "biomes": "wythers:lichenous_caves"
               }
             }
           }
@@ -2922,7 +2925,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:mossy_caves"
+                "biomes": "wythers:mossy_caves"
               }
             }
           }
@@ -2938,7 +2941,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:fungous_dripstone_caves"
+                "biomes": "wythers:fungous_dripstone_caves"
               }
             }
           }
@@ -2954,7 +2957,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:lush_dripstone_caves"
+                "biomes": "wythers:lush_dripstone_caves"
               }
             }
           }
@@ -2970,7 +2973,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:lichenous_dripstone_caves"
+                "biomes": "wythers:lichenous_dripstone_caves"
               }
             }
           }
@@ -2986,7 +2989,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:mossy_dripstone_caves"
+                "biomes": "wythers:mossy_dripstone_caves"
               }
             }
           }
@@ -3002,7 +3005,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:lush_fungous_dripstone_caves"
+                "biomes": "wythers:lush_fungous_dripstone_caves"
               }
             }
           }
@@ -3018,7 +3021,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "wythers:deep_underground"
+                "biomes": "wythers:deep_underground"
               }
             }
           }
