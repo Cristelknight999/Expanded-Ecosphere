@@ -15,13 +15,11 @@
     "grass_color": 12250712,
     "grass_color_modifier": "dark_forest"
   },
-  "carvers": {
-    "air": [
-      "minecraft:cave",
-      "minecraft:cave_extra_underground",
-      "minecraft:canyon"
-    ]
-  },
+  "carvers": [
+    "minecraft:cave",
+    "minecraft:cave_extra_underground",
+    "minecraft:canyon"
+  ],
   "features": [
     [
       "wythers:terrain/placed_random_patch/red_sandstone_cliffs"

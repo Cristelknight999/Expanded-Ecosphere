@@ -17,6 +17,7 @@ public class ExpandedEcosphereForge {
     public ExpandedEcosphereForge(IEventBus bus, ModContainer container) {
         ExpandedEcosphere.init();
 
+
         if(ExpandedEcosphere.isTerraBlenderLoaded()) bus.addListener(this::terraBlenderSetup);
 
         if(FMLEnvironment.dist.equals(Dist.CLIENT) && isClothConfigLoaded()) NeoForgeClient.registerConfigScreen(container);

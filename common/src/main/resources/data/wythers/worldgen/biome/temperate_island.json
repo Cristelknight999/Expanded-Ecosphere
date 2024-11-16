@@ -13,13 +13,11 @@
     "water_color": 3570859,
     "water_fog_color": 331305
   },
-  "carvers": {
-    "air": [
-      "minecraft:cave",
-      "minecraft:cave_extra_underground",
-      "minecraft:canyon"
-    ]
-  },
+  "carvers": [
+    "minecraft:cave",
+    "minecraft:cave_extra_underground",
+    "minecraft:canyon"
+  ],
   "features": [
     [
       "wythers:terrain/placed_random_patch/stone_cliffs"

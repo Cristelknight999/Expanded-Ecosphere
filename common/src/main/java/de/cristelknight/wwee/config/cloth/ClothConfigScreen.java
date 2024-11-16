@@ -26,7 +26,6 @@ import org.jetbrains.annotations.NotNull;
 import java.util.*;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 import static de.cristelknight.wwee.ExpandedEcosphere.MODID;
 import static de.cristelknight.wwee.ExpandedEcosphere.Mode.DEFAULT;
