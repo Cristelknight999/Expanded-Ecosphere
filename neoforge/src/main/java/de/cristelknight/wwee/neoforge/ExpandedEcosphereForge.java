@@ -1,14 +1,15 @@
 package de.cristelknight.wwee.neoforge;
 
 import de.cristelknight.wwee.ExpandedEcosphere;
-import de.cristelknight.wwee.config.cloth.ClothConfigScreen;
+import de.cristelknight.wwee.neoforge.client.NeoForgeClient;
 import de.cristelknight.wwee.terra.TerraInit;
+import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.ModList;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.neoforged.neoforge.client.gui.IConfigScreenFactory;
+import net.neoforged.fml.loading.FMLEnvironment;
 
 @Mod(ExpandedEcosphere.MODID)
 public class ExpandedEcosphereForge {
@@ -16,11 +17,9 @@ public class ExpandedEcosphereForge {
     public ExpandedEcosphereForge(IEventBus bus, ModContainer container) {
         ExpandedEcosphere.init();
 
-
-
         if(ExpandedEcosphere.isTerraBlenderLoaded()) bus.addListener(this::terraBlenderSetup);
-        if(isClothConfigLoaded()) container.registerExtensionPoint(IConfigScreenFactory.class, (mc, screen) ->
-                new ClothConfigScreen().create(screen));
+
+        if(FMLEnvironment.dist.equals(Dist.CLIENT) && isClothConfigLoaded()) NeoForgeClient.registerConfigScreen(container);
     }
 
     public static boolean isClothConfigLoaded(){
