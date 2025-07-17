@@ -1,7 +1,7 @@
 package de.cristelknight.wwee;
 
-import de.cristelknight.cristellib.ModLoadingUtil;
-import de.cristelknight.cristellib.builtinpacks.BuiltInDataPacks;
+import de.cristelknight.cristellib.builtinpacks.BuiltInDataPackLoader;
+import de.cristelknight.cristellib.util.ModVersionComparator;
 import de.cristelknight.wwee.config.configs.EEConfig;
 import de.cristelknight.wwee.config.configs.ReplaceBiomesConfig;
 import de.cristelknight.wwee.utils.BiomeReplace;
@@ -21,8 +21,8 @@ public class ExpandedEcosphere {
     public static final String LINK_DC = "https://discord.com/invite/yJng7sC44x";
     public static final String LINK_MODRINTH = "https://modrinth.com/mod/expanded-ecosphere";
     public static final String LINK_CF = "https://www.curseforge.com/minecraft/mc-mods/expanded-ecosphere";
-    public static final String backupVersionNumber = "1.21.3";
-    public static final String minTerraBlenderVersion = "4.2.0.0";
+    public static final String backupVersionNumber = "1.21.7";
+    public static final String minTerraBlenderVersion = "6.0.0.2";
 
 
     public static void init() {
@@ -32,9 +32,9 @@ public class ExpandedEcosphere {
         ReplaceBiomesConfig config2 = ReplaceBiomesConfig.DEFAULT.getConfig();
         if(config2.enableBiomes() && currentMode.equals(Mode.DEFAULT)) BiomeReplace.replace();
 
-        BuiltInDataPacks.registerPack(EERL.create("resources/ee_default"), MODID, Component.literal("Expanded Ecosphere Default World Gen"), () -> currentMode.equals(Mode.DEFAULT));
-        BuiltInDataPacks.registerPack(EERL.create("resources/ee_remove_blobs"), MODID, Component.literal("Disables granit, etc."), () -> EEConfig.DEFAULT.getConfig().removeOreBlobs());
-        BuiltInDataPacks.registerPack(EERL.create("resources/ee_force_large_biomes"), MODID, Component.literal("Forcing LARGE biomes"), () -> EEConfig.DEFAULT.getConfig().forceLargeBiomes());
+        BuiltInDataPackLoader.registerPack(EERL.create("resources/ee_default"), Component.literal("Expanded Ecosphere Default World Gen"), () -> currentMode.equals(Mode.DEFAULT));
+        BuiltInDataPackLoader.registerPack(EERL.create("resources/ee_remove_blobs"), Component.literal("Disables granit, etc."), () -> EEConfig.DEFAULT.getConfig().removeOreBlobs());
+        BuiltInDataPackLoader.registerPack(EERL.create("resources/ee_force_large_biomes"), Component.literal("Forcing LARGE biomes"), () -> EEConfig.DEFAULT.getConfig().forceLargeBiomes());
     }
 
     public static Updater getUpdater(){
@@ -43,7 +43,7 @@ public class ExpandedEcosphere {
 
 
     public static boolean isTerraBlenderLoaded(){
-        return ModLoadingUtil.isModLoadedWithVersion("terrablender", minTerraBlenderVersion);
+        return ModVersionComparator.GREATER_EQUAL.test("terrablender", minTerraBlenderVersion);
     }
 
     public enum Mode {

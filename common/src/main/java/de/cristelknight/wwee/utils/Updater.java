@@ -113,13 +113,13 @@ public class Updater {
         boolean isForge = CristelLibExpectPlatform.getPlatform().equals(Platform.FORGE);
 
         Component component = Component.translatable(string, Util.translatableText("ch").withStyle(ChatFormatting.BOLD).withStyle(ChatFormatting.UNDERLINE)
-                .withStyle((s) -> s.withClickEvent(new ClickEvent(ClickEvent.Action.OPEN_URL, isForge ? update.modDownloadFO : update.modDownloadFA))), component1);
+                .withStyle((s) -> s.withClickEvent(Util.createUrlEvent(isForge ? update.modDownloadFO : update.modDownloadFA))), component1);
 
         return Optional.of(component);
     }
 
     public static String getReleaseTarget() {
-        return SharedConstants.getCurrentVersion().isStable() ? SharedConstants.getCurrentVersion().getName() : ExpandedEcosphere.backupVersionNumber;
+        return SharedConstants.getCurrentVersion().stable() ? SharedConstants.getCurrentVersion().name() : ExpandedEcosphere.backupVersionNumber;
     }
 
 }

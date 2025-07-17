@@ -1,5 +1,5 @@
 plugins {
-    id 'dev.architectury.loom' version '1.7-SNAPSHOT' apply false
+    id 'dev.architectury.loom' version '1.10-SNAPSHOT' apply false
     id 'architectury-plugin' version '3.4-SNAPSHOT'
     id 'com.github.johnrengelman.shadow' version '8.1.1' apply false
 }
@@ -69,12 +69,11 @@ subprojects {
 
                 version: mod_version,
 
-
-
                 neo_loader_version_range: neo_loader_version_range,
                 neo_version_range: neo_version_range,
 
                 fabric_loader_min_version: fabric_loader_min_version,
+                fabric_api_version: fabric_api_version,
 
                 mod_id              : archives_name, mod_name: mod_name, mod_license: mod_license, mod_version: mod_version, mod_description: mod_description, homepage : homepage
         ]

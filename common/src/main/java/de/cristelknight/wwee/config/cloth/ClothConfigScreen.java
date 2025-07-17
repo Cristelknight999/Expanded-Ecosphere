@@ -23,6 +23,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.*;
 import org.jetbrains.annotations.NotNull;
 
+import java.nio.file.Path;
 import java.util.*;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
@@ -85,7 +86,7 @@ public class ClothConfigScreen {
             // Tab 3
             if(!ExpandedEcosphere.isTerraBlenderLoaded()){
                 textListEntry(Component.translatable(MODID + ".config.text.requiresTerrablender", ExpandedEcosphere.minTerraBlenderVersion), category3);
-                textListEntry(Component.translatable(MODID + ".config.text.downloadTB").withStyle((s) -> s.withClickEvent(new ClickEvent(ClickEvent.Action.OPEN_URL, "https://modrinth.com/mod/terrablender"))), category3);
+                textListEntry(Component.translatable(MODID + ".config.text.downloadTB").withStyle((s) -> s.withClickEvent(Util.createUrlEvent("https://modrinth.com/mod/terrablender"))), category3);
             }
             mode = builder.startEnumSelector(fieldName("selectMode"), ExpandedEcosphere.Mode.class, currentMode).setDefaultValue(DEFAULT).build();
             category3.addEntry(mode);

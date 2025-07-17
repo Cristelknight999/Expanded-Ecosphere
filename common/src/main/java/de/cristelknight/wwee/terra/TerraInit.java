@@ -4,7 +4,6 @@ import com.google.gson.*;
 import com.mojang.datafixers.util.Pair;
 import com.mojang.serialization.JsonOps;
 import de.cristelknight.cristellib.CristelLibExpectPlatform;
-import de.cristelknight.cristellib.util.TerrablenderUtil;
 import de.cristelknight.wwee.EERL;
 import de.cristelknight.wwee.ExpandedEcosphere;
 import de.cristelknight.wwee.config.configs.ReplaceBiomesConfig;
@@ -110,14 +109,14 @@ public class TerraInit {
             terraEnable();
         }
         else {
-            TerrablenderUtil.setMixinEnabled(false);
+            //TerrablenderUtil.setMixinEnabled(false);
             Regions.remove(RegionType.OVERWORLD, EERL.create("overworld"));
             SurfaceRuleManager.removeSurfaceRules(SurfaceRuleManager.RuleCategory.OVERWORLD, "wythers");
         }
     }
 
     public static void terraEnable(){
-        TerrablenderUtil.setMixinEnabled(true);
+        //TerrablenderUtil.setMixinEnabled(true);
         registerRegions();
         readOverworldSurfaceRules();
     }

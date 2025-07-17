@@ -8,6 +8,7 @@ import com.mojang.serialization.Codec;
 import com.mojang.serialization.DataResult;
 import com.mojang.serialization.DynamicOps;
 import de.cristelknight.wwee.ExpandedEcosphere;
+import net.minecraft.network.chat.ClickEvent;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.MutableComponent;
 import org.jetbrains.annotations.Nullable;
@@ -71,5 +72,9 @@ public class Util {
 			throw new RuntimeException(e);
 		}
 
+	}
+
+	public static ClickEvent.OpenUrl createUrlEvent(String url) {
+		return new ClickEvent.OpenUrl(Path.of(url).toUri());
 	}
 }
