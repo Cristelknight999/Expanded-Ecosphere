@@ -19,7 +19,6 @@ public abstract class HoglinMixin {
     @Inject(
             method = "finalizeSpawn",
             at = @At(value = "HEAD"))
-
     public void modifyHoglin(ServerLevelAccessor serverLevelAccessor, DifficultyInstance difficultyInstance, MobSpawnType mobSpawnType, SpawnGroupData spawnGroupData, CallbackInfoReturnable<SpawnGroupData> cir) {
         if(serverLevelAccessor.dimensionType().natural() && (mobSpawnType.equals(MobSpawnType.NATURAL) || mobSpawnType.equals(MobSpawnType.CHUNK_GENERATION))){
             setImmuneToZombification(true);

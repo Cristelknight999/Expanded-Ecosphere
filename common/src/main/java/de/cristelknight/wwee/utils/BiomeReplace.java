@@ -63,7 +63,7 @@ public class BiomeReplace {
 
 
     public static byte[] addDimensionFile(ResourceLocation identifier, com.google.gson.JsonObject structure) {
-        return CristelLib.DATA_PACK.addDataForJsonLocation("dimension", identifier, structure);
+        return CristelLib.RUNTIME_PACK.addDataForJsonLocation("dimension", identifier, structure);
     }
 
     public static Set<Integer> getAllBiomes(JsonArray biomes, String biome){
