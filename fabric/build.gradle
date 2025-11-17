@@ -35,12 +35,13 @@ dependencies {
     modImplementation "net.fabricmc:fabric-loader:$rootProject.fabric_loader_version"
     modImplementation "net.fabricmc.fabric-api:fabric-api:$rootProject.fabric_api_version"
 
-    modImplementation("com.terraformersmc:modmenu:${rootProject.modmenu_version}") {
-        exclude module: "fabric-api"
+    modApi("me.shedaniel.cloth:cloth-config-fabric:${rootProject.cloth_config_version}") {
+        exclude(group: "net.fabricmc.fabric-api")
     }
+    modImplementation("com.terraformersmc:modmenu:${rootProject.modmenu_version}")
+    modImplementation "maven.modrinth:cristel-lib:fabric-${rootProject.minecraft_version}-${rootProject.cristellib_version}"
+
     modImplementation "com.github.glitchfiend:TerraBlender-fabric:${rootProject.minecraft_version}-${rootProject.terrablender_version}"
-    modImplementation "maven.modrinth:cristel-lib:${rootProject.cristellib_version}-fabric"
-    modApi "me.shedaniel.cloth:cloth-config-fabric:${rootProject.cloth_config_version}"
     implementation("blue.endless:jankson:${rootProject.jankson_version}")
 
     common(project(path: ':common', configuration: 'namedElements')) { transitive false }

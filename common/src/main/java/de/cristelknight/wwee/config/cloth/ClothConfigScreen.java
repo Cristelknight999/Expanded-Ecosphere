@@ -1,5 +1,6 @@
 package de.cristelknight.wwee.config.cloth;
 
+
 import de.cristelknight.cristellib.CristelLib;
 import de.cristelknight.wwee.ExpandedEcosphere;
 import de.cristelknight.wwee.config.configs.EEConfig;
@@ -20,13 +21,18 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.chat.ClickEvent;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.level.block.*;
+import net.minecraft.world.level.block.AirBlock;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.ButtonBlock;
+import net.minecraft.world.level.block.RotatedPillarBlock;
 import org.jetbrains.annotations.NotNull;
 
-import java.util.*;
+import java.util.Comparator;
+import java.util.LinkedHashSet;
+import java.util.List;
+import java.util.Map;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 import static de.cristelknight.wwee.ExpandedEcosphere.MODID;
 import static de.cristelknight.wwee.ExpandedEcosphere.Mode.DEFAULT;
@@ -54,7 +60,7 @@ public class ClothConfigScreen {
 
             if(ExpandedEcosphere.isTerraBlenderLoaded()) TerraInit.terraEnableDisable();
             if(config2.enableBiomes() && currentMode.equals(DEFAULT)) BiomeReplace.replace();
-            else CristelLib.DATA_PACK.removeData(ResourceLocation.withDefaultNamespace("dimension/overworld.json"));
+            else CristelLib.RUNTIME_PACK.removeData(ResourceLocation.withDefaultNamespace("dimension/overworld.json"));
         });
         return builder.build();
     }
