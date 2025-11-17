@@ -2,6 +2,7 @@ package de.cristelknight.wwee.config.cloth;
 
 
 import de.cristelknight.cristellib.CristelLib;
+import de.cristelknight.cristellib.config.client.ScreenBuilder;
 import de.cristelknight.wwee.ExpandedEcosphere;
 import de.cristelknight.wwee.config.configs.EEConfig;
 import de.cristelknight.wwee.config.configs.ReplaceBiomesConfig;
@@ -51,6 +52,7 @@ public class ClothConfigScreen {
                 .setTitle(Component.translatable(MODID + ".config.title").withStyle(ChatFormatting.BOLD));
 
         ConfigEntries entries = new ConfigEntries(builder.entryBuilder(), builder.getOrCreateCategory(mainName("main")), builder.getOrCreateCategory(mainName("biomes")), builder.getOrCreateCategory(mainName("modes")));
+        new ScreenBuilder(MODID).addToBuilder(builder, true, false);
         builder.setSavingRunnable(() -> {
             EEConfig.DEFAULT.setInstance(entries.createConfig());
             EEConfig.DEFAULT.getConfig(true, true);

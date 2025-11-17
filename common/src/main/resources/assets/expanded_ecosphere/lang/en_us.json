@@ -37,8 +37,8 @@
 
 
     // Updater
-    "expanded_ecosphere.config.text.newUpdateBig": "\n\n There is a new Version for William Wythers' Overhauled Overworld available, which adds much content or fixes a game breaking bug! Download it %1$s\n %2$s\n\n",
-    "expanded_ecosphere.config.text.newUpdate": "\n\n There is a new Version for William Wythers' Overhauled Overworld available! Download it %1$s\n %2$s\n\n",
+    "expanded_ecosphere.config.text.newUpdateBig": "\n\n There is a new Version for William Wythers' Expanded Ecosphere available, which adds much content or fixes a game breaking bug! Download it %1$s\n %2$s\n\n",
+    "expanded_ecosphere.config.text.newUpdate": "\n\n There is a new Version for William Wythers' Expanded Ecosphere available! Download it %1$s\n %2$s\n\n",
 
     "expanded_ecosphere.config.text.newUpdates": "(You are %1$s version%2$s behind)",
     "expanded_ecosphere.config.text.ch": "here",
@@ -48,7 +48,7 @@
 
     // Non config stuff
     "advancements.adventure.world_explorer.title": "World Explorer",
-    "advancements.adventure.world_explorer.description": "Discover (almost) every biome of William Wythers' Overhauled Overworld",
+    "advancements.adventure.world_explorer.description": "Discover (almost) every biome of William Wythers' Expanded Ecosphere",
 
     "biome.wythers.ancient_copper_beech_forest": "Ancient Copper Beech Forest",
     "biome.wythers.ancient_emerald_beech_forest": "Ancient Emerald Beech Forest",

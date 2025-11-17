@@ -20,6 +20,9 @@
     ],
     "terrablender": [
       "de.cristelknight.wwee.fabric.terrablender.TerrablenderFabricInit"
+    ],
+    "cristellib": [
+      "de.cristelknight.wwee.APIImpl"
     ]
   },
   "license": "${mod_license}",
