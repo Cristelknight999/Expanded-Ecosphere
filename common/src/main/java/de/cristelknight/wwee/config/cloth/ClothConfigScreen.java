@@ -12,6 +12,7 @@ import de.cristelknight.wwee.utils.Util;
 import me.shedaniel.clothconfig2.api.ConfigBuilder;
 import me.shedaniel.clothconfig2.api.ConfigCategory;
 import me.shedaniel.clothconfig2.api.ConfigEntryBuilder;
+import me.shedaniel.clothconfig2.api.Requirement;
 import me.shedaniel.clothconfig2.gui.entries.*;
 import me.shedaniel.clothconfig2.impl.builders.DropdownMenuBuilder;
 import net.fabricmc.api.EnvType;
@@ -45,10 +46,8 @@ public class ClothConfigScreen {
 
 
     public Screen create(Screen parent) {
-        //EEConfig config = EEConfig.DEFAULT.getConfig();
         ConfigBuilder builder = ConfigBuilder.create()
                 .setParentScreen(parent)
-                //.setDefaultBackgroundTexture(getIdentifier(config.backGroundBlock().getBlock()))
                 .setTitle(Component.translatable(MODID + ".config.title").withStyle(ChatFormatting.BOLD));
 
         ConfigEntries entries = new ConfigEntries(builder.entryBuilder(), builder.getOrCreateCategory(mainName("main")), builder.getOrCreateCategory(mainName("biomes")), builder.getOrCreateCategory(mainName("modes")));
@@ -82,7 +81,6 @@ public class ClothConfigScreen {
     private static class ConfigEntries {
         private final ConfigEntryBuilder builder;
         private final BooleanListEntry removeOreBlobs, checkForUpdates, showUpdates, showBigUpdates, forceLargeBiomes, enableBiomes;
-        //private final @NotNull DropdownBoxEntry<Block> backgroundBlock;
         private final EnumListEntry<ExpandedEcosphere.Mode> mode;
         private final StringListListEntry biomeList;
 
@@ -96,7 +94,7 @@ public class ClothConfigScreen {
                 textListEntry(Component.translatable(MODID + ".config.text.requiresTerrablender", ExpandedEcosphere.minTerraBlenderVersion), category3);
                 textListEntry(Component.translatable(MODID + ".config.text.downloadTB").withStyle((s) -> s.withClickEvent(new ClickEvent(ClickEvent.Action.OPEN_URL, "https://modrinth.com/mod/terrablender"))), category3);
             }
-            mode = builder.startEnumSelector(fieldName("selectMode"), ExpandedEcosphere.Mode.class, currentMode).setDefaultValue(DEFAULT).build();
+            mode = builder.startEnumSelector(fieldName("selectMode"), ExpandedEcosphere.Mode.class, currentMode).setDefaultValue(DEFAULT).setRequirement(Requirement.isTrue(ExpandedEcosphere::isTerraBlenderLoaded)).build();
             category3.addEntry(mode);
             textListEntry(Component.translatable(MODID + ".config.text.defaultMode").withStyle(ChatFormatting.GRAY), category3);
             textListEntry(Component.translatable(MODID + ".config.text.compatibleMode").withStyle(ChatFormatting.GRAY), category3);
@@ -112,7 +110,6 @@ public class ClothConfigScreen {
             // Tab 1
             textListEntry(Component.translatable(MODID + ".config.text.modes", Component.literal(currentMode.toString()).withStyle(ChatFormatting.DARK_PURPLE)).withStyle(ChatFormatting.GRAY), category1);
 
-            //backgroundBlock = createBlockField("bB", config.backGroundBlock().getBlock(), EEConfig.DEFAULT.backGroundBlock().getBlock(), category1, List.of(FT.NO_BLOCK_ENTITY, FT.NO_BUTTON));
             checkForUpdates = createBooleanField("checkForUpdates", config.checkForUpdates(), EEConfig.DEFAULT.checkForUpdates(), category1, new Component[]{});
             showUpdates = createBooleanField("showUpdates", config.showUpdates(), EEConfig.DEFAULT.showUpdates(), category1, new Component[]{});
             showBigUpdates = createBooleanField("showBigUpdates", config.showBigUpdates(), EEConfig.DEFAULT.showBigUpdates(), category1, new Component[]{});
@@ -147,7 +144,6 @@ public class ClothConfigScreen {
                     .collect(Collectors.toMap(parts -> parts[0], parts -> parts[1]));
         }
 
-
         private BooleanListEntry createBooleanField(String id, boolean value, boolean defaultValue, ConfigCategory category, Component[] tooltip) {
             BooleanListEntry e = builder.startBooleanToggle(fieldName(id), value)
                     .setDefaultValue(defaultValue).setTooltip(tooltip).build();
@@ -155,82 +151,10 @@ public class ClothConfigScreen {
             category.addEntry(e);
             return e;
         }
-        private @NotNull DropdownBoxEntry<Block> createBlockField(String id, Block value, Block defaultValue, ConfigCategory category, List<FT> filter) {
-            DropdownMenuBuilder<Block> e = builder.startDropdownMenu(fieldName(id), DropdownMenuBuilder.TopCellElementBuilder.ofBlockObject(value), DropdownMenuBuilder.CellCreatorBuilder.ofBlockObject())
-                    .setDefaultValue(defaultValue)
-                    .setSelections(BuiltInRegistries.BLOCK.stream().sorted(Comparator.comparing(Block::toString)).filter(new BlockPredicate(filter)).collect(Collectors.toCollection(LinkedHashSet::new)));
-            @NotNull DropdownBoxEntry<Block> entry = e.build();
-            category.addEntry(entry);
-            return entry;
-        }
 
         public void textListEntry(Component component, ConfigCategory category){
             TextListEntry tle = this.builder.startTextDescription(component).build();
             category.addEntry(tle);
         }
-
-        static class BlockPredicate implements Predicate<Block> {
-            private final List<FT> filters;
-            public BlockPredicate(List<FT> filters) {
-                this.filters = filters;
-            }
-
-            @Override
-            public boolean test(Block block) {
-                boolean b = true;
-                for(FT filter : filters){
-                    if(block instanceof AirBlock){
-                        b = false;
-                    }
-                    if(filter.equals(FT.NO_BUTTON)){
-                        if(block instanceof ButtonBlock){
-                            b = false;
-                        }
-                    }
-                    if(filter.equals(FT.PILLAR)){
-                        if(!(block instanceof RotatedPillarBlock)){
-                            b = false;
-                        }
-                    }
-                    if(filter.equals(FT.NO_BLOCK_ENTITY)){
-                        if(block.defaultBlockState().hasBlockEntity()){
-                            b = false;
-                        }
-                    }
-                }
-
-                return b;
-            }
-        }
     }
-
-    /*
-    private static ResourceLocation getIdentifier(Block b){
-        Stream<String> s = Arrays.stream(BuiltInRegistries.BLOCK.getKey(b).toString().split(":"));
-        List<String> l = s.toList();
-        String s2 = l.get(1);
-        if(b instanceof SnowyDirtBlock || b instanceof DoorBlock || b.equals(Blocks.CAKE) || b.equals(Blocks.LOOM)){
-            s2 = s2 + "_top";
-        }
-        else if(b.equals(Blocks.TNT)){
-            s2 = s2 +"_side";
-        }
-        else if(b.equals(Blocks.LAVA) || b.equals(Blocks.WATER)){
-            s2 = s2 +"_still";
-        }
-        else if(b instanceof FireBlock){
-            s2 = s2 +"_0";
-        }
-        return ResourceLocation.fromNamespaceAndPath(l.get(0), "textures/block/" + s2 + ".png");
-    }
-
-     */
-
-    public enum FT {
-        NO_BUTTON,
-        PILLAR,
-        NO_BLOCK_ENTITY,
-        NONE
-    }
-
 }
