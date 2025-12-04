@@ -1,1 +1,0 @@
-execute as @e[predicate=wythers:boat_in_ocean] at @s[predicate=wythers:boat_in_ocean] run tp @s[predicate=wythers:boat_in_ocean] ~ ~ ~0.01
