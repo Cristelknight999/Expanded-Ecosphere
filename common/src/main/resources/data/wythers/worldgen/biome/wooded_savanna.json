@@ -159,6 +159,12 @@
         "weight": 8,
         "minCount": 4,
         "maxCount": 4
+      },
+      {
+        "type": "minecraft:armadillo",
+        "minCount": 1,
+        "maxCount": 2,
+        "weight": 9
       }
     ],
     "ambient": [

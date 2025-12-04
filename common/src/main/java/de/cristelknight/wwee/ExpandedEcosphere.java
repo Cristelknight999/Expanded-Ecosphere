@@ -19,8 +19,8 @@ public class ExpandedEcosphere {
     public static final String LINK_DC = "https://discord.com/invite/yJng7sC44x";
     public static final String LINK_MODRINTH = "https://modrinth.com/mod/expanded-ecosphere";
     public static final String LINK_CF = "https://www.curseforge.com/minecraft/mc-mods/expanded-ecosphere";
-    public static final String backupVersionNumber = "1.21";
-    public static final String minTerraBlenderVersion = "4.0.0.1";
+    public static final String backupVersionNumber = "1.21.1";
+    public static final String minTerraBlenderVersion = "4.1.0.8";
 
 
     public static void init() {

@@ -136,7 +136,14 @@
         "maxCount": 1
       }
     ],
-    "creature": [],
+    "creature": [
+      {
+        "type": "minecraft:armadillo",
+        "minCount": 1,
+        "maxCount": 2,
+        "weight": 2
+      }
+    ],
     "ambient": [
       {
         "type": "minecraft:bat",
