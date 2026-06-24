@@ -4,7 +4,7 @@ import com.google.gson.Gson;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
-import de.cristelknight.cristellib.CristelLibExpectPlatform;
+import de.cristelknight.cristellib.PlatformHelper;
 import de.cristelknight.cristellib.util.Platform;
 import de.cristelknight.wwee.EEExpectPlatform;
 import de.cristelknight.wwee.ExpandedEcosphere;
@@ -58,7 +58,7 @@ public class Updater {
             JsonObject object = JsonParser.parseReader(new InputStreamReader(URI.create(updateIndex).toURL().openStream())).getAsJsonObject();
             List<Update> newUpdate = new ArrayList<>();
 
-            boolean isForge = CristelLibExpectPlatform.getPlatform().equals(Platform.FORGE);
+            boolean isForge = PlatformHelper.getPlatform().equals(Platform.NEO_FORGE);
 
             for(JsonElement element : object.getAsJsonArray("versions")){
                 Update u = new Gson().fromJson(element, Update.class);
@@ -110,7 +110,7 @@ public class Updater {
 
         Component component1 = Component.translatable("expanded_ecosphere.config.text.newUpdates", newUpdates, newUpdates > 1 ? Util.translatableText("multiple") : Util.translatableText("null")).withStyle(ChatFormatting.GRAY);
 
-        boolean isForge = CristelLibExpectPlatform.getPlatform().equals(Platform.FORGE);
+        boolean isForge = PlatformHelper.getPlatform().equals(Platform.NEO_FORGE);
 
         Component component = Component.translatable(string, Util.translatableText("ch").withStyle(ChatFormatting.BOLD).withStyle(ChatFormatting.UNDERLINE)
                 .withStyle((s) -> s.withClickEvent(new ClickEvent(ClickEvent.Action.OPEN_URL, isForge ? update.modDownloadFO : update.modDownloadFA))), component1);

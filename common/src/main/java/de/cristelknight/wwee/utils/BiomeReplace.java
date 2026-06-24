@@ -1,15 +1,15 @@
 package de.cristelknight.wwee.utils;
 
 import com.google.gson.JsonArray;
+import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import de.cristelknight.cristellib.CristelLib;
-import de.cristelknight.cristellib.CristelLibExpectPlatform;
+import de.cristelknight.cristellib.util.JsonHelper;
 import de.cristelknight.wwee.ExpandedEcosphere;
 import de.cristelknight.wwee.config.configs.ReplaceBiomesConfig;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.GsonHelper;
 
-import java.nio.file.Path;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
@@ -18,15 +18,14 @@ import java.util.Set;
 public class BiomeReplace {
 
     public static void replace() {
+        JsonElement element = JsonHelper.getElement(ExpandedEcosphere.MODID, "resources/ee_default/data/minecraft/dimension/overworld.json");
+        if(!(element instanceof JsonObject jsonObject)) {
+            throw new RuntimeException("Couldn't load ee_default/data/minecraft/dimension/overworld.json");
+        }
 
-        Path path = CristelLibExpectPlatform.getResourceDirectory(ExpandedEcosphere.MODID, "resources/ee_default/data/minecraft/dimension/overworld.json");
-        if(path == null) throw new RuntimeException();
+        replaceObject(jsonObject, false);
 
-        JsonObject object = Util.getObjectFromPath(path);
-
-        replaceObject(object, false);
-
-        addDimensionFile(ResourceLocation.fromNamespaceAndPath("minecraft", "overworld"), object);
+        addDimensionFile(ResourceLocation.fromNamespaceAndPath("minecraft", "overworld"), jsonObject);
     }
 
     public static void replaceObject(JsonObject object, boolean skipVanilla){
@@ -63,7 +62,7 @@ public class BiomeReplace {
 
 
     public static byte[] addDimensionFile(ResourceLocation identifier, com.google.gson.JsonObject structure) {
-        return CristelLib.RUNTIME_PACK.addDataForJsonLocation("dimension", identifier, structure);
+        return CristelLib.CONFIG_PACK.addDataForJsonLocation("dimension", identifier, structure);
     }
 
     public static Set<Integer> getAllBiomes(JsonArray biomes, String biome){

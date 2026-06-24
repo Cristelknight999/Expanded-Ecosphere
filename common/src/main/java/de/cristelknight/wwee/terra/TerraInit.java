@@ -3,7 +3,7 @@ package de.cristelknight.wwee.terra;
 import com.google.gson.*;
 import com.mojang.datafixers.util.Pair;
 import com.mojang.serialization.JsonOps;
-import de.cristelknight.cristellib.CristelLibExpectPlatform;
+import de.cristelknight.cristellib.PlatformHelper;
 import de.cristelknight.wwee.EERL;
 import de.cristelknight.wwee.ExpandedEcosphere;
 import de.cristelknight.wwee.config.configs.ReplaceBiomesConfig;
@@ -37,15 +37,7 @@ public class TerraInit {
 
 
     public static List<Pair<Climate.ParameterPoint, ResourceKey<Biome>>> readParameterPoints() {
-        InputStream im;
-        try {
-            Path path = CristelLibExpectPlatform.getResourceDirectory(ExpandedEcosphere.MODID, OVERWORLD);
-            if(path == null) throw new RuntimeException();
-            im = Files.newInputStream(path);
-        } catch (IOException e) {
-            ExpandedEcosphere.LOGGER.error("Couldn't read " + OVERWORLD + ", crashing instead");
-            throw new RuntimeException(e);
-        }
+        InputStream im = PlatformHelper.getResourceStream(ExpandedEcosphere.MODID, OVERWORLD);
 
         try (InputStreamReader reader = new InputStreamReader(im)) {
             JsonElement el = JsonParser.parseReader(reader);
@@ -83,15 +75,8 @@ public class TerraInit {
 
 
     public static SurfaceRules.RuleSource readSurfaceRulesFromNoise() {
-        InputStream im;
-        try {
-            Path path = CristelLibExpectPlatform.getResourceDirectory(ExpandedEcosphere.MODID, NOISE);
-            if(path == null) throw new RuntimeException();
-            im = Files.newInputStream(path);
-        } catch (IOException e) {
-            ExpandedEcosphere.LOGGER.error("Couldn't read " + NOISE + ", crashing instead");
-            throw new RuntimeException(e);
-        }
+        InputStream im = PlatformHelper.getResourceStream(ExpandedEcosphere.MODID, NOISE);
+
         try(InputStreamReader reader = new InputStreamReader(im)) {
             JsonElement load = JsonParser.parseReader(reader);
             JsonElement element = load.getAsJsonObject().get("surface_rule");

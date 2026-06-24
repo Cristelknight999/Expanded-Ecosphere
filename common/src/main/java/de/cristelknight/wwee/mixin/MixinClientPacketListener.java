@@ -15,7 +15,7 @@ public abstract class MixinClientPacketListener {
 
 
     @Inject(method = "handleLogin", at = @At("RETURN"))
-    private void showUpdateMessage(ClientboundLoginPacket arg, CallbackInfo ci) {
+    private void showUpdateMessage(ClientboundLoginPacket clientboundLoginPacket, CallbackInfo ci) {
         if (Minecraft.getInstance().player == null) {
             return;
         }

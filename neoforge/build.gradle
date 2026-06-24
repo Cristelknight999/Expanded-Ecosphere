@@ -1,5 +1,6 @@
 plugins {
     id 'com.github.johnrengelman.shadow'
+    id 'com.hypherionmc.modutils.modpublisher'
 }
 
 architectury {
@@ -52,4 +53,72 @@ shadowJar {
 
 remapJar {
     input.set shadowJar.archiveFile
+}
+
+publisher {
+    // Setup the required API keys. You only need to define the keys for
+    // the platforms you plan on uploading to
+    apiKeys {
+        modrinth (providers.gradleProperty("modrinthToken").orElse(System.getenv("MODRINTH_TOKEN")).get())
+        curseforge (providers.gradleProperty("curseToken").orElse(System.getenv("CURSE_TOKEN")).get())
+    }
+
+    // Enable Debug mode. When enabled, no files will actually be uploaded
+    setDebug(false)
+
+    // Curseforge Project ID
+    setCurseID("490686")
+
+    // Modrinth Project ID
+    setModrinthID("O1XGs7ps")
+
+    // Type of release. beta, alpha or release
+    // You can also use VersionType.BETA, VersionType.ALPHA or VersionType.RELEASE
+    setVersionType("release")
+
+    // Required for Modrinth/GitHub
+    setProjectVersion("neoforge-${rootProject.minecraft_version}-${project.version}")
+
+    // Fancy display name for the upload.
+    // Will default to the project version if not set
+    setDisplayName("WWEE ${project.version}")
+
+    // The supported game versions
+    setGameVersions(minecraft_version)
+
+    // The modloaders your upload supports.
+    // This can also be an Enum from ModLoader,
+    // like setLoaders(ModLoader.FABRIC, ModLoader.FORGE)
+    setLoaders("neoforge")
+
+    // The new Curseforge Environment tag. Optional
+    // Valid values are "server", "client" or "both"
+    // You can also use CurseEnvironment.BOTH, or CurseEnvironment.SERVER or CurseEnvironment.CLIENT
+    setCurseEnvironment("both")
+
+    // Upload the release, but keep it "private" until you are ready
+    // Unreleased feature on CurseForge, working on Modrinth
+    setIsManualRelease(false)
+
+    // The file to be uploaded. This can be a file, task, or string.
+    // setArtifact("build/libs/mymod.jar")
+    // setArtifact(jar.getArchiveFile().get())
+    // If this is a task, the task specified will be executed before publishing
+    setArtifact(tasks.remapJar)
+
+    // Disable the built in Fractureizer scanner
+    setDisableMalwareScanner(true)
+
+    curseDepends {
+        required "cristel-lib"
+    }
+    modrinthDepends {
+        required "cristel-lib"
+    }
+
+
+
+    // Add supported java versions. Currently only used by CurseForge
+    // Supports anything that can be parsed using JavaVersion.toVersion()
+    setJavaVersions([("VERSION_" + java_version)])
 }

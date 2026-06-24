@@ -13,8 +13,8 @@ import org.apache.logging.log4j.Logger;
 public class ExpandedEcosphere {
     public static final String MODID = "expanded_ecosphere";
     public static final Logger LOGGER = LogManager.getLogger("Expanded Ecosphere");
-    public static final String WWOOVersion = EEExpectPlatform.getVersionForMod(MODID);
-    private static final Updater updater = new Updater(WWOOVersion);
+    public static final String WWEEVersion = EEExpectPlatform.getVersionForMod(MODID);
+    private static final Updater updater = new Updater(WWEEVersion);
     public static Mode currentMode = Util.getMode(EEConfig.DEFAULT.getConfig().mode());
     public static final String LINK_DC = "https://discord.com/invite/yJng7sC44x";
     public static final String LINK_MODRINTH = "https://modrinth.com/mod/expanded-ecosphere";

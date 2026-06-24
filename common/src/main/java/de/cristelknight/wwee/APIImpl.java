@@ -4,7 +4,7 @@ import de.cristelknight.cristellib.CristelLibRegistry;
 import de.cristelknight.cristellib.StructureConfig;
 import de.cristelknight.cristellib.api.CristelLibAPI;
 import de.cristelknight.cristellib.api.CristelPlugin;
-import de.cristelknight.cristellib.builtinpacks.BuiltInDataPackLoader;
+import de.cristelknight.cristellib.builtinpacks.BuiltInPackLoader;
 import de.cristelknight.cristellib.config.ConfigType;
 import de.cristelknight.wwee.config.configs.EEConfig;
 import net.minecraft.network.chat.Component;
@@ -14,7 +14,7 @@ import java.util.Set;
 
 @CristelPlugin
 public class APIImpl implements CristelLibAPI {
-    public static final StructureConfig MINECRAFT_ED = StructureConfig.createWithDefaultConfigPath(ExpandedEcosphere.MODID, "toggle_structure_config", ConfigType.ENABLE_DISABLE);
+    public static final StructureConfig MINECRAFT_ED = StructureConfig.createWithDefaultConfigPath(ExpandedEcosphere.MODID, "toggle_structure_config", ConfigType.TOGGLE);
     public static final StructureConfig MINECRAFT_P = StructureConfig.createWithDefaultConfigPath(ExpandedEcosphere.MODID, "placement_structure_config", ConfigType.PLACEMENT);
 
     @Override
@@ -54,9 +54,9 @@ public class APIImpl implements CristelLibAPI {
 
     @Override
     public void registerBuiltInPacks() {
-        BuiltInDataPackLoader.registerPack(EERL.create("resources/ee_default"), Component.literal("Expanded Ecosphere Default World Gen"), () -> ExpandedEcosphere.currentMode.equals(ExpandedEcosphere.Mode.DEFAULT));
-        BuiltInDataPackLoader.registerPack(EERL.create("resources/ee_remove_blobs"), Component.literal("Disables granit, etc."), () -> EEConfig.DEFAULT.getConfig().removeOreBlobs());
-        BuiltInDataPackLoader.registerPack(EERL.create("resources/ee_force_large_biomes"), Component.literal("Forcing LARGE biomes"), () -> EEConfig.DEFAULT.getConfig().forceLargeBiomes());
+        BuiltInPackLoader.registerPack(EERL.create("resources/ee_default"), Component.literal("Expanded Ecosphere Default World Gen"), () -> ExpandedEcosphere.currentMode.equals(ExpandedEcosphere.Mode.DEFAULT));
+        BuiltInPackLoader.registerPack(EERL.create("resources/ee_remove_blobs"), Component.literal("Disables granit, etc."), () -> EEConfig.DEFAULT.getConfig().removeOreBlobs());
+        BuiltInPackLoader.registerPack(EERL.create("resources/ee_force_large_biomes"), Component.literal("Forcing LARGE biomes"), () -> EEConfig.DEFAULT.getConfig().forceLargeBiomes());
     }
 
 }

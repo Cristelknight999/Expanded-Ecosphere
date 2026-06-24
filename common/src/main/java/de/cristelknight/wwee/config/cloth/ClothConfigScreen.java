@@ -14,26 +14,16 @@ import me.shedaniel.clothconfig2.api.ConfigCategory;
 import me.shedaniel.clothconfig2.api.ConfigEntryBuilder;
 import me.shedaniel.clothconfig2.api.Requirement;
 import me.shedaniel.clothconfig2.gui.entries.*;
-import me.shedaniel.clothconfig2.impl.builders.DropdownMenuBuilder;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.gui.screens.Screen;
-import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.chat.ClickEvent;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.level.block.AirBlock;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.ButtonBlock;
-import net.minecraft.world.level.block.RotatedPillarBlock;
-import org.jetbrains.annotations.NotNull;
 
-import java.util.Comparator;
-import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Map;
-import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
 import static de.cristelknight.wwee.ExpandedEcosphere.MODID;
@@ -51,7 +41,7 @@ public class ClothConfigScreen {
                 .setTitle(Component.translatable(MODID + ".config.title").withStyle(ChatFormatting.BOLD));
 
         ConfigEntries entries = new ConfigEntries(builder.entryBuilder(), builder.getOrCreateCategory(mainName("main")), builder.getOrCreateCategory(mainName("biomes")), builder.getOrCreateCategory(mainName("modes")));
-        new ScreenBuilder(MODID).addToBuilder(builder, true, false);
+        new ScreenBuilder(MODID).addToBuilder(builder);
         builder.setSavingRunnable(() -> {
             EEConfig.DEFAULT.setInstance(entries.createConfig());
             EEConfig.DEFAULT.getConfig(true, true);
@@ -61,7 +51,7 @@ public class ClothConfigScreen {
 
             if(ExpandedEcosphere.isTerraBlenderLoaded()) TerraInit.terraEnableDisable();
             if(config2.enableBiomes() && currentMode.equals(DEFAULT)) BiomeReplace.replace();
-            else CristelLib.RUNTIME_PACK.removeData(ResourceLocation.withDefaultNamespace("dimension/overworld.json"));
+            else CristelLib.CONFIG_PACK.removeData(ResourceLocation.withDefaultNamespace("dimension/overworld.json"));
         });
         return builder.build();
     }

@@ -1,7 +1,7 @@
 package de.cristelknight.wwee.config.jankson.config;
 
 import com.mojang.serialization.Codec;
-import de.cristelknight.cristellib.CristelLibExpectPlatform;
+import de.cristelknight.cristellib.PlatformHelper;
 import de.cristelknight.wwee.config.jankson.ConfigUtil;
 import de.cristelknight.wwee.config.jankson.JanksonOps;
 import org.jetbrains.annotations.Nullable;
@@ -34,7 +34,7 @@ public interface CommentedConfig<T extends Record> {
 
 
     default Path getConfigPath() {
-        return CristelLibExpectPlatform.getConfigDirectory().resolve(getSubPath() + ".json5");
+        return PlatformHelper.getConfigDirectory().resolve(getSubPath() + ".json5");
     }
 
     default T getConfig(boolean fromFile, boolean save) {
