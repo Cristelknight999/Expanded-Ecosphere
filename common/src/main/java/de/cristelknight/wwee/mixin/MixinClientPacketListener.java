@@ -21,11 +21,13 @@ public abstract class MixinClientPacketListener {
         }
 
         EEConfig config = EEConfig.DEFAULT.getConfig();
+        if(!config.checkForUpdates())
+            return;
+
         if(config.showUpdates() || (config.showBigUpdates() && ExpandedEcosphere.getUpdater().isBig())){
             ExpandedEcosphere.getUpdater().getUpdateMessage().ifPresent(msg ->
                     Minecraft.getInstance().player.displayClientMessage(msg, false));
         }
-
         //minecraft.setScreen(new DeathScreen(Component.literal("Download or you will really die!"), true));
     }
 }

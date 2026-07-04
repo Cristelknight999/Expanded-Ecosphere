@@ -24,13 +24,11 @@ public class ExpandedEcosphere {
 
 
     public static void init() {
-        LOGGER.info("Loading Expanded Ecosphere");
+        LOGGER.debug("Loading Expanded Ecosphere");
         updater.checkForUpdates();
 
         ReplaceBiomesConfig config2 = ReplaceBiomesConfig.DEFAULT.getConfig();
         if(config2.enableBiomes() && currentMode.equals(Mode.DEFAULT)) BiomeReplace.replace();
-
-
     }
 
     public static Updater getUpdater(){

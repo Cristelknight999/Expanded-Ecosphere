@@ -26,7 +26,7 @@ import java.util.Optional;
 
 public class Updater {
 
-    private Optional<Update> info;
+    private Optional<Update> info = Optional.empty();
     private final String currentVersion;
 
     private boolean isBig = false;
@@ -43,7 +43,6 @@ public class Updater {
     public void checkForUpdates() {
         EEConfig config = EEConfig.DEFAULT.getConfig();
         if(!config.checkForUpdates()) return;
-
 
         try (InputStream in = URI.create("https://github.com/Cristelknight999/CristelknightUpdateChecker/releases/download/1.0/update.json").toURL().openStream()) {
             String updateIndex;
